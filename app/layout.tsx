@@ -10,7 +10,6 @@ import {
   fiveByFiveSchema,
 } from '@/shared/ui-composite/SEO/StructuredData';
 import { Metadata, Viewport } from 'next';
-import { headers } from 'next/headers';
 import Script from 'next/script';
 import SessionPrefetch from '@/shared/ui-composite/Performance/SessionPrefetch';
 
@@ -121,11 +120,8 @@ interface RootLayoutProps {
   readonly children: React.ReactNode;
 }
 
-export default async function RootLayout({ children }: RootLayoutProps) {
-  // Trigger rebuild: 2025-12-31
-  // Get locale from middleware header
-  const headersList = await headers();
-  const locale = headersList.get('x-locale') || 'en';
+export default function RootLayout({ children }: RootLayoutProps) {
+  const locale = 'en';
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -188,4 +184,3 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     </html>
   );
 }
-

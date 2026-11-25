@@ -10,6 +10,10 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 const isDev = process.env.NODE_ENV !== 'production';
 
+// GitHub Pages only serves static files. Set STATIC_EXPORT=true when building
+// for Pages. Normal deployments keep the Vercel and Sentry setup unchanged.
+const isStaticExport = process.env.STATIC_EXPORT === 'true';
+
 const posthogHost = process.env.NEXT_PUBLIC_POSTHOG_HOST;
 const posthogServerHost =
   process.env.POSTHOG_HOST ?? process.env.NEXT_PUBLIC_POSTHOG_HOST;
@@ -220,40 +224,53 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default withSentryConfig(withBundleAnalyzer(withNextIntl(nextConfig)), {
-  // For all available options, see:
-  // https://www.npmjs.com/package/@sentry/webpack-plugin#options
+const staticConfig: NextConfig = {
+  ...nextConfig,
+  output: 'export',
+  basePath: '/FiveByFive',
+  assetPrefix: '/FiveByFive',
+  trailingSlash: true,
+  images: { ...nextConfig.images, unoptimized: true, remotePatterns: [] },
+  headers: undefined,
+  turbopack: undefined,
+};
 
-  org: "zephyr-software",
+export default isStaticExport
+  ? withNextIntl(staticConfig)
+  : withSentryConfig(withBundleAnalyzer(withNextIntl(nextConfig)), {
+      // For all available options, see:
+      // https://www.npmjs.com/package/@sentry/webpack-plugin#options
 
-  project: "javascript-nextjs",
+      org: 'zephyr-software',
 
-  // Only print logs for uploading source maps in CI
-  silent: !process.env.CI,
+      project: 'javascript-nextjs',
 
-  // For all available options, see:
-  // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
+      // Only print logs for uploading source maps in CI
+      silent: !process.env.CI,
 
-  // Upload a larger set of source maps for prettier stack traces (increases build time)
-  widenClientFileUpload: true,
+      // For all available options, see:
+      // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
 
-  // Route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
-  // This can increase your server load as well as your hosting bill.
-  // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
-  // side errors will fail.
-  tunnelRoute: "/monitoring",
+      // Upload a larger set of source maps for prettier stack traces (increases build time)
+      widenClientFileUpload: true,
 
-  webpack: {
-    // Enables automatic instrumentation of Vercel Cron Monitors. (Does not yet work with App Router route handlers.)
-    // See the following for more information:
-    // https://docs.sentry.io/product/crons/
-    // https://vercel.com/docs/cron-jobs
-    automaticVercelMonitors: true,
+      // Route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
+      // This can increase your server load as well as your hosting bill.
+      // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
+      // side errors will fail.
+      tunnelRoute: '/monitoring',
 
-    // Tree-shaking options for reducing bundle size
-    treeshake: {
-      // Automatically tree-shake Sentry logger statements to reduce bundle size
-      removeDebugLogging: true,
-    },
-  },
-});
+      webpack: {
+        // Enables automatic instrumentation of Vercel Cron Monitors. (Does not yet work with App Router route handlers.)
+        // See the following for more information:
+        // https://docs.sentry.io/product/crons/
+        // https://vercel.com/docs/cron-jobs
+        automaticVercelMonitors: true,
+
+        // Tree-shaking options for reducing bundle size
+        treeshake: {
+          // Automatically tree-shake Sentry logger statements to reduce bundle size
+          removeDebugLogging: true,
+        },
+      },
+    });
