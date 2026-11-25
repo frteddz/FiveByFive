@@ -23,6 +23,12 @@ restore_routes() {
 trap restore_routes EXIT
 
 STATIC_EXPORT=true npx next build
+
+# next-intl emits the default locale under out/en even with localePrefix
+# 'never'. Copy it to the root so / and /kana resolve on GitHub Pages.
+if [ -d out/en ]; then
+  cp -a out/en/. out/
+fi
 touch out/.nojekyll
 
 echo "Static export written to out/"
