@@ -2,211 +2,305 @@
   "resources": [
     {
       "id": "tadoku-graded-readers",
-      "name": "Tadoku Graded Readers",
-      "nameJa": "多読グレーデッドリーダーズ",
-      "description": "Free graded readers for extensive reading practice.",
-      "descriptionLong": "Tadoku provides free graded readers at various levels for extensive reading practice. The stories are designed to be read without a dictionary, helping learners build reading fluency and confidence. Levels range from absolute beginner to advanced.",
+      "name": "FAA Airman's Information Manual",
+      "nameJa": "",
+      "description": "Official text for guided reading practice.",
+      "descriptionLong": "Read one short section at a time and write down the phrases you want to reuse.",
       "category": "reading",
       "subcategory": "graded-readers",
-      "tags": ["graded-readers", "free", "extensive-reading", "beginner"],
-      "difficulty": "beginner",
+      "tags": [
+        "faa",
+        "reading",
+        "phraseology",
+        "guided"
+      ],
+      "difficulty": "intermediate",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://tadoku.org/japanese/free-books/",
-      "rating": 4.7,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/",
+      "rating": 0,
       "featured": true,
-      "notes": "Excellent free resource for building reading fluency."
+      "notes": ""
     },
     {
       "id": "satori-reader",
-      "name": "Satori Reader",
-      "nameJa": "サトリリーダー",
-      "description": "Graded reading with audio and detailed explanations.",
-      "descriptionLong": "Satori Reader offers graded Japanese content with professional audio, grammar notes, and vocabulary support. Stories are written specifically for learners and gradually increase in difficulty. Each sentence can be broken down with detailed explanations.",
+      "name": "FAA Handbooks and Manuals",
+      "nameJa": "",
+      "description": "Downloadable handbooks for longer reading sessions.",
+      "descriptionLong": "The FAA library has handbooks that explain procedures in full sentences and fixed phrases.",
       "category": "reading",
       "subcategory": "graded-readers",
-      "tags": ["graded-readers", "audio", "grammar", "intermediate"],
+      "tags": [
+        "faa",
+        "handbooks",
+        "reading",
+        "procedures"
+      ],
       "difficulty": "intermediate",
-      "priceType": "subscription",
-      "priceDetails": "$9/month or $68/year",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.satorireader.com/",
-      "rating": 4.8,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
+      "rating": 0,
       "featured": true,
-      "notes": "Best graded reader platform for intermediate learners."
+      "notes": ""
     },
     {
       "id": "nhk-news-easy",
-      "name": "NHK News Web Easy",
-      "nameJa": "NHK NEWS WEB EASY",
-      "description": "Simplified Japanese news articles with furigana.",
-      "descriptionLong": "NHK News Web Easy provides simplified versions of news articles with furigana, audio, and vocabulary highlights. It's an excellent bridge between textbook Japanese and real news content, covering current events in accessible language.",
+      "name": "Amateur Radio Newsline",
+      "nameJa": "",
+      "description": "News bulletins in spoken and written form.",
+      "descriptionLong": "Read a bulletin first, then listen to the same report to connect the wording with the sound.",
       "category": "reading",
       "subcategory": "news",
-      "tags": ["news", "furigana", "audio", "intermediate", "free"],
-      "difficulty": "intermediate",
+      "tags": [
+        "amateur-radio",
+        "news",
+        "reading",
+        "listening"
+      ],
+      "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www3.nhk.or.jp/news/easy/",
-      "rating": 4.8,
-      "featured": true,
-      "notes": "Updated daily with current news. Essential resource."
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.arnewsline.org/",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     },
     {
       "id": "watanoc",
-      "name": "Watanoc",
-      "nameJa": "Watanoc",
-      "description": "Japanese news for learners at multiple levels.",
-      "descriptionLong": "Watanoc provides Japanese news articles written at different difficulty levels. Each article includes vocabulary lists and is categorized by topic, making it easy to find content that interests you.",
+      "name": "ICAO news",
+      "nameJa": "",
+      "description": "News and updates from the international aviation body.",
+      "descriptionLong": "ICAO publishes current material about civil aviation standards and activities.",
       "category": "reading",
       "subcategory": "news",
-      "tags": ["news", "levels", "vocabulary", "intermediate"],
-      "difficulty": "intermediate",
+      "tags": [
+        "icao",
+        "aviation",
+        "news",
+        "standards"
+      ],
+      "difficulty": "advanced",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://watanoc.com/",
-      "rating": 4.4,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.icao.int/",
+      "rating": 0,
       "featured": false,
-      "notes": "Good variety of topics and difficulty levels."
+      "notes": ""
     },
     {
       "id": "japanese-io-reader",
-      "name": "Japanese.io Reader",
-      "nameJa": "Japanese.io",
-      "description": "Read any Japanese text with built-in dictionary.",
-      "descriptionLong": "Japanese.io lets you paste any Japanese text and provides instant word lookups, grammar explanations, and flashcard creation. Great for reading native content with support when you need it.",
+      "name": "Aviation English",
+      "nameJa": "",
+      "description": "Short background reading on aviation language.",
+      "descriptionLong": "The article is a short introduction to the language requirements used in aviation.",
       "category": "reading",
       "subcategory": "graded-readers",
-      "tags": ["reader", "dictionary", "flashcards", "intermediate"],
-      "difficulty": "intermediate",
-      "priceType": "freemium",
-      "priceDetails": "Free tier available. Premium for additional features.",
-      "platforms": ["web"],
-      "url": "https://www.japanese.io/",
-      "rating": 4.5,
+      "tags": [
+        "aviation",
+        "english",
+        "reading",
+        "background"
+      ],
+      "difficulty": "beginner",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Aviation_English",
+      "rating": 0,
       "featured": false,
-      "notes": "Excellent for reading any Japanese content."
+      "notes": ""
     },
     {
       "id": "syosetu",
-      "name": "Syosetu (小説家になろう)",
-      "nameJa": "小説家になろう",
-      "description": "Free Japanese web novels for advanced reading.",
-      "descriptionLong": "Syosetu is Japan's largest web novel platform with thousands of free stories across all genres. While written for native speakers, it's an excellent resource for advanced learners seeking extensive reading material.",
+      "name": "ARRL Ham Radio License Manual",
+      "nameJa": "",
+      "description": "Long form study material for new operators.",
+      "descriptionLong": "The licence manual gives you extended reading on the rules and practice of amateur radio.",
       "category": "reading",
       "subcategory": "novels",
-      "tags": ["novels", "web-novels", "free", "advanced", "native"],
-      "difficulty": "advanced",
-      "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://syosetu.com/",
-      "rating": 4.5,
-      "featured": true,
-      "notes": "Huge library of free content. Many light novels started here."
+      "tags": [
+        "book",
+        "licensing",
+        "reading",
+        "amateur-radio"
+      ],
+      "difficulty": "beginner",
+      "priceType": "freemium",
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "physical",
+        "web"
+      ],
+      "url": "https://www.arrl.org/ham-radio-license-manual",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     },
     {
       "id": "aozora-bunko",
-      "name": "Aozora Bunko",
-      "nameJa": "青空文庫",
-      "description": "Free Japanese classic literature in digital format.",
-      "descriptionLong": "Aozora Bunko is a digital library of Japanese literature in the public domain. It includes works by famous authors like Natsume Soseki and Akutagawa Ryunosuke. Excellent for advanced learners interested in Japanese literature.",
+      "name": "Amateur radio licensing in the US",
+      "nameJa": "",
+      "description": "Extended reference on licence classes.",
+      "descriptionLong": "Read the article for a full account of US licence classes and the exams for each.",
       "category": "reading",
       "subcategory": "novels",
-      "tags": ["literature", "classics", "free", "advanced", "public-domain"],
+      "tags": [
+        "licensing",
+        "reference",
+        "reading",
+        "us"
+      ],
       "difficulty": "advanced",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www.aozora.gr.jp/",
-      "rating": 4.6,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Amateur_radio_licensing_in_the_United_States",
+      "rating": 0,
       "featured": false,
-      "notes": "Classic Japanese literature. Challenging but rewarding."
+      "notes": ""
     },
     {
       "id": "manga-raw",
-      "name": "Raw Manga Resources",
-      "nameJa": "日本語漫画",
-      "description": "Reading manga in Japanese for language practice.",
-      "descriptionLong": "Reading manga in Japanese is an excellent way to practice reading while enjoying engaging stories. Many manga include furigana, making them accessible to intermediate learners. Popular series are available through various legal platforms.",
+      "name": "ITU Radiocommunication Sector",
+      "nameJa": "",
+      "description": "Technical reading on radio services.",
+      "descriptionLong": "The ITU-R pages provide detailed background on radiocommunication services and spectrum use.",
       "category": "reading",
       "subcategory": "manga",
-      "tags": ["manga", "visual", "furigana", "intermediate", "entertainment"],
-      "difficulty": "intermediate",
-      "priceType": "paid",
-      "priceDetails": "Varies by platform and title",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.amazon.co.jp/kindle-dbs/manga-store/",
-      "rating": 4.6,
-      "featured": true,
-      "notes": "Amazon Japan Kindle has extensive manga selection."
+      "tags": [
+        "itu",
+        "diagrams",
+        "technical",
+        "radio"
+      ],
+      "difficulty": "advanced",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.itu.int/en/ITU-R/Pages/default.aspx",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     },
     {
       "id": "bookwalker",
-      "name": "BookWalker",
-      "nameJa": "ブックウォーカー",
-      "description": "Digital manga and light novel platform.",
-      "descriptionLong": "BookWalker is a major digital bookstore for manga and light novels in Japanese. The platform offers a vast selection of titles with regular sales. Great for building a digital Japanese reading library.",
+      "name": "ARRL shop",
+      "nameJa": "",
+      "description": "Illustrated guides and manuals from ARRL.",
+      "descriptionLong": "Browse the shop for books with diagrams and photographs of radio equipment and operating practice.",
       "category": "reading",
       "subcategory": "manga",
-      "tags": ["manga", "light-novels", "digital", "intermediate"],
-      "difficulty": "intermediate",
-      "priceType": "paid",
-      "priceDetails": "Varies by title. Frequent sales.",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://bookwalker.jp/",
-      "rating": 4.5,
+      "tags": [
+        "books",
+        "diagrams",
+        "arrl",
+        "radio"
+      ],
+      "difficulty": "all-levels",
+      "priceType": "freemium",
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "physical",
+        "web"
+      ],
+      "url": "https://www.arrl.org/shop",
+      "rating": 0,
       "featured": false,
-      "notes": "Good selection and frequent discounts."
+      "notes": ""
     },
     {
       "id": "learnnatively",
-      "name": "Natively",
-      "nameJa": "Natively",
-      "description": "Japanese book difficulty ratings and recommendations.",
-      "descriptionLong": "Natively provides difficulty ratings for Japanese books, manga, and other reading materials based on community feedback. It helps learners find content at their level and track their reading progress.",
+      "name": "Radiotelephony procedure",
+      "nameJa": "",
+      "description": "Reading that explains a complete radio call.",
+      "descriptionLong": "Work through the article once for the overall sequence, then reread the parts you need.",
       "category": "reading",
       "subcategory": "graded-readers",
-      "tags": ["ratings", "recommendations", "community", "all-levels"],
+      "tags": [
+        "procedure",
+        "reading",
+        "call-signs",
+        "guided"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://learnnatively.com/",
-      "rating": 4.7,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Radiotelephony_procedure",
+      "rating": 0,
       "featured": true,
-      "notes": "Essential for finding books at your level."
+      "notes": ""
     },
     {
       "id": "yomujp",
-      "name": "Yomu JP",
-      "nameJa": "Yomu JP",
-      "description": "Graded reading articles for Japanese learners.",
-      "descriptionLong": "Yomu JP provides graded reading articles on various topics for Japanese learners. Articles are categorized by JLPT level and include vocabulary support.",
+      "name": "Morse code reference",
+      "nameJa": "",
+      "description": "Short reference text on the Morse alphabet.",
+      "descriptionLong": "Read the timing and alphabet sections, then check your notes against a practice session.",
       "category": "reading",
       "subcategory": "graded-readers",
-      "tags": ["graded", "articles", "JLPT", "intermediate"],
-      "difficulty": "intermediate",
+      "tags": [
+        "morse",
+        "reference",
+        "reading",
+        "timing"
+      ],
+      "difficulty": "beginner",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://yomujp.com/",
-      "rating": 4.3,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Morse_code",
+      "rating": 0,
       "featured": false,
-      "notes": "Good variety of topics at different levels."
+      "notes": ""
     },
     {
       "id": "hukumusume",
-      "name": "Hukumusume Fairy Tales",
-      "nameJa": "福娘童話集",
-      "description": "Japanese fairy tales and folk stories.",
-      "descriptionLong": "Hukumusume offers a collection of Japanese fairy tales and folk stories with audio. The stories use relatively simple language and provide cultural insight, making them good for intermediate reading practice.",
+      "name": "Q code reference",
+      "nameJa": "",
+      "description": "Short list of radio abbreviations to read and copy.",
+      "descriptionLong": "Read one group of Q codes at a time and write down the meanings in your own words.",
       "category": "reading",
       "subcategory": "graded-readers",
-      "tags": ["fairy-tales", "audio", "culture", "intermediate", "free"],
-      "difficulty": "intermediate",
+      "tags": [
+        "q-code",
+        "abbreviations",
+        "reading",
+        "list"
+      ],
+      "difficulty": "beginner",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://hukumusume.com/douwa/",
-      "rating": 4.4,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Q_code",
+      "rating": 0,
       "featured": false,
-      "notes": "Traditional Japanese stories with audio."
+      "notes": ""
     }
   ]
 }

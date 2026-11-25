@@ -1,7 +1,7 @@
 'use client';
 import { Fragment, lazy, Suspense, useState, useEffect } from 'react';
 import { Link } from '@/core/i18n/routing';
-import KanaDojoBanner from './KanaDojoBanner';
+import FiveByFiveBanner from './KanaDojoBanner';
 import Info from '@/shared/ui-composite/Menu/Info';
 import NightlyBanner from '@/shared/ui-composite/Modals/NightlyBanner';
 import {
@@ -10,7 +10,6 @@ import {
   Cookie,
   Sun,
   Moon,
-  Heart,
   Sparkle,
   FileDiff,
   CircleHelp,
@@ -76,26 +75,20 @@ const MainMenu = () => {
   }, []);
   const links = [
     {
-      name_en: 'Kana',
-      name_ja: 'あ',
+      name_en: 'Letters',
+      name_ja: 'A-Z',
       href: '/kana',
     },
     {
-      name_en: 'Vocab',
-      name_ja: '語',
+      name_en: 'Spelling',
+      name_ja: 'SPC',
       href: '/vocabulary',
     },
     {
-      name_en: 'Kanji',
-      name_ja: '字',
+      name_en: 'Codes',
+      name_ja: 'R/T',
       href: '/kanji',
     },
-
-    // {
-    //   name_en: 'Sentences',
-    //   name_ja: 'цЦЗ',
-    //   href: '/sentences'
-    // }
   ];
 
   const legalLinks = [
@@ -172,7 +165,7 @@ const MainMenu = () => {
         )}
       >
         <div className='flex w-full flex-row items-center justify-between gap-2 px-1'>
-          <KanaDojoBanner />
+          <FiveByFiveBanner />
           <div className='pointer-events-auto flex w-1/2 flex-row justify-end gap-2 md:w-1/3'>
             <button
               type='button'
@@ -231,7 +224,7 @@ const MainMenu = () => {
               )}
               onClick={() => {
                 playClick();
-                window.open('https://github.com/lingdojo/kana-dojo', '_blank');
+                window.open('https://github.com/frteddz/FiveByFive', '_blank');
               }}
             />
             <button
@@ -250,18 +243,6 @@ const MainMenu = () => {
             >
               <Bug size={32}  />
             </button>
-            <Heart
-              size={32}
-              className={clsx(
-                'duration-250 hover:cursor-pointer hover:scale-105',
-                'active:scale-100 active:duration-225',
-                'animate-bounce fill-current text-red-500',
-              )}
-              onClick={() => {
-                playClick();
-                window.open('https://ko-fi.com/kanadojo', '_blank');
-              }}
-            />
           </div>
         </div>
         <div className='pointer-events-auto w-full'>
@@ -305,7 +286,7 @@ const MainMenu = () => {
                   onClick={() => playClick()}
                 >
                   <span
-                    lang='ja'
+                    lang='en'
                     className={characterTileClassName(
                       i === 0
                         ? '[animation-delay:0ms]'

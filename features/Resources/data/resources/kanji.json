@@ -2,179 +2,260 @@
   "resources": [
     {
       "id": "wanikani-kanji",
-      "name": "WaniKani",
-      "nameJa": "ワニカニ",
-      "description": "Kanji learning through mnemonics and SRS.",
-      "descriptionLong": "WaniKani teaches over 2,000 kanji through a structured curriculum using mnemonics and spaced repetition. Each kanji comes with memorable stories, and readings are learned through vocabulary. The radical-based approach builds understanding systematically.",
+      "name": "NATO phonetic alphabet",
+      "nameJa": "",
+      "description": "The full code word list in one table.",
+      "descriptionLong": "Learn the words in order, then shuffle them so you can answer from the letter alone.",
       "category": "kanji",
       "subcategory": "learning-systems",
-      "tags": ["mnemonics", "SRS", "radicals", "structured", "vocabulary"],
+      "tags": [
+        "code-words",
+        "alphabet",
+        "list",
+        "learning"
+      ],
       "difficulty": "all-levels",
-      "priceType": "subscription",
-      "priceDetails": "$9/month or $89/year. Lifetime option available.",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.wanikani.com/",
-      "rating": 4.8,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/NATO_phonetic_alphabet",
+      "rating": 0,
       "featured": true,
-      "notes": "First 3 levels free. Most popular kanji learning platform."
+      "notes": ""
     },
     {
       "id": "remembering-the-kanji",
-      "name": "Remembering the Kanji",
-      "nameJa": "漢字を覚える",
-      "description": "Mnemonic-based kanji learning method.",
-      "descriptionLong": "Remembering the Kanji by James Heisig teaches kanji meanings through imaginative stories and mnemonics. The method focuses on learning meanings first, with readings learned later through vocabulary. A proven approach for many learners.",
+      "name": "ICAO phonetic alphabet",
+      "nameJa": "",
+      "description": "Reference entry for the ICAO spelling alphabet.",
+      "descriptionLong": "Use the page to connect the ICAO name with the code word list.",
       "category": "kanji",
       "subcategory": "learning-systems",
-      "tags": ["mnemonics", "meanings", "method", "book"],
+      "tags": [
+        "icao",
+        "alphabet",
+        "reference",
+        "learning"
+      ],
       "difficulty": "all-levels",
-      "priceType": "paid",
-      "priceDetails": "~$35",
-      "platforms": ["physical"],
-      "url": "https://www.amazon.com/Remembering-Kanji-Complete-Japanese-Characters/dp/0824835921",
-      "rating": 4.5,
-      "featured": true,
-      "notes": "Volume 1 covers meanings. Volume 2 covers readings."
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/ICAO_phonetic_alphabet",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     },
     {
       "id": "kodansha-kanji-course",
-      "name": "Kodansha Kanji Learner's Course",
-      "nameJa": "講談社漢字学習コース",
-      "description": "Systematic kanji course covering 2,300 characters.",
-      "descriptionLong": "The Kodansha Kanji Learner's Course presents 2,300 kanji in a carefully designed order that builds on previously learned characters. Each entry includes meanings, readings, vocabulary, and mnemonics. A comprehensive and well-organized approach.",
+      "name": "Anki",
+      "nameJa": "",
+      "description": "Card based review for code words.",
+      "descriptionLong": "Create cards for each letter and word, then keep the daily reviews short and regular.",
       "category": "kanji",
       "subcategory": "learning-systems",
-      "tags": ["systematic", "comprehensive", "vocabulary", "book"],
+      "tags": [
+        "flashcards",
+        "srs",
+        "code-words",
+        "review"
+      ],
       "difficulty": "all-levels",
-      "priceType": "paid",
-      "priceDetails": "~$35",
-      "platforms": ["physical"],
-      "url": "https://www.amazon.com/Kodansha-Kanji-Learners-Course-Step/dp/1568365268",
-      "rating": 4.7,
+      "priceType": "freemium",
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web",
+        "ios",
+        "android",
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "url": "https://apps.ankiweb.net/",
+      "rating": 0,
       "featured": true,
-      "notes": "Excellent systematic approach. Anki decks available."
+      "notes": ""
     },
     {
       "id": "kanji-study-app",
-      "name": "Kanji Study",
-      "nameJa": "漢字スタディ",
-      "description": "Comprehensive kanji app with writing practice.",
-      "descriptionLong": "Kanji Study is a dedicated kanji learning app covering all joyo kanji plus more. It includes detailed information, writing practice with stroke order, flashcards, and quizzes. Organized by JLPT level, grade, and frequency.",
+      "name": "Quizlet",
+      "nameJa": "",
+      "description": "Set based drills in both directions.",
+      "descriptionLong": "Make a set with the letter on one side and the code word on the other, then test both directions.",
       "category": "kanji",
       "subcategory": "kanji-practice",
-      "tags": ["app", "writing", "stroke-order", "JLPT", "comprehensive"],
+      "tags": [
+        "flashcards",
+        "sets",
+        "drills",
+        "code-words"
+      ],
       "difficulty": "all-levels",
       "priceType": "freemium",
-      "priceDetails": "Free with in-app purchases for full content",
-      "platforms": ["android"],
-      "url": "https://play.google.com/store/apps/details?id=com.mindtwisted.kanjistudy",
-      "rating": 4.8,
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "url": "https://quizlet.com/",
+      "rating": 0,
       "featured": true,
-      "notes": "Android only. One of the best kanji apps."
+      "notes": ""
     },
     {
       "id": "kanji-garden",
-      "name": "Kanji Garden",
-      "nameJa": "漢字ガーデン",
-      "description": "SRS-based kanji learning with mnemonics.",
-      "descriptionLong": "Kanji Garden uses spaced repetition and mnemonics to teach kanji. The platform provides a structured learning path and tracks your progress. A good alternative to WaniKani with a different approach.",
+      "name": "Morse Code Trainer",
+      "nameJa": "",
+      "description": "Audio drill for letters and Morse patterns.",
+      "descriptionLong": "Hear a character and identify it, then say the matching NATO word out loud.",
       "category": "kanji",
       "subcategory": "learning-systems",
-      "tags": ["SRS", "mnemonics", "structured", "web"],
+      "tags": [
+        "morse",
+        "audio",
+        "drills",
+        "learning"
+      ],
       "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Free tier available. Premium for full access.",
-      "platforms": ["web"],
-      "url": "https://kanji.garden/",
-      "rating": 4.4,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://morsecode.world/international/trainer/",
+      "rating": 0,
       "featured": false,
-      "notes": "Good free alternative for kanji learning."
+      "notes": ""
     },
     {
       "id": "jisho-kanji",
-      "name": "Jisho Kanji Search",
-      "nameJa": "辞書漢字検索",
-      "description": "Kanji lookup with stroke order and details.",
-      "descriptionLong": "Jisho provides detailed kanji information including meanings, readings, stroke order, and example words. You can search by radical, stroke count, or draw the kanji. Essential reference tool.",
+      "name": "Q code reference",
+      "nameJa": "",
+      "description": "Table of three letter radio abbreviations.",
+      "descriptionLong": "Use the table to check a Q code and its meaning during review.",
       "category": "kanji",
       "subcategory": "kanji-reference",
-      "tags": ["dictionary", "stroke-order", "reference", "free"],
+      "tags": [
+        "q-code",
+        "reference",
+        "abbreviations",
+        "lookup"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://jisho.org/",
-      "rating": 4.9,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Q_code",
+      "rating": 0,
       "featured": true,
-      "notes": "Essential kanji reference. Supports drawing to search."
+      "notes": ""
     },
     {
       "id": "kanji-damage",
-      "name": "Kanji Damage",
-      "nameJa": "漢字ダメージ",
-      "description": "Irreverent mnemonic-based kanji learning.",
-      "descriptionLong": "Kanji Damage teaches kanji through memorable (often irreverent) mnemonics. The free resource covers 1,700+ kanji with a unique, humorous approach that helps many learners remember characters.",
+      "name": "Phonetic alphabets",
+      "nameJa": "",
+      "description": "Compare the NATO list with other spelling alphabets.",
+      "descriptionLong": "The article explains why spelling alphabets exist and how lists differ.",
       "category": "kanji",
       "subcategory": "learning-systems",
-      "tags": ["mnemonics", "free", "humor", "memorable"],
+      "tags": [
+        "alphabet",
+        "comparison",
+        "background",
+        "reference"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "http://www.kanjidamage.com/",
-      "rating": 4.3,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Phonetic_alphabet",
+      "rating": 0,
       "featured": false,
-      "notes": "Free resource with memorable mnemonics."
+      "notes": ""
     },
     {
       "id": "skritter-kanji",
-      "name": "Skritter",
-      "nameJa": "Skritter",
-      "description": "SRS kanji writing practice.",
-      "descriptionLong": "Skritter combines spaced repetition with handwriting practice for kanji. Write characters on your device and get instant feedback. The app tracks your progress and schedules reviews optimally.",
+      "name": "Call sign reference",
+      "nameJa": "",
+      "description": "Practice spelling complete call signs.",
+      "descriptionLong": "Write a call sign out letter by letter using the standard words, then check it.",
       "category": "kanji",
       "subcategory": "kanji-practice",
-      "tags": ["writing", "SRS", "handwriting", "practice"],
+      "tags": [
+        "call-signs",
+        "spelling",
+        "writing",
+        "practice"
+      ],
       "difficulty": "all-levels",
-      "priceType": "subscription",
-      "priceDetails": "$14.99/month or $99.99/year",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://skritter.com/",
-      "rating": 4.6,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Call_sign",
+      "rating": 0,
       "featured": false,
-      "notes": "Best for kanji writing practice."
+      "notes": ""
     },
     {
       "id": "kanji-koohii",
-      "name": "Kanji Koohii",
-      "nameJa": "漢字コーヒー",
-      "description": "Community for RTK learners with SRS.",
-      "descriptionLong": "Kanji Koohii is a community site for learners using Remembering the Kanji. It includes an SRS system, shared mnemonics, and discussion forums. Great companion to the RTK book.",
+      "name": "AnkiWeb Shared Decks",
+      "nameJa": "",
+      "description": "Decks you can compare with your own card list.",
+      "descriptionLong": "Look through community decks for code word drills and check the cards before you use them.",
       "category": "kanji",
       "subcategory": "learning-systems",
-      "tags": ["RTK", "community", "SRS", "mnemonics"],
+      "tags": [
+        "anki",
+        "community",
+        "shared-decks",
+        "review"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://kanji.koohii.com/",
-      "rating": 4.4,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://ankiweb.net/shared/decks/",
+      "rating": 0,
       "featured": false,
-      "notes": "Essential companion for RTK users."
+      "notes": ""
     },
     {
       "id": "kanjialive",
-      "name": "Kanji Alive",
-      "nameJa": "漢字アライブ",
-      "description": "Free kanji reference with animations.",
-      "descriptionLong": "Kanji Alive provides free kanji reference with stroke order animations, meanings, readings, and example words. The clean interface makes it easy to look up and study kanji.",
+      "name": "Prosigns reference",
+      "nameJa": "",
+      "description": "Morse sequences used in radio traffic.",
+      "descriptionLong": "Keep the prosign list beside the code word list when you review Morse letters.",
       "category": "kanji",
       "subcategory": "kanji-reference",
-      "tags": ["reference", "animations", "free", "clean"],
+      "tags": [
+        "morse",
+        "prosigns",
+        "reference",
+        "lookup"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://kanjialive.com/",
-      "rating": 4.5,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Prosigns_for_Morse_code",
+      "rating": 0,
       "featured": false,
-      "notes": "Clean interface with helpful animations."
+      "notes": ""
     }
   ]
 }

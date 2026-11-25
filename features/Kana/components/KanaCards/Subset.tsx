@@ -70,7 +70,7 @@ const Subset = ({ sliceRange, subgroup }: SubsetProps) => {
         {item}
         {index < items.length - 1 && (
           <span aria-hidden='true' className={separatorClassName}>
-            ・
+            /
           </span>
         )}
       </span>

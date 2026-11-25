@@ -73,7 +73,7 @@ const usePreferencesStore = create<PreferencesState>()(
       setTheme: theme => set({ theme }),
       isGlassMode: false,
       setGlassMode: isGlassMode => set({ isGlassMode }),
-      font: 'Zen Maru Gothic',
+      font: 'Inter',
       setFont: fontName => set({ font: fontName }),
       silentMode: false,
       setSilentMode: silent => set({ silentMode: silent }),

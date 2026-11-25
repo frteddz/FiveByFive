@@ -7,8 +7,8 @@ import {
 } from './scheduler';
 
 const WORKFLOW_FILE = 'hourly-community-issue.yml';
-const REPO_OWNER = 'lingdojo';
-const REPO_NAME = 'kana-dojo';
+const REPO_OWNER = 'frteddz';
+const REPO_NAME = 'FiveByFive';
 const GITHUB_DISPATCH_TIMEOUT_MS = 8000;
 
 export const runtime = 'edge';
@@ -23,8 +23,8 @@ export const runtime = 'edge';
  * providing a reliable external trigger that bypasses GitHub's unreliable scheduler.
  *
  * Required env vars:
- *   CRON_SECRET  — must match the secret configured in Vercel project settings
- *   GITHUB_PAT   — fine-grained PAT with Actions: Read & Write on this repo
+ *   CRON_SECRET - must match the secret configured in Vercel project settings
+ *   GITHUB_PAT - fine-grained PAT with Actions: Read & Write on this repo
  */
 export async function POST(request: Request) {
   const cronSecret = process.env.CRON_SECRET;

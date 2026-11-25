@@ -39,36 +39,36 @@ export default async function VocabularyJlptN3Page({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
+          { name: 'Home', url: `https://fivebyfive.vercel.app/${locale}` },
           {
-            name: 'Vocabulary',
-            url: `https://kanadojo.com/${locale}/vocabulary`,
+            name: 'Spelling',
+            url: `https://fivebyfive.vercel.app/${locale}/vocabulary`,
           },
           {
-            name: 'JLPT N3',
-            url: `https://kanadojo.com/${locale}/vocabulary/jlpt-n3`,
+            name: 'Tier 3',
+            url: `https://fivebyfive.vercel.app/${locale}/vocabulary/jlpt-n3`,
           },
         ]}
       />
       <CourseSchema
-        name='JLPT N3 Japanese Vocabulary Course'
-        description='Practice JLPT N3 Japanese vocabulary with interactive level sets. Train word recognition, meanings, and reading recall with fast feedback and progress tracking.'
-        url={`https://kanadojo.com/${locale}/vocabulary/jlpt-n3`}
+        name='Tier 3 Spelling - Longer Words'
+        description='Spell longer words with code words in the third tier. Focused sets help you keep letters in the right order.'
+        url={`https://fivebyfive.vercel.app/${locale}/vocabulary/jlpt-n3`}
         educationalLevel='Intermediate'
-        skillLevel='JLPT N3'
+        skillLevel='Tier 3'
         learningResourceType='Interactive Course'
       />
       <LearningResourceSchema
-        name='JLPT N3 Vocabulary Practice'
-        description='Targeted JLPT N3 vocabulary drills with selectable sets, quick selection controls, and dictionary links for exam-focused Japanese study.'
-        url={`https://kanadojo.com/${locale}/vocabulary/jlpt-n3`}
+        name='Tier 3 Spelling Practice'
+        description='Spell words with ICAO code words in tier 3. Use short drills and set review to build accurate recall.'
+        url={`https://fivebyfive.vercel.app/${locale}/vocabulary/jlpt-n3`}
         learningResourceType={['Quiz', 'Interactive', 'Game']}
         educationalLevel={['Intermediate']}
-        teaches='JLPT N3 Japanese vocabulary, meanings, and usage'
-        assesses='JLPT N3 word recognition and recall speed'
+        teaches='Spelling words with ICAO code words'
+        assesses='Spelling accuracy and speed'
         timeRequired='PT30M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
         educationalAlignment={{
           alignmentType: 'educationalLevel',
           educationalFramework: 'JLPT',

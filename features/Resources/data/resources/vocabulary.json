@@ -2,178 +2,262 @@
   "resources": [
     {
       "id": "anki-core-decks",
-      "name": "Anki Core Vocabulary Decks",
-      "nameJa": "Anki Core語彙デッキ",
-      "description": "Popular frequency-based vocabulary decks for Anki.",
-      "descriptionLong": "The Core 2k/6k/10k Anki decks contain the most frequently used Japanese words with example sentences and audio. These decks are highly effective for building vocabulary using spaced repetition. Start with Core 2k and progress from there.",
+      "name": "AnkiWeb Shared Decks",
+      "nameJa": "",
+      "description": "Shared decks for code words and radio terms.",
+      "descriptionLong": "Search the deck library, read the card list, and pick a small deck you can finish reviewing.",
       "category": "vocabulary",
       "subcategory": "frequency-lists",
-      "tags": ["Anki", "frequency", "SRS", "audio", "sentences"],
+      "tags": [
+        "anki",
+        "shared-decks",
+        "srs",
+        "lists"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web", "ios", "android", "windows", "macos", "linux"],
-      "url": "https://ankiweb.net/shared/decks/japanese%20core",
-      "rating": 4.8,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://ankiweb.net/shared/decks/",
+      "rating": 0,
       "featured": true,
-      "notes": "Core 2k is a great starting point. Progress to 6k and 10k."
+      "notes": ""
     },
     {
       "id": "wanikani-vocab",
-      "name": "WaniKani Vocabulary",
-      "nameJa": "WaniKani語彙",
-      "description": "Vocabulary learning integrated with kanji study.",
-      "descriptionLong": "WaniKani teaches vocabulary alongside kanji, ensuring you learn words that use the kanji you've studied. This integrated approach helps reinforce kanji readings through practical vocabulary.",
+      "name": "Quizlet",
+      "nameJa": "",
+      "description": "Build a set of procedural words and phrases.",
+      "descriptionLong": "Collect the terms you keep meeting, then study them as a set rather than as isolated words.",
       "category": "vocabulary",
       "subcategory": "word-lists",
-      "tags": ["kanji", "integrated", "SRS", "mnemonics"],
+      "tags": [
+        "flashcards",
+        "sets",
+        "vocabulary",
+        "phrases"
+      ],
       "difficulty": "all-levels",
-      "priceType": "subscription",
-      "priceDetails": "$9/month or $89/year",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.wanikani.com/",
-      "rating": 4.7,
+      "priceType": "freemium",
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "url": "https://quizlet.com/",
+      "rating": 0,
       "featured": true,
-      "notes": "Vocabulary is taught in context with kanji."
+      "notes": ""
     },
     {
       "id": "jpdb-vocab",
-      "name": "jpdb Vocabulary",
-      "nameJa": "jpdb語彙",
-      "description": "Learn vocabulary from your favorite media.",
-      "descriptionLong": "jpdb provides vocabulary lists based on specific anime, visual novels, light novels, and other media. Study the words you'll encounter before consuming content, making immersion more effective.",
+      "name": "Q code reference",
+      "nameJa": "",
+      "description": "Abbreviations grouped by meaning.",
+      "descriptionLong": "Choose a few Q codes at a time and add them to your own list with their meanings.",
       "category": "vocabulary",
       "subcategory": "themed-vocab",
-      "tags": ["media", "anime", "visual-novels", "frequency", "SRS"],
+      "tags": [
+        "q-code",
+        "abbreviations",
+        "lists",
+        "vocabulary"
+      ],
       "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Free tier available. Premium for $5.50/month",
-      "platforms": ["web"],
-      "url": "https://jpdb.io/",
-      "rating": 4.6,
-      "featured": true,
-      "notes": "Great for preparing to consume specific Japanese media."
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Q_code",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     },
     {
       "id": "jlpt-vocabulary-lists",
-      "name": "JLPT Vocabulary Lists",
-      "nameJa": "JLPT語彙リスト",
-      "description": "Vocabulary organized by JLPT level.",
-      "descriptionLong": "Various resources provide vocabulary lists organized by JLPT level. These lists help you focus on the words most likely to appear on your target JLPT exam and track your vocabulary progress.",
+      "name": "NATO phonetic alphabet",
+      "nameJa": "",
+      "description": "The twenty six words worth learning first.",
+      "descriptionLong": "Copy the table into your own list and check off each word as you learn it.",
       "category": "vocabulary",
       "subcategory": "word-lists",
-      "tags": ["JLPT", "organized", "levels", "test-prep"],
+      "tags": [
+        "alphabet",
+        "code-words",
+        "list",
+        "basics"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://jlptsensei.com/jlpt-n5-vocabulary-list/",
-      "rating": 4.5,
-      "featured": false,
-      "notes": "Lists available for all JLPT levels."
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/NATO_phonetic_alphabet",
+      "rating": 0,
+      "featured": true,
+      "notes": ""
     },
     {
       "id": "renshuu-vocab",
-      "name": "Renshuu Vocabulary",
-      "nameJa": "練習語彙",
-      "description": "Vocabulary practice with games and community.",
-      "descriptionLong": "Renshuu offers vocabulary practice through various study modes and games. The platform includes JLPT vocabulary, custom lists, and community features. Great for making vocabulary study more engaging.",
+      "name": "Morse code reference",
+      "nameJa": "",
+      "description": "Letter patterns to add to your word list.",
+      "descriptionLong": "Put each letter, its code word, and its Morse pattern on the same line of your list.",
       "category": "vocabulary",
       "subcategory": "word-lists",
-      "tags": ["games", "community", "JLPT", "practice"],
+      "tags": [
+        "morse",
+        "letters",
+        "lists",
+        "vocabulary"
+      ],
       "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Free with optional premium subscription",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.renshuu.org/",
-      "rating": 4.5,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Morse_code",
+      "rating": 0,
       "featured": false,
-      "notes": "Gamified vocabulary learning."
+      "notes": ""
     },
     {
       "id": "takoboto-vocab",
-      "name": "Takoboto Dictionary",
-      "nameJa": "タコボト辞書",
-      "description": "Dictionary with vocabulary lists and flashcards.",
-      "descriptionLong": "Takoboto is a comprehensive Japanese dictionary that includes vocabulary list features and built-in flashcards. Save words you look up and review them using the app's study features.",
+      "name": "Prosigns reference",
+      "nameJa": "",
+      "description": "Short Morse signals and their meanings.",
+      "descriptionLong": "Add the common prosigns to your list alongside the Q codes you are learning.",
       "category": "vocabulary",
       "subcategory": "word-lists",
-      "tags": ["dictionary", "flashcards", "Android", "offline"],
+      "tags": [
+        "morse",
+        "prosigns",
+        "meanings",
+        "lists"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["android"],
-      "url": "https://takoboto.jp/",
-      "rating": 4.7,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Prosigns_for_Morse_code",
+      "rating": 0,
       "featured": false,
-      "notes": "Great dictionary with vocabulary features."
+      "notes": ""
     },
     {
       "id": "memrise-japanese",
-      "name": "Memrise Japanese",
-      "nameJa": "Memrise日本語",
-      "description": "Vocabulary learning with video clips of native speakers.",
-      "descriptionLong": "Memrise teaches Japanese vocabulary using video clips of native speakers. The platform uses spaced repetition and various exercise types to help you remember words. Good for learning pronunciation alongside vocabulary.",
+      "name": "Call sign reference",
+      "nameJa": "",
+      "description": "Terms used when exchanging call signs.",
+      "descriptionLong": "Read the article for the vocabulary that appears in a call sign exchange.",
       "category": "vocabulary",
       "subcategory": "word-lists",
-      "tags": ["video", "native-speakers", "SRS", "pronunciation"],
-      "difficulty": "beginner",
-      "priceType": "freemium",
-      "priceDetails": "Free tier available. Pro subscription for full access.",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.memrise.com/",
-      "rating": 4.3,
+      "tags": [
+        "call-signs",
+        "vocabulary",
+        "reference",
+        "radio"
+      ],
+      "difficulty": "all-levels",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Call_sign",
+      "rating": 0,
       "featured": false,
-      "notes": "Video clips help with pronunciation."
+      "notes": ""
     },
     {
       "id": "torii-srs",
-      "name": "Torii SRS",
-      "nameJa": "Torii SRS",
-      "description": "Free vocabulary SRS app with Core 10k words.",
-      "descriptionLong": "Torii SRS is a free application for learning Japanese vocabulary using spaced repetition. It includes the Core 10k vocabulary list and allows you to exclude words you already know from WaniKani or other sources.",
+      "name": "Anki",
+      "nameJa": "",
+      "description": "Turn your own list into review cards.",
+      "descriptionLong": "Add one fact per card, such as a letter and its word, and review the deck on a fixed schedule.",
       "category": "vocabulary",
       "subcategory": "frequency-lists",
-      "tags": ["SRS", "free", "Core10k", "desktop"],
+      "tags": [
+        "anki",
+        "srs",
+        "lists",
+        "review"
+      ],
       "difficulty": "all-levels",
-      "priceType": "free",
-      "platforms": ["windows", "macos", "linux"],
-      "url": "https://torii-srs.com/",
-      "rating": 4.5,
+      "priceType": "freemium",
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web",
+        "ios",
+        "android",
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "url": "https://apps.ankiweb.net/",
+      "rating": 0,
       "featured": false,
-      "notes": "Free alternative to paid vocabulary apps."
+      "notes": ""
     },
     {
       "id": "kitsun-vocab",
-      "name": "Kitsun.io",
-      "nameJa": "Kitsun.io",
-      "description": "SRS platform with community-created vocabulary decks.",
-      "descriptionLong": "Kitsun.io is an SRS platform with a library of community-created vocabulary decks. The platform offers a polished interface and various study modes. Good alternative to Anki with a more modern design.",
+      "name": "Quizlet",
+      "nameJa": "",
+      "description": "Short checks on a word list.",
+      "descriptionLong": "Use a set you have built yourself and test it a few lines at a time.",
       "category": "vocabulary",
       "subcategory": "word-lists",
-      "tags": ["SRS", "community", "decks", "modern"],
+      "tags": [
+        "flashcards",
+        "quiz",
+        "lists",
+        "review"
+      ],
       "difficulty": "all-levels",
-      "priceType": "subscription",
-      "priceDetails": "$8/month or $72/year",
-      "platforms": ["web"],
-      "url": "https://kitsun.io/",
-      "rating": 4.4,
+      "priceType": "freemium",
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "url": "https://quizlet.com/",
+      "rating": 0,
       "featured": false,
-      "notes": "Modern SRS platform with good community decks."
+      "notes": ""
     },
     {
       "id": "japanese-core-1000",
-      "name": "Japanese Core 1000",
-      "nameJa": "日本語コア1000",
-      "description": "The 1000 most common Japanese words.",
-      "descriptionLong": "Learning the 1000 most common Japanese words gives you coverage of a large percentage of everyday Japanese. Various resources provide this core vocabulary with example sentences and audio.",
+      "name": "Aviation English",
+      "nameJa": "",
+      "description": "Core terms for aviation communication.",
+      "descriptionLong": "Read the article and highlight the terms that appear in standard phraseology.",
       "category": "vocabulary",
       "subcategory": "frequency-lists",
-      "tags": ["frequency", "common", "beginner", "essential"],
+      "tags": [
+        "aviation",
+        "english",
+        "terms",
+        "lists"
+      ],
       "difficulty": "beginner",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www.fluentin3months.com/japanese-words/",
-      "rating": 4.3,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Aviation_English",
+      "rating": 0,
       "featured": false,
-      "notes": "Focus on the most common words first."
+      "notes": ""
     }
   ]
 }

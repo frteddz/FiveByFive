@@ -2,177 +2,260 @@
   "resources": [
     {
       "id": "lang-8-writing",
-      "name": "Lang-8",
-      "nameJa": "Lang-8",
-      "description": "Get your Japanese writing corrected by native speakers.",
-      "descriptionLong": "Lang-8 is a language exchange platform where you write journal entries in Japanese and native speakers correct them. In return, you correct entries in your native language. Great for improving writing skills with real feedback.",
+      "name": "Ham Stack Exchange",
+      "nameJa": "",
+      "description": "Ask for review of your radio wording.",
+      "descriptionLong": "Post a specific question about a phrase or abbreviation and read the answers from other operators.",
       "category": "writing",
       "subcategory": "correction",
-      "tags": ["correction", "native-speakers", "exchange", "free"],
+      "tags": [
+        "q-and-a",
+        "writing",
+        "phraseology",
+        "review"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://lang-8.com/",
-      "rating": 4.4,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://ham.stackexchange.com/",
+      "rating": 0,
       "featured": true,
-      "notes": "Currently not accepting new registrations. Try HiNative instead."
+      "notes": ""
     },
     {
       "id": "hinative-writing",
-      "name": "HiNative",
-      "nameJa": "HiNative",
-      "description": "Ask native speakers to check your Japanese writing.",
-      "descriptionLong": "HiNative lets you post Japanese writing samples and get feedback from native speakers. You can ask about grammar, word choice, and naturalness. A great alternative to Lang-8 for writing practice.",
+      "name": "r/amateurradio",
+      "nameJa": "",
+      "description": "Community feedback on written call signs.",
+      "descriptionLong": "Write out a call sign or short exchange and ask if the wording and order are correct.",
       "category": "writing",
       "subcategory": "correction",
-      "tags": ["correction", "Q&A", "native-speakers", "feedback"],
+      "tags": [
+        "reddit",
+        "community",
+        "feedback",
+        "call-signs"
+      ],
       "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Free tier available. Premium for additional features.",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://hinative.com/",
-      "rating": 4.5,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.reddit.com/r/amateurradio/",
+      "rating": 0,
       "featured": true,
-      "notes": "Active community for getting writing feedback."
+      "notes": ""
     },
     {
       "id": "kanji-study-writing",
-      "name": "Kanji Study",
-      "nameJa": "漢字スタディ",
-      "description": "Practice writing kanji with stroke order guidance.",
-      "descriptionLong": "Kanji Study provides stroke order animations and writing practice for all joyo kanji. Practice writing characters on your device screen with feedback on stroke order and accuracy.",
+      "name": "Quizlet",
+      "nameJa": "",
+      "description": "Type code words from a card set.",
+      "descriptionLong": "Write mode checks spelling. Use it for pairs of words that sound or look similar.",
       "category": "writing",
       "subcategory": "handwriting",
-      "tags": ["kanji", "stroke-order", "practice", "Android"],
+      "tags": [
+        "typing",
+        "spelling",
+        "flashcards",
+        "code-words"
+      ],
       "difficulty": "all-levels",
       "priceType": "freemium",
-      "priceDetails": "Free with in-app purchases for full content",
-      "platforms": ["android"],
-      "url": "https://play.google.com/store/apps/details?id=com.mindtwisted.kanjistudy",
-      "rating": 4.8,
-      "featured": true,
-      "notes": "Best kanji writing practice app for Android."
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "url": "https://quizlet.com/",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     },
     {
       "id": "skritter",
-      "name": "Skritter",
-      "nameJa": "Skritter",
-      "description": "SRS-based kanji and kana writing practice.",
-      "descriptionLong": "Skritter combines spaced repetition with handwriting practice for Japanese characters. Write kanji and kana on your device and get instant feedback. The app tracks your progress and schedules reviews optimally.",
+      "name": "Anki",
+      "nameJa": "",
+      "description": "Keep a written review history for code words.",
+      "descriptionLong": "Add cards with the word on one side and write your answer before revealing the other.",
       "category": "writing",
       "subcategory": "handwriting",
-      "tags": ["kanji", "kana", "SRS", "handwriting", "practice"],
+      "tags": [
+        "flashcards",
+        "writing",
+        "review",
+        "spelling"
+      ],
       "difficulty": "all-levels",
-      "priceType": "subscription",
-      "priceDetails": "$14.99/month or $99.99/year",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://skritter.com/",
-      "rating": 4.6,
+      "priceType": "freemium",
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web",
+        "ios",
+        "android",
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "url": "https://apps.ankiweb.net/",
+      "rating": 0,
       "featured": true,
-      "notes": "Excellent for systematic character writing practice."
+      "notes": ""
     },
     {
       "id": "ringotan",
-      "name": "Ringotan",
-      "nameJa": "りんごたん",
-      "description": "Kana writing practice app for beginners.",
-      "descriptionLong": "Ringotan is a beginner-friendly app for practicing hiragana and katakana writing. The app provides stroke order guidance and tracks your progress as you learn to write Japanese characters.",
+      "name": "Morse Code Trainer",
+      "nameJa": "",
+      "description": "Write down characters you hear.",
+      "descriptionLong": "Use the trainer as a dictation exercise, then check each character against the alphabet.",
       "category": "writing",
       "subcategory": "handwriting",
-      "tags": ["hiragana", "katakana", "beginner", "stroke-order"],
+      "tags": [
+        "morse",
+        "dictation",
+        "writing",
+        "letters"
+      ],
       "difficulty": "beginner",
       "priceType": "free",
-      "platforms": ["ios", "android"],
-      "url": "https://www.ringotan.com/",
-      "rating": 4.4,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://morsecode.world/international/trainer/",
+      "rating": 0,
       "featured": false,
-      "notes": "Good for beginners learning to write kana."
+      "notes": ""
     },
     {
       "id": "japanese-writing-practice",
-      "name": "Japanese Writing Practice Sheets",
-      "nameJa": "日本語書き取り練習シート",
-      "description": "Printable practice sheets for handwriting.",
-      "descriptionLong": "Various websites offer free printable practice sheets for Japanese handwriting. These sheets include stroke order guides and practice grids for hiragana, katakana, and kanji.",
+      "name": "Q code reference",
+      "nameJa": "",
+      "description": "Copy out common Q codes by hand.",
+      "descriptionLong": "Write each abbreviation and its meaning once, then cover the list and repeat.",
       "category": "writing",
       "subcategory": "handwriting",
-      "tags": ["printable", "practice", "free", "beginner"],
+      "tags": [
+        "q-code",
+        "handwriting",
+        "abbreviations",
+        "practice"
+      ],
       "difficulty": "beginner",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www.japanese-lesson.com/resources/pdf/characters/",
-      "rating": 4.2,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Q_code",
+      "rating": 0,
       "featured": false,
-      "notes": "Free printable resources for handwriting practice."
+      "notes": ""
     },
     {
       "id": "italki-writing",
-      "name": "italki Notebook",
-      "nameJa": "italki ノートブック",
-      "description": "Write entries and get corrections from the community.",
-      "descriptionLong": "italki's Notebook feature lets you write journal entries in Japanese and receive corrections from native speakers in the community. A good way to practice writing and get feedback.",
+      "name": "eHam.net",
+      "nameJa": "",
+      "description": "Get comments on a written exchange from operators.",
+      "descriptionLong": "Use the forums to check a draft call or to ask how a phrase is normally written.",
       "category": "writing",
       "subcategory": "correction",
-      "tags": ["journal", "correction", "community", "free"],
-      "difficulty": "all-levels",
-      "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www.italki.com/notebook",
-      "rating": 4.3,
+      "tags": [
+        "forums",
+        "feedback",
+        "writing",
+        "amateur-radio"
+      ],
+      "difficulty": "intermediate",
+      "priceType": "freemium",
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.eham.net/",
+      "rating": 0,
       "featured": false,
-      "notes": "Free writing correction from the italki community."
+      "notes": ""
     },
     {
       "id": "japanese-composition",
-      "name": "Japanese Composition Resources",
-      "nameJa": "日本語作文教材",
-      "description": "Textbooks and guides for Japanese composition.",
-      "descriptionLong": "Various textbooks focus on Japanese composition and essay writing. These resources teach how to structure Japanese writing, use appropriate expressions, and write for different purposes.",
+      "name": "FAA Airman's Information Manual",
+      "nameJa": "",
+      "description": "Draft calls using the official wording.",
+      "descriptionLong": "Copy a short procedure from the AIM, then write your own version with a different call sign.",
       "category": "writing",
       "subcategory": "composition",
-      "tags": ["textbook", "composition", "essay", "intermediate"],
+      "tags": [
+        "faa",
+        "drafting",
+        "phraseology",
+        "writing"
+      ],
       "difficulty": "intermediate",
-      "priceType": "paid",
-      "priceDetails": "Varies by textbook",
-      "platforms": ["physical"],
-      "url": "https://www.amazon.com/s?k=japanese+composition+textbook",
-      "rating": 4.3,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/",
+      "rating": 0,
       "featured": false,
-      "notes": "Search for composition textbooks at your level."
+      "notes": ""
     },
     {
       "id": "takoboto-writing",
-      "name": "Takoboto Kanji Writing",
-      "nameJa": "タコボト漢字書き取り",
-      "description": "Kanji writing practice within the dictionary app.",
-      "descriptionLong": "Takoboto dictionary includes kanji writing practice with stroke order animations. Practice writing characters while looking up words, making it convenient for integrated study.",
+      "name": "Call sign reference",
+      "nameJa": "",
+      "description": "Write out call signs in standard form.",
+      "descriptionLong": "Use the article to check the format, then write several call signs from memory.",
       "category": "writing",
       "subcategory": "handwriting",
-      "tags": ["kanji", "dictionary", "stroke-order", "Android"],
+      "tags": [
+        "call-signs",
+        "writing",
+        "spelling",
+        "reference"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["android"],
-      "url": "https://takoboto.jp/",
-      "rating": 4.6,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Call_sign",
+      "rating": 0,
       "featured": false,
-      "notes": "Writing practice integrated with dictionary lookups."
+      "notes": ""
     },
     {
       "id": "genkouyoushi",
-      "name": "Genkouyoushi Paper",
-      "nameJa": "原稿用紙",
-      "description": "Traditional Japanese writing paper for practice.",
-      "descriptionLong": "Genkouyoushi is traditional Japanese manuscript paper with a grid format. Using this paper for writing practice helps develop proper character spacing and composition skills. Available as printable PDFs or physical notebooks.",
+      "name": "Prosigns reference",
+      "nameJa": "",
+      "description": "Copy Morse prosigns and their meanings.",
+      "descriptionLong": "Write each prosign on its own line with the meaning beside it, then review the list.",
       "category": "writing",
       "subcategory": "composition",
-      "tags": ["paper", "traditional", "composition", "practice"],
-      "difficulty": "all-levels",
+      "tags": [
+        "morse",
+        "prosigns",
+        "writing",
+        "reference"
+      ],
+      "difficulty": "advanced",
       "priceType": "free",
-      "platforms": ["web", "physical"],
-      "url": "https://www.japanese-lesson.com/resources/pdf/genkouyoushi.html",
-      "rating": 4.3,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Prosigns_for_Morse_code",
+      "rating": 0,
       "featured": false,
-      "notes": "Traditional format for Japanese writing practice."
+      "notes": ""
     }
   ]
 }

@@ -89,7 +89,7 @@ const Behavior = ({ useNewIconDesign = false }: BehaviorProps) => {
           label: (
             <>
               <span>on</span>
-              <span className='mb-0.5 text-sm'>ふり</span>
+              <span className='mb-0.5 text-sm'>A-Z</span>
             </>
           ),
           selectedWhen: true,

@@ -1,4 +1,3 @@
-import { toHiragana } from 'wanakana';
 import type { IVocabObj } from '@/entities/vocabulary';
 import {
   normalizeAnswerValue,
@@ -23,7 +22,6 @@ export const isVocabularyMeaningAnswerCorrect = (
 
   return (
     normalizeAnswerValue(vocabulary.word) === normalizedAnswer ||
-    toHiragana(normalizedAnswer) ===
-      toHiragana(normalizeAnswerValue(vocabulary.reading))
+    normalizeAnswerValue(vocabulary.reading) === normalizedAnswer
   );
 };

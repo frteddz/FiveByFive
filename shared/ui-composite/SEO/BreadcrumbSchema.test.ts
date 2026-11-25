@@ -25,13 +25,13 @@ describe('generateBreadcrumbSchema', () => {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://kanadojo.com/',
+        item: 'https://fivebyfive.vercel.app/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Kana',
-        item: 'https://kanadojo.com/kana',
+        item: 'https://fivebyfive.vercel.app/kana',
       },
     ]);
   });

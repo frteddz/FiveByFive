@@ -1,58 +1,58 @@
 {
-  "title": "Paramètres",
-  "description": "Personnalisez votre expérience d'apprentissage",
+  "title": "Settings",
+  "description": "Customize your training experience",
   "general": {
-    "title": "Général",
-    "language": "Langue",
-    "theme": "Thème",
-    "sound": "Effets sonores",
+    "title": "General",
+    "language": "Language",
+    "theme": "Theme",
+    "sound": "Sound Effects",
     "notifications": "Notifications"
   },
   "appearance": {
-    "title": "Apparence",
-    "colorTheme": "Thème de couleur",
-    "font": "Police japonaise",
-    "fontSize": "Taille de police",
-    "darkMode": "Mode sombre",
-    "customTheme": "Thème personnalisé"
+    "title": "Appearance",
+    "colorTheme": "Color Theme",
+    "font": "Display Font",
+    "fontSize": "Font Size",
+    "darkMode": "Dark Mode",
+    "customTheme": "Custom Theme"
   },
   "game": {
-    "title": "Paramètres de jeu",
-    "timeLimit": "Limite de temps",
-    "questionsPerSession": "Questions par session",
-    "difficulty": "Difficulté",
-    "autoNext": "Question suivante automatique",
-    "showHints": "Afficher les indices"
+    "title": "Game Settings",
+    "timeLimit": "Time Limit",
+    "questionsPerSession": "Questions per Session",
+    "difficulty": "Difficulty",
+    "autoNext": "Auto Next Question",
+    "showHints": "Show Hints"
   },
   "audio": {
     "title": "Audio",
-    "soundEffects": "Effets sonores",
+    "soundEffects": "Sound Effects",
     "volume": "Volume",
-    "clickSound": "Son de clic",
-    "correctSound": "Son de bonne réponse",
-    "incorrectSound": "Son de mauvaise réponse"
+    "clickSound": "Click Sound",
+    "correctSound": "Correct Answer Sound",
+    "incorrectSound": "Incorrect Answer Sound"
   },
   "preferences": {
-    "title": "Préférences",
-    "showRomaji": "Afficher les romaji",
-    "showFurigana": "Afficher les furigana",
-    "inputMethod": "Méthode de saisie",
-    "keyboardShortcuts": "Raccourcis clavier"
+    "title": "Preferences",
+    "showRomaji": "Show Code Words",
+    "showFurigana": "Show Letters",
+    "inputMethod": "Input Method",
+    "keyboardShortcuts": "Keyboard Shortcuts"
   },
   "data": {
-    "title": "Données",
-    "exportData": "Exporter les données",
-    "importData": "Importer les données",
-    "resetProgress": "Réinitialiser la progression",
-    "clearCache": "Vider le cache",
-    "confirmReset": "Êtes-vous sûr de vouloir réinitialiser toute votre progression ? Cette action est irréversible."
+    "title": "Data",
+    "exportData": "Export Data",
+    "importData": "Import Data",
+    "resetProgress": "Reset Progress",
+    "clearCache": "Clear Cache",
+    "confirmReset": "Are you sure you want to reset all progress? This action cannot be undone."
   },
   "themes": {
-    "light": "Clair",
-    "dark": "Sombre",
-    "system": "Système",
-    "custom": "Personnalisé",
-    "presets": "Thèmes prédéfinis",
-    "createCustom": "Créer un thème personnalisé"
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "custom": "Custom",
+    "presets": "Theme Presets",
+    "createCustom": "Create Custom Theme"
   }
 }

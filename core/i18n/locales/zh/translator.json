@@ -1,40 +1,126 @@
 {
-  "title": "翻译器",
-  "description": "日语 ↔ 英语翻译，支持罗马字显示",
-  "input": {
-    "placeholder": "输入要翻译的文本...",
-    "from": "源语言",
-    "to": "目标语言"
+  "meta": {
+    "title": "Code Word Reference - NATO Alphabet Lookup | FiveByFive",
+    "description": "Look up NATO code words and radio phrase meanings. A quick reference for letters, digits, callsign spelling and radiotelephony."
+  },
+  "header": {
+    "title": "Code Word Reference"
   },
   "languages": {
-    "japanese": "日语",
-    "english": "英语",
-    "auto": "自动检测"
+    "english": "Plain text",
+    "japanese": "Code words",
+    "en": "TEXT",
+    "ja": "CODE"
+  },
+  "input": {
+    "placeholder": {
+      "en": "Enter a letter or phrase...",
+      "ja": "Enter a letter or word to spell..."
+    },
+    "clearButton": "Clear input",
+    "characterCount": "{count} / {max}",
+    "keyboardHint": "Press Ctrl+Enter (Command+Enter on Mac) to look up",
+    "characterLimitWarning": "Text exceeds maximum length of {max} characters"
+  },
+  "output": {
+    "placeholder": {
+      "en": "The code word will appear here...",
+      "ja": "The spelled result will appear here..."
+    },
+    "copyButton": "Copy result",
+    "copied": "Copied!",
+    "copiedMessage": "Copied to clipboard!",
+    "romanization": "Code word spelling"
   },
   "actions": {
-    "translate": "翻译",
-    "swap": "交换语言",
-    "copy": "复制结果",
-    "clear": "清除"
+    "translate": "Look up",
+    "translating": "Looking up...",
+    "swapLanguages": "Swap directions"
   },
-  "results": {
-    "translation": "翻译结果",
-    "romaji": "罗马字",
-    "reading": "读音",
-    "noResults": "未找到翻译结果"
+  "history": {
+    "title": "History",
+    "empty": "No lookups yet",
+    "emptyHint": "Your results will appear here",
+    "clearAll": "Clear All",
+    "deleteEntry": "Delete entry",
+    "clearDialog": {
+      "title": "Clear lookup history?",
+      "description": "This will permanently delete all your saved lookups. This action cannot be undone.",
+      "cancel": "Cancel",
+      "confirm": "Clear All"
+    },
+    "timeAgo": {
+      "justNow": "Just now",
+      "minutesAgo": "{count}m ago",
+      "hoursAgo": "{count}h ago",
+      "daysAgo": "{count}d ago"
+    }
   },
-  "features": {
-    "title": "功能特点",
-    "romajiSupport": "罗马字支持",
-    "romajiDescription": "显示日语文本的罗马字读音",
-    "instantTranslation": "即时翻译",
-    "instantDescription": "快速获取翻译结果",
-    "multipleInputs": "多种输入",
-    "multipleDescription": "支持日语和英语输入"
+  "offline": {
+    "message": "You are offline. Lookups are unavailable until you reconnect."
   },
   "errors": {
-    "emptyInput": "请输入要翻译的文本",
-    "translationFailed": "翻译失败，请重试",
-    "languageNotSupported": "不支持的语言"
+    "networkError": "Unable to connect. Please check your internet connection.",
+    "rateLimit": "Too many requests. Please wait a moment and try again.",
+    "invalidInput": "Please enter valid text to look up.",
+    "emptyInput": "Please enter text to look up",
+    "serverError": "The lookup service is temporarily unavailable.",
+    "authError": "Lookup service configuration error.",
+    "unknownError": "An error occurred during lookup. Please try again."
+  },
+  "seo": {
+    "guideTitle": "NATO Alphabet Reference Guide",
+    "howToUse": {
+      "title": "How to use the code word reference",
+      "intro": "Use this page to check a code word or spell a word before a drill. Here is how to get started:",
+      "steps": {
+        "step1": "Enter a letter, digit or short word in the input field",
+        "step2": "Choose the direction you need",
+        "step3": "Click the lookup button or press Ctrl+Enter",
+        "step4": "Read the code word spelling in the result",
+        "step5": "Copy the result or save it to your history"
+      },
+      "proTip": "Tip: Use the swap button to move between plain text and code word spelling."
+    },
+    "writingSystems": {
+      "title": "About the NATO phonetic alphabet",
+      "intro": "The alphabet gives every letter a fixed code word so speech sounds cannot be mistaken for another letter:",
+      "hiragana": {
+        "name": "Letters A to Z",
+        "description": "Alfa, Bravo, Charlie and the rest of the 26 letter code words"
+      },
+      "katakana": {
+        "name": "Digits and radio phrases",
+        "description": "Digit code words such as Niner and short phrases such as Roger or Wilco"
+      },
+      "kanji": {
+        "name": "Callsign spelling",
+        "description": "Spell a whole word one letter at a time with its code word"
+      },
+      "outro": "Use this reference while training, or check a spelling before you send a call."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "isFree": {
+        "question": "Is this reference free?",
+        "answer": "Yes. There is no registration and no limit on how many lookups you make."
+      },
+      "accuracy": {
+        "question": "Which spellings does it use?",
+        "answer": "The trainer follows ICAO spellings such as Alfa with one l and Juliett with two t. Common variants are accepted in drills."
+      },
+      "romanization": {
+        "question": "What is a code word?",
+        "answer": "A code word is a word used to represent a letter in the NATO phonetic alphabet. Saying Sierra for S avoids confusion with other letters over radio."
+      },
+      "historySaved": {
+        "question": "Is my lookup history saved?",
+        "answer": "Yes, your history is saved locally in your browser and stays on your device. You can clear it at any time."
+      },
+      "maxLength": {
+        "question": "What is the maximum text length?",
+        "answer": "You can look up up to 5,000 characters at a time. For longer text, break it into smaller sections."
+      }
+    }
   }
 }

@@ -1,7 +1,11 @@
 // SEO Schema Components
 // Export all structured data schemas for easy importing
 
-export { StructuredData, kanaDojoSchema } from './StructuredData';
+export {
+  StructuredData,
+  fiveByFiveSchema,
+  kanaDojoSchema,
+} from './StructuredData';
 
 export { BreadcrumbSchema, generateBreadcrumbSchema } from './BreadcrumbSchema';
 export type { BreadcrumbItem, BreadcrumbSchemaProps } from './BreadcrumbSchema';

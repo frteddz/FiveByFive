@@ -1,13 +1,13 @@
 {
-  "title": "Tableau Hiragana & Katakana",
-  "subtitle": "Guide de référence complet pour tous les caractères kana japonais de base",
-  "aboutTitle": "À propos de ce tableau",
-  "aboutText": "Ce tableau complet présente les 46 caractères Hiragana et Katakana de base avec leur romanisation. Les Hiragana sont utilisés pour les mots japonais natifs, tandis que les Katakana sont principalement utilisés pour les mots empruntés aux langues étrangères, les noms propres et l'accentuation.",
-  "howToUseTitle": "Comment utiliser ce tableau",
-  "howToUse1": "Cliquez sur les onglets ci-dessus pour basculer entre Hiragana et Katakana",
-  "howToUse2": "Chaque cellule affiche le caractère japonais (en grand) et sa romanisation (en petit)",
-  "howToUse3": "Utilisez ce tableau comme référence rapide pendant votre apprentissage ou votre pratique",
-  "howToUse4": "Appuyez sur Ctrl+P (ou ⌘+P sur Mac) pour imprimer ou sauvegarder en PDF pour une utilisation hors ligne",
-  "practiceTitle": "Prêt à pratiquer ?",
-  "practiceText": "Rendez-vous dans nos modes d'entraînement interactifs pour pratiquer ces caractères ! Essayez le mode Choix pour la reconnaissance, le mode Saisie pour le rappel, ou le mode Blitz pour les défis de vitesse."
+  "title": "Code Word Chart",
+  "subtitle": "Complete reference for NATO letter code words and digit codes",
+  "aboutTitle": "About This Chart",
+  "aboutText": "This chart lists the 26 letters A to Z with their ICAO code words and the 10 digit codes. Letters such as B and D or M and N are easy to confuse by voice, so each one has a fixed word.",
+  "howToUseTitle": "How to Use This Chart",
+  "howToUse1": "Click the tabs above to switch between letters and codes",
+  "howToUse2": "Each cell shows the letter or digit and its code word",
+  "howToUse3": "Use this as a quick reference while drilling",
+  "howToUse4": "Press Ctrl+P (or Command+P on Mac) to print or save as PDF for offline use",
+  "practiceTitle": "Ready to Practice?",
+  "practiceText": "Head to a training mode to practice these code words. Try Pick Mode for recognition, Input Mode for recall, or Blitz Mode for speed."
 }

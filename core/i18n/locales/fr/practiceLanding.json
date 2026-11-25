@@ -1,113 +1,113 @@
 {
   "hiragana": {
-    "title": "Pratique Hiragana",
-    "subtitle": "Apprenez les hiragana avec des exercices rapides, ciblés et un retour instantané.",
-    "ctaPrimary": "Commencer la pratique des hiragana",
-    "ctaSecondary": "Ouvrir le dojo kana",
+    "title": "Letters Practice",
+    "subtitle": "Learn the ICAO code word for every letter with fast, focused drills.",
+    "ctaPrimary": "Start practicing letters",
+    "ctaSecondary": "Open Letters training",
     "sections": {
       "what": {
-        "title": "Qu'est-ce que les hiragana ?",
-        "body": "Les hiragana sont l'un des trois systèmes d'écriture japonais. Ils sont utilisés pour les mots japonais natifs, la grammaire et les terminaisons de particules. Maîtriser les hiragana est la première étape majeure pour lire le japonais."
+        "title": "What is the NATO phonetic alphabet?",
+        "body": "The NATO phonetic alphabet assigns a code word to every letter, from Alfa for A to Zulu for Z. It lets people spell words clearly over radio or phone when letters sound alike."
       },
       "how": {
-        "title": "Comment pratiquer les hiragana efficacement",
+        "title": "How to practice letters effectively",
         "bullets": [
-          "Pratiquez lors de courtes sessions quotidiennes (5 à 15 minutes).",
-          "Alternez entre reconnaissance (lecture) et rappel (saisie/réponse).",
-          "Révisez vos erreurs immédiatement et répétez les caractères faibles.",
-          "Évitez de vous appuyer sur les romaji une fois les bases acquises."
+          "Practice in short sessions daily (5 to 15 minutes).",
+          "Mix recognition with typing drills.",
+          "Review missed letters immediately and repeat weak pairs.",
+          "Use Blitz once your accuracy is stable."
         ]
       },
       "why": {
-        "title": "Pourquoi utiliser KanaDojo pour les hiragana ?",
+        "title": "Why use FiveByFive for letter practice?",
         "bullets": [
-          "Exercices interactifs et modes de jeu.",
-          "Suivi de progression pour voir ce que vous maîtrisez.",
-          "Plusieurs modes : entraînement, blitz et gauntlet.",
-          "Fonctionne parfaitement sur ordinateur et mobile."
+          "Interactive drills with instant feedback.",
+          "Progress tracking that shows which letters need work.",
+          "Pick, input, Blitz and Gauntlet modes.",
+          "Works on desktop and mobile."
         ]
       }
     },
     "links": {
-      "kana": "Kana",
-      "train": "Entraînement",
+      "kana": "Letters",
+      "train": "Training",
       "blitz": "Blitz",
       "gauntlet": "Gauntlet",
       "faq": "FAQ"
     }
   },
   "katakana": {
-    "title": "Pratique Katakana",
-    "subtitle": "Maîtrisez les katakana avec des exercices rapides, un retour clair et une progression régulière.",
-    "ctaPrimary": "Commencer la pratique des katakana",
-    "ctaSecondary": "Ouvrir le dojo kana",
+    "title": "Codes Practice",
+    "subtitle": "Learn radio phrases and digit code words with clear feedback and steady progress.",
+    "ctaPrimary": "Start practicing codes",
+    "ctaSecondary": "Open Codes training",
     "sections": {
       "what": {
-        "title": "Qu'est-ce que les katakana ?",
-        "body": "Les katakana sont l'un des trois systèmes d'écriture japonais. Ils sont couramment utilisés pour les mots empruntés, les noms étrangers, les onomatopées et l'accentuation. Les katakana deviennent essentiels dès que vous commencez à lire du japonais moderne."
+        "title": "What are radio codes?",
+        "body": "Radio codes are short, agreed phrases used in voice communication. They keep messages brief and unambiguous, whether you are saying Zero, Niner, Roger or Mayday."
       },
       "how": {
-        "title": "Comment pratiquer les katakana efficacement",
+        "title": "How to practice radio codes effectively",
         "bullets": [
-          "Concentrez-vous sur les paires confuses (シ/ツ, ソ/ン, etc.).",
-          "Pratiquez la reconnaissance et le rappel — ne vous contentez pas de lire.",
-          "Révisez les erreurs et répétez les caractères faibles jusqu'à la maîtrise.",
-          "Mélangez les kana de base, dakuon et combinaisons au fil du temps."
+          "Focus on the phrases you confuse most often.",
+          "Practice recognition and typing, not just reading.",
+          "Review mistakes until the meaning is automatic.",
+          "Work through all five tiers over time."
         ]
       },
       "why": {
-        "title": "Pourquoi utiliser KanaDojo pour les katakana ?",
+        "title": "Why use FiveByFive for code practice?",
         "bullets": [
-          "Exercices interactifs et modes de jeu.",
-          "Suivi de progression pour cibler vos erreurs.",
-          "Mode Blitz pour développer la vitesse.",
-          "Mode Gauntlet pour une couverture complète."
+          "Interactive drills across five tiers.",
+          "Progress tracking that targets what you miss.",
+          "Blitz mode to build speed.",
+          "Gauntlet mode for full coverage."
         ]
       }
     },
     "links": {
-      "kana": "Kana",
-      "train": "Entraînement",
+      "kana": "Letters",
+      "train": "Training",
       "blitz": "Blitz",
       "gauntlet": "Gauntlet",
       "faq": "FAQ"
     }
   },
   "kanji": {
-    "title": "Pratique Kanji",
-    "subtitle": "Pratiquez les kanji par niveau JLPT avec des exercices rapides et un suivi de progression.",
-    "ctaPrimary": "Commencer la pratique des kanji",
-    "ctaSecondary": "Ouvrir le dojo kanji",
+    "title": "Spelling Practice",
+    "subtitle": "Spell words with ICAO code words using fast drills and progress tracking.",
+    "ctaPrimary": "Start practicing spelling",
+    "ctaSecondary": "Open Spelling training",
     "sections": {
       "what": {
-        "title": "Qu'est-ce que les kanji ?",
-        "body": "Les kanji sont des caractères utilisés en japonais pour représenter des significations et des concepts. Apprendre les kanji prend du temps, mais les étudier par niveau (JLPT N5 → N1) rend le processus gérable et mesurable."
+        "title": "What is callsign spelling?",
+        "body": "Callsign spelling uses code words for each letter of a word. Saying Sierra Oscar Sierra is clearer than spelling S-O-S letter by letter, especially over a noisy radio link."
       },
       "how": {
-        "title": "Comment pratiquer les kanji efficacement",
+        "title": "How to practice spelling effectively",
         "bullets": [
-          "Étudiez par niveau et gardez votre sélection ciblée.",
-          "Priorisez d'abord la reconnaissance, puis élargissez aux lectures et usages.",
-          "Révisez fréquemment les kanji manqués (style répétition espacée).",
-          "Utilisez des exercices chronométrés occasionnellement pour améliorer la vitesse de rappel."
+          "Learn the A to Z code words first.",
+          "Start with short words before callsign length strings.",
+          "Review missed words often.",
+          "Use timed drills once the code words are familiar."
         ]
       },
       "why": {
-        "title": "Pourquoi utiliser KanaDojo pour les kanji ?",
+        "title": "Why use FiveByFive for spelling practice?",
         "bullets": [
-          "Sélection de kanji organisée par JLPT.",
-          "Plusieurs modes pour différents objectifs.",
-          "Suivi de progression pour se concentrer sur les kanji faibles.",
-          "Idéal pour une pratique quotidienne régulière."
+          "Five tiers of spelling sets.",
+          "Multiple modes for different goals.",
+          "Progress tracking so you can focus on weak words.",
+          "Good for consistent daily practice."
         ]
       }
     },
     "links": {
-      "kanji": "Kanji",
-      "train": "Entraînement",
+      "kanji": "Spelling",
+      "train": "Training",
       "blitz": "Blitz",
       "gauntlet": "Gauntlet",
-      "jlpt": "Guides JLPT",
+      "jlpt": "Tier Guides",
       "faq": "FAQ"
     }
   }

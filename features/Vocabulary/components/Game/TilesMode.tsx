@@ -677,7 +677,7 @@ const VocabTilesMode = ({
                           : 'text-6xl sm:text-8xl',
                         'text-center',
                       )}
-                      lang='ja'
+                      lang='en'
                     />
                   )}
                   {/* Audio button - show for word display (not for meaning-only display) */}

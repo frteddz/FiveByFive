@@ -28,17 +28,17 @@ export default function Train() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Vocabulary', url: 'https://kanadojo.com/vocabulary' },
-          { name: 'Training', url: 'https://kanadojo.com/vocabulary/train' },
+          { name: 'Home', url: 'https://fivebyfive.vercel.app' },
+          { name: 'Spelling', url: 'https://fivebyfive.vercel.app/vocabulary' },
+          { name: 'Training', url: 'https://fivebyfive.vercel.app/vocabulary/train' },
         ]}
       />
       <CourseSchema
-        name='Japanese Vocabulary Training'
-        description='Build your Japanese vocabulary with words organized by JLPT levels. Interactive exercises with example sentences and translations.'
-        url='https://kanadojo.com/vocabulary/train'
-        skillLevel='Beginner to Advanced'
-        learningResourceType='Interactive Vocabulary Training'
+        name='Spelling Training - Code Word Drills'
+        description='Spell words with ICAO code words. Short sessions build accurate letter by letter recall.'
+        url='https://fivebyfive.vercel.app/vocabulary/train'
+        skillLevel='All Levels'
+        learningResourceType='Interactive Training'
       />
       <VocabularyGame />
     </>

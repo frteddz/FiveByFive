@@ -15,7 +15,7 @@ export function generateStaticParams() {
 
 export const revalidate = 3600;
 
-const BASE_URL = 'https://kanadojo.com';
+const BASE_URL = 'https://fivebyfive.vercel.app';
 
 export async function generateMetadata({
   params,
@@ -24,7 +24,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const ogLocale = locale === 'es' ? 'es_ES' : 'en_US';
-  const title = 'Anki to JSON Converter | Free APKG Converter | KanaDojo';
+  const title = 'Anki to JSON Converter | Free APKG Converter | FiveByFive';
   const description =
     'Convert Anki flashcard decks to JSON format instantly. Supports APKG, TSV, SQLite, and COLPKG files. Free, fast, and completely private - all processing happens in your browser.';
 
@@ -53,14 +53,14 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: `${BASE_URL}/anki-converter`,
-      siteName: 'KanaDojo',
+      siteName: 'FiveByFive',
       locale: ogLocale,
       /* images: [
         {
           url: `${BASE_URL}/api/og?title=${encodeURIComponent('Anki Deck to JSON Converter')}&description=${encodeURIComponent('Free, private, browser-based conversion')}`,
           width: 1200,
           height: 630,
-          alt: 'Anki Deck to JSON Converter - KanaDojo',
+          alt: 'Anki Deck to JSON Converter - FiveByFive',
         },
       ], */
     },
@@ -178,12 +178,12 @@ const webApplicationSchema = {
   ],
   author: {
     '@type': 'Organization',
-    name: 'KanaDojo',
+    name: 'FiveByFive',
     url: BASE_URL,
   },
   creator: {
     '@type': 'Organization',
-    name: 'KanaDojo',
+    name: 'FiveByFive',
   },
   isAccessibleForFree: true,
   inLanguage: ['en', 'es'],
@@ -203,11 +203,11 @@ const softwareApplicationSchema = {
   },
   description:
     'Command-line tool for converting Anki decks to JSON format. Ideal for batch processing and automation.',
-  downloadUrl: 'https://github.com/lingdojo/kanadojo',
+  downloadUrl: 'https://github.com/frteddz/FiveByFive',
   softwareVersion: '1.0.0',
   author: {
     '@type': 'Organization',
-    name: 'KanaDojo',
+    name: 'FiveByFive',
   },
 };
 
@@ -246,8 +246,7 @@ export default function AnkiConverterPage() {
           </h1>
           <p className='mx-auto max-w-2xl text-lg text-(--secondary-color)'>
             Convert your Anki flashcard decks to clean, structured JSON format.
-            Free, fast, and completely private — all processing happens in your
-            browser.
+            Free, fast and private. All processing happens in your browser.
           </p>
         </header>
 
@@ -275,7 +274,7 @@ export default function AnkiConverterPage() {
                 <strong className='text-(--main-color)'>
                   APKG files (.apkg)
                 </strong>{' '}
-                — The standard Anki package format containing deck data, note
+                : The standard Anki package format containing deck data, note
                 types, and metadata. This is the most common export format from
                 Anki desktop and AnkiWeb.
               </li>
@@ -283,7 +282,7 @@ export default function AnkiConverterPage() {
                 <strong className='text-(--main-color)'>
                   TSV files (.tsv)
                 </strong>{' '}
-                — Tab-separated values format for simple deck imports and
+                : Tab-separated values format for simple deck imports and
                 exports. Useful for decks created from spreadsheets or text
                 files.
               </li>
@@ -291,14 +290,14 @@ export default function AnkiConverterPage() {
                 <strong className='text-(--main-color)'>
                   SQLite databases (.db, .sqlite, .anki2)
                 </strong>{' '}
-                — Direct Anki database files containing all deck information.
+                : Direct Anki database files containing all deck information.
                 Found in your Anki profile folder.
               </li>
               <li>
                 <strong className='text-(--main-color)'>
                   COLPKG files (.colpkg)
                 </strong>{' '}
-                — Collection packages that include your entire Anki collection
+                : Collection packages that include your entire Anki collection
                 with multiple decks, settings, and configurations.
               </li>
             </ul>
@@ -314,20 +313,20 @@ export default function AnkiConverterPage() {
             </h2>
             <ol className='list-decimal space-y-3 pl-6'>
               <li>
-                <strong>Export your deck from Anki</strong> — Open Anki, select
+                <strong>Export your deck from Anki</strong> : Open Anki, select
                 your deck, go to File → Export, and save as .apkg or .colpkg
                 format.
               </li>
               <li>
-                <strong>Upload the file</strong> — Drag and drop your file into
+                <strong>Upload the file</strong> : Drag and drop your file into
                 the converter above, or click to select it from your computer.
               </li>
               <li>
-                <strong>Wait for conversion</strong> — The converter processes
+                <strong>Wait for conversion</strong> : The converter processes
                 your file locally. Large decks may take a few seconds.
               </li>
               <li>
-                <strong>Download your JSON</strong> — Click the download button
+                <strong>Download your JSON</strong> : Click the download button
                 to save your converted deck as a JSON file.
               </li>
             </ol>
@@ -344,16 +343,16 @@ export default function AnkiConverterPage() {
             <div className='grid gap-4 md:grid-cols-2'>
               <div className='rounded-lg border border-(--border-color) bg-(--card-color) p-4'>
                 <h3 className='mb-2 font-semibold text-(--main-color)'>
-                  🔒 100% Private
+                  Private by default
                 </h3>
                 <p className='text-sm'>
                   All conversion happens locally in your browser. Your files
-                  never leave your device — no data is sent to any server.
+                  never leave your device. No data is sent to any server.
                 </p>
               </div>
               <div className='rounded-lg border border-(--border-color) bg-(--card-color) p-4'>
                 <h3 className='mb-2 font-semibold text-(--main-color)'>
-                  ⚡ Fast Conversion
+                  Fast conversion
                 </h3>
                 <p className='text-sm'>
                   Convert decks with thousands of cards in seconds. Web Workers
@@ -362,7 +361,7 @@ export default function AnkiConverterPage() {
               </div>
               <div className='rounded-lg border border-(--border-color) bg-(--card-color) p-4'>
                 <h3 className='mb-2 font-semibold text-(--main-color)'>
-                  📁 All Formats Supported
+                  All formats supported
                 </h3>
                 <p className='text-sm'>
                   Supports APKG, TSV, SQLite, COLPKG, and ANKI2 files. Convert
@@ -371,7 +370,7 @@ export default function AnkiConverterPage() {
               </div>
               <div className='rounded-lg border border-(--border-color) bg-(--card-color) p-4'>
                 <h3 className='mb-2 font-semibold text-(--main-color)'>
-                  🎯 Smart Output
+                  Structured output
                 </h3>
                 <p className='text-sm'>
                   JSON output is optimized for each deck type. Basic, cloze, and
@@ -380,7 +379,7 @@ export default function AnkiConverterPage() {
               </div>
               <div className='rounded-lg border border-(--border-color) bg-(--card-color) p-4'>
                 <h3 className='mb-2 font-semibold text-(--main-color)'>
-                  🏷️ Preserves Structure
+                  Preserves structure
                 </h3>
                 <p className='text-sm'>
                   Deck hierarchy, tags, field names, and cloze deletions are all
@@ -389,7 +388,7 @@ export default function AnkiConverterPage() {
               </div>
               <div className='rounded-lg border border-(--border-color) bg-(--card-color) p-4'>
                 <h3 className='mb-2 font-semibold text-(--main-color)'>
-                  💻 CLI Available
+                  Command line tool
                 </h3>
                 <p className='text-sm'>
                   Command-line tool for developers. Perfect for batch
@@ -413,28 +412,28 @@ export default function AnkiConverterPage() {
             </p>
             <ul className='list-disc space-y-2 pl-6'>
               <li>
-                <strong>Build custom applications</strong> — Integrate flashcard
+                <strong>Build custom applications</strong> : Integrate flashcard
                 data into your own websites, apps, or learning tools.
               </li>
               <li>
-                <strong>Data analysis</strong> — Analyze deck content
+                <strong>Data analysis</strong> : Analyze deck content
                 programmatically using Python, JavaScript, or any language that
                 reads JSON.
               </li>
               <li>
-                <strong>Cross-platform compatibility</strong> — Use your Anki
+                <strong>Cross-platform compatibility</strong> : Use your Anki
                 content in other flashcard systems or learning platforms.
               </li>
               <li>
-                <strong>Portable backups</strong> — Create human-readable
+                <strong>Portable backups</strong> : Create human-readable
                 backups of your decks that can be easily inspected and modified.
               </li>
               <li>
-                <strong>Content transformation</strong> — Process and transform
+                <strong>Content transformation</strong> : Process and transform
                 deck content with scripts for bulk editing or format conversion.
               </li>
               <li>
-                <strong>API integration</strong> — Feed flashcard data into
+                <strong>API integration</strong> : Feed flashcard data into
                 APIs, databases, or machine learning models.
               </li>
             </ul>
@@ -486,31 +485,31 @@ npm run anki:convert -- --help`}
                     <code className='rounded bg-(--card-color) px-1'>
                       -i, --input
                     </code>{' '}
-                    — Input file path (required)
+                    : Input file path (required)
                   </li>
                   <li>
                     <code className='rounded bg-(--card-color) px-1'>
                       -o, --output
                     </code>{' '}
-                    — Output file path (required)
+                    : Output file path (required)
                   </li>
                   <li>
                     <code className='rounded bg-(--card-color) px-1'>
                       --include-stats
                     </code>{' '}
-                    — Include card statistics in output
+                    : Include card statistics in output
                   </li>
                   <li>
                     <code className='rounded bg-(--card-color) px-1'>
                       --include-suspended
                     </code>{' '}
-                    — Include suspended cards
+                    : Include suspended cards
                   </li>
                   <li>
                     <code className='rounded bg-(--card-color) px-1'>
                       -h, --help
                     </code>{' '}
-                    — Show help documentation
+                    : Show help documentation
                   </li>
                 </ul>
               </div>
@@ -546,45 +545,21 @@ npm run anki:convert -- --help`}
               id='related-tools-heading'
               className='mb-4 text-2xl font-semibold text-(--main-color)'
             >
-              Related Japanese Learning Tools
+              Related Trainings
             </h2>
             <p className='mb-4'>
-              Explore more free tools on KanaDojo to enhance your Japanese
-              learning:
+              Keep practising with the other FiveByFive trainings:
             </p>
             <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
               <Link
-                href='/translate/english-to-japanese'
+                href='/kana'
                 className='block rounded-lg border border-(--border-color) bg-(--card-color) p-4 transition-colors hover:border-(--main-color)'
               >
                 <h3 className='mb-1 font-semibold text-(--main-color)'>
-                  English → Japanese Translator
+                  Letters
                 </h3>
                 <p className='text-sm'>
-                  Translate English to Japanese with romaji pronunciation
-                  support.
-                </p>
-              </Link>
-              <Link
-                href='/conjugate'
-                className='block rounded-lg border border-(--border-color) bg-(--card-color) p-4 transition-colors hover:border-(--main-color)'
-              >
-                <h3 className='mb-1 font-semibold text-(--main-color)'>
-                  Verb Conjugator
-                </h3>
-                <p className='text-sm'>
-                  Get all Japanese verb conjugation forms instantly.
-                </p>
-              </Link>
-              <Link
-                href='/kana-chart'
-                className='block rounded-lg border border-(--border-color) bg-(--card-color) p-4 transition-colors hover:border-(--main-color)'
-              >
-                <h3 className='mb-1 font-semibold text-(--main-color)'>
-                  Kana Chart
-                </h3>
-                <p className='text-sm'>
-                  Complete Hiragana and Katakana reference chart.
+                  Match every letter with its ICAO code word.
                 </p>
               </Link>
               <Link
@@ -592,10 +567,10 @@ npm run anki:convert -- --help`}
                 className='block rounded-lg border border-(--border-color) bg-(--card-color) p-4 transition-colors hover:border-(--main-color)'
               >
                 <h3 className='mb-1 font-semibold text-(--main-color)'>
-                  Kanji Study
+                  Codes
                 </h3>
                 <p className='text-sm'>
-                  Practice Kanji organized by JLPT levels from N5 to N1.
+                  Drill radio phrases from roger to mayday.
                 </p>
               </Link>
               <Link
@@ -603,11 +578,32 @@ npm run anki:convert -- --help`}
                 className='block rounded-lg border border-(--border-color) bg-(--card-color) p-4 transition-colors hover:border-(--main-color)'
               >
                 <h3 className='mb-1 font-semibold text-(--main-color)'>
-                  Vocabulary Builder
+                  Spelling
                 </h3>
                 <p className='text-sm'>
-                  Build your Japanese vocabulary with thousands of words by JLPT
-                  level.
+                  Spell whole words with code words.
+                </p>
+              </Link>
+              <Link
+                href='/kanji'
+                className='block rounded-lg border border-(--border-color) bg-(--card-color) p-4 transition-colors hover:border-(--main-color)'
+              >
+                <h3 className='mb-1 font-semibold text-(--main-color)'>
+                  Radio Phrase Sets
+                </h3>
+                <p className='text-sm'>
+                  Drill radio codes across the five tiers.
+                </p>
+              </Link>
+              <Link
+                href='/vocabulary'
+                className='block rounded-lg border border-(--border-color) bg-(--card-color) p-4 transition-colors hover:border-(--main-color)'
+              >
+                <h3 className='mb-1 font-semibold text-(--main-color)'>
+                  Spelling Sets
+                </h3>
+                <p className='text-sm'>
+                  Spell short and long words with ICAO code words.
                 </p>
               </Link>
               <Link
@@ -615,11 +611,10 @@ npm run anki:convert -- --help`}
                 className='block rounded-lg border border-(--border-color) bg-(--card-color) p-4 transition-colors hover:border-(--main-color)'
               >
                 <h3 className='mb-1 font-semibold text-(--main-color)'>
-                  Learning Resources
+                  Resources
                 </h3>
                 <p className='text-sm'>
-                  Discover curated Japanese learning resources, apps, and
-                  textbooks.
+                  Browse study tools and reference material.
                 </p>
               </Link>
             </div>

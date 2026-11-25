@@ -2,182 +2,253 @@
   "resources": [
     {
       "id": "italki-speaking",
-      "name": "italki",
-      "nameJa": "italki",
-      "description": "Find Japanese tutors for conversation practice.",
-      "descriptionLong": "italki connects you with professional Japanese tutors and community tutors for one-on-one conversation practice. Book lessons at times that work for you and practice speaking with native speakers via video chat.",
+      "name": "ARRL club finder",
+      "nameJa": "",
+      "description": "Find a local amateur radio club.",
+      "descriptionLong": "ARRL lists affiliated clubs where you can meet operators and practise calls in person.",
       "category": "speaking",
       "subcategory": "tutoring",
-      "tags": ["tutoring", "conversation", "native-speakers", "one-on-one"],
+      "tags": [
+        "clubs",
+        "arrl",
+        "practice",
+        "amateur-radio"
+      ],
       "difficulty": "all-levels",
-      "priceType": "paid",
-      "priceDetails": "Tutor prices vary. Typically $10-30/hour",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.italki.com/",
-      "rating": 4.7,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.arrl.org/find-a-club",
+      "rating": 0,
       "featured": true,
-      "notes": "Best platform for finding Japanese tutors."
+      "notes": ""
     },
     {
       "id": "preply-japanese",
-      "name": "Preply Japanese",
-      "nameJa": "Preply日本語",
-      "description": "Online Japanese tutoring platform.",
-      "descriptionLong": "Preply offers online Japanese tutoring with qualified teachers. The platform matches you with tutors based on your goals and schedule, providing personalized conversation practice and lessons.",
+      "name": "eHam.net",
+      "nameJa": "",
+      "description": "Forums where operators answer questions.",
+      "descriptionLong": "Post a question about your wording or read past discussions on operating technique.",
       "category": "speaking",
       "subcategory": "tutoring",
-      "tags": ["tutoring", "personalized", "lessons", "all-levels"],
-      "difficulty": "all-levels",
-      "priceType": "paid",
-      "priceDetails": "Tutor prices vary. Typically $15-40/hour",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://preply.com/en/online/japanese-tutors",
-      "rating": 4.5,
+      "tags": [
+        "forums",
+        "amateur-radio",
+        "questions",
+        "elmers"
+      ],
+      "difficulty": "intermediate",
+      "priceType": "freemium",
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.eham.net/",
+      "rating": 0,
       "featured": false,
-      "notes": "Good selection of qualified tutors."
+      "notes": ""
     },
     {
       "id": "verbling-japanese",
-      "name": "Verbling Japanese",
-      "nameJa": "Verbling日本語",
-      "description": "Video-based Japanese tutoring platform.",
-      "descriptionLong": "Verbling provides video-based Japanese lessons with professional tutors. The platform offers structured lessons and conversation practice with native speakers.",
+      "name": "ARRL Getting Licensed",
+      "nameJa": "",
+      "description": "Guidance for new operators.",
+      "descriptionLong": "Use the licence page to check what you should be able to say before your first contact.",
       "category": "speaking",
       "subcategory": "tutoring",
-      "tags": ["tutoring", "video", "professional", "structured"],
+      "tags": [
+        "licensing",
+        "arrl",
+        "study",
+        "speaking"
+      ],
       "difficulty": "all-levels",
-      "priceType": "paid",
-      "priceDetails": "Tutor prices vary",
-      "platforms": ["web"],
-      "url": "https://www.verbling.com/find-teachers/japanese",
-      "rating": 4.4,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.arrl.org/getting-licensed",
+      "rating": 0,
       "featured": false,
-      "notes": "Quality tutors with structured lessons."
+      "notes": ""
     },
     {
       "id": "hellotalk",
-      "name": "HelloTalk",
-      "nameJa": "HelloTalk",
-      "description": "Language exchange app for finding conversation partners.",
-      "descriptionLong": "HelloTalk connects you with native Japanese speakers who want to learn your language. Practice through text, voice messages, and calls. The app includes correction features and translation tools.",
+      "name": "r/amateurradio",
+      "nameJa": "",
+      "description": "Community for asking about on air wording.",
+      "descriptionLong": "Read how experienced operators describe a call, then ask a specific question if you are unsure.",
       "category": "speaking",
       "subcategory": "conversation",
-      "tags": ["exchange", "free", "native-speakers", "chat", "voice"],
+      "tags": [
+        "reddit",
+        "amateur-radio",
+        "community",
+        "questions"
+      ],
       "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Free with optional premium features",
-      "platforms": ["ios", "android"],
-      "url": "https://www.hellotalk.com/",
-      "rating": 4.5,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.reddit.com/r/amateurradio/",
+      "rating": 0,
       "featured": true,
-      "notes": "Great for finding language exchange partners."
+      "notes": ""
     },
     {
       "id": "tandem-speaking",
-      "name": "Tandem",
-      "nameJa": "Tandem",
-      "description": "Language exchange for conversation practice.",
-      "descriptionLong": "Tandem is a language exchange app that connects you with native Japanese speakers. Practice through text, voice messages, and video calls while helping others learn your language.",
+      "name": "Discord",
+      "nameJa": "",
+      "description": "Live chat platform with amateur radio servers.",
+      "descriptionLong": "Look for a public radio server, then use text or voice chat to practise short exchanges.",
       "category": "speaking",
       "subcategory": "conversation",
-      "tags": ["exchange", "conversation", "video", "native-speakers"],
+      "tags": [
+        "discord",
+        "chat",
+        "live",
+        "practice"
+      ],
       "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Free with optional premium features",
-      "platforms": ["ios", "android"],
-      "url": "https://www.tandem.net/",
-      "rating": 4.4,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://discord.com/",
+      "rating": 0,
       "featured": false,
-      "notes": "Good alternative to HelloTalk."
+      "notes": ""
     },
     {
       "id": "dogen-pronunciation",
-      "name": "Dogen's Phonetics Course",
-      "nameJa": "Dogenの発音コース",
-      "description": "Comprehensive Japanese pitch accent course.",
-      "descriptionLong": "Dogen's Patreon course is the most comprehensive resource for learning Japanese pitch accent. The course covers the rules of pitch accent, common patterns, and provides extensive practice materials for sounding natural.",
+      "name": "NATO alphabet pronunciation",
+      "nameJa": "",
+      "description": "Check how each code word is said.",
+      "descriptionLong": "The article includes pronunciation guidance. Say each word slowly before you speed up.",
       "category": "speaking",
       "subcategory": "pronunciation",
-      "tags": ["pitch-accent", "pronunciation", "comprehensive", "advanced"],
-      "difficulty": "advanced",
-      "priceType": "subscription",
-      "priceDetails": "$10/month on Patreon",
-      "platforms": ["web"],
-      "url": "https://www.patreon.com/daboreal",
-      "rating": 4.9,
+      "tags": [
+        "pronunciation",
+        "alphabet",
+        "code-words",
+        "audio"
+      ],
+      "difficulty": "all-levels",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/NATO_phonetic_alphabet",
+      "rating": 0,
       "featured": true,
-      "notes": "The gold standard for pitch accent learning."
+      "notes": ""
     },
     {
       "id": "ojad",
-      "name": "OJAD (Online Japanese Accent Dictionary)",
-      "nameJa": "OJAD",
-      "description": "Free pitch accent dictionary and learning tool.",
-      "descriptionLong": "OJAD is a free online tool for looking up Japanese pitch accent patterns. It includes a dictionary, text-to-speech with pitch visualization, and verb conjugation accent patterns. Essential for pronunciation study.",
+      "name": "Aviation English",
+      "nameJa": "",
+      "description": "Standard English used in aviation.",
+      "descriptionLong": "Read the article for the reasons phraseology stays fixed, then practise the same wording out loud.",
       "category": "speaking",
       "subcategory": "pronunciation",
-      "tags": ["pitch-accent", "dictionary", "free", "tool"],
+      "tags": [
+        "aviation",
+        "english",
+        "phraseology",
+        "standard"
+      ],
       "difficulty": "intermediate",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/",
-      "rating": 4.7,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Aviation_English",
+      "rating": 0,
       "featured": true,
-      "notes": "Essential free tool for pitch accent study."
+      "notes": ""
     },
     {
       "id": "japanese-pronunciation-trainer",
-      "name": "Japanese Pronunciation Trainer",
-      "nameJa": "日本語発音トレーナー",
-      "description": "App for practicing Japanese pronunciation.",
-      "descriptionLong": "Japanese Pronunciation Trainer helps you practice Japanese sounds and pitch accent. The app provides audio examples and allows you to record and compare your pronunciation.",
+      "name": "Morse Code Trainer",
+      "nameJa": "",
+      "description": "Practise sending as well as saying letters.",
+      "descriptionLong": "Send a character, say the matching code word, then check your answer in the trainer.",
       "category": "speaking",
       "subcategory": "pronunciation",
-      "tags": ["pronunciation", "practice", "recording", "beginner"],
+      "tags": [
+        "morse",
+        "sending",
+        "letters",
+        "practice"
+      ],
       "difficulty": "beginner",
-      "priceType": "freemium",
-      "priceDetails": "Free with premium features available",
-      "platforms": ["ios", "android"],
-      "url": "https://apps.apple.com/app/japanese-pronunciation-trainer/id1481655488",
-      "rating": 4.3,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://morsecode.world/international/trainer/",
+      "rating": 0,
       "featured": false,
-      "notes": "Good for basic pronunciation practice."
+      "notes": ""
     },
     {
       "id": "cambly-japanese",
-      "name": "Cambly",
-      "nameJa": "Cambly",
-      "description": "On-demand conversation practice with tutors.",
-      "descriptionLong": "Cambly offers on-demand conversation practice with tutors. While primarily for English learning, some tutors offer Japanese conversation practice. Good for spontaneous speaking practice.",
+      "name": "ARRL on YouTube",
+      "nameJa": "",
+      "description": "Recorded explanations you can repeat aloud.",
+      "descriptionLong": "Pause a video after a phrase and say it back before the presenter moves on.",
       "category": "speaking",
       "subcategory": "tutoring",
-      "tags": ["tutoring", "on-demand", "conversation", "flexible"],
+      "tags": [
+        "arrl",
+        "video",
+        "repetition",
+        "speaking"
+      ],
       "difficulty": "all-levels",
-      "priceType": "subscription",
-      "priceDetails": "Various subscription plans available",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.cambly.com/",
-      "rating": 4.2,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/@ARRL",
+      "rating": 0,
       "featured": false,
-      "notes": "Limited Japanese tutors but flexible scheduling."
+      "notes": ""
     },
     {
       "id": "speechling-speaking",
-      "name": "Speechling",
-      "nameJa": "Speechling",
-      "description": "Speaking practice with native speaker feedback.",
-      "descriptionLong": "Speechling provides speaking practice with feedback from native Japanese speakers. Record yourself speaking and receive corrections on pronunciation, intonation, and naturalness.",
+      "name": "Radio phraseology video search",
+      "nameJa": "",
+      "description": "Recorded calls to copy out loud.",
+      "descriptionLong": "Pick a short call, listen once, then speak it using the same wording and order.",
       "category": "speaking",
       "subcategory": "pronunciation",
-      "tags": ["feedback", "pronunciation", "recording", "native-speakers"],
+      "tags": [
+        "phraseology",
+        "copying",
+        "speaking",
+        "audio"
+      ],
       "difficulty": "intermediate",
-      "priceType": "freemium",
-      "priceDetails": "Free tier with limited recordings. Premium for unlimited.",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://speechling.com/",
-      "rating": 4.5,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/results?search_query=aviation+radio+phraseology",
+      "rating": 0,
       "featured": false,
-      "notes": "Get personalized feedback on your speaking."
+      "notes": ""
     }
   ]
 }

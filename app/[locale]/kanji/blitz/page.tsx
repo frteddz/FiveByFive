@@ -28,22 +28,22 @@ export default function BlitzPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Kanji', url: 'https://kanadojo.com/kanji' },
-          { name: 'Blitz', url: 'https://kanadojo.com/kanji/blitz' },
+          { name: 'Home', url: 'https://fivebyfive.vercel.app' },
+          { name: 'Codes', url: 'https://fivebyfive.vercel.app/kanji' },
+          { name: 'Blitz', url: 'https://fivebyfive.vercel.app/kanji/blitz' },
         ]}
       />
       <LearningResourceSchema
-        name='Kanji Blitz Mode'
-        description='Fast-paced Japanese Kanji practice game. Test your speed with Kanji recognition across all JLPT levels in timed challenges.'
-        url='https://kanadojo.com/kanji/blitz'
+        name='Codes Blitz Mode'
+        description='Race through radio phrase drills against the clock. Build faster recall of common radiotelephony phrases.'
+        url='https://fivebyfive.vercel.app/kanji/blitz'
         learningResourceType='Game'
         educationalLevel={['Beginner', 'Intermediate', 'Advanced']}
-        teaches='Japanese Kanji characters and meanings (JLPT N5-N1)'
-        assesses='Kanji recognition speed and accuracy'
+        teaches='Radio phrases and their meanings'
+        assesses='Phrase recall speed and accuracy'
         timeRequired='PT5M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
       />
       <KanjiBlitz />
     </>

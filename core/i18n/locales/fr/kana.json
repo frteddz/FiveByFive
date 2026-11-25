@@ -1,65 +1,65 @@
 {
   "metadata": {
-    "title": "KanaDojo : Kana",
-    "description": "Le dojo kana est l'endroit où vous pouvez apprendre et pratiquer les deux syllabaires fondamentaux du japonais - les Hiragana et les Katakana."
+    "title": "FiveByFive: Letters",
+    "description": "Match every letter from A to Z with its NATO code word using fast typing drills."
   },
-  "title": "Entraînement Kana",
-  "description": "Maîtrisez les Hiragana et Katakana",
+  "title": "Letters Training",
+  "description": "Learn the ICAO code word for every letter from A to Z",
   "selection": {
-    "title": "Sélectionnez les groupes de Kana",
-    "hiragana": "Hiragana",
-    "katakana": "Katakana",
-    "selectAll": "Tout sélectionner",
-    "deselectAll": "Tout désélectionner",
+    "title": "Select Letter Groups",
+    "hiragana": "Letters",
+    "katakana": "Phrases",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
     "groups": {
-      "basic": "Base",
-      "dakuon": "Dakuon",
-      "combo": "Combinaisons",
-      "yoon": "Yōon"
+      "basic": "A-Z",
+      "dakuon": "N-Z",
+      "combo": "Confusables",
+      "yoon": "A-M"
     }
   },
   "game": {
-    "title": "Jeu Kana",
-    "start": "Commencer",
+    "title": "Letters Game",
+    "start": "Start Game",
     "pause": "Pause",
-    "resume": "Reprendre",
-    "finish": "Terminer",
-    "nextQuestion": "Question suivante",
-    "submit": "Valider la réponse",
-    "score": "Score : {{points}}",
-    "timeLeft": "Temps restant : {{seconds}}s",
-    "streak": "Série : {{count}}",
-    "correct": "Correct !",
+    "resume": "Resume",
+    "finish": "Finish",
+    "nextQuestion": "Next Question",
+    "submit": "Submit Answer",
+    "score": "Score: {{points}}",
+    "timeLeft": "Time left: {{seconds}}s",
+    "streak": "Streak: {{count}}",
+    "correct": "Correct!",
     "incorrect": "Incorrect",
-    "tryAgain": "Réessayer"
+    "tryAgain": "Try Again"
   },
   "modes": {
-    "pick": "Mode choix",
-    "reversePick": "Choix inversé",
-    "input": "Mode saisie",
-    "reverseInput": "Saisie inversée",
+    "pick": "Pick Mode",
+    "reversePick": "Reverse Pick",
+    "input": "Input Mode",
+    "reverseInput": "Reverse Input",
     "description": {
-      "pick": "Voir le kana, choisir la lecture",
-      "reversePick": "Voir la lecture, choisir le kana",
-      "input": "Voir le kana, taper la lecture",
-      "reverseInput": "Voir la lecture, taper le kana"
+      "pick": "See a letter, choose its code word",
+      "reversePick": "See a code word, choose the letter",
+      "input": "See a letter, type the code word",
+      "reverseInput": "See a code word, type the letter"
     }
   },
   "results": {
-    "title": "Résultats",
-    "congratulations": "Félicitations !",
-    "correct": "Correct : {{count}}",
-    "incorrect": "Incorrect : {{count}}",
-    "accuracy": "Précision : {{percentage}}%",
-    "timeSpent": "Temps passé : {{time}}",
-    "playAgain": "Rejouer",
-    "backToMenu": "Retour au menu"
+    "title": "Results",
+    "congratulations": "Congratulations!",
+    "correct": "Correct: {{count}}",
+    "incorrect": "Incorrect: {{count}}",
+    "accuracy": "Accuracy: {{percentage}}%",
+    "timeSpent": "Time spent: {{time}}",
+    "playAgain": "Play Again",
+    "backToMenu": "Back to Menu"
   },
   "dictionary": {
-    "title": "Dictionnaire Kana",
-    "search": "Rechercher un kana...",
-    "character": "Caractère",
-    "romaji": "Romaji",
-    "type": "Type"
+    "title": "Letter Dictionary",
+    "search": "Search letters...",
+    "character": "Letter",
+    "romaji": "Code word",
+    "type": "Group"
   }
 }

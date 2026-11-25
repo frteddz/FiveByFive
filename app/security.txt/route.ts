@@ -6,17 +6,17 @@ import { NextResponse } from 'next/server';
  * https://securitytxt.org/
  */
 export async function GET() {
-  const securityTxt = `Contact: https://github.com/lingdojo/kanadojo/security
-Contact: mailto:security@kanadojo.com
+  const securityTxt = `Contact: https://github.com/frteddz/FiveByFive/security
+Contact: mailto:security@fivebyfive.vercel.app
 Expires: 2026-12-31T23:59:59.000Z
 Preferred-Languages: en, es
-Canonical: https://kanadojo.com/.well-known/security.txt
-Policy: https://kanadojo.com/security
-Acknowledgments: https://kanadojo.com/credits
+Canonical: https://fivebyfive.vercel.app/.well-known/security.txt
+Policy: https://fivebyfive.vercel.app/security
+Acknowledgments: https://fivebyfive.vercel.app/credits
 
-# Security Policy for KanaDojo
+# Security Policy for FiveByFive
 # If you discover a security vulnerability, please report it responsibly.
-# See our security policy at https://kanadojo.com/security for details.`;
+# See our security policy at https://fivebyfive.vercel.app/security for details.`;
 
   return new NextResponse(securityTxt, {
     headers: {

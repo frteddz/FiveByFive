@@ -2,175 +2,255 @@
   "resources": [
     {
       "id": "tae-kim-grammar",
-      "name": "Tae Kim's Grammar Guide",
-      "nameJa": "Tae Kimの文法ガイド",
-      "description": "Comprehensive free grammar guide for all levels.",
-      "descriptionLong": "Tae Kim's Guide to Learning Japanese is one of the most popular free resources for Japanese grammar. It covers everything from basic sentence structure to advanced patterns with clear explanations and examples. A must-read for all Japanese learners.",
+      "name": "Radiotelephony procedure",
+      "nameJa": "",
+      "description": "How a standard two way call is structured.",
+      "descriptionLong": "The article describes call signs, readbacks, and the order of a procedural exchange.",
       "category": "grammar",
       "subcategory": "guides",
-      "tags": ["comprehensive", "free", "all-levels", "explanations"],
+      "tags": [
+        "procedure",
+        "call-signs",
+        "readback",
+        "guide"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://guidetojapanese.org/learn/",
-      "rating": 4.8,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Radiotelephony_procedure",
+      "rating": 0,
       "featured": true,
-      "notes": "Essential free grammar resource. Also available as an app."
+      "notes": ""
     },
     {
       "id": "imabi-grammar",
-      "name": "Imabi",
-      "nameJa": "今日",
-      "description": "Extremely detailed grammar explanations.",
-      "descriptionLong": "Imabi provides incredibly detailed Japanese grammar explanations that go beyond typical textbooks. It covers classical Japanese, dialects, and nuanced grammar points. Excellent for intermediate to advanced learners seeking deep understanding.",
+      "name": "FAA Airman's Information Manual",
+      "nameJa": "",
+      "description": "Official rules for pilot and controller speech.",
+      "descriptionLong": "The AIM spells out the phraseology used in US air traffic communication, with examples.",
       "category": "grammar",
       "subcategory": "guides",
-      "tags": ["detailed", "advanced", "classical", "comprehensive"],
+      "tags": [
+        "faa",
+        "phraseology",
+        "rules",
+        "guide"
+      ],
       "difficulty": "intermediate",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://imabi.org/",
-      "rating": 4.6,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/",
+      "rating": 0,
       "featured": true,
-      "notes": "Very detailed. Great for advanced grammar study."
+      "notes": ""
     },
     {
       "id": "bunpro-grammar",
-      "name": "Bunpro",
-      "nameJa": "文プロ",
-      "description": "SRS-based grammar learning platform.",
-      "descriptionLong": "Bunpro uses spaced repetition to help you master Japanese grammar points. It covers all JLPT levels with detailed explanations, example sentences, and links to external resources. The platform tracks your progress and adapts reviews.",
+      "name": "Quizlet",
+      "nameJa": "",
+      "description": "Drill the order of a standard phrase.",
+      "descriptionLong": "Make a set where one side is the situation and the other is the phrase to use.",
       "category": "grammar",
       "subcategory": "practice-grammar",
-      "tags": ["SRS", "JLPT", "practice", "comprehensive"],
+      "tags": [
+        "flashcards",
+        "phrases",
+        "drills",
+        "practice"
+      ],
       "difficulty": "all-levels",
-      "priceType": "subscription",
-      "priceDetails": "$5/month or $55/year",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://bunpro.jp/",
-      "rating": 4.7,
-      "featured": true,
-      "notes": "Best platform for systematic grammar study."
+      "priceType": "freemium",
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "url": "https://quizlet.com/",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     },
     {
       "id": "japanese-grammar-dictionary",
-      "name": "Dictionary of Japanese Grammar Series",
-      "nameJa": "日本語文法辞典シリーズ",
-      "description": "Essential grammar reference books.",
-      "descriptionLong": "The Dictionary of Japanese Grammar series (Basic, Intermediate, Advanced) is the definitive reference for Japanese grammar. Each entry includes detailed explanations, numerous examples, and comparisons with similar patterns. A must-have for serious learners.",
+      "name": "Aviation English",
+      "nameJa": "",
+      "description": "Why phraseology is kept fixed.",
+      "descriptionLong": "The article explains the language rules that apply to international aviation.",
       "category": "grammar",
       "subcategory": "guides",
-      "tags": ["reference", "dictionary", "comprehensive", "examples"],
-      "difficulty": "all-levels",
-      "priceType": "paid",
-      "priceDetails": "~$55 per volume",
-      "platforms": ["physical"],
-      "url": "https://www.amazon.com/Dictionary-Basic-Japanese-Grammar/dp/4789004546",
-      "rating": 4.9,
+      "tags": [
+        "aviation",
+        "english",
+        "rules",
+        "reference"
+      ],
+      "difficulty": "intermediate",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Aviation_English",
+      "rating": 0,
       "featured": true,
-      "notes": "The gold standard grammar reference. Three volumes available."
+      "notes": ""
     },
     {
       "id": "maggie-sensei-grammar",
-      "name": "Maggie Sensei",
-      "nameJa": "マギー先生",
-      "description": "Natural grammar explanations with real examples.",
-      "descriptionLong": "Maggie Sensei provides grammar explanations focusing on natural, conversational Japanese. Each lesson includes plenty of example sentences showing real-world usage. Great for understanding how grammar is actually used.",
+      "name": "Q code reference",
+      "nameJa": "",
+      "description": "Codes that replace a full question or answer.",
+      "descriptionLong": "Read the list to see how a short abbreviation carries a complete meaning.",
       "category": "grammar",
       "subcategory": "guides",
-      "tags": ["natural", "conversational", "examples", "expressions"],
-      "difficulty": "intermediate",
+      "tags": [
+        "q-code",
+        "abbreviations",
+        "meaning",
+        "guide"
+      ],
+      "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://maggiesensei.com/",
-      "rating": 4.5,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Q_code",
+      "rating": 0,
       "featured": false,
-      "notes": "Excellent for learning natural expressions."
+      "notes": ""
     },
     {
       "id": "wasabi-grammar",
-      "name": "Wasabi Japanese Grammar",
-      "nameJa": "わさび日本語文法",
-      "description": "Structured grammar lessons with exercises.",
-      "descriptionLong": "Wasabi Japanese offers structured grammar lessons with clear explanations and practice exercises. The site organizes grammar by level and topic, making it easy to find what you need.",
+      "name": "ICAO",
+      "nameJa": "",
+      "description": "The organisation behind international aviation standards.",
+      "descriptionLong": "The ICAO site is the starting point for the standards that shape aviation phraseology.",
       "category": "grammar",
       "subcategory": "guides",
-      "tags": ["structured", "exercises", "beginner", "clear"],
-      "difficulty": "beginner",
+      "tags": [
+        "icao",
+        "standards",
+        "aviation",
+        "official"
+      ],
+      "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www.wasabi-jpn.com/japanese-grammar/",
-      "rating": 4.4,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.icao.int/",
+      "rating": 0,
       "featured": false,
-      "notes": "Good structured lessons for beginners."
+      "notes": ""
     },
     {
       "id": "jlpt-sensei-grammar",
-      "name": "JLPT Sensei Grammar",
-      "nameJa": "JLPT先生文法",
-      "description": "Grammar organized by JLPT level.",
-      "descriptionLong": "JLPT Sensei provides grammar explanations organized by JLPT level. Each grammar point includes explanations, example sentences, and practice questions. Great for JLPT preparation.",
+      "name": "ARRL Getting Licensed",
+      "nameJa": "",
+      "description": "Rules for amateur radio operators.",
+      "descriptionLong": "The ARRL page explains the licence classes and the operating privileges attached to them.",
       "category": "grammar",
       "subcategory": "guides",
-      "tags": ["JLPT", "organized", "examples", "practice"],
+      "tags": [
+        "arrl",
+        "licensing",
+        "rules",
+        "amateur-radio"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://jlptsensei.com/",
-      "rating": 4.5,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.arrl.org/getting-licensed",
+      "rating": 0,
       "featured": false,
-      "notes": "Excellent for JLPT grammar study."
+      "notes": ""
     },
     {
       "id": "bunpo-jp",
-      "name": "Bunpo.jp",
-      "nameJa": "文法.jp",
-      "description": "Clean grammar dictionary with quick lookups.",
-      "descriptionLong": "Bunpo.jp is a grammar dictionary with a clean interface for quick lookups. Each entry includes explanations, examples, and JLPT level information. Great for checking specific grammar points.",
+      "name": "NATO phonetic alphabet",
+      "nameJa": "",
+      "description": "The word assigned to each letter.",
+      "descriptionLong": "Use the table as the base reference when you check your own phrase lists.",
       "category": "grammar",
       "subcategory": "guides",
-      "tags": ["dictionary", "quick", "clean", "reference"],
+      "tags": [
+        "alphabet",
+        "code-words",
+        "reference",
+        "table"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://bunpo.jp/",
-      "rating": 4.4,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/NATO_phonetic_alphabet",
+      "rating": 0,
       "featured": false,
-      "notes": "Clean interface for grammar lookups."
+      "notes": ""
     },
     {
       "id": "japanese-sentence-patterns",
-      "name": "Japanese Sentence Patterns",
-      "nameJa": "日本語文型",
-      "description": "Common sentence patterns and structures.",
-      "descriptionLong": "Resources focusing on Japanese sentence patterns help learners understand how to construct various types of sentences. Learning patterns provides templates for expressing different ideas.",
+      "name": "Mayday distress call",
+      "nameJa": "",
+      "description": "The fixed pattern of an emergency call.",
+      "descriptionLong": "Read the article for the wording used when a station declares an emergency.",
       "category": "grammar",
       "subcategory": "sentence-patterns",
-      "tags": ["patterns", "structures", "templates", "intermediate"],
-      "difficulty": "intermediate",
+      "tags": [
+        "mayday",
+        "emergency",
+        "phrases",
+        "patterns"
+      ],
+      "difficulty": "advanced",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www.japanesewithanime.com/",
-      "rating": 4.3,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Mayday_(distress_signal)",
+      "rating": 0,
       "featured": false,
-      "notes": "Learn grammar through anime examples."
+      "notes": ""
     },
     {
       "id": "cure-dolly-grammar",
-      "name": "Cure Dolly's Organic Japanese",
-      "nameJa": "Cure Dollyの有機日本語",
-      "description": "Unique approach to understanding Japanese structure.",
-      "descriptionLong": "Cure Dolly presents Japanese grammar from a unique perspective, focusing on the organic structure of the language. The approach helps learners understand how Japanese actually works rather than memorizing rules.",
+      "name": "Morse code",
+      "nameJa": "",
+      "description": "Signals that sit behind voice abbreviations.",
+      "descriptionLong": "The article explains Morse code and the short forms that grew out of it.",
       "category": "grammar",
       "subcategory": "guides",
-      "tags": ["unique", "structure", "organic", "understanding"],
-      "difficulty": "beginner",
+      "tags": [
+        "morse",
+        "abbreviations",
+        "background",
+        "guide"
+      ],
+      "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www.youtube.com/@organicjapanesewithcuredlly",
-      "rating": 4.7,
-      "featured": true,
-      "notes": "Revolutionary approach to Japanese grammar."
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Morse_code",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     }
   ]
 }

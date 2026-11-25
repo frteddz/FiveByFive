@@ -1,1301 +1,314 @@
 [
   {
     "id": 1,
-    "kanjiChar": "日",
+    "kanjiChar": "roger",
     "onyomi": [
-      "nichi ニチ",
-      "jitsu ジツ"
+      "roger"
     ],
     "kunyomi": [
-      "hi ひ",
-      "-bi -び",
-      "-ka -か"
+      "message received"
     ],
     "meanings": [
-      "day",
-      "sun",
-      "Japan",
-      "counter for days"
+      "I have received your last message"
     ]
   },
   {
     "id": 2,
-    "kanjiChar": "一",
+    "kanjiChar": "wilco",
     "onyomi": [
-      "ichi イチ"
+      "wilco"
     ],
     "kunyomi": [
-      "hito ひと",
-      "tsu つ"
+      "will comply"
     ],
     "meanings": [
-      "one",
-      "1"
+      "I will do what you asked"
     ]
   },
   {
     "id": 3,
-    "kanjiChar": "国",
+    "kanjiChar": "over",
     "onyomi": [
-      "koku コク"
+      "over"
     ],
     "kunyomi": [
-      "kuni くに"
+      "awaiting reply"
     ],
     "meanings": [
-      "country",
-      "state",
-      "nation"
+      "I have finished speaking and expect a response"
     ]
   },
   {
     "id": 4,
-    "kanjiChar": "人",
+    "kanjiChar": "out",
     "onyomi": [
-      "jin ジン",
-      "nin ニン"
+      "out"
     ],
     "kunyomi": [
-      "hito ひと"
+      "end of conversation"
     ],
     "meanings": [
-      "person",
-      "human"
+      "No reply is expected"
     ]
   },
   {
     "id": 5,
-    "kanjiChar": "年",
+    "kanjiChar": "copy",
     "onyomi": [
-      "nen ネン"
+      "copy"
     ],
     "kunyomi": [
-      "toshi とし"
+      "understood"
     ],
     "meanings": [
-      "year",
-      "counter for years"
+      "I heard and understood you"
     ]
   },
   {
     "id": 6,
-    "kanjiChar": "大",
+    "kanjiChar": "affirm",
     "onyomi": [
-      "dai ダイ",
-      "tai タイ"
+      "affirm"
     ],
     "kunyomi": [
-      "oo おお",
-      "kii きい"
+      "yes"
     ],
     "meanings": [
-      "large",
-      "big"
+      "Affirmative answer"
     ]
   },
   {
     "id": 7,
-    "kanjiChar": "十",
+    "kanjiChar": "negative",
     "onyomi": [
-      "juu ジュウ"
+      "negative"
     ],
     "kunyomi": [
-      "tou とお",
-      "to と"
+      "no"
     ],
     "meanings": [
-      "ten",
-      "10"
+      "Negative answer"
     ]
   },
   {
     "id": 8,
-    "kanjiChar": "二",
+    "kanjiChar": "say again",
     "onyomi": [
-      "ni ニ",
-      "ji ジ"
+      "say again"
     ],
     "kunyomi": [
-      "futa ふた",
-      "tsu つ"
+      "repeat"
     ],
     "meanings": [
-      "two",
-      "2"
+      "Please repeat your last transmission"
     ]
   },
   {
     "id": 9,
-    "kanjiChar": "本",
+    "kanjiChar": "stand by",
     "onyomi": [
-      "hon ホン"
+      "stand by"
     ],
     "kunyomi": [
-      "moto もと"
+      "wait"
     ],
     "meanings": [
-      "book",
-      "origin",
-      "present",
-      "true"
+      "Pause until I call you back"
     ]
   },
   {
     "id": 10,
-    "kanjiChar": "中",
+    "kanjiChar": "go ahead",
     "onyomi": [
-      "chuu チュウ"
+      "go ahead"
     ],
     "kunyomi": [
-      "naka なか",
-      "uchi うち",
-      "ata あた"
+      "proceed"
     ],
     "meanings": [
-      "middle",
-      "in",
-      "inside",
-      "mean",
-      "center"
+      "You may continue with your transmission"
     ]
   },
   {
     "id": 11,
-    "kanjiChar": "長",
+    "kanjiChar": "mayday",
     "onyomi": [
-      "chou チョウ"
+      "mayday"
     ],
     "kunyomi": [
-      "naga なが",
-      "osa おさ"
+      "distress"
     ],
     "meanings": [
-      "long",
-      "leader",
-      "superior",
-      "senior",
-      "chief",
-      "boss"
+      "Life threatening emergency"
     ]
   },
   {
     "id": 12,
-    "kanjiChar": "出",
+    "kanjiChar": "pan pan",
     "onyomi": [
-      "shutsu シュツ",
-      "sui スイ"
+      "pan pan"
     ],
     "kunyomi": [
-      "de で",
-      "da だ",
-      "ideru い(でる)"
+      "urgent"
     ],
     "meanings": [
-      "exit",
-      "to exit",
-      "leave",
-      "to leave",
-      "go out",
-      "to go out"
+      "Urgent situation that is not yet life threatening"
     ]
   },
   {
     "id": 13,
-    "kanjiChar": "三",
+    "kanjiChar": "hold",
     "onyomi": [
-      "san サン"
+      "hold"
     ],
     "kunyomi": [
-      "mi み",
-      "tsu つ"
+      "hold position"
     ],
     "meanings": [
-      "three",
-      "3"
+      "Stay where you are"
     ]
   },
   {
     "id": 14,
-    "kanjiChar": "時",
+    "kanjiChar": "approach",
     "onyomi": [
-      "ji ジ"
+      "approach"
     ],
     "kunyomi": [
-      "toki とき",
-      "doki どき"
+      "landing"
     ],
     "meanings": [
-      "time",
-      "hour"
+      "Preparing to land"
     ]
   },
   {
     "id": 15,
-    "kanjiChar": "行",
+    "kanjiChar": "clearance",
     "onyomi": [
-      "kou コウ",
-      "gyou ギョウ",
-      "an アン"
+      "clearance"
     ],
     "kunyomi": [
-      "i い",
-      "yu ゆ",
-      "okona おこな"
+      "permission"
     ],
     "meanings": [
-      "going",
-      "journey",
-      "carry out",
-      "line",
-      "row"
+      "Permission to proceed has been given"
     ]
   },
   {
     "id": 16,
-    "kanjiChar": "見",
+    "kanjiChar": "taxi",
     "onyomi": [
-      "ken ケン"
+      "taxi"
     ],
     "kunyomi": [
-      "mi み",
-      "seru セル"
+      "ground movement"
     ],
     "meanings": [
-      "see",
-      "to see",
-      "look",
-      "to look",
-      "hopes",
-      "chances",
-      "idea",
-      "opinion",
-      "look at",
-      "to look at",
-      "visible"
+      "Move the aircraft on the ground"
     ]
   },
   {
     "id": 17,
-    "kanjiChar": "月",
+    "kanjiChar": "squawk",
     "onyomi": [
-      "getsu ゲツ",
-      "gatsu ガツ"
+      "squawk"
     ],
     "kunyomi": [
-      "tsuki つき"
+      "transponder"
     ],
     "meanings": [
-      "month",
-      "moon"
+      "Set the transponder code"
     ]
   },
   {
     "id": 18,
-    "kanjiChar": "分",
+    "kanjiChar": "ready",
     "onyomi": [
-      "bun ブン",
-      "fun フン",
-      "bu ブ"
+      "ready"
     ],
     "kunyomi": [
-      "wa わ",
-      "keru ケル"
+      "prepared"
     ],
     "meanings": [
-      "part",
-      "minute",
-      "minutes",
-      "minute of time",
-      "understand",
-      "to understand"
+      "Ready to proceed"
     ]
   },
   {
     "id": 19,
-    "kanjiChar": "後",
+    "kanjiChar": "contact",
     "onyomi": [
-      "go ゴ",
-      "kou コウ"
+      "contact"
     ],
     "kunyomi": [
-      "nochi のち",
-      "ushi うし",
-      "ato あと"
+      "call"
     ],
     "meanings": [
-      "behind",
-      "back",
-      "later"
+      "Establish radio contact"
     ]
   },
   {
     "id": 20,
-    "kanjiChar": "前",
+    "kanjiChar": "monitor",
     "onyomi": [
-      "zen ゼン"
+      "monitor"
     ],
     "kunyomi": [
-      "mae まえ"
+      "listen"
     ],
     "meanings": [
-      "in front",
-      "before"
+      "Listen on this frequency"
     ]
   },
   {
     "id": 21,
-    "kanjiChar": "生",
+    "kanjiChar": "confirm",
     "onyomi": [
-      "sei セイ",
-      "shou ショウ"
+      "confirm"
     ],
     "kunyomi": [
-      "i い",
-      "mu む",
-      "o お",
-      "ha は",
-      "nama なま"
+      "verify"
     ],
     "meanings": [
-      "life",
-      "genuine",
-      "birth"
+      "Please check and confirm"
     ]
   },
   {
     "id": 22,
-    "kanjiChar": "五",
+    "kanjiChar": "correct",
     "onyomi": [
-      "go ゴ"
+      "correct"
     ],
     "kunyomi": [
-      "itsu いつ",
-      "tsu つ"
+      "right"
     ],
     "meanings": [
-      "five",
-      "5"
+      "That is accurate"
     ]
   },
   {
     "id": 23,
-    "kanjiChar": "間",
+    "kanjiChar": "unable",
     "onyomi": [
-      "kan カン",
-      "ken ケン"
+      "unable"
     ],
     "kunyomi": [
-      "aida あいだ",
-      "ma ま",
-      "ai あい"
+      "cannot"
     ],
     "meanings": [
-      "interval",
-      "space"
+      "I cannot comply with the request"
     ]
   },
   {
     "id": 24,
-    "kanjiChar": "上",
+    "kanjiChar": "expedite",
     "onyomi": [
-      "jou ジョウ",
-      "shou ショウ",
-      "shan シャン"
+      "expedite"
     ],
     "kunyomi": [
-      "ue うえ",
-      "uwa うわ",
-      "kami かみ",
-      "ageru あ(げる)",
-      "noboru のぼ(る)",
-      "tatematsu たてまつ(る)"
+      "hurry"
     ],
     "meanings": [
-      "above",
-      "up"
-    ]
-  },
-  {
-    "id": 25,
-    "kanjiChar": "東",
-    "onyomi": [
-      "tou トウ"
-    ],
-    "kunyomi": [
-      "higashi ひがし"
-    ],
-    "meanings": [
-      "east"
-    ]
-  },
-  {
-    "id": 26,
-    "kanjiChar": "四",
-    "onyomi": [
-      "shi シ"
-    ],
-    "kunyomi": [
-      "yo(tsu) よ(つ)",
-      "yon よん"
-    ],
-    "meanings": [
-      "four",
-      "4"
-    ]
-  },
-  {
-    "id": 27,
-    "kanjiChar": "今",
-    "onyomi": [
-      "kon コン",
-      "kin キン"
-    ],
-    "kunyomi": [
-      "ima いま"
-    ],
-    "meanings": [
-      "now",
-      "the present"
-    ]
-  },
-  {
-    "id": 28,
-    "kanjiChar": "金",
-    "onyomi": [
-      "kin キン",
-      "kon コン",
-      "gon ゴン"
-    ],
-    "kunyomi": [
-      "kane カネ",
-      "kana カナ",
-      "gane ガネ"
-    ],
-    "meanings": [
-      "gold"
-    ]
-  },
-  {
-    "id": 29,
-    "kanjiChar": "九",
-    "onyomi": [
-      "kyuu キュウ",
-      "ku ク"
-    ],
-    "kunyomi": [
-      "kokono(tsu) ここの(つ)"
-    ],
-    "meanings": [
-      "nine",
-      "9"
-    ]
-  },
-  {
-    "id": 30,
-    "kanjiChar": "入",
-    "onyomi": [
-      "nyuu ニュウ"
-    ],
-    "kunyomi": [
-      "i(ru) い(る)",
-      "hai(ru) はい(る)",
-      "nyu にゅ"
-    ],
-    "meanings": [
-      "enter",
-      "to enter",
-      "insert",
-      "to insert"
-    ]
-  },
-  {
-    "id": 31,
-    "kanjiChar": "学",
-    "onyomi": [
-      "gaku ガク"
-    ],
-    "kunyomi": [
-      "mana(bu) まな(ぶ)"
-    ],
-    "meanings": [
-      "study",
-      "to study",
-      "studying",
-      "learn",
-      "to learn",
-      "learning",
-      "science"
-    ]
-  },
-  {
-    "id": 32,
-    "kanjiChar": "高",
-    "onyomi": [
-      "kou コウ"
-    ],
-    "kunyomi": [
-      "taka(i) たか(い)"
-    ],
-    "meanings": [
-      "tall",
-      "high",
-      "expensive"
-    ]
-  },
-  {
-    "id": 33,
-    "kanjiChar": "円",
-    "onyomi": [
-      "en エン"
-    ],
-    "kunyomi": [
-      "maru(i) まる(い)"
-    ],
-    "meanings": [
-      "circle",
-      "yen",
-      "round"
-    ]
-  },
-  {
-    "id": 34,
-    "kanjiChar": "子",
-    "onyomi": [
-      "shi シ",
-      "su ス",
-      "tsu ツ"
-    ],
-    "kunyomi": [
-      "ko こ",
-      "ne ね"
-    ],
-    "meanings": [
-      "child",
-      "kid"
-    ]
-  },
-  {
-    "id": 35,
-    "kanjiChar": "外",
-    "onyomi": [
-      "gai ガイ",
-      "ge ゲ"
-    ],
-    "kunyomi": [
-      "soto そと",
-      "hoka ほか",
-      "hazu- はず(す)",
-      "to- と-"
-    ],
-    "meanings": [
-      "outside"
-    ]
-  },
-  {
-    "id": 36,
-    "kanjiChar": "八",
-    "onyomi": [
-      "hachi ハチ"
-    ],
-    "kunyomi": [
-      "ya(tsu) や(つ)",
-      "you よう"
-    ],
-    "meanings": [
-      "eight",
-      "8"
-    ]
-  },
-  {
-    "id": 37,
-    "kanjiChar": "六",
-    "onyomi": [
-      "roku ロク"
-    ],
-    "kunyomi": [
-      "mu(tsu) む(つ)",
-      "mui むい"
-    ],
-    "meanings": [
-      "six",
-      "6"
-    ]
-  },
-  {
-    "id": 38,
-    "kanjiChar": "下",
-    "onyomi": [
-      "ka カ",
-      "ge ゲ"
-    ],
-    "kunyomi": [
-      "shita した",
-      "shimo しも",
-      "moto もと",
-      "sa(geru) さ(げる)",
-      "kuda(ru) くだ(る)",
-      "o(rosu) お(ろす)"
-    ],
-    "meanings": [
-      "below",
-      "down",
-      "descend",
-      "give",
-      "low",
-      "inferior"
-    ]
-  },
-  {
-    "id": 39,
-    "kanjiChar": "来",
-    "onyomi": [
-      "rai ライ"
-    ],
-    "kunyomi": [
-      "kuru く.る",
-      "kitaru きた.る",
-      "ki き",
-      "ko こ"
-    ],
-    "meanings": [
-      "come",
-      "due",
-      "next",
-      "cause",
-      "become",
-      "to become"
-    ]
-  },
-  {
-    "id": 40,
-    "kanjiChar": "気",
-    "onyomi": [
-      "ki キ",
-      "ke ケ"
-    ],
-    "kunyomi": [
-      "iki いき"
-    ],
-    "meanings": [
-      "spirit",
-      "mind",
-      "air",
-      "atmosphere",
-      "mood",
-      "energy"
-    ]
-  },
-  {
-    "id": 41,
-    "kanjiChar": "小",
-    "onyomi": [
-      "shou ショウ"
-    ],
-    "kunyomi": [
-      "chii(sai) ちい(さい)",
-      "ko- こ-",
-      "o- お-",
-      "sa- さ-"
-    ],
-    "meanings": [
-      "little",
-      "small"
-    ]
-  },
-  {
-    "id": 42,
-    "kanjiChar": "七",
-    "onyomi": [
-      "shichi シチ"
-    ],
-    "kunyomi": [
-      "nana(tsu) なな(つ)",
-      "nano なの"
-    ],
-    "meanings": [
-      "seven",
-      "7"
-    ]
-  },
-  {
-    "id": 43,
-    "kanjiChar": "山",
-    "onyomi": [
-      "san サン",
-      "sen セン"
-    ],
-    "kunyomi": [
-      "yama やま"
-    ],
-    "meanings": [
-      "mountain",
-      "mountains"
-    ]
-  },
-  {
-    "id": 44,
-    "kanjiChar": "話",
-    "onyomi": [
-      "wa わ"
-    ],
-    "kunyomi": [
-      "hana(su) はな(す)",
-      "hanashi はなし"
-    ],
-    "meanings": [
-      "tale",
-      "to talk",
-      "talk"
-    ]
-  },
-  {
-    "id": 45,
-    "kanjiChar": "女",
-    "onyomi": [
-      "jo ジョ"
-    ],
-    "kunyomi": [
-      "onna おんな",
-      "me め"
-    ],
-    "meanings": [
-      "woman",
-      "female"
-    ]
-  },
-  {
-    "id": 46,
-    "kanjiChar": "北",
-    "onyomi": [
-      "hoku ホク"
-    ],
-    "kunyomi": [
-      "kita キタ"
-    ],
-    "meanings": [
-      "north"
-    ]
-  },
-  {
-    "id": 47,
-    "kanjiChar": "午",
-    "onyomi": [
-      "go ゴ"
-    ],
-    "kunyomi": [
-      "uma うま"
-    ],
-    "meanings": [
-      "noon",
-      "sign of the horse"
-    ]
-  },
-  {
-    "id": 48,
-    "kanjiChar": "百",
-    "onyomi": [
-      "hyaku ヒャク",
-      "byaku ビャク"
-    ],
-    "kunyomi": [
-      "momo もも"
-    ],
-    "meanings": [
-      "hundred",
-      "100"
-    ]
-  },
-  {
-    "id": 49,
-    "kanjiChar": "書",
-    "onyomi": [
-      "sho ショ"
-    ],
-    "kunyomi": [
-      "kaku か.く"
-    ],
-    "meanings": [
-      "write",
-      "to write"
-    ]
-  },
-  {
-    "id": 50,
-    "kanjiChar": "先",
-    "onyomi": [
-      "sen セン"
-    ],
-    "kunyomi": [
-      "saki さき",
-      "ma(zu) ま(ず)"
-    ],
-    "meanings": [
-      "before",
-      "ahead",
-      "previous",
-      "future",
-      "precedence"
-    ]
-  },
-  {
-    "id": 51,
-    "kanjiChar": "名",
-    "onyomi": [
-      "mei メイ",
-      "myou ミョウ"
-    ],
-    "kunyomi": [
-      "na な"
-    ],
-    "meanings": [
-      "name",
-      "noted",
-      "distinguished",
-      "reputation"
-    ]
-  },
-  {
-    "id": 52,
-    "kanjiChar": "川",
-    "onyomi": [
-      "sen セン"
-    ],
-    "kunyomi": [
-      "kawa かわ"
-    ],
-    "meanings": [
-      "river",
-      "stream"
-    ]
-  },
-  {
-    "id": 53,
-    "kanjiChar": "千",
-    "onyomi": [
-      "sen セン"
-    ],
-    "kunyomi": [
-      "chi ち"
-    ],
-    "meanings": [
-      "thousand",
-      "1000"
-    ]
-  },
-  {
-    "id": 54,
-    "kanjiChar": "水",
-    "onyomi": [
-      "sui スイ"
-    ],
-    "kunyomi": [
-      "mizu みず"
-    ],
-    "meanings": [
-      "water"
-    ]
-  },
-  {
-    "id": 55,
-    "kanjiChar": "半",
-    "onyomi": [
-      "han ハン"
-    ],
-    "kunyomi": [
-      "naka(ba) なか(ば)"
-    ],
-    "meanings": [
-      "half",
-      "middle",
-      "odd number",
-      "semi-",
-      "semi"
-    ]
-  },
-  {
-    "id": 56,
-    "kanjiChar": "男",
-    "onyomi": [
-      "dan ダン",
-      "nan ナン"
-    ],
-    "kunyomi": [
-      "otoko おとこ",
-      "o お"
-    ],
-    "meanings": [
-      "male",
-      "man"
-    ]
-  },
-  {
-    "id": 57,
-    "kanjiChar": "西",
-    "onyomi": [
-      "sei セイ",
-      "sai サイ"
-    ],
-    "kunyomi": [
-      "nishi にし"
-    ],
-    "meanings": [
-      "west"
-    ]
-  },
-  {
-    "id": 58,
-    "kanjiChar": "電",
-    "onyomi": [
-      "den デン"
-    ],
-    "kunyomi": [
-      ""
-    ],
-    "meanings": [
-      "electricity",
-      "electric powered",
-      "electric-powered"
-    ]
-  },
-  {
-    "id": 59,
-    "kanjiChar": "校",
-    "onyomi": [
-      "kou コウ"
-    ],
-    "kunyomi": [
-      ""
-    ],
-    "meanings": [
-      "school",
-      "exam"
-    ]
-  },
-  {
-    "id": 60,
-    "kanjiChar": "語",
-    "onyomi": [
-      "go ゴ"
-    ],
-    "kunyomi": [
-      "kata(ru) かた(る)"
-    ],
-    "meanings": [
-      "language",
-      "word",
-      "speech"
-    ]
-  },
-  {
-    "id": 61,
-    "kanjiChar": "土",
-    "onyomi": [
-      "do ド",
-      "to ト"
-    ],
-    "kunyomi": [
-      "tsuchi つち"
-    ],
-    "meanings": [
-      "soil",
-      "earth",
-      "ground"
-    ]
-  },
-  {
-    "id": 62,
-    "kanjiChar": "木",
-    "onyomi": [
-      "boku ボク",
-      "moku モク"
-    ],
-    "kunyomi": [
-      "ki き",
-      "ko こ"
-    ],
-    "meanings": [
-      "tree",
-      "wood"
-    ]
-  },
-  {
-    "id": 63,
-    "kanjiChar": "聞",
-    "onyomi": [
-      "bun ブン",
-      "mon モン"
-    ],
-    "kunyomi": [
-      "ki き",
-      "ku く"
-    ],
-    "meanings": [
-      "hear",
-      "to hear",
-      "listen",
-      "to listen",
-      "ask",
-      "to ask"
-    ]
-  },
-  {
-    "id": 64,
-    "kanjiChar": "食",
-    "onyomi": [
-      "shoku ショク",
-      "jiki ジキ"
-    ],
-    "kunyomi": [
-      "ku く",
-      "ta た",
-      "mu む"
-    ],
-    "meanings": [
-      "eat",
-      "to eat",
-      "food"
-    ]
-  },
-  {
-    "id": 65,
-    "kanjiChar": "車",
-    "onyomi": [
-      "sha シャ"
-    ],
-    "kunyomi": [
-      "kuruma くるま"
-    ],
-    "meanings": [
-      "car",
-      "wheel"
-    ]
-  },
-  {
-    "id": 66,
-    "kanjiChar": "何",
-    "onyomi": [
-      "ka カ"
-    ],
-    "kunyomi": [
-      "nani なに",
-      "nan なん"
-    ],
-    "meanings": [
-      "what"
-    ]
-  },
-  {
-    "id": 67,
-    "kanjiChar": "南",
-    "onyomi": [
-      "nan ナン",
-      "na ナ"
-    ],
-    "kunyomi": [
-      "minami みなみ"
-    ],
-    "meanings": [
-      "south"
-    ]
-  },
-  {
-    "id": 68,
-    "kanjiChar": "万",
-    "onyomi": [
-      "man マン",
-      "ban バン"
-    ],
-    "kunyomi": [
-      ""
-    ],
-    "meanings": [
-      "ten thousand",
-      "10000"
-    ]
-  },
-  {
-    "id": 69,
-    "kanjiChar": "毎",
-    "onyomi": [
-      "mai マイ"
-    ],
-    "kunyomi": [
-      "goto ごと",
-      "ni に"
-    ],
-    "meanings": [
-      "every"
-    ]
-  },
-  {
-    "id": 70,
-    "kanjiChar": "白",
-    "onyomi": [
-      "haku ハク",
-      "byaku ビャク"
-    ],
-    "kunyomi": [
-      "shiro しろ"
-    ],
-    "meanings": [
-      "white"
-    ]
-  },
-  {
-    "id": 71,
-    "kanjiChar": "天",
-    "onyomi": [
-      "ten テン"
-    ],
-    "kunyomi": [
-      "amatsu あまつ"
-    ],
-    "meanings": [
-      "heavens",
-      "sky",
-      "imperial",
-      "heaven"
-    ]
-  },
-  {
-    "id": 72,
-    "kanjiChar": "母",
-    "onyomi": [
-      "bo ボ"
-    ],
-    "kunyomi": [
-      "haha はは",
-      "ka か"
-    ],
-    "meanings": [
-      "mother"
-    ]
-  },
-  {
-    "id": 73,
-    "kanjiChar": "火",
-    "onyomi": [
-      "ka カ"
-    ],
-    "kunyomi": [
-      "hi ひ",
-      "bi び",
-      "ho ほ"
-    ],
-    "meanings": [
-      "fire",
-      "flame"
-    ]
-  },
-  {
-    "id": 74,
-    "kanjiChar": "右",
-    "onyomi": [
-      "u ウ",
-      "yuu ユウ"
-    ],
-    "kunyomi": [
-      "migi みぎ"
-    ],
-    "meanings": [
-      "right (direction)",
-      "right",
-      "right direction"
-    ]
-  },
-  {
-    "id": 75,
-    "kanjiChar": "読",
-    "onyomi": [
-      "doku ドク",
-      "toku トク",
-      "tou トウ"
-    ],
-    "kunyomi": [
-      "yo よ"
-    ],
-    "meanings": [
-      "read",
-      "to read"
-    ]
-  },
-  {
-    "id": 76,
-    "kanjiChar": "友",
-    "onyomi": [
-      "yuu ユウ"
-    ],
-    "kunyomi": [
-      "tomo とも"
-    ],
-    "meanings": [
-      "friend",
-      "buddy"
-    ]
-  },
-  {
-    "id": 77,
-    "kanjiChar": "左",
-    "onyomi": [
-      "sa サ",
-      "sha シャ"
-    ],
-    "kunyomi": [
-      "hidari ひだり"
-    ],
-    "meanings": [
-      "left",
-      "left (direction)",
-      "left direction"
-    ]
-  },
-  {
-    "id": 78,
-    "kanjiChar": "休",
-    "onyomi": [
-      "kyuu キュウ"
-    ],
-    "kunyomi": [
-      "yasu やす",
-      "mu む"
-    ],
-    "meanings": [
-      "rest",
-      "to rest",
-      "day off",
-      "retire",
-      "to retire",
-      "sleep"
-    ]
-  },
-  {
-    "id": 79,
-    "kanjiChar": "父",
-    "onyomi": [
-      "fu フ"
-    ],
-    "kunyomi": [
-      "chichi ちち",
-      "tou とう"
-    ],
-    "meanings": [
-      "father",
-      "dad"
-    ]
-  },
-  {
-    "id": 80,
-    "kanjiChar": "雨",
-    "onyomi": [
-      "u ウ"
-    ],
-    "kunyomi": [
-      "ame あめ",
-      "ama あま"
-    ],
-    "meanings": [
-      "rain",
-      "to rain"
+      "Move faster than normal"
     ]
   }
 ]

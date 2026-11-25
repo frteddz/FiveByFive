@@ -101,9 +101,27 @@ function getPriceLabel(priceType: PriceType): string {
     free: 'Free',
     freemium: 'Freemium',
     paid: 'Paid',
-    subscription: 'Subscription',
+    subscription: 'Subs',
   };
   return labels[priceType];
+}
+
+/**
+ * Get the aria-label of a platform icon
+ */
+function getPlatformLabel(platform: Platform): string {
+  const labels: Record<Platform, string> = {
+    web: 'Web',
+    ios: 'iOS',
+    android: 'Android',
+    windows: 'Windows',
+    macos: 'macOS',
+    linux: 'Linux',
+    physical: 'Physical',
+    'browser-extension': 'Browser Extension',
+    api: 'API',
+  };
+  return labels[platform];
 }
 
 /**
@@ -112,21 +130,21 @@ function getPriceLabel(priceType: PriceType): string {
 function formatCategoryName(categoryId: string): string {
   const names: Record<string, string> = {
     apps: 'Apps',
-    websites: 'Websites',
-    textbooks: 'Textbooks',
-    youtube: 'YouTube',
-    podcasts: 'Podcasts',
+    websites: 'Web',
+    textbooks: 'Print',
+    youtube: 'Video',
+    podcasts: 'Audio',
     games: 'Games',
     jlpt: 'JLPT',
-    reading: 'Reading',
-    listening: 'Listening',
-    speaking: 'Speaking',
-    writing: 'Writing',
+    reading: 'Read',
+    listening: 'Listen',
+    speaking: 'Speak',
+    writing: 'Write',
     grammar: 'Grammar',
-    vocabulary: 'Vocabulary',
+    vocabulary: 'Vocab',
     kanji: 'Kanji',
     immersion: 'Immersion',
-    community: 'Community',
+    community: 'Social',
   };
   return names[categoryId] || categoryId;
 }
@@ -161,10 +179,10 @@ describe('Property 1: Resource Card Rendering Completeness', () => {
         const priceLabel = getPriceLabel(resource.priceType);
         expect(html).toContain(priceLabel);
 
-        // Platform section should exist if platforms are present
-        if (resource.platforms.length > 0) {
-          expect(html).toContain('Available on:');
-        }
+        // Platform icons should exist if platforms are present
+        resource.platforms.slice(0, 3).forEach(platform => {
+          expect(html).toContain(`aria-label="${getPlatformLabel(platform)}"`);
+        });
 
         // Clean up
         cleanup();

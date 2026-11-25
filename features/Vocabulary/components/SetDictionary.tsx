@@ -1,10 +1,9 @@
 'use client';
 
 import clsx from 'clsx';
-import { toKana, toRomaji } from 'wanakana';
 import { IWord } from '@/shared/types/interfaces';
 import { cardBorderStyles } from '@/shared/utils/styles';
-import { useAudioPreferences, useThemePreferences } from '@/features/Preferences';
+import { useAudioPreferences } from '@/features/Preferences';
 import { useJapaneseTTS } from '@/features/Preferences/hooks/useJapaneseTTS';
 import FuriganaText from '@/shared/ui-composite/text/FuriganaText';
 import { Volume2 } from 'lucide-react';
@@ -17,7 +16,6 @@ type SetDictionaryProps = {
 const SetDictionary = memo(function SetDictionary({
   words,
 }: SetDictionaryProps) {
-  const { displayKana: showKana } = useThemePreferences();
   const { pronunciationEnabled, pronunciationSpeed, pronunciationPitch } =
     useAudioPreferences();
   const { speak, stop, isPlaying, refreshVoices } = useJapaneseTTS();
@@ -73,9 +71,7 @@ const SetDictionary = memo(function SetDictionary({
         const rawReading =
           typeof wordObj.reading === 'string' ? wordObj.reading : '';
         const baseReading = rawReading.split(' ')[1] || rawReading;
-        const displayReading = showKana
-          ? toKana(baseReading)
-          : toRomaji(baseReading);
+        const displayReading = baseReading.trim().toLowerCase();
 
         return (
           <div
@@ -85,21 +81,12 @@ const SetDictionary = memo(function SetDictionary({
               i !== words.length - 1 && 'border-b-1 border-(--border-color)',
             )}
           >
-            <a
-              href={`https://jisho.org/search/${encodeURIComponent(
-                wordObj.word,
-              )}`}
-              target='_blank'
-              rel='noopener'
-              className='cursor-pointer transition-opacity'
-            >
-              <FuriganaText
-                text={wordObj.word}
-                reading={wordObj.reading}
-                className='text-6xl md:text-5xl'
-                lang='ja'
-              />
-            </a>
+            <FuriganaText
+              text={wordObj.word}
+              reading={wordObj.reading}
+              className='text-6xl md:text-5xl'
+              lang='en'
+            />
             <div className='flex flex-col items-start gap-2'>
               <button
                 type='button'

@@ -152,7 +152,7 @@ export default async function FAQPage({
   ];
 
   const faqsForSchema = groups.flatMap(group => group.faqs);
-  const pageUrl = `https://kanadojo.com/${locale}/faq`;
+  const pageUrl = `https://fivebyfive.vercel.app/${locale}/faq`;
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -165,11 +165,11 @@ export default async function FAQPage({
         description: t('subtitle'),
         inLanguage: locale,
         isPartOf: {
-          '@id': 'https://kanadojo.com/#website',
+          '@id': 'https://fivebyfive.vercel.app/#website',
         },
         about: {
           '@type': 'Thing',
-          name: 'Japanese learning',
+          name: 'NATO phonetic alphabet training',
         },
       },
       {
@@ -206,8 +206,8 @@ export default async function FAQPage({
       <StructuredData data={faqSchema} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
-          { name: 'FAQ', url: `https://kanadojo.com/${locale}/faq` },
+          { name: 'Home', url: `https://fivebyfive.vercel.app/${locale}` },
+          { name: 'FAQ', url: `https://fivebyfive.vercel.app/${locale}/faq` },
         ]}
       />
 
@@ -248,19 +248,19 @@ export default async function FAQPage({
                 {t('links.howToUse')}
               </Link>
               <Link
-                href={`/${locale}/glossary`}
+                href={`/${locale}/kana`}
                 className='rounded-full border border-(--border-color) bg-[color-mix(in_oklab,var(--card-color),transparent_0%)] px-4 py-2 text-sm font-semibold text-(--main-color) shadow-[0_1px_0_rgba(0,0,0,0.05)] transition-colors hover:bg-[color-mix(in_oklab,var(--card-color),var(--main-color)_6%)]'
               >
                 {t('links.glossary')}
               </Link>
               <Link
-                href='/translate'
+                href={`/${locale}/vocabulary`}
                 className='rounded-full border border-(--border-color) bg-[color-mix(in_oklab,var(--card-color),transparent_0%)] px-4 py-2 text-sm font-semibold text-(--main-color) shadow-[0_1px_0_rgba(0,0,0,0.05)] transition-colors hover:bg-[color-mix(in_oklab,var(--card-color),var(--main-color)_6%)]'
               >
                 {t('links.translator')}
               </Link>
               <Link
-                href={`/${locale}/academy`}
+                href={`/${locale}/resources`}
                 className='rounded-full border border-(--border-color) bg-[color-mix(in_oklab,var(--card-color),transparent_0%)] px-4 py-2 text-sm font-semibold text-(--main-color) shadow-[0_1px_0_rgba(0,0,0,0.05)] transition-colors hover:bg-[color-mix(in_oklab,var(--card-color),var(--main-color)_6%)]'
               >
                 {t('links.academy')}
@@ -326,19 +326,19 @@ export default async function FAQPage({
                 </p>
                 <div className='mt-6 flex flex-wrap gap-3'>
                   <Link
-                    href={`/${locale}/hiragana-practice`}
+                    href={`/${locale}/kana`}
                     className='rounded-full bg-(--main-color) px-4 py-2 text-sm font-semibold text-(--background-color) shadow-[0_10px_30px_color-mix(in_oklab,var(--main-color),transparent_75%)] transition-transform hover:-translate-y-px'
                   >
                     {t('cta.hiragana')}
                   </Link>
                   <Link
-                    href={`/${locale}/katakana-practice`}
+                    href={`/${locale}/kanji`}
                     className='rounded-full border border-(--border-color) bg-[color-mix(in_oklab,var(--card-color),transparent_0%)] px-4 py-2 text-sm font-semibold text-(--main-color) transition-colors hover:bg-[color-mix(in_oklab,var(--card-color),var(--main-color)_6%)]'
                   >
                     {t('cta.katakana')}
                   </Link>
                   <Link
-                    href={`/${locale}/kanji-practice`}
+                    href={`/${locale}/vocabulary`}
                     className='rounded-full border border-(--border-color) bg-[color-mix(in_oklab,var(--card-color),transparent_0%)] px-4 py-2 text-sm font-semibold text-(--main-color) transition-colors hover:bg-[color-mix(in_oklab,var(--card-color),var(--main-color)_6%)]'
                   >
                     {t('cta.kanji')}

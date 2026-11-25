@@ -1,13 +1,13 @@
 {
-  "title": "Tabla de Hiragana y Katakana",
-  "subtitle": "Guía de referencia completa para todos los caracteres kana japoneses básicos",
-  "aboutTitle": "Acerca de Esta Tabla",
-  "aboutText": "Esta tabla completa muestra los 46 caracteres básicos de Hiragana y Katakana con su romanización. Hiragana se usa para palabras japonesas nativas, mientras que Katakana se usa principalmente para palabras prestadas extranjeras, nombres y énfasis.",
-  "howToUseTitle": "Cómo Usar Esta Tabla",
-  "howToUse1": "Haz clic en las pestañas de arriba para cambiar entre Hiragana y Katakana",
-  "howToUse2": "Cada celda muestra el carácter japonés (grande) y su romanización (pequeña)",
-  "howToUse3": "Úsala como referencia rápida mientras aprendes o practicas",
-  "howToUse4": "Presiona Ctrl+P (o ⌘+P en Mac) para imprimir o guardar como PDF para uso sin conexión",
-  "practiceTitle": "¿Listo para Practicar?",
-  "practiceText": "¡Dirígete a nuestros modos de entrenamiento interactivos para practicar estos caracteres! Prueba el Modo Pick para reconocimiento, Modo Input para recordar, o Modo Blitz para desafíos de velocidad."
+  "title": "Code Word Chart",
+  "subtitle": "Complete reference for NATO letter code words and digit codes",
+  "aboutTitle": "About This Chart",
+  "aboutText": "This chart lists the 26 letters A to Z with their ICAO code words and the 10 digit codes. Letters such as B and D or M and N are easy to confuse by voice, so each one has a fixed word.",
+  "howToUseTitle": "How to Use This Chart",
+  "howToUse1": "Click the tabs above to switch between letters and codes",
+  "howToUse2": "Each cell shows the letter or digit and its code word",
+  "howToUse3": "Use this as a quick reference while drilling",
+  "howToUse4": "Press Ctrl+P (or Command+P on Mac) to print or save as PDF for offline use",
+  "practiceTitle": "Ready to Practice?",
+  "practiceText": "Head to a training mode to practice these code words. Try Pick Mode for recognition, Input Mode for recall, or Blitz Mode for speed."
 }

@@ -1,40 +1,40 @@
 {
   "title": "Experiments",
-  "description": "Explore experimental features and alternative learning methods",
+  "description": "Explore experimental features and alternative ways to practice code words",
   "zenMode": {
     "title": "Zen Mode",
     "description": "Minimalist focus mode for distraction-free practice"
   },
   "breathing": {
     "title": "Breathing Exercise",
-    "description": "Mindful breathing exercise to improve focus and reduce stress"
+    "description": "A short breathing exercise to settle focus before a drill"
   },
   "ambient": {
     "title": "Ambient Mode",
-    "description": "Practice with ambient background and soothing sounds"
+    "description": "Practice with ambient background sound"
   },
   "constellation": {
-    "title": "Kana Constellation",
-    "description": "Connect the stars to form kana characters"
+    "title": "Code Constellation",
+    "description": "Connect the stars to form letters and code words"
   },
   "rain": {
-    "title": "Kana Rain",
-    "description": "Catch falling kana characters in this arcade-style game"
+    "title": "Code Rain",
+    "description": "Catch falling code words in this arcade-style game"
   },
   "memory": {
     "title": "Memory Palace",
-    "description": "Use memory techniques to remember characters"
+    "description": "Use memory techniques to recall code words"
   },
   "sound": {
     "title": "Sound Garden",
-    "description": "Learn through audio-visual associations"
+    "description": "Learn through audio and visual associations"
   },
   "typing": {
     "title": "Speed Typing",
-    "description": "Improve your typing speed with Japanese characters"
+    "description": "Improve your typing speed with code words"
   },
   "haiku": {
-    "title": "Daily Haiku",
-    "description": "Learn through beautiful Japanese poetry"
+    "title": "Daily Phrase",
+    "description": "Practice a short radio phrase each day"
   }
 }

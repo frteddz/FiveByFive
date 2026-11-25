@@ -1,5 +1,5 @@
 const privacyPolicy = `
-**KanaDojo** operates kanadojo.com (the "Site"). This Privacy Policy explains how we handle information related to your use of the Site.
+**KanaDojo** operates fivebyfive.vercel.app (the "Site"). This Privacy Policy explains how we handle information related to your use of the Site.
 
 
 ## 1. Information We Collect
@@ -94,7 +94,7 @@ We may update this Privacy Policy periodically. Changes will be posted on this p
 ## 9. Contact Information
 If you have any questions about this Privacy Policy, you can contact us at:
 
-dev@kanadojo.com
+dev@fivebyfive.vercel.app
 
 
 **Thank you for using KanaDojo!** 🚀  

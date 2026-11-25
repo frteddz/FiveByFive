@@ -17,24 +17,22 @@ export const USE_NEW_KANA_ROW_DESIGN = true;
 type KanaCardsFilter = 'all' | 'hiragana' | 'katakana';
 
 const DEFAULT_SHOWN_SUBSETS: Record<KanaCardsFilter, string[]> = {
-  all: ['hiragana ひらがな', 'hbase', 'katakana カタカナ', 'kbase'],
-  hiragana: ['hiragana ひらがな', 'hbase'],
-  katakana: ['katakana カタカナ', 'kbase'],
+  all: ['letters a-z', 'a-m', 'digits and phrases', 'digits'],
+  hiragana: ['letters a-z', 'a-m'],
+  katakana: ['digits and phrases', 'digits'],
 };
 
 const groupKanaBadgeByName: Record<string, string> = {
-  'Hiragana ひらがな': 'あ',
-  'Katakana カタカナ': 'ア',
+  'Letters A-Z': 'A',
+  'Digits and Phrases': '7',
 };
 
 const subsetKanaBadgeByName: Record<string, string> = {
-  HBase: 'か',
-  HDakuon: 'が',
-  HYoon: 'ゃ',
-  KBase: 'カ',
-  KDakuon: 'ガ',
-  KYoon: 'ャ',
-  'KForeign Sounds': 'フ',
+  'A-M': 'A',
+  'N-Z': 'Z',
+  Digits: '7',
+  Phrases: 'R',
+  Challenges: 'X',
 };
 
 const headingBadgeClasses = {
@@ -46,30 +44,22 @@ const headingBadgeClasses = {
 
 const kanaGroups = [
   {
-    name: 'Hiragana ひらがな',
+    name: 'Letters A-Z',
+    unit: 'hiragana' as KanaCardsFilter,
     subsets: [
-      { name: 'HBase', sliceRange: [0, 10] },
-      { name: 'HDakuon', sliceRange: [10, 15] },
-      { name: 'HYoon', sliceRange: [15, 26] },
+      { name: 'A-M', sliceRange: [0, 13] },
+      { name: 'N-Z', sliceRange: [13, 26] },
     ],
   },
   {
-    name: 'Katakana カタカナ',
+    name: 'Digits and Phrases',
+    unit: 'katakana' as KanaCardsFilter,
     subsets: [
-      { name: 'KBase', sliceRange: [26, 36] },
-      { name: 'KDakuon', sliceRange: [36, 41] },
-      { name: 'KYoon', sliceRange: [41, 52] },
-      { name: 'KForeign Sounds', sliceRange: [52, 60] },
+      { name: 'Digits', sliceRange: [26, 36] },
+      { name: 'Phrases', sliceRange: [36, 60] },
+      { name: 'Challenges', sliceRange: [60, 69] },
     ],
   },
-  // TEMPORARILY COMMENTED OUT - Challenge section
-  // {
-  //   name: 'Challenge チャレンジ',
-  //   subsets: [
-  //     { name: 'CSimilar Hiragana', sliceRange: [60, 65] },
-  //     { name: 'CConfusing Katakana', sliceRange: [65, 69] }
-  //   ]
-  // }
 ];
 
 const getDefaultHiddenSubsets = (
@@ -136,13 +126,8 @@ const KanaCards = ({
   const currentSubset = selectedSubset ?? 'base';
 
   const filteredGroups = kanaGroups.filter(group => {
-    if (effectiveFilter === 'hiragana') {
-      return group.name.toLowerCase().startsWith('hiragana');
-    }
-    if (effectiveFilter === 'katakana') {
-      return group.name.toLowerCase().startsWith('katakana');
-    }
-    return true;
+    if (effectiveFilter === 'all') return true;
+    return group.unit === effectiveFilter;
   });
 
   const storageKey =
@@ -269,7 +254,7 @@ const KanaCards = ({
                   <ChevronUp className={chevronClasses(groupHidden)} />
                   {USE_NEW_KANA_BADGE_DESIGN && (
                     <span className={headingBadgeClasses.group}>
-                      {groupKanaBadgeByName[group.name] ?? 'あ'}
+                      {groupKanaBadgeByName[group.name] ?? 'A'}
                     </span>
                   )}
                   <h3 className='flex items-center gap-2'>
@@ -308,7 +293,7 @@ const KanaCards = ({
                             />
                             {USE_NEW_KANA_BADGE_DESIGN && (
                               <span className={headingBadgeClasses.subset}>
-                                {subsetKanaBadgeByName[subset.name] ?? 'あ'}
+                                {subsetKanaBadgeByName[subset.name] ?? 'A'}
                               </span>
                             )}
                             <span>{subset.name.slice(1)}</span>

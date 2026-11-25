@@ -2,7 +2,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
-import { toHiragana } from 'wanakana';
 import { IVocabObj } from '@/features/Vocabulary/store/useVocabStore';
 import {
   useClick,
@@ -227,9 +226,7 @@ const VocabInputGame = ({
         : false;
     } else {
       const targetReading = typeof targetChar === 'string' ? targetChar : '';
-      const inputAsHiragana = toHiragana(input);
-      const targetAsHiragana = toHiragana(targetReading);
-      return inputAsHiragana === targetAsHiragana || input === targetReading;
+      return input.trim().toLowerCase() === targetReading.trim().toLowerCase();
     }
   };
 
@@ -349,8 +346,8 @@ const VocabInputGame = ({
     }
   };
 
-  const displayCharLang = isReverse && quizType === 'meaning' ? 'en' : 'ja';
-  const inputLang = quizType === 'reading' ? 'ja' : isReverse ? 'ja' : 'en';
+  const displayCharLang = 'en';
+  const inputLang = 'en';
   const textSize = isReverse ? 'text-5xl sm:text-7xl' : 'text-5xl md:text-8xl';
   const canCheck = inputValue.trim().length > 0 && bottomBarState !== 'correct';
   const showContinue = bottomBarState === 'correct';

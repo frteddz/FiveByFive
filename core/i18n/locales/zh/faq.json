@@ -1,52 +1,134 @@
 {
-  "title": "常见问题",
-  "description": "查找关于使用 KanaDojo 的常见问题答案",
-  "questions": {
-    "whatIsKanaDojo": {
-      "question": "什么是 KanaDojo？",
-      "answer": "KanaDojo 是一个免费在线平台，帮助您学习日语平假名、片假名、汉字和词汇。它提供互动游戏、进度追踪和可自定义的学习体验。"
-    },
-    "howToStart": {
-      "question": "如何开始学习？",
-      "answer": "只需在首页选择一个道场（假名、汉字或词汇），选择您想练习的内容，然后开始游戏！无需创建账户。"
-    },
-    "isFree": {
-      "question": "KanaDojo 是免费的吗？",
-      "answer": "是的，KanaDojo 完全免费使用。无需付费或订阅。"
-    },
-    "progressSaved": {
-      "question": "我的进度会保存吗？",
-      "answer": "是的，您的进度会自动保存在您的浏览器本地存储中。无需账户。如果您清除浏览器数据，进度将被重置。"
-    },
-    "jlpLevels": {
-      "question": "什么是JLPT级别？",
-      "answer": "JLPT（日语能力测试）分为N5（初学者）到N1（高级）五个级别。我们按这些级别组织汉字和词汇，帮助您循序渐进地学习。"
-    },
-    "modesDifference": {
-      "question": "不同的游戏模式有什么区别？",
-      "answer": "选择模式：看字符选答案。输入模式：看字符输入答案。反向模式：看意思选/输入字符。每种模式帮助您以不同方式练习识别和回忆。"
-    },
-    "mobileSupport": {
-      "question": "支持手机使用吗？",
-      "answer": "是的，KanaDojo 在桌面和移动设备上都能很好地运行。只需在手机浏览器中访问网站即可。"
-    },
-    "resetProgress": {
-      "question": "如何重置进度？",
-      "answer": "进入设置 → 数据 → 重置进度。请注意，此操作无法撤销。"
-    },
-    "themes": {
-      "question": "如何更改主题？",
-      "answer": "进入偏好设置，您可以选择多种颜色主题和日文字体来自定义您的学习体验。"
-    },
-    "contact": {
-      "question": "如何联系支持？",
-      "answer": "您可以通过 GitHub issues 提交问题或建议，或发送邮件至 dev@kanadojo.com。"
+  "kicker": "HELP CENTER",
+  "title": "Frequently Asked Questions",
+  "subtitle": "Clear answers, real details, and the fastest path from ‘what is Alfa’ to confident code word, radio phrase and spelling practice.",
+  "links": {
+    "howToUse": "How to use FiveByFive",
+    "glossary": "Phonetic glossary",
+    "translator": "Code word reference",
+    "academy": "Training guides",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service"
+  },
+  "nav": {
+    "title": "Jump to",
+    "backToTop": "Top",
+    "aria": "FAQ section navigation",
+    "note": "Tip: Use the Glossary if you see a term like ‘code word’, ‘radiotelephony’, or ‘callsign’."
+  },
+  "intro": {
+    "title": "Quick orientation",
+    "body": "FiveByFive is a free trainer for the NATO phonetic alphabet. Practice letters, radio phrases and callsign spelling without an account. Your progress is saved locally in your browser, and you can change themes and fonts at any time."
+  },
+  "cta": {
+    "hiragana": "Start Letters practice",
+    "katakana": "Start Codes practice",
+    "kanji": "Start Spelling practice"
+  },
+  "footer": {
+    "title": "Still stuck?",
+    "body": "If something feels off, it is usually one of two things: a set that is too large, or a mode that does not match your goal. Use the links below to reset your setup in under a minute.",
+    "links": {
+      "kana": "Browse Letter sets",
+      "progress": "Open Progress dashboard"
     }
   },
-  "categories": {
-    "general": "常规",
-    "learning": "学习",
-    "technical": "技术",
-    "account": "账户"
+  "sections": {
+    "gettingStarted": {
+      "title": "Getting started",
+      "description": "What FiveByFive is, how it works, and what you should do first.",
+      "q1": {
+        "question": "What is FiveByFive?",
+        "answer": "FiveByFive is a free trainer for the NATO phonetic alphabet. It teaches the ICAO code word for every letter, radio phrases used in voice communication, and spelling words with code words."
+      },
+      "q2": {
+        "question": "Is FiveByFive really free?",
+        "answer": "Yes. FiveByFive is free to use with no required account and no paywalled training content."
+      },
+      "q3": {
+        "question": "Do I need to create an account?",
+        "answer": "No. Your preferences and statistics are stored locally in your browser. If you clear site data or switch devices, your local progress will not follow you."
+      }
+    },
+    "learningPath": {
+      "title": "Suggested order",
+      "description": "A practical order for learning the phonetic alphabet.",
+      "q1": {
+        "question": "Should I learn letters or radio phrases first?",
+        "answer": "Start with the letters A to Z so every code word is familiar. Then move to radio codes and phrases, and finish with spelling full words and callsigns."
+      },
+      "q2": {
+        "question": "How long does it take to learn the code words?",
+        "answer": "Short daily sessions work best. Most learners get comfortable with the alphabet within a couple of weeks, then keep improving speed with Blitz drills."
+      },
+      "q3": {
+        "question": "When should I start spelling words?",
+        "answer": "Once you can match letters to code words without hesitating, start spelling short words. Spelling practice reinforces the same code words in a different context."
+      }
+    },
+    "features": {
+      "title": "Features & training modes",
+      "description": "How practice works and which mode to pick for your goal.",
+      "q1": {
+        "question": "What are the training modes?",
+        "answer": "FiveByFive includes recognition and recall modes (pick/reverse-pick, input/reverse-input) plus timed Blitz challenges and full-set Gauntlet runs. Switch modes depending on whether you want accuracy, recall, or speed."
+      },
+      "q2": {
+        "question": "What is the best mode for beginners?",
+        "answer": "Start with pick mode to build fast recognition, then add input mode for typing recall. Alternating the two works well for code words and spelling."
+      },
+      "q3": {
+        "question": "Can I customize themes and fonts?",
+        "answer": "Yes. FiveByFive supports themes, fonts and display preferences so long practice sessions stay comfortable."
+      }
+    },
+    "privacy": {
+      "title": "Privacy & data",
+      "description": "What is stored, where it is stored, and what that means for you.",
+      "q1": {
+        "question": "Where is my progress saved?",
+        "answer": "Your progress is saved locally in your browser. Statistics stay on your device and you can start training without signing up."
+      },
+      "q2": {
+        "question": "Will my progress sync across devices?",
+        "answer": "Not automatically. Progress is stored locally, so switching browsers or devices will not carry it over unless you move the data yourself."
+      },
+      "q3": {
+        "question": "Does FiveByFive work offline?",
+        "answer": "Core practice can work offline once assets are cached, but the first load and any network-backed features need a connection."
+      }
+    },
+    "jlpt": {
+      "title": "Training tiers",
+      "description": "How the five tiers are organized.",
+      "q1": {
+        "question": "What are the five tiers?",
+        "answer": "Codes and Spelling are split into five tiers. Tier 1 holds the most common items and Tier 5 holds the most demanding ones. You can select any tier directly."
+      },
+      "q2": {
+        "question": "Do I need to finish a tier before the next one?",
+        "answer": "No. The tiers are a way to keep practice sets manageable. Pick the tier that matches your current accuracy and move on when it feels easy."
+      },
+      "q3": {
+        "question": "What should I practice first?",
+        "answer": "Start with letters A to Z, then Tier 1 radio codes. After that, spell short words and review the items you miss most often."
+      }
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting",
+      "description": "Fix the most common ‘why am I not improving?’ problems.",
+      "q1": {
+        "question": "I keep mixing up similar code words. What should I do?",
+        "answer": "Reduce your active set and drill recognition first. Confusable pairs such as B and D or M and N deserve their own short sessions."
+      },
+      "q2": {
+        "question": "My accuracy is fine but I am slow.",
+        "answer": "Add timed practice with a small set. Speed usually improves once accuracy is stable."
+      },
+      "q3": {
+        "question": "My progress looks reset. Did I lose everything?",
+        "answer": "Progress is stored locally. Clearing browser data, using private mode, or switching devices can make it look reset. Check that you are in the same browser profile and that site data is not being cleared automatically."
+      }
+    }
   }
 }

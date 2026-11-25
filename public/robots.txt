@@ -39,7 +39,7 @@ User-agent: Amazonbot
 Allow: /
 
 # Host
-Host: https://kanadojo.com
+Host: https://fivebyfive.vercel.app
 
 # Sitemaps
-Sitemap: https://kanadojo.com/sitemap.xml
+Sitemap: https://fivebyfive.vercel.app/sitemap.xml

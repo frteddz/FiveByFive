@@ -1,43 +1,16 @@
 ﻿import {
-  Noto_Sans_JP,
-  Zen_Maru_Gothic,
-  Rampart_One,
-  Zen_Kurenaido,
-  Klee_One,
-  DotGothic16,
-  Kiwi_Maru,
-  Potta_One,
-  Hachi_Maru_Pop,
-  Yuji_Mai,
-  RocknRoll_One,
-  Reggae_One,
-  Stick,
-  M_PLUS_Rounded_1c,
-  M_PLUS_1,
-  Yusei_Magic,
-  Dela_Gothic_One,
-  New_Tegomin,
-  Kosugi_Maru,
-  Hina_Mincho,
-  Shippori_Mincho,
-  Kaisei_Decol,
-  Mochiy_Pop_One,
-  Yuji_Boku,
-  Kaisei_HarunoUmi,
-  Sawarabi_Gothic,
-  Zen_Old_Mincho,
-  Sawarabi_Mincho,
-  Zen_Antique,
-  Kaisei_Tokumin,
-  Yuji_Syuku,
-  // WDXL_Lubrifont_JP_N - Removed: causes font override error in Next.js 15
-  Murecho,
-  Kaisei_Opti,
-  BIZ_UDMincho,
-  Shippori_Antique,
+  Inter,
+  Roboto,
+  Lora,
+  JetBrains_Mono,
+  Nunito,
+  Space_Grotesk,
+  DM_Sans,
+  Outfit,
+  Work_Sans,
 } from 'next/font/google';
 
-const notoSansJP = Noto_Sans_JP({
+const inter = Inter({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
@@ -45,15 +18,7 @@ const notoSansJP = Noto_Sans_JP({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const zenMaruGothic = Zen_Maru_Gothic({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: true,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const rampartOne = Rampart_One({
+const roboto = Roboto({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
@@ -61,7 +26,7 @@ const rampartOne = Rampart_One({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const zenKurenaido = Zen_Kurenaido({
+const lora = Lora({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
@@ -69,7 +34,7 @@ const zenKurenaido = Zen_Kurenaido({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const kleeOne = Klee_One({
+const jetBrainsMono = JetBrains_Mono({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
@@ -77,7 +42,7 @@ const kleeOne = Klee_One({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const dotGothic16 = DotGothic16({
+const nunito = Nunito({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
@@ -85,7 +50,7 @@ const dotGothic16 = DotGothic16({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const kiwiMaru = Kiwi_Maru({
+const spaceGrotesk = Space_Grotesk({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
@@ -93,7 +58,7 @@ const kiwiMaru = Kiwi_Maru({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const pottaOne = Potta_One({
+const dmSans = DM_Sans({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
@@ -101,7 +66,7 @@ const pottaOne = Potta_One({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const hachiMaruPop = Hachi_Maru_Pop({
+const outfit = Outfit({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
@@ -109,206 +74,7 @@ const hachiMaruPop = Hachi_Maru_Pop({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const yujiMai = Yuji_Mai({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const rocknRollOne = RocknRoll_One({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const reggaeOne = Reggae_One({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const stick = Stick({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const mPlusRounded1c = M_PLUS_Rounded_1c({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const mPlus1 = M_PLUS_1({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const yuseiMagic = Yusei_Magic({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-const delaGothicOne = Dela_Gothic_One({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-const newTegomin = New_Tegomin({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-const kosugiMaru = Kosugi_Maru({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const hinaMincho = Hina_Mincho({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const shipporiMincho = Shippori_Mincho({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const kaiseiDecol = Kaisei_Decol({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const mochiyPopOne = Mochiy_Pop_One({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const yujiBoku = Yuji_Boku({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const kaiseiHarunoUmi = Kaisei_HarunoUmi({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const sawarabiGothic = Sawarabi_Gothic({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const zenOldMincho = Zen_Old_Mincho({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const sawarabiMincho = Sawarabi_Mincho({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const zenAntique = Zen_Antique({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const kaiseiTokumin = Kaisei_Tokumin({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const yujiSyuku = Yuji_Syuku({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-// WDXL Lubrifont JP N removed - causes font override error in Next.js 15
-
-const murecho = Murecho({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const kaiseiOpti = Kaisei_Opti({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const bIZUDMincho = BIZ_UDMincho({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-  fallback: ['system-ui', 'sans-serif'],
-});
-
-const shipporiAntique = Shippori_Antique({
+const workSans = Work_Sans({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
@@ -318,146 +84,40 @@ const shipporiAntique = Shippori_Antique({
 
 const fonts = [
   {
-    name: 'Zen Maru Gothic',
-    font: zenMaruGothic,
+    name: 'Inter',
+    font: inter,
   },
   {
-    name: 'Noto Sans JP',
-    font: notoSansJP,
-  },
-
-  {
-    name: 'Rampart One',
-    font: rampartOne,
+    name: 'Roboto',
+    font: roboto,
   },
   {
-    name: 'Zen Kurenaido',
-    font: zenKurenaido,
+    name: 'Lora',
+    font: lora,
   },
   {
-    name: 'Klee One',
-    font: kleeOne,
+    name: 'JetBrains Mono',
+    font: jetBrainsMono,
   },
   {
-    name: 'Dot Gothic 16',
-    font: dotGothic16,
+    name: 'Nunito',
+    font: nunito,
   },
   {
-    name: 'Kiwi Maru',
-    font: kiwiMaru,
+    name: 'Space Grotesk',
+    font: spaceGrotesk,
   },
   {
-    name: 'Potta One',
-    font: pottaOne,
+    name: 'DM Sans',
+    font: dmSans,
   },
   {
-    name: 'Hachi Maru Pop',
-    font: hachiMaruPop,
+    name: 'Outfit',
+    font: outfit,
   },
   {
-    name: 'Yuji Mai',
-    font: yujiMai,
-  },
-  {
-    name: 'RocknRoll One',
-    font: rocknRollOne,
-  },
-  {
-    name: 'Reggae One',
-    font: reggaeOne,
-  },
-  {
-    name: 'Stick',
-    font: stick,
-  },
-  {
-    name: 'M PLUS Rounded 1c',
-    font: mPlusRounded1c,
-  },
-  {
-    name: 'M PLUS 1',
-    font: mPlus1,
-  },
-  {
-    name: 'Yusei Magic',
-    font: yuseiMagic,
-  },
-  {
-    name: 'Dela Gothic One',
-    font: delaGothicOne,
-  },
-  {
-    name: 'New Tegomin',
-    font: newTegomin,
-  },
-  {
-    name: 'Kosugi Maru',
-    font: kosugiMaru,
-  },
-  {
-    name: 'Hina Mincho',
-    font: hinaMincho,
-  },
-  {
-    name: 'Shippori Mincho',
-    font: shipporiMincho,
-  },
-  {
-    name: 'Kaisei Decol',
-    font: kaiseiDecol,
-  },
-  {
-    name: 'Mochiy Pop One',
-    font: mochiyPopOne,
-  },
-  {
-    name: 'Yuji Boku',
-    font: yujiBoku,
-  },
-  {
-    name: 'Kaisei HarunoUmi',
-    font: kaiseiHarunoUmi,
-  },
-  {
-    name: 'Sawarabi Gothic',
-    font: sawarabiGothic,
-  },
-  {
-    name: 'Zen Old Mincho',
-    font: zenOldMincho,
-  },
-  {
-    name: 'Sawarabi Mincho',
-    font: sawarabiMincho,
-  },
-  {
-    name: 'Zen Antique',
-    font: zenAntique,
-  },
-  {
-    name: 'Kaisei Tokumin',
-    font: kaiseiTokumin,
-  },
-  {
-    name: 'Yuji Syuku',
-    font: yujiSyuku,
-  },
-  // WDXL Lubrifont JP N removed - causes font override error
-  {
-    name: 'Murecho',
-    font: murecho,
-  },
-  {
-    name: 'Kaisei Opti',
-    font: kaiseiOpti,
-  },
-  {
-    name: 'BIZ UDMincho',
-    font: bIZUDMincho,
-  },
-  {
-    name: 'Shippori Antique',
-    font: shipporiAntique,
+    name: 'Work Sans',
+    font: workSans,
   },
 ];
 

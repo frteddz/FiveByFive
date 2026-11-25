@@ -15,51 +15,51 @@ export function StructuredData({ data }: StructuredDataProps) {
   );
 }
 
-// Comprehensive Schema Graph for KanaDojo
-export const kanaDojoSchema = {
+// Comprehensive Schema Graph for FiveByFive
+export const fiveByFiveSchema = {
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'Organization',
-      '@id': 'https://kanadojo.com/#organization',
-      name: 'KanaDojo',
-      url: 'https://kanadojo.com',
-      logo: 'https://kanadojo.com/favicon.ico',
+      '@id': 'https://fivebyfive.vercel.app/#organization',
+      name: 'FiveByFive',
+      url: 'https://fivebyfive.vercel.app',
+      logo: 'https://fivebyfive.vercel.app/favicon.ico',
       description:
-        'An aesthetic, minimalist platform for learning Japanese Hiragana, Katakana, Kanji, and Vocabulary',
-      sameAs: ['https://github.com/lingdojo/kanadojo'],
+        'A free trainer for the NATO and ICAO phonetic alphabet',
+      sameAs: ['https://github.com/frteddz/FiveByFive'],
       contactPoint: {
         '@type': 'ContactPoint',
-        email: 'dev@kanadojo.com',
-        contactType: 'Customer Support',
+        url: 'https://github.com/frteddz/FiveByFive/issues',
+        contactType: 'Bug reports',
       },
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://kanadojo.com/#website',
-      url: 'https://kanadojo.com',
-      name: 'KanaDojo',
+      '@id': 'https://fivebyfive.vercel.app/#website',
+      url: 'https://fivebyfive.vercel.app',
+      name: 'FiveByFive',
       description:
-        'Master Japanese with KanaDojo - Learn Hiragana, Katakana, Kanji, and Vocabulary',
-      publisher: { '@id': 'https://kanadojo.com/#organization' },
+        'Learn the NATO phonetic alphabet with FiveByFive - letter drills, radio phrases and callsign spelling',
+      publisher: { '@id': 'https://fivebyfive.vercel.app/#organization' },
       inLanguage: ['en', 'es'],
       potentialAction: {
         '@type': 'SearchAction',
         target: {
           '@type': 'EntryPoint',
-          urlTemplate: 'https://kanadojo.com/?q={search_term_string}',
+          urlTemplate: 'https://fivebyfive.vercel.app/?q={search_term_string}',
         },
         'query-input': 'required name=search_term_string',
       },
     },
     {
       '@type': 'WebApplication',
-      '@id': 'https://kanadojo.com/#webapp',
-      name: 'KanaDojo',
-      alternateName: 'Kana Dojo',
-      url: 'https://kanadojo.com',
+      '@id': 'https://fivebyfive.vercel.app/#webapp',
+      name: 'FiveByFive',
+      alternateName: 'Five by five',
+      url: 'https://fivebyfive.vercel.app',
       applicationCategory: 'EducationalApplication',
-      applicationSubCategory: 'Language Learning',
+      applicationSubCategory: 'Radio phrase training',
       operatingSystem: 'Any',
       browserRequirements:
         'Requires JavaScript. Works with Chrome, Firefox, Safari, Edge.',
@@ -70,26 +70,25 @@ export const kanaDojoSchema = {
         availability: 'https://schema.org/InStock',
       },
       description:
-        'Interactive Japanese learning platform with Hiragana, Katakana, Kanji, and Vocabulary training',
+        'Interactive NATO phonetic alphabet trainer with letter drills, radio phrases and callsign spelling practice',
       featureList: [
-        'Learn Hiragana and Katakana',
-        'Practice Kanji by JLPT level',
-        'Build Japanese vocabulary',
-        'Interactive games and quizzes',
-        'Progress tracking',
-        '100+ customizable themes',
-        'Multiple training modes',
+        'Learn the ICAO code word for every letter from A to Z',
+        'Practice digits and radio phrases across five tiers',
+        'Spell words using code words',
+        'Pick, reverse pick, input and reverse input modes',
         'Blitz and Gauntlet challenges',
+        'Instant feedback and progress tracking',
+        'Customizable themes',
         'No account required',
-        'Works offline with progress saved locally',
+        'Progress saved locally in the browser',
       ],
       author: {
         '@type': 'Organization',
-        name: 'LingDojo',
+        name: 'frteddz',
       },
       creator: {
         '@type': 'Organization',
-        name: 'LingDojo',
+        name: 'frteddz',
       },
       inLanguage: ['en', 'es'],
       availableLanguage: ['English', 'Spanish'],
@@ -101,41 +100,40 @@ export const kanaDojoSchema = {
     },
     {
       '@type': 'EducationalOrganization',
-      '@id': 'https://kanadojo.com/#educational',
-      name: 'KanaDojo',
-      url: 'https://kanadojo.com',
-      description: 'Interactive Japanese language learning platform',
-      educationalCredentialAwarded: 'Japanese Language Proficiency',
+      '@id': 'https://fivebyfive.vercel.app/#educational',
+      name: 'FiveByFive',
+      url: 'https://fivebyfive.vercel.app',
+      description: 'Interactive NATO phonetic alphabet training platform',
+      educationalCredentialAwarded: 'Letters, codes and spelling practice',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
-        name: 'Japanese Learning Courses',
+        name: 'Phonetic alphabet training',
         itemListElement: [
           {
             '@type': 'Course',
-            name: 'Hiragana & Katakana Learning',
-            description: 'Master Japanese Hiragana and Katakana syllabaries',
+            name: 'Letters A to Z',
+            description: 'Match every letter with its ICAO code word',
             provider: {
               '@type': 'Organization',
-              name: 'KanaDojo',
+              name: 'FiveByFive',
             },
           },
           {
             '@type': 'Course',
-            name: 'Kanji Learning by JLPT Level',
-            description:
-              'Learn essential Kanji characters organized by JLPT levels',
+            name: 'Radio codes and phrases',
+            description: 'Practice radiotelephony phrases across five tiers',
             provider: {
               '@type': 'Organization',
-              name: 'KanaDojo',
+              name: 'FiveByFive',
             },
           },
           {
             '@type': 'Course',
-            name: 'Japanese Vocabulary Building',
-            description: 'Build Japanese vocabulary organized by JLPT levels',
+            name: 'Callsign spelling',
+            description: 'Spell whole words using NATO code words',
             provider: {
               '@type': 'Organization',
-              name: 'KanaDojo',
+              name: 'FiveByFive',
             },
           },
         ],
@@ -143,30 +141,30 @@ export const kanaDojoSchema = {
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://kanadojo.com/#faq',
+      '@id': 'https://fivebyfive.vercel.app/#faq',
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'What is KanaDojo?',
+          name: 'What is FiveByFive?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'KanaDojo is a free, aesthetic Japanese learning platform that helps you master Hiragana, Katakana, Kanji, and Vocabulary through interactive games and exercises. It features 100+ customizable themes, progress tracking, and training modes designed to make learning Japanese enjoyable and effective.',
+            text: 'FiveByFive is a free trainer for the NATO phonetic alphabet. It teaches the ICAO code word for every letter, radio phrases used in voice communication, and spelling words with code words.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Is KanaDojo completely free?',
+          name: 'Is FiveByFive completely free?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes! KanaDojo is completely free to use with no hidden costs, subscriptions, or premium features. All learning content, games, themes, and features are available to everyone at no charge.',
+            text: 'Yes. FiveByFive is free to use with no account required. All training modes and content are available at no charge.',
           },
         },
         {
           '@type': 'Question',
-          name: 'What can I learn on KanaDojo?',
+          name: 'What can I practice on FiveByFive?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'You can learn all fundamental Japanese writing systems: Hiragana (basic, dakuon, yoon), Katakana (basic, dakuon, yoon, foreign sounds), Kanji organized by JLPT levels (N5-N1), and Japanese Vocabulary also organized by JLPT levels with thousands of words and example sentences.',
+            text: 'You can practice letters A to Z, digits and radio phrases in the Letters and Codes trainings, and spell full words in the Spelling training. Each training shares the same four modes.',
           },
         },
         {
@@ -174,15 +172,15 @@ export const kanaDojoSchema = {
           name: 'Do I need to create an account?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'No account is required! KanaDojo stores all your progress locally in your browser, so you can start learning immediately without signing up. Your progress and preferences are automatically saved as you use the platform.',
+            text: 'No account is required. Your progress and preferences are saved locally in your browser as you train.',
           },
         },
         {
           '@type': 'Question',
-          name: 'What are the different training modes?',
+          name: 'What are the training modes?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'KanaDojo offers multiple training modes: Pick Mode (multiple choice recognition), Reverse-Pick (reverse multiple choice), Input Mode (text input practice), Reverse-Input (reverse text input), Blitz Mode (speed tests), and Gauntlet Mode (comprehensive mastery challenges).',
+            text: 'FiveByFive offers pick mode (choose the code word), reverse pick (choose the letter or word), input mode (type the code word) and reverse input (type the letter or word). Blitz and Gauntlet add timed and full-set challenges.',
           },
         },
         {
@@ -190,26 +188,29 @@ export const kanaDojoSchema = {
           name: 'How does progress tracking work?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'KanaDojo automatically tracks your learning statistics including correct answers, speed, accuracy, and mastery levels for each character or word. All progress is stored locally in your browser and displayed in detailed charts and statistics on the Progress page.',
+            text: 'FiveByFive records correct answers, speed, accuracy and mastery by item. The statistics pages show that progress in charts. Data stays in your browser.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Can I use KanaDojo on mobile devices?',
+          name: 'Can I use FiveByFive on mobile devices?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes! KanaDojo is fully responsive and works seamlessly on mobile phones, tablets, and desktop computers. The interface adapts to your screen size for an optimal learning experience on any device.',
+            text: 'Yes. The interface adapts to phones, tablets and desktop screens.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Is KanaDojo suitable for JLPT preparation?',
+          name: 'Who maintains FiveByFive?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Absolutely! KanaDojo organizes Kanji and Vocabulary content by JLPT levels (N5, N4, N3, N2, N1), making it an excellent supplementary tool for JLPT exam preparation. Practice characters and words specific to your target JLPT level.',
+            text: 'FiveByFive is maintained by frteddz as a fork of the kana-dojo engine. The source is available on GitHub at github.com/frteddz/FiveByFive.',
           },
         },
       ],
     },
   ],
 };
+
+// Kept so the existing SEO barrel export continues to resolve.
+export const kanaDojoSchema = fiveByFiveSchema;

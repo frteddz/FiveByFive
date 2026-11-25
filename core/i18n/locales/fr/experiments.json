@@ -1,40 +1,40 @@
 {
-  "title": "Expériences",
-  "description": "Explorez des fonctionnalités expérimentales et des méthodes d'apprentissage alternatives",
+  "title": "Experiments",
+  "description": "Explore experimental features and alternative ways to practice code words",
   "zenMode": {
-    "title": "Mode Zen",
-    "description": "Mode minimaliste sans distraction pour une pratique concentrée"
+    "title": "Zen Mode",
+    "description": "Minimalist focus mode for distraction-free practice"
   },
   "breathing": {
-    "title": "Exercice de respiration",
-    "description": "Exercice de respiration consciente pour améliorer la concentration et réduire le stress"
+    "title": "Breathing Exercise",
+    "description": "A short breathing exercise to settle focus before a drill"
   },
   "ambient": {
-    "title": "Mode ambiance",
-    "description": "Pratiquez avec un fond d'ambiance et des sons apaisants"
+    "title": "Ambient Mode",
+    "description": "Practice with ambient background sound"
   },
   "constellation": {
-    "title": "Constellation Kana",
-    "description": "Reliez les étoiles pour former des caractères kana"
+    "title": "Code Constellation",
+    "description": "Connect the stars to form letters and code words"
   },
   "rain": {
-    "title": "Pluie de Kana",
-    "description": "Attrapez les caractères kana qui tombent dans ce jeu de type arcade"
+    "title": "Code Rain",
+    "description": "Catch falling code words in this arcade-style game"
   },
   "memory": {
-    "title": "Palais de la mémoire",
-    "description": "Utilisez des techniques de mémorisation pour retenir les caractères"
+    "title": "Memory Palace",
+    "description": "Use memory techniques to recall code words"
   },
   "sound": {
-    "title": "Jardin sonore",
-    "description": "Apprenez grâce à des associations audio-visuelles"
+    "title": "Sound Garden",
+    "description": "Learn through audio and visual associations"
   },
   "typing": {
-    "title": "Frappe rapide",
-    "description": "Améliorez votre vitesse de frappe avec les caractères japonais"
+    "title": "Speed Typing",
+    "description": "Improve your typing speed with code words"
   },
   "haiku": {
-    "title": "Haïku du jour",
-    "description": "Apprenez à travers la belle poésie japonaise"
+    "title": "Daily Phrase",
+    "description": "Practice a short radio phrase each day"
   }
 }

@@ -270,19 +270,19 @@ describe('isKanaInputAnswerCorrect', () => {
     ).toBe(true); // resolved via legacy fallback: altRomanjiMap.get('し') = ['si']
   });
 
-  it('accepts di/du for ぢ/づ through the data-driven map', () => {
-    // Regression #29312: 'di' is the standard keystroke for ぢ and 'du' for づ.
+  it('accepts ICAO spelling variants through the data-driven map', () => {
+    // The data stores ICAO spellings in romanji and common variants in altRomanji.
     const dataMap = buildAltMapFromData();
-    expect(dataMap.get('ぢ')).toEqual(['di']);
-    expect(dataMap.get('づ')).toEqual(['du']);
-    expect(dataMap.get('ヂ')).toEqual(['di']);
-    expect(dataMap.get('ヅ')).toEqual(['du']);
+    expect(dataMap.get('A')).toEqual(['alpha']);
+    expect(dataMap.get('J')).toEqual(['juliet']);
+    expect(dataMap.get('X')).toEqual(['xray', 'x ray', 'exray']);
+    expect(dataMap.get('1')).toEqual(['one']);
 
     expect(
       isKanaInputAnswerCorrect({
-        inputValue: 'di',
-        correctChar: 'ぢ',
-        targetChar: 'ji',
+        inputValue: 'alpha',
+        correctChar: 'A',
+        targetChar: 'alfa',
         isReverse: false,
         altRomanjiMap: dataMap,
       }),
@@ -290,9 +290,19 @@ describe('isKanaInputAnswerCorrect', () => {
 
     expect(
       isKanaInputAnswerCorrect({
-        inputValue: 'du',
-        correctChar: 'づ',
-        targetChar: 'zu',
+        inputValue: 'juliet',
+        correctChar: 'J',
+        targetChar: 'juliett',
+        isReverse: false,
+        altRomanjiMap: dataMap,
+      }),
+    ).toBe(true);
+
+    expect(
+      isKanaInputAnswerCorrect({
+        inputValue: 'one',
+        correctChar: '1',
+        targetChar: 'wun',
         isReverse: false,
         altRomanjiMap: dataMap,
       }),

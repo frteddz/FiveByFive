@@ -101,7 +101,7 @@ export function generateAuthorSchema(props: AuthorSchemaProps) {
  * @example
  * <AuthorSchema
  *   name="John Tanaka"
- *   url="https://kanadojo.com/authors/john-tanaka"
+ *   url="https://fivebyfive.vercel.app/authors/john-tanaka"
  *   jobTitle="Japanese Language Instructor"
  *   expertise="Japanese Language Education, JLPT Preparation"
  *   yearsOfExperience={10}

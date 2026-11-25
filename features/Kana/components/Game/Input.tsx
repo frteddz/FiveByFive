@@ -23,18 +23,11 @@ import { shouldSuppressContinueKeyboardShortcut } from '@/shared/utils/game/cont
 // Get the global adaptive selector for weighted character selection
 const adaptiveSelector = getGlobalAdaptiveSelector();
 
-// Helper function to determine if a kana character is hiragana or katakana
-const isHiragana = (char: string): boolean => {
-  // Hiragana Unicode range: U+3040 to U+309F
-  const code = char.charCodeAt(0);
-  return code >= 0x3040 && code <= 0x309f;
-};
+// The stats store kept the upstream counter names. Here they track letters
+// and code words instead of the two Japanese scripts.
+const isHiragana = (char: string): boolean => /^[A-Z]$/.test(char);
 
-const isKatakana = (char: string): boolean => {
-  // Katakana Unicode range: U+30A0 to U+30FF
-  const code = char.charCodeAt(0);
-  return code >= 0x30a0 && code <= 0x30ff;
-};
+const isKatakana = (char: string): boolean => /^[0-9]$/.test(char) || char.length > 1;
 
 // Bottom bar states
 type BottomBarState = 'check' | 'correct' | 'wrong';

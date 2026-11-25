@@ -1,9 +1,9 @@
 {
   "title": "Statistics",
-  "description": "Your learning progress and statistics",
+  "description": "Your training results and statistics",
   "overview": {
     "title": "Overview",
-    "totalStudyTime": "Total Study Time",
+    "totalStudyTime": "Total Training Time",
     "questionsAnswered": "Questions Answered",
     "accuracy": "Overall Accuracy",
     "currentStreak": "Current Streak",
@@ -12,30 +12,30 @@
   "charts": {
     "dailyActivity": "Daily Activity",
     "accuracyOverTime": "Accuracy Over Time",
-    "progressByLevel": "Progress by Level",
-    "timeByDojo": "Time by Dojo"
+    "progressByLevel": "Progress by Tier",
+    "timeByDojo": "Time by Training"
   },
   "kana": {
-    "title": "Kana Statistics",
+    "title": "Letters Statistics",
     "mastered": "Mastered",
     "learning": "Learning",
     "notStarted": "Not Started",
-    "hiraganaProgress": "Hiragana Progress",
-    "katakanaProgress": "Katakana Progress"
+    "hiraganaProgress": "Letter Progress",
+    "katakanaProgress": "Code Progress"
   },
   "kanji": {
-    "title": "Kanji Statistics",
+    "title": "Codes Statistics",
     "mastered": "Mastered",
     "learning": "Learning",
     "notStarted": "Not Started",
-    "byLevel": "By JLPT Level"
+    "byLevel": "By Tier"
   },
   "vocabulary": {
-    "title": "Vocabulary Statistics",
+    "title": "Spelling Statistics",
     "wordsLearned": "Words Learned",
     "mastered": "Mastered",
     "learning": "Learning",
-    "byLevel": "By JLPT Level"
+    "byLevel": "By Tier"
   },
   "performance": {
     "title": "Performance",

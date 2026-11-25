@@ -36,33 +36,33 @@ export default async function KanjiJlptN4Page({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
-          { name: 'Kanji', url: `https://kanadojo.com/${locale}/kanji` },
+          { name: 'Home', url: `https://fivebyfive.vercel.app/${locale}` },
+          { name: 'Codes', url: `https://fivebyfive.vercel.app/${locale}/kanji` },
           {
-            name: 'JLPT N4',
-            url: `https://kanadojo.com/${locale}/kanji/jlpt-n4`,
+            name: 'Tier 2',
+            url: `https://fivebyfive.vercel.app/${locale}/kanji/jlpt-n4`,
           },
         ]}
       />
       <CourseSchema
-        name='JLPT N4 Kanji Course - Japanese Kanji Practice'
-        description='Study JLPT N4 kanji with interactive drills and set-based practice. Improve kanji recognition, readings, and meanings with immediate feedback and progress tracking.'
-        url={`https://kanadojo.com/${locale}/kanji/jlpt-n4`}
+        name='Tier 2 Radio Codes - Practice and Meaning'
+        description='Study tier 2 radio codes with interactive drills and set-based practice. Improve phrase recognition and meaning recall with immediate feedback.'
+        url={`https://fivebyfive.vercel.app/${locale}/kanji/jlpt-n4`}
         educationalLevel='Beginner to Intermediate'
-        skillLevel='JLPT N4'
+        skillLevel='Tier 2'
         learningResourceType='Interactive Course'
       />
       <LearningResourceSchema
-        name='JLPT N4 Kanji Practice'
-        description='Targeted JLPT N4 kanji practice with selectable levels, quick selection tools, and kanji set dictionaries for exam-focused study.'
-        url={`https://kanadojo.com/${locale}/kanji/jlpt-n4`}
+        name='Tier 2 Radio Codes Practice'
+        description='Practice tier 2 radio codes with selectable sets, quick selection tools and instant feedback.'
+        url={`https://fivebyfive.vercel.app/${locale}/kanji/jlpt-n4`}
         learningResourceType={['Quiz', 'Interactive', 'Game']}
         educationalLevel={['Beginner to Intermediate']}
-        teaches='JLPT N4 kanji readings, meanings, and recognition'
-        assesses='JLPT N4 kanji recall speed and accuracy'
+        teaches='Tier 2 radio phrases and their meanings'
+        assesses='Tier 2 phrase recall speed and accuracy'
         timeRequired='PT25M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
         educationalAlignment={{
           alignmentType: 'educationalLevel',
           educationalFramework: 'JLPT',

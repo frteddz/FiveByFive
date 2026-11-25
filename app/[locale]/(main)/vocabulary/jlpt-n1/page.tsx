@@ -39,36 +39,36 @@ export default async function VocabularyJlptN1Page({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
+          { name: 'Home', url: `https://fivebyfive.vercel.app/${locale}` },
           {
-            name: 'Vocabulary',
-            url: `https://kanadojo.com/${locale}/vocabulary`,
+            name: 'Spelling',
+            url: `https://fivebyfive.vercel.app/${locale}/vocabulary`,
           },
           {
-            name: 'JLPT N1',
-            url: `https://kanadojo.com/${locale}/vocabulary/jlpt-n1`,
+            name: 'Tier 5',
+            url: `https://fivebyfive.vercel.app/${locale}/vocabulary/jlpt-n1`,
           },
         ]}
       />
       <CourseSchema
-        name='JLPT N1 Japanese Vocabulary Course'
-        description='Practice JLPT N1 Japanese vocabulary with interactive level sets. Train word recognition, meanings, and reading recall with fast feedback and progress tracking.'
-        url={`https://kanadojo.com/${locale}/vocabulary/jlpt-n1`}
+        name='Tier 5 Spelling - Full Word Mastery'
+        description='Master the most demanding spelling sets in the fifth tier. Practice complete words with code words and review weak items.'
+        url={`https://fivebyfive.vercel.app/${locale}/vocabulary/jlpt-n1`}
         educationalLevel='Advanced'
-        skillLevel='JLPT N1'
+        skillLevel='Tier 5'
         learningResourceType='Interactive Course'
       />
       <LearningResourceSchema
-        name='JLPT N1 Vocabulary Practice'
-        description='Targeted JLPT N1 vocabulary drills with selectable sets, quick selection controls, and dictionary links for exam-focused Japanese study.'
-        url={`https://kanadojo.com/${locale}/vocabulary/jlpt-n1`}
+        name='Tier 5 Spelling Practice'
+        description='Spell words with ICAO code words in tier 5. Use short drills and set review to build accurate recall.'
+        url={`https://fivebyfive.vercel.app/${locale}/vocabulary/jlpt-n1`}
         learningResourceType={['Quiz', 'Interactive', 'Game']}
         educationalLevel={['Advanced']}
-        teaches='JLPT N1 Japanese vocabulary, meanings, and usage'
-        assesses='JLPT N1 word recognition and recall speed'
+        teaches='Spelling words with ICAO code words'
+        assesses='Spelling accuracy and speed'
         timeRequired='PT40M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
         educationalAlignment={{
           alignmentType: 'educationalLevel',
           educationalFramework: 'JLPT',

@@ -1,12 +1,12 @@
 {
   "kicker": "HELP CENTER",
   "title": "Frequently Asked Questions",
-  "subtitle": "Clear answers, real details, and the fastest path from ‘I can’t read Japanese’ to confident kana, kanji, and vocabulary practice.",
+  "subtitle": "Clear answers, real details, and the fastest path from ‘what is Alfa’ to confident code word, radio phrase and spelling practice.",
   "links": {
-    "howToUse": "How to use KanaDojo",
-    "glossary": "Japanese glossary",
-    "translator": "English ↔ Japanese translator",
-    "academy": "Learning guides",
+    "howToUse": "How to use FiveByFive",
+    "glossary": "Phonetic glossary",
+    "translator": "Code word reference",
+    "academy": "Training guides",
     "privacy": "Privacy policy",
     "terms": "Terms of service"
   },
@@ -14,56 +14,56 @@
     "title": "Jump to",
     "backToTop": "Top",
     "aria": "FAQ section navigation",
-    "note": "Tip: Use the Glossary if you see a term like ‘dakuon’, ‘yoon’, ‘onyomi’, or ‘kunyomi’."
+    "note": "Tip: Use the Glossary if you see a term like ‘code word’, ‘radiotelephony’, or ‘callsign’."
   },
   "intro": {
     "title": "Quick orientation",
-    "body": "KanaDojo is a free Japanese learning web app for practicing Hiragana, Katakana, Kanji, and JLPT vocabulary. You don’t need an account. Your progress is saved locally in your browser, and you can customize the experience with themes and fonts."
+    "body": "FiveByFive is a free trainer for the NATO phonetic alphabet. Practice letters, radio phrases and callsign spelling without an account. Your progress is saved locally in your browser, and you can change themes and fonts at any time."
   },
   "cta": {
-    "hiragana": "Start Hiragana practice",
-    "katakana": "Start Katakana practice",
-    "kanji": "Start Kanji practice"
+    "hiragana": "Start Letters practice",
+    "katakana": "Start Codes practice",
+    "kanji": "Start Spelling practice"
   },
   "footer": {
     "title": "Still stuck?",
-    "body": "If something feels off, it’s usually one of two things: the wrong practice set (too many new characters at once) or the wrong mode (recognition vs recall). Use the links below to recalibrate in under a minute.",
+    "body": "If something feels off, it is usually one of two things: a set that is too large, or a mode that does not match your goal. Use the links below to reset your setup in under a minute.",
     "links": {
-      "kana": "Browse Kana sets",
+      "kana": "Browse Letter sets",
       "progress": "Open Progress dashboard"
     }
   },
   "sections": {
     "gettingStarted": {
       "title": "Getting started",
-      "description": "What KanaDojo is, how it works, and what you should do first.",
+      "description": "What FiveByFive is, how it works, and what you should do first.",
       "q1": {
-        "question": "What is KanaDojo?",
-        "answer": "KanaDojo is a free Japanese learning platform for practicing Hiragana, Katakana, Kanji, and vocabulary with fast drills and game-like training modes. It’s designed for self-study, quick feedback, and steady progress."
+        "question": "What is FiveByFive?",
+        "answer": "FiveByFive is a free trainer for the NATO phonetic alphabet. It teaches the ICAO code word for every letter, radio phrases used in voice communication, and spelling words with code words."
       },
       "q2": {
-        "question": "Is KanaDojo really free?",
-        "answer": "Yes. KanaDojo is free to use with no required account and no paywalled practice content."
+        "question": "Is FiveByFive really free?",
+        "answer": "Yes. FiveByFive is free to use with no required account and no paywalled training content."
       },
       "q3": {
         "question": "Do I need to create an account?",
-        "answer": "No. Your preferences and learning stats are stored locally in your browser. If you clear site data or switch devices/browsers, your local progress won’t automatically follow."
+        "answer": "No. Your preferences and statistics are stored locally in your browser. If you clear site data or switch devices, your local progress will not follow you."
       }
     },
     "learningPath": {
-      "title": "Learning path",
-      "description": "A practical order to learn Japanese reading fundamentals.",
+      "title": "Suggested order",
+      "description": "A practical order for learning the phonetic alphabet.",
       "q1": {
-        "question": "Should I learn Hiragana or Katakana first?",
-        "answer": "Most learners start with Hiragana, then move to Katakana. Once you can read kana comfortably, start beginner Kanji and vocabulary together for faster real-world comprehension."
+        "question": "Should I learn letters or radio phrases first?",
+        "answer": "Start with the letters A to Z so every code word is familiar. Then move to radio codes and phrases, and finish with spelling full words and callsigns."
       },
       "q2": {
-        "question": "How long does it take to learn Hiragana and Katakana?",
-        "answer": "With consistent daily practice, many learners memorize each kana set in 1–2 weeks and become comfortable reading within a month. Speed and accuracy improve with short, frequent sessions."
+        "question": "How long does it take to learn the code words?",
+        "answer": "Short daily sessions work best. Most learners get comfortable with the alphabet within a couple of weeks, then keep improving speed with Blitz drills."
       },
       "q3": {
-        "question": "When should I start Kanji?",
-        "answer": "After you know kana well enough to read basic words (even slowly), start Kanji—ideally by JLPT level (N5 → N4 → N3 → N2 → N1). Learning Kanji alongside vocabulary helps retention."
+        "question": "When should I start spelling words?",
+        "answer": "Once you can match letters to code words without hesitating, start spelling short words. Spelling practice reinforces the same code words in a different context."
       }
     },
     "features": {
@@ -71,63 +71,63 @@
       "description": "How practice works and which mode to pick for your goal.",
       "q1": {
         "question": "What are the training modes?",
-        "answer": "KanaDojo includes recognition and recall modes (pick/reverse-pick, input/reverse-input) plus speed challenges like Blitz and longer mastery checks like Gauntlet. Switch modes depending on whether you want accuracy, recall, or speed."
+        "answer": "FiveByFive includes recognition and recall modes (pick/reverse-pick, input/reverse-input) plus timed Blitz challenges and full-set Gauntlet runs. Switch modes depending on whether you want accuracy, recall, or speed."
       },
       "q2": {
-        "question": "What’s the best mode for beginners?",
-        "answer": "Start with recognition (pick mode) to build fast pattern matching, then add input mode for recall. For kana, alternating recognition and typing is a strong combo."
+        "question": "What is the best mode for beginners?",
+        "answer": "Start with pick mode to build fast recognition, then add input mode for typing recall. Alternating the two works well for code words and spelling."
       },
       "q3": {
         "question": "Can I customize themes and fonts?",
-        "answer": "Yes. KanaDojo supports extensive customization (themes, fonts, and preferences) so you can find a look that’s comfortable for long study sessions."
+        "answer": "Yes. FiveByFive supports themes, fonts and display preferences so long practice sessions stay comfortable."
       }
     },
     "privacy": {
       "title": "Privacy & data",
-      "description": "What’s stored, where it’s stored, and what that means for you.",
+      "description": "What is stored, where it is stored, and what that means for you.",
       "q1": {
         "question": "Where is my progress saved?",
-        "answer": "Your progress is saved locally in your browser (on your device). This keeps your stats private and lets you start instantly without signup."
+        "answer": "Your progress is saved locally in your browser. Statistics stay on your device and you can start training without signing up."
       },
       "q2": {
         "question": "Will my progress sync across devices?",
-        "answer": "Not automatically. Because progress is stored locally, switching browsers/devices won’t carry progress unless you manually move data."
+        "answer": "Not automatically. Progress is stored locally, so switching browsers or devices will not carry it over unless you move the data yourself."
       },
       "q3": {
-        "question": "Does KanaDojo work offline?",
-        "answer": "KanaDojo can work offline for core practice once assets are cached, but the best experience is with an internet connection—especially the first load."
+        "question": "Does FiveByFive work offline?",
+        "answer": "Core practice can work offline once assets are cached, but the first load and any network-backed features need a connection."
       }
     },
     "jlpt": {
-      "title": "JLPT preparation",
-      "description": "How KanaDojo fits into a JLPT study plan.",
+      "title": "Training tiers",
+      "description": "How the five tiers are organized.",
       "q1": {
-        "question": "Does KanaDojo help with JLPT?",
-        "answer": "Yes. KanaDojo organizes Kanji and vocabulary by JLPT level (N5–N1), which makes it easy to focus your practice for a target exam level."
+        "question": "What are the five tiers?",
+        "answer": "Codes and Spelling are split into five tiers. Tier 1 holds the most common items and Tier 5 holds the most demanding ones. You can select any tier directly."
       },
       "q2": {
-        "question": "Is KanaDojo enough to pass JLPT?",
-        "answer": "It’s a strong practice tool for recognition, recall, and speed—but JLPT also tests listening, reading comprehension, and grammar in context. Pair KanaDojo with graded reading/listening and a grammar resource."
+        "question": "Do I need to finish a tier before the next one?",
+        "answer": "No. The tiers are a way to keep practice sets manageable. Pick the tier that matches your current accuracy and move on when it feels easy."
       },
       "q3": {
-        "question": "What should I study for JLPT N5 first?",
-        "answer": "Start with Hiragana + Katakana, then N5 Kanji and core vocabulary. Short daily sessions beat occasional cramming—aim for consistency and review your weak items often."
+        "question": "What should I practice first?",
+        "answer": "Start with letters A to Z, then Tier 1 radio codes. After that, spell short words and review the items you miss most often."
       }
     },
     "troubleshooting": {
       "title": "Troubleshooting",
       "description": "Fix the most common ‘why am I not improving?’ problems.",
       "q1": {
-        "question": "I keep mixing up similar characters. What should I do?",
-        "answer": "Reduce your active set, drill recognition first, and add short recall sessions. For kana, practice minimal pairs and focus on the distinguishing strokes (e.g., さ vs ち, シ vs ツ)."
+        "question": "I keep mixing up similar code words. What should I do?",
+        "answer": "Reduce your active set and drill recognition first. Confusable pairs such as B and D or M and N deserve their own short sessions."
       },
       "q2": {
-        "question": "My accuracy is fine but I’m slow.",
-        "answer": "Add timed practice (Blitz) with a small set. Speed usually improves after accuracy becomes stable."
+        "question": "My accuracy is fine but I am slow.",
+        "answer": "Add timed practice with a small set. Speed usually improves once accuracy is stable."
       },
       "q3": {
         "question": "My progress looks reset. Did I lose everything?",
-        "answer": "Progress is stored locally. Clearing browser data, using incognito mode, or switching devices/browsers can make it look reset. Check you’re in the same browser profile and that site data isn’t being cleared automatically."
+        "answer": "Progress is stored locally. Clearing browser data, using private mode, or switching devices can make it look reset. Check that you are in the same browser profile and that site data is not being cleared automatically."
       }
     }
   }

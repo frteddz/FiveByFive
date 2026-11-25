@@ -129,12 +129,15 @@ export default function Blitz<T>({ config }: BlitzProps<T>) {
     },
   });
 
-  // Refs for stable callbacks
+  // Refs for stable callbacks. Keep the latest functions without writing to a
+  // ref during render.
   const generateQuestionRef = useRef(generateQuestion);
-  generateQuestionRef.current = generateQuestion;
-
   const generateOptionsRef = useRef(generateOptions);
-  generateOptionsRef.current = generateOptions;
+
+  useEffect(() => {
+    generateQuestionRef.current = generateQuestion;
+    generateOptionsRef.current = generateOptions;
+  }, [generateQuestion, generateOptions]);
 
   // Initialize question
   useEffect(() => {

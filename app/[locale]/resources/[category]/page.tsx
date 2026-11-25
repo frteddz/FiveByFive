@@ -45,33 +45,33 @@ export async function generateMetadata({
   const resources = getResourcesByCategory(categoryId);
   const resourceCount = resources.length;
 
-  const title = `Best ${category.name} for Learning Japanese - ${resourceCount}+ Resources | KanaDojo`;
-  const description = `${category.description} Discover ${resourceCount}+ curated ${category.name.toLowerCase()} to help you learn Japanese effectively.`;
+  const title = `Best ${category.name} for Study - ${resourceCount}+ Resources | FiveByFive`;
+  const description = `Browse ${resourceCount}+ curated ${category.name.toLowerCase()}. Filter by difficulty, price and platform to find a resource that fits your study.`;
 
   return {
     title,
     description,
     keywords: [
-      `japanese ${category.name.toLowerCase()}`,
-      `learn japanese ${category.name.toLowerCase()}`,
-      `best ${category.name.toLowerCase()} for japanese`,
-      `japanese learning ${category.name.toLowerCase()}`,
+      `study ${category.name.toLowerCase()}`,
+      `best ${category.name.toLowerCase()}`,
       category.name.toLowerCase(),
-      'japanese study resources',
+      'learning resources',
+      'reference material',
+      'study tools',
     ],
     openGraph: {
-      title: `Best ${category.name} for Learning Japanese | KanaDojo`,
+      title: `Best ${category.name} for Study | FiveByFive`,
       description,
-      url: `https://kanadojo.com/resources/${categoryId}`,
+      url: `https://fivebyfive.vercel.app/resources/${categoryId}`,
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `Best ${category.name} for Learning Japanese | KanaDojo`,
+      title: `Best ${category.name} for Study | FiveByFive`,
       description,
     },
     alternates: {
-      canonical: `https://kanadojo.com/resources/${categoryId}`,
+      canonical: `https://fivebyfive.vercel.app/resources/${categoryId}`,
     },
   };
 }
@@ -85,7 +85,7 @@ function generateItemListSchema(
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: `Best ${categoryName} for Learning Japanese`,
+    name: `Curated ${categoryName}`,
     description: categoryDescription,
     numberOfItems: resources.length,
     itemListOrder: 'https://schema.org/ItemListUnordered',
@@ -125,11 +125,11 @@ export default async function CategoryPage({
   const availableFilters = getFilterOptions(categoryResources);
 
   const breadcrumbItems = [
-    { name: 'Home', url: 'https://kanadojo.com' },
-    { name: 'Resources', url: 'https://kanadojo.com/resources' },
+    { name: 'Home', url: 'https://fivebyfive.vercel.app' },
+    { name: 'Resources', url: 'https://fivebyfive.vercel.app/resources' },
     {
       name: category.name,
-      url: `https://kanadojo.com/resources/${categoryId}`,
+      url: `https://fivebyfive.vercel.app/resources/${categoryId}`,
     },
   ];
 

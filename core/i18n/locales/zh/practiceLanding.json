@@ -1,114 +1,114 @@
 {
   "hiragana": {
-    "title": "平假名练习",
-    "subtitle": "通过快速、集中的练习和即时反馈学习平假名。",
-    "ctaPrimary": "开始练习平假名",
-    "ctaSecondary": "打开假名道场",
+    "title": "Letters Practice",
+    "subtitle": "Learn the ICAO code word for every letter with fast, focused drills.",
+    "ctaPrimary": "Start practicing letters",
+    "ctaSecondary": "Open Letters training",
     "sections": {
       "what": {
-        "title": "什么是平假名？",
-        "body": "平假名是日语三种书写系统之一。它用于日语本土词汇、语法和助词词尾。掌握平假名是阅读日语的第一个重要步骤。"
+        "title": "What is the NATO phonetic alphabet?",
+        "body": "The NATO phonetic alphabet assigns a code word to every letter, from Alfa for A to Zulu for Z. It lets people spell words clearly over radio or phone when letters sound alike."
       },
       "how": {
-        "title": "如何有效练习平假名",
+        "title": "How to practice letters effectively",
         "bullets": [
-          "每天进行短时间练习（5-15分钟）。",
-          "将识别（阅读）与回忆（输入/回答）相结合。",
-          "立即复习错误并重复薄弱字符。",
-          "掌握基础后避免依赖罗马字。"
+          "Practice in short sessions daily (5 to 15 minutes).",
+          "Mix recognition with typing drills.",
+          "Review missed letters immediately and repeat weak pairs.",
+          "Use Blitz once your accuracy is stable."
         ]
       },
       "why": {
-        "title": "为什么选择 KanaDojo 练习平假名？",
+        "title": "Why use FiveByFive for letter practice?",
         "bullets": [
-          "互动练习和游戏化模式。",
-          "进度追踪，了解您已掌握的内容。",
-          "多种模式：训练、闪电战和挑战。",
-          "桌面和移动端体验优秀。"
+          "Interactive drills with instant feedback.",
+          "Progress tracking that shows which letters need work.",
+          "Pick, input, Blitz and Gauntlet modes.",
+          "Works on desktop and mobile."
         ]
       }
     },
     "links": {
-      "kana": "假名",
-      "train": "训练",
-      "blitz": "闪电战",
-      "gauntlet": "挑战",
-      "faq": "常见问题"
+      "kana": "Letters",
+      "train": "Training",
+      "blitz": "Blitz",
+      "gauntlet": "Gauntlet",
+      "faq": "FAQ"
     }
   },
   "katakana": {
-    "title": "片假名练习",
-    "subtitle": "通过快速练习、清晰反馈和稳步进步掌握片假名。",
-    "ctaPrimary": "开始练习片假名",
-    "ctaSecondary": "打开假名道场",
+    "title": "Codes Practice",
+    "subtitle": "Learn radio phrases and digit code words with clear feedback and steady progress.",
+    "ctaPrimary": "Start practicing codes",
+    "ctaSecondary": "Open Codes training",
     "sections": {
       "what": {
-        "title": "什么是片假名？",
-        "body": "片假名是日语三种书写系统之一。它通常用于外来词、外国名字、拟声词和强调。一旦开始阅读现代日语，片假名就变得必不可少。"
+        "title": "What are radio codes?",
+        "body": "Radio codes are short, agreed phrases used in voice communication. They keep messages brief and unambiguous, whether you are saying Zero, Niner, Roger or Mayday."
       },
       "how": {
-        "title": "如何有效练习片假名",
+        "title": "How to practice radio codes effectively",
         "bullets": [
-          "专注于易混淆的对（シ/ツ、ソ/ン等）。",
-          "练习识别和回忆——不要只阅读。",
-          "复习错误并重复薄弱字符直到稳定。",
-          "逐渐混合基本、浊音和组合假名。"
+          "Focus on the phrases you confuse most often.",
+          "Practice recognition and typing, not just reading.",
+          "Review mistakes until the meaning is automatic.",
+          "Work through all five tiers over time."
         ]
       },
       "why": {
-        "title": "为什么选择 KanaDojo 练习片假名？",
+        "title": "Why use FiveByFive for code practice?",
         "bullets": [
-          "互动练习和游戏化模式。",
-          "进度追踪，针对错误进行练习。",
-          "闪电战模式提高速度。",
-          "挑战模式确保全面覆盖。"
+          "Interactive drills across five tiers.",
+          "Progress tracking that targets what you miss.",
+          "Blitz mode to build speed.",
+          "Gauntlet mode for full coverage."
         ]
       }
     },
     "links": {
-      "kana": "假名",
-      "train": "训练",
-      "blitz": "闪电战",
-      "gauntlet": "挑战",
-      "faq": "常见问题"
+      "kana": "Letters",
+      "train": "Training",
+      "blitz": "Blitz",
+      "gauntlet": "Gauntlet",
+      "faq": "FAQ"
     }
   },
   "kanji": {
-    "title": "汉字练习",
-    "subtitle": "按JLPT级别练习汉字，快速练习并追踪进度。",
-    "ctaPrimary": "开始练习汉字",
-    "ctaSecondary": "打开汉字道场",
+    "title": "Spelling Practice",
+    "subtitle": "Spell words with ICAO code words using fast drills and progress tracking.",
+    "ctaPrimary": "Start practicing spelling",
+    "ctaSecondary": "Open Spelling training",
     "sections": {
       "what": {
-        "title": "什么是汉字？",
-        "body": "汉字是日语中用于表示意义和概念的字符。学习汉字需要时间，但按级别（如JLPT N5 → N1）学习使其可控且可衡量。"
+        "title": "What is callsign spelling?",
+        "body": "Callsign spelling uses code words for each letter of a word. Saying Sierra Oscar Sierra is clearer than spelling S-O-S letter by letter, especially over a noisy radio link."
       },
       "how": {
-        "title": "如何有效练习汉字",
+        "title": "How to practice spelling effectively",
         "bullets": [
-          "按级别学习，保持选择集中。",
-          "优先识别，然后扩展到读音和用法。",
-          "经常复习错过的汉字（间隔重复方式）。",
-          "偶尔使用计时练习提高回忆速度。"
+          "Learn the A to Z code words first.",
+          "Start with short words before callsign length strings.",
+          "Review missed words often.",
+          "Use timed drills once the code words are familiar."
         ]
       },
       "why": {
-        "title": "为什么选择 KanaDojo 练习汉字？",
+        "title": "Why use FiveByFive for spelling practice?",
         "bullets": [
-          "JLPT组织的汉字选择。",
-          "多种模式适应不同目标。",
-          "进度追踪，专注于薄弱汉字。",
-          "适合每日坚持练习。"
+          "Five tiers of spelling sets.",
+          "Multiple modes for different goals.",
+          "Progress tracking so you can focus on weak words.",
+          "Good for consistent daily practice."
         ]
       }
     },
     "links": {
-      "kanji": "汉字",
-      "train": "训练",
-      "blitz": "闪电战",
-      "gauntlet": "挑战",
-      "jlpt": "JLPT指南",
-      "faq": "常见问题"
+      "kanji": "Spelling",
+      "train": "Training",
+      "blitz": "Blitz",
+      "gauntlet": "Gauntlet",
+      "jlpt": "Tier Guides",
+      "faq": "FAQ"
     }
   }
 }

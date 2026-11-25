@@ -1,9 +1,9 @@
 {
   "menu": {
     "home": "Home",
-    "kana": "Kana",
-    "kanji": "Kanji",
-    "vocabulary": "Vocabulary",
+    "kana": "Letters",
+    "kanji": "Codes",
+    "vocabulary": "Spelling",
     "academy": "Academy",
     "achievements": "Achievements",
     "statistics": "Statistics",
@@ -19,7 +19,7 @@
     "back": "Back to {{name}}"
   },
   "footer": {
-    "copyright": "© {{year}} KanaDojo. All rights reserved.",
+    "copyright": "© {{year}} FiveByFive. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "contact": "Contact Us"

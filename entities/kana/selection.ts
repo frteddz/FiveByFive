@@ -39,21 +39,16 @@ export const getKanaGroupNames = (kanaGroupIndices: number[]) => {
   const selected = new Set(kanaGroupIndices);
 
   const parentGroupDefs = [
-    { label: 'All Hiragana', start: 0, end: 26 },
-    { label: 'All Katakana', start: 26, end: 60 },
-    { label: 'All Challenge', start: 60, end: 69 },
+    { label: 'All Letters', start: 0, end: 26 },
+    { label: 'All Digits and Phrases', start: 26, end: 60 },
+    { label: 'All Challenges', start: 60, end: 69 },
   ];
 
   const subgroupDefs = [
-    { label: 'Hiragana Base', start: 0, end: 10 },
-    { label: 'Hiragana Dakuon', start: 10, end: 15 },
-    { label: 'Hiragana Yoon', start: 15, end: 26 },
-    { label: 'Katakana Base', start: 26, end: 36 },
-    { label: 'Katakana Dakuon', start: 36, end: 41 },
-    { label: 'Katakana Yoon', start: 41, end: 52 },
-    { label: 'Katakana Foreign Sounds', start: 52, end: 60 },
-    { label: 'Challenge Similar Hiragana', start: 60, end: 65 },
-    { label: 'Challenge Confusing Katakana', start: 65, end: 69 },
+    { label: 'Letters A-Z', start: 0, end: 26 },
+    { label: 'Digits 0-9', start: 26, end: 36 },
+    { label: 'Radio Phrases', start: 36, end: 60 },
+    { label: 'Confusable Pairs', start: 60, end: 69 },
   ];
 
   const nonChallengeIndices = kana
@@ -69,13 +64,13 @@ export const getKanaGroupNames = (kanaGroupIndices: number[]) => {
   const covered = new Set<number>();
 
   if (allNonChallengeSelected) {
-    full.push('all kana');
-    compact.push('all kana');
+    full.push('all letters and codes');
+    compact.push('all letters and codes');
     nonChallengeIndices.forEach(i => covered.add(i));
   }
 
   parentGroupDefs.forEach(parentDef => {
-    if (allNonChallengeSelected && parentDef.label !== 'All Challenge') return;
+    if (allNonChallengeSelected && parentDef.label !== 'All Challenges') return;
 
     let allCovered = true;
     for (let i = parentDef.start; i < parentDef.end; i++) {
@@ -131,9 +126,7 @@ export const getKanaGroupNames = (kanaGroupIndices: number[]) => {
     if (!group) return;
     const firstKana = group.kana[0];
     const isChallenge = group.groupName.startsWith('challenge.');
-    full.push(
-      isChallenge ? `${firstKana}-group (challenge)` : `${firstKana}-group`,
-    );
+    full.push(isChallenge ? `${firstKana} challenge` : `${firstKana} group`);
     compact.push(firstKana);
   });
 

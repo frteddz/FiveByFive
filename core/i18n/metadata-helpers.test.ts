@@ -14,7 +14,7 @@ vi.mock('next-intl/server', () => ({
       if (key.endsWith('.title')) return 'Sample Title';
       if (key.endsWith('.titleShort')) return 'Sample Title Short';
       if (key.endsWith('.description')) return 'Sample description for metadata';
-      if (key.endsWith('.keywords')) return 'kana, kanji, vocabulary';
+      if (key.endsWith('.keywords')) return 'letters, codes, spelling';
       return key;
     }) as (key: string) => string,
   ),
@@ -27,23 +27,23 @@ describe('generatePageMetadata canonical + hreflang', () => {
     const metadata = await generatePageMetadata('kana', {
       locale: 'es',
       pathname: '/kana',
-      baseUrl: 'https://kanadojo.com/',
+      baseUrl: 'https://fivebyfive.vercel.app/',
     });
 
-    expect(metadata.alternates?.canonical).toBe('https://kanadojo.com/kana');
+    expect(metadata.alternates?.canonical).toBe('https://fivebyfive.vercel.app/kana');
   });
 
   it('keeps locale alternates reciprocal and stable in no-prefix routing', async () => {
     const metadata = await generatePageMetadata('kanjiJlptN5', {
       locale: 'en',
       pathname: '/kanji/jlpt-n5',
-      baseUrl: 'https://kanadojo.com',
+      baseUrl: 'https://fivebyfive.vercel.app',
     });
 
     expect(metadata.alternates?.languages).toEqual({
-      en: 'https://kanadojo.com/kanji/jlpt-n5',
-      es: 'https://kanadojo.com/kanji/jlpt-n5',
-      'x-default': 'https://kanadojo.com/kanji/jlpt-n5',
+      en: 'https://fivebyfive.vercel.app/kanji/jlpt-n5',
+      es: 'https://fivebyfive.vercel.app/kanji/jlpt-n5',
+      'x-default': 'https://fivebyfive.vercel.app/kanji/jlpt-n5',
     });
   });
 
@@ -51,10 +51,10 @@ describe('generatePageMetadata canonical + hreflang', () => {
     const metadata = await generatePageMetadata('vocabulary', {
       locale: 'fr',
       pathname: '/vocabulary',
-      baseUrl: 'https://kanadojo.com',
+      baseUrl: 'https://fivebyfive.vercel.app',
     });
 
-    expect(metadata.alternates?.canonical).toBe('https://kanadojo.com/vocabulary');
-    expect(metadata.openGraph?.url).toBe('https://kanadojo.com/vocabulary');
+    expect(metadata.alternates?.canonical).toBe('https://fivebyfive.vercel.app/vocabulary');
+    expect(metadata.openGraph?.url).toBe('https://fivebyfive.vercel.app/vocabulary');
   });
 });

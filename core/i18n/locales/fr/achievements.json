@@ -1,33 +1,33 @@
 {
-  "title": "Succès",
-  "description": "Suivez votre progression et débloquez des succès",
-  "unlocked": "Débloqué",
-  "locked": "Verrouillé",
-  "progress": "Progression : {{current}}/{{total}}",
-  "earnedOn": "Obtenu le {{date}}",
+  "title": "Achievements",
+  "description": "Track your progress and earn achievements",
+  "unlocked": "Unlocked",
+  "locked": "Locked",
+  "progress": "Progress: {{current}}/{{total}}",
+  "earnedOn": "Earned on {{date}}",
   "categories": {
-    "all": "Tout",
-    "kana": "Kana",
-    "kanji": "Kanji",
-    "vocabulary": "Vocabulaire",
-    "general": "Général",
-    "special": "Spécial"
+    "all": "All",
+    "kana": "Letters",
+    "kanji": "Codes",
+    "vocabulary": "Spelling",
+    "general": "General",
+    "special": "Special"
   },
   "rarity": {
-    "common": "Commun",
+    "common": "Common",
     "rare": "Rare",
-    "epic": "Épique",
-    "legendary": "Légendaire"
+    "epic": "Epic",
+    "legendary": "Legendary"
   },
   "notifications": {
-    "achievementUnlocked": "Succès débloqué !",
-    "congratulations": "Félicitations !",
-    "youEarned": "Vous avez obtenu"
+    "achievementUnlocked": "Achievement Unlocked!",
+    "congratulations": "Congratulations!",
+    "youEarned": "You earned"
   },
   "stats": {
-    "totalAchievements": "Total des succès",
-    "unlockedAchievements": "Débloqués",
-    "completionRate": "Taux de complétion",
-    "recentAchievements": "Succès récents"
+    "totalAchievements": "Total Achievements",
+    "unlockedAchievements": "Unlocked",
+    "completionRate": "Completion Rate",
+    "recentAchievements": "Recent Achievements"
   }
 }

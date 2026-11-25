@@ -70,7 +70,7 @@ const FontCard = memo(function FontCard({
             color: isSelected ? 'var(--card-color)' : 'var(--secondary-color)',
           }}
         >
-          かな道場
+          FiveByFive
         </span>
       </p>
     </label>
@@ -153,7 +153,7 @@ export default function FontsModal({ open, onOpenChange }: FontsModalProps) {
                       fontName={fontObj.name}
                       fontClassName={fontObj.font.className}
                       isSelected={selectedFont === fontObj.name}
-                      isDefault={fontObj.name === 'Zen Maru Gothic'}
+                      isDefault={fontObj.name === 'Inter'}
                       onClick={handleFontClick}
                     />
                   ))}
@@ -176,7 +176,7 @@ export default function FontsModal({ open, onOpenChange }: FontsModalProps) {
                       fontName={fontObj.name}
                       fontClassName={fontObj.font.className}
                       isSelected={selectedFont === fontObj.name}
-                      isDefault={fontObj.name === 'Zen Maru Gothic'}
+                      isDefault={fontObj.name === 'Inter'}
                       onClick={handleFontClick}
                     />
                   ))}

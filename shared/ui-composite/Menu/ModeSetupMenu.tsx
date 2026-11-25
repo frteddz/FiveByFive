@@ -256,12 +256,12 @@ const ModeSetupMenu = ({
 
   const dojoLabel =
     currentDojo === 'kana'
-      ? 'Kana'
+      ? 'Letters'
       : currentDojo === 'kanji'
-        ? 'Kanji'
-        : 'Vocabulary';
+        ? 'Codes'
+        : 'Spelling';
   const dojoCharacter =
-    currentDojo === 'kana' ? 'あ' : currentDojo === 'kanji' ? '字' : '語';
+    currentDojo === 'kana' ? 'A' : currentDojo === 'kanji' ? '7' : 'W';
   const ModeIcon = mode === 'blitz' ? Zap : mode === 'gauntlet' ? Swords : Play;
 
   if (!isOpen) return null;

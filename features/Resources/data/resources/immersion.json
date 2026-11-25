@@ -2,189 +2,253 @@
   "resources": [
     {
       "id": "yomitan",
-      "name": "Yomitan",
-      "nameJa": "ヨミタン",
-      "description": "Powerful browser popup dictionary for reading Japanese.",
-      "descriptionLong": "Yomitan (formerly Yomichan) is a browser extension that provides instant Japanese word lookups by hovering over text. It supports multiple dictionaries, Anki integration for flashcard creation, and audio pronunciation. Essential for reading Japanese online.",
+      "name": "HamRadioNow",
+      "nameJa": "",
+      "description": "Recorded amateur radio discussions.",
+      "descriptionLong": "Use the video archive for listening practice and note the terms that come up repeatedly.",
       "category": "immersion",
       "subcategory": "media-tools",
       "tags": [
-        "browser-extension",
-        "dictionary",
-        "Anki",
-        "reading",
-        "essential"
+        "amateur-radio",
+        "video",
+        "listening",
+        "terms"
       ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["browser-extension"],
-      "url": "https://github.com/themoeway/yomitan",
-      "rating": 4.9,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://hamradionow.tv/",
+      "rating": 0,
       "featured": true,
-      "notes": "Must-have for reading Japanese on the web."
+      "notes": ""
     },
     {
       "id": "migaku-immersion",
-      "name": "Migaku",
-      "nameJa": "ミガク",
-      "description": "Browser extension suite for immersion learning.",
-      "descriptionLong": "Migaku is a suite of browser extensions for immersion-based learning. It includes tools for looking up words, creating flashcards from content, and tracking learning. Works with Netflix, YouTube, and web pages.",
+      "name": "Amateur radio contacts on video",
+      "nameJa": "",
+      "description": "Video results for full operator contacts.",
+      "descriptionLong": "Watch several short contacts and keep one phrase from each in your notes.",
       "category": "immersion",
       "subcategory": "media-tools",
       "tags": [
-        "browser-extension",
-        "Netflix",
-        "YouTube",
-        "flashcards",
-        "tracking"
+        "contacts",
+        "video",
+        "listening",
+        "practice"
       ],
-      "difficulty": "intermediate",
-      "priceType": "subscription",
-      "priceDetails": "$5/month or $50/year",
-      "platforms": ["browser-extension"],
-      "url": "https://migaku.io/",
-      "rating": 4.6,
-      "featured": true,
-      "notes": "Comprehensive immersion toolkit."
+      "difficulty": "all-levels",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/results?search_query=amateur+radio+contact",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     },
     {
       "id": "language-reactor",
-      "name": "Language Reactor",
-      "nameJa": "Language Reactor",
-      "description": "Learn Japanese from Netflix and YouTube.",
-      "descriptionLong": "Language Reactor (formerly Language Learning with Netflix) enhances Netflix and YouTube for language learning. It shows dual subtitles, provides word lookups, and lets you save vocabulary. Great for learning from content you enjoy.",
+      "name": "Amateur Radio Newsline",
+      "nameJa": "",
+      "description": "Audio bulletins for regular listening.",
+      "descriptionLong": "Play a short bulletin and write down the call signs and abbreviations you hear.",
       "category": "immersion",
       "subcategory": "media-tools",
-      "tags": ["Netflix", "YouTube", "subtitles", "vocabulary", "free"],
-      "difficulty": "intermediate",
-      "priceType": "freemium",
-      "priceDetails": "Free tier available. Pro for additional features.",
-      "platforms": ["browser-extension"],
-      "url": "https://www.languagereactor.com/",
-      "rating": 4.7,
+      "tags": [
+        "amateur-radio",
+        "audio",
+        "listening",
+        "news"
+      ],
+      "difficulty": "all-levels",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.arnewsline.org/",
+      "rating": 0,
       "featured": true,
-      "notes": "Excellent for learning from Netflix and YouTube."
+      "notes": ""
     },
     {
       "id": "asbplayer",
-      "name": "asbplayer",
-      "nameJa": "asbplayer",
-      "description": "Subtitle player for language learning.",
-      "descriptionLong": "asbplayer is a browser-based subtitle player that works with various video sources. It supports Yomitan integration, Anki card creation, and subtitle timing adjustments. Great for mining sentences from video content.",
+      "name": "Morse code practice audio",
+      "nameJa": "",
+      "description": "Recordings you can mine for short drills.",
+      "descriptionLong": "Pick a short clip, copy the characters, and add them to your own practice list.",
       "category": "immersion",
       "subcategory": "sentence-mining",
-      "tags": ["subtitles", "video", "Anki", "mining", "free"],
-      "difficulty": "intermediate",
+      "tags": [
+        "morse",
+        "audio",
+        "drills",
+        "listening"
+      ],
+      "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["browser-extension"],
-      "url": "https://github.com/killergerbah/asbplayer",
-      "rating": 4.5,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Morse+code+practice",
+      "rating": 0,
       "featured": false,
-      "notes": "Powerful tool for sentence mining from video."
+      "notes": ""
     },
     {
       "id": "crunchyroll",
-      "name": "Crunchyroll",
-      "nameJa": "クランチロール",
-      "description": "Anime streaming with Japanese audio.",
-      "descriptionLong": "Crunchyroll is the largest anime streaming service with thousands of shows available with Japanese audio. Watch anime in Japanese with or without subtitles for immersion practice. Many shows have Japanese subtitles available.",
+      "name": "ARRL on YouTube",
+      "nameJa": "",
+      "description": "Video material from ARRL.",
+      "descriptionLong": "Use the channel for regular exposure to how operators talk about their activity.",
       "category": "immersion",
       "subcategory": "streaming",
-      "tags": ["anime", "streaming", "Japanese-audio", "subtitles"],
-      "difficulty": "intermediate",
-      "priceType": "freemium",
-      "priceDetails": "Free with ads. Premium from $7.99/month",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.crunchyroll.com/",
-      "rating": 4.6,
+      "tags": [
+        "arrl",
+        "video",
+        "listening",
+        "amateur-radio"
+      ],
+      "difficulty": "all-levels",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/@ARRL",
+      "rating": 0,
       "featured": true,
-      "notes": "Largest anime library. Some shows have JP subtitles."
+      "notes": ""
     },
     {
       "id": "netflix-japan",
-      "name": "Netflix Japan Content",
-      "nameJa": "Netflix日本コンテンツ",
-      "description": "Japanese dramas and anime on Netflix.",
-      "descriptionLong": "Netflix offers a growing library of Japanese content including dramas, anime, and movies. Many titles include Japanese subtitles, making it excellent for immersion. Use with Language Reactor for enhanced learning.",
+      "name": "ICQ Amateur Radio Podcast",
+      "nameJa": "",
+      "description": "Long form amateur radio audio.",
+      "descriptionLong": "Listen to part of an episode and keep a note of the terms used by the hosts.",
       "category": "immersion",
       "subcategory": "streaming",
-      "tags": ["dramas", "anime", "movies", "subtitles", "streaming"],
-      "difficulty": "intermediate",
-      "priceType": "subscription",
-      "priceDetails": "Netflix subscription required",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.netflix.com/",
-      "rating": 4.5,
+      "tags": [
+        "amateur-radio",
+        "podcast",
+        "audio",
+        "listening"
+      ],
+      "difficulty": "all-levels",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.icqpodcast.com/",
+      "rating": 0,
       "featured": false,
-      "notes": "Use with Language Reactor for best learning experience."
+      "notes": ""
     },
     {
       "id": "animelon",
-      "name": "Animelon",
-      "nameJa": "Animelon",
-      "description": "Anime with Japanese subtitles for learning.",
-      "descriptionLong": "Animelon provides anime with Japanese subtitles specifically for language learners. The site includes vocabulary lists, subtitle timing controls, and learning features. Great for anime-based immersion.",
+      "name": "NATO alphabet video search",
+      "nameJa": "",
+      "description": "Video results for code word listening.",
+      "descriptionLong": "Use the clips for extra listening after you have learned the full alphabet.",
       "category": "immersion",
       "subcategory": "streaming",
-      "tags": ["anime", "Japanese-subtitles", "learning", "free"],
-      "difficulty": "intermediate",
+      "tags": [
+        "alphabet",
+        "video",
+        "listening",
+        "extra"
+      ],
+      "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://animelon.com/",
-      "rating": 4.3,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/results?search_query=NATO+phonetic+alphabet",
+      "rating": 0,
       "featured": false,
-      "notes": "Free anime with Japanese subtitles."
+      "notes": ""
     },
     {
       "id": "subs2srs",
-      "name": "subs2srs",
-      "nameJa": "subs2srs",
-      "description": "Create Anki cards from video with subtitles.",
-      "descriptionLong": "subs2srs is a tool that creates Anki flashcards from video files and subtitle files. It extracts audio clips and screenshots for each subtitle line, creating immersive flashcards from your favorite content.",
+      "name": "Morse Code Trainer",
+      "nameJa": "",
+      "description": "Generate short drills from what you hear.",
+      "descriptionLong": "Write down each character from the trainer, then turn the ones you miss into a review list.",
       "category": "immersion",
       "subcategory": "sentence-mining",
-      "tags": ["Anki", "mining", "video", "subtitles", "tool"],
+      "tags": [
+        "morse",
+        "drills",
+        "listening",
+        "review"
+      ],
       "difficulty": "advanced",
       "priceType": "free",
-      "platforms": ["windows"],
-      "url": "http://subs2srs.sourceforge.net/",
-      "rating": 4.4,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://morsecode.world/international/trainer/",
+      "rating": 0,
       "featured": false,
-      "notes": "Powerful but requires setup. Windows only."
+      "notes": ""
     },
     {
       "id": "immersion-kit",
-      "name": "Immersion Kit",
-      "nameJa": "Immersion Kit",
-      "description": "Search for example sentences from anime and dramas.",
-      "descriptionLong": "Immersion Kit lets you search for Japanese words and phrases and find example sentences from anime, dramas, and other media. Each result includes audio and video clips showing the word in context.",
+      "name": "Radio phraseology video search",
+      "nameJa": "",
+      "description": "Clips with sample radio exchanges.",
+      "descriptionLong": "Save a phrase with its clip and review it later as part of a short drill.",
       "category": "immersion",
       "subcategory": "sentence-mining",
-      "tags": ["examples", "anime", "dramas", "context", "search"],
-      "difficulty": "intermediate",
+      "tags": [
+        "phraseology",
+        "clips",
+        "listening",
+        "review"
+      ],
+      "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www.immersionkit.com/",
-      "rating": 4.6,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/results?search_query=aviation+radio+phraseology",
+      "rating": 0,
       "featured": true,
-      "notes": "Great for finding words used in real context."
+      "notes": ""
     },
     {
       "id": "mokuro",
-      "name": "Mokuro",
-      "nameJa": "Mokuro",
-      "description": "OCR tool for reading manga with lookups.",
-      "descriptionLong": "Mokuro is an OCR tool that processes manga images and makes the text selectable and searchable. Combined with Yomitan, it enables easy reading of manga with instant word lookups.",
+      "name": "International Telecommunication Union",
+      "nameJa": "",
+      "description": "International radio material for wider reading.",
+      "descriptionLong": "The ITU pages provide background reading on the radio services you hear in recordings.",
       "category": "immersion",
       "subcategory": "media-tools",
-      "tags": ["manga", "OCR", "reading", "tool"],
-      "difficulty": "intermediate",
+      "tags": [
+        "itu",
+        "radio",
+        "background",
+        "reading"
+      ],
+      "difficulty": "advanced",
       "priceType": "free",
-      "platforms": ["windows", "macos", "linux"],
-      "url": "https://github.com/kha-white/mokuro",
-      "rating": 4.5,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.itu.int/",
+      "rating": 0,
       "featured": false,
-      "notes": "Makes manga reading with lookups possible."
+      "notes": ""
     }
   ]
 }

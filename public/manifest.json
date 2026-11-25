@@ -1,7 +1,7 @@
 {
-  "name": "KanaDojo - Learn Japanese Hiragana, Katakana, Kanji, Vocabulary & Translation",
-  "short_name": "KanaDojo",
-  "description": "Master Japanese with KanaDojo - learn Hiragana, Katakana, Kanji, Vocabulary with interactive games. Free Japanese to English translator with romanization. Track progress and customize your experience.",
+  "name": "FiveByFive - Learn the NATO Phonetic Alphabet",
+  "short_name": "FiveByFive",
+  "description": "Practice ICAO code words, radio phrases and callsign spelling with typing drills. Free NATO phonetic alphabet trainer with progress saved locally.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -31,20 +31,21 @@
       "sizes": "1920x918",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "KanaDojo desktop view"
+      "label": "FiveByFive desktop view"
     },
     {
       "src": "/screenshots/narrow-1.png",
       "sizes": "792x832",
       "type": "image/png",
-      "label": "KanaDojo mobile view"
+      "form_factor": "narrow",
+      "label": "FiveByFive mobile view"
     }
   ],
   "shortcuts": [
     {
-      "name": "Kana Dojo",
-      "short_name": "Kana",
-      "description": "Practice Hiragana and Katakana",
+      "name": "Letters",
+      "short_name": "A-Z",
+      "description": "Practice letter to code word drills",
       "url": "/kana",
       "icons": [
         {
@@ -55,9 +56,9 @@
       ]
     },
     {
-      "name": "Kanji Dojo",
-      "short_name": "Kanji",
-      "description": "Practice Kanji characters",
+      "name": "Codes",
+      "short_name": "R/T",
+      "description": "Practice radio phrases across five tiers",
       "url": "/kanji",
       "icons": [
         {
@@ -68,9 +69,9 @@
       ]
     },
     {
-      "name": "Vocabulary Dojo",
-      "short_name": "Vocabulary",
-      "description": "Practice Japanese vocabulary",
+      "name": "Spelling",
+      "short_name": "SPC",
+      "description": "Spell words using ICAO code words",
       "url": "/vocabulary",
       "icons": [
         {
@@ -81,9 +82,9 @@
       ]
     },
     {
-      "name": "Japanese Translator",
-      "short_name": "Translator",
-      "description": "Translate Japanese to English with romaji",
+      "name": "Code Reference",
+      "short_name": "Codes",
+      "description": "Look up code words and phrases",
       "url": "/translate",
       "icons": [
         {

@@ -1,13 +1,13 @@
 {
-  "title": "平假名与片假名图表",
-  "subtitle": "所有基本日语假名字符的完整参考指南",
-  "aboutTitle": "关于此图表",
-  "aboutText": "此综合图表显示所有46个基本平假名和片假名字符及其罗马字。平假名用于日语本土词汇，而片假名主要用于外来词、名字和强调。",
-  "howToUseTitle": "如何使用此图表",
-  "howToUse1": "点击上方标签在平假名和片假名之间切换",
-  "howToUse2": "每个单元格显示日文字符（大）和其罗马字（小）",
-  "howToUse3": "作为学习或练习时的快速参考",
-  "howToUse4": "按Ctrl+P（Mac上为⌘+P）打印或保存为PDF以便离线使用",
-  "practiceTitle": "准备开始练习？",
-  "practiceText": "前往我们的互动训练模式练习这些字符！尝试选择模式进行识别，输入模式进行回忆，或闪电战模式进行速度挑战。"
+  "title": "Code Word Chart",
+  "subtitle": "Complete reference for NATO letter code words and digit codes",
+  "aboutTitle": "About This Chart",
+  "aboutText": "This chart lists the 26 letters A to Z with their ICAO code words and the 10 digit codes. Letters such as B and D or M and N are easy to confuse by voice, so each one has a fixed word.",
+  "howToUseTitle": "How to Use This Chart",
+  "howToUse1": "Click the tabs above to switch between letters and codes",
+  "howToUse2": "Each cell shows the letter or digit and its code word",
+  "howToUse3": "Use this as a quick reference while drilling",
+  "howToUse4": "Press Ctrl+P (or Command+P on Mac) to print or save as PDF for offline use",
+  "practiceTitle": "Ready to Practice?",
+  "practiceText": "Head to a training mode to practice these code words. Try Pick Mode for recognition, Input Mode for recall, or Blitz Mode for speed."
 }

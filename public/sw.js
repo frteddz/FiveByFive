@@ -1,5 +1,5 @@
 /**
- * KanaDojo's bounded offline cache. Audio uses a byte-budgeted LRU; API
+ * FiveByFive's bounded offline cache. Audio uses a byte-budgeted LRU; API
  * responses are limited by age and count. Neither cache is permanent storage.
  */
 const AUDIO_CACHE_NAME = 'audio-cache-v4';
@@ -10,11 +10,6 @@ const AUDIO_METADATA_STORE = 'audio-entries';
 const MAX_AUDIO_CACHE_BYTES = 40 * 1024 * 1024;
 const MAX_API_CACHE_ENTRIES = 100;
 const API_CACHE_TTL_MS = 7 * 24 * 60 * 60 * 1000;
-
-const OFFLINE_TRANSLATIONS = {
-  'en:ja': { hello: 'こんにちは', 'thank you': 'ありがとう', goodbye: 'さようなら', yes: 'はい', no: 'いいえ', please: 'お願いします', 'excuse me': 'すみません', sorry: 'ごめんなさい', 'good morning': 'おはようございます', 'good night': 'おやすみなさい' },
-  'ja:en': { こんにちは: 'hello', ありがとう: 'thank you', さようなら: 'goodbye', はい: 'yes', いいえ: 'no', お願いします: 'please', すみません: 'excuse me', ごめんなさい: 'sorry', おはようございます: 'good morning', おやすみなさい: 'good night' },
-};
 
 const AUDIO_FILES = [
   '/sounds/correct.opus',
@@ -189,8 +184,6 @@ self.addEventListener('activate', function (event) {
 self.addEventListener('fetch', function (event) {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
-  if (url.pathname === '/api/translate' && event.request.method === 'POST') { event.respondWith(handleTranslationRequest(event.request, event)); return; }
-  if (url.pathname === '/api/analyze-text' && event.request.method === 'POST') { event.respondWith(handleAnalysisRequest(event.request, event)); return; }
   if (event.request.method === 'GET' && url.pathname.startsWith('/sounds/')) event.respondWith(handleAudioRequest(event.request, event));
 });
 
@@ -206,43 +199,6 @@ async function handleAudioRequest(request, event) {
     }
     return response;
   } catch (_) { return new Response('Audio file not available offline', { status: 503, statusText: 'Service Unavailable' }); }
-}
-
-async function handleTranslationRequest(request, event) {
-  const body = await request.clone().json();
-  const normalized = [body.sourceLanguage, body.targetLanguage, String(body.text || '').trim().toLowerCase()].join(':');
-  try {
-    const response = await fetch(request);
-    if (response.ok) {
-      const responseForCache = response.clone();
-      event.waitUntil(enqueueCacheWrite(function () { return cacheApiResponse('translate', normalized, responseForCache); }));
-    }
-    return response;
-  } catch (_) {
-    const cached = await freshCachedApiResponse('translate', normalized);
-    if (cached) return cached;
-    const fallback = OFFLINE_TRANSLATIONS[body.sourceLanguage + ':' + body.targetLanguage];
-    const translatedText = fallback && fallback[String(body.text || '').trim().toLowerCase()];
-    if (translatedText) return new Response(JSON.stringify({ translatedText: translatedText, cached: true, offline: true }), { headers: { 'Content-Type': 'application/json' } });
-    return new Response(JSON.stringify({ code: 'OFFLINE', message: 'You are offline and this translation is not cached.', status: 0 }), { status: 503, headers: { 'Content-Type': 'application/json' } });
-  }
-}
-
-async function handleAnalysisRequest(request, event) {
-  const body = await request.clone().json();
-  const normalized = String(body.text || '');
-  try {
-    const response = await fetch(request);
-    if (response.ok) {
-      const responseForCache = response.clone();
-      event.waitUntil(enqueueCacheWrite(function () { return cacheApiResponse('analyze', normalized, responseForCache); }));
-    }
-    return response;
-  } catch (_) {
-    const cached = await freshCachedApiResponse('analyze', normalized);
-    if (cached) return cached;
-    return new Response(JSON.stringify({ error: 'You are offline and this analysis is not cached.' }), { status: 503, headers: { 'Content-Type': 'application/json' } });
-  }
 }
 
 self.addEventListener('message', function (event) {

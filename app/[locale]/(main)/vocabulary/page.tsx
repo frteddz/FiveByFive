@@ -50,24 +50,24 @@ export default async function VocabularyPage({
         ]}
       />
       <CourseSchema
-        name='Japanese Vocabulary Building Course by JLPT Level (N5-N1)'
-        description='Build your Japanese vocabulary with thousands of words organized by JLPT levels. Learn nouns, verbs, adjectives, and adverbs with readings, meanings, and interactive practice from beginner to advanced.'
-        url={`https://kanadojo.com/${locale}/vocabulary`}
+        name='Spelling Course - Spell Words with Code Words'
+        description='Spell full words using ICAO code words. Practice sets by tier, check your spelling with instant feedback and track the words you miss.'
+        url={`https://fivebyfive.vercel.app/${locale}/vocabulary`}
         educationalLevel='Beginner to Advanced'
         skillLevel='All Levels'
         learningResourceType='Interactive Course, Exercise and Games'
       />
       <LearningResourceSchema
-        name='Japanese Vocabulary Quiz and JLPT Word Practice'
-        description='Build your Japanese vocabulary with thousands of words organized by JLPT levels N5 through N1. Practice readings, meanings, and usage with interactive drills and quick set selection.'
-        url={`https://kanadojo.com/${locale}/vocabulary`}
+        name='Spelling Quiz and Code Word Practice'
+        description='Spell words across five tiers with ICAO code words. Use quick set selection and short drills to build letter by letter recall.'
+        url={`https://fivebyfive.vercel.app/${locale}/vocabulary`}
         learningResourceType={['Quiz', 'Interactive', 'Game']}
         educationalLevel={['Beginner', 'Intermediate', 'Advanced']}
-        teaches='Japanese vocabulary, word readings, meanings, and usage'
-        assesses='Vocabulary recognition, recall speed, and JLPT-level word knowledge'
+        teaches='Spelling words with NATO code words'
+        assesses='Spelling accuracy and speed'
         timeRequired='PT45M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
         educationalAlignment={{
           alignmentType: 'educationalLevel',
           educationalFramework: 'JLPT',
@@ -77,11 +77,11 @@ export default async function VocabularyPage({
       <DojoRouteSchema
         routeKey='vocabulary'
         locale={locale}
-        title='Vocabulary Dojo - Learn Japanese Words & Vocabulary by JLPT Level'
-        description='Build Japanese vocabulary by JLPT level with interactive set drills, quizzes, and fast review. Practice meanings, readings, and usage from N5 to N1.'
+        title='Spelling Dojo - Spell Words with ICAO Code Words'
+        description='Spell words by tier with interactive drills and fast review. Check your spelling and track the words you miss.'
         canonicalPath='/vocabulary'
-        teaches='Japanese vocabulary, word readings, meanings, and usage'
-        assesses='Vocabulary recognition, recall speed, and JLPT-level word knowledge'
+        teaches='Spelling words with NATO code words'
+        assesses='Spelling accuracy and speed'
         educationalAlignment={{
           alignmentType: 'educationalLevel',
           educationalFramework: 'JLPT',

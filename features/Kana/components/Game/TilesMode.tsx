@@ -38,16 +38,11 @@ import { useTilesModeKeyboardSelection } from '@/shared/hooks/game/useTilesModeK
 const random = new Random();
 const adaptiveSelector = getGlobalAdaptiveSelector();
 
-// Helper function to determine if a kana character is hiragana or katakana
-const isHiragana = (char: string): boolean => {
-  const code = char.charCodeAt(0);
-  return code >= 0x3040 && code <= 0x309f;
-};
+// The stats store kept the upstream counter names. Here they track letters
+// and code words instead of the two Japanese scripts.
+const isHiragana = (char: string): boolean => /^[A-Z]$/.test(char);
 
-const isKatakana = (char: string): boolean => {
-  const code = char.charCodeAt(0);
-  return code >= 0x30a0 && code <= 0x30ff;
-};
+const isKatakana = (char: string): boolean => /^[0-9]$/.test(char) || char.length > 1;
 
 interface KanaTilesModeProps {
   isHidden: boolean;

@@ -1,71 +1,71 @@
 {
-  "title": "词汇训练",
-  "description": "扩展您的日语词汇量",
+  "title": "Spelling Training",
+  "description": "Spell everyday words using ICAO code words",
   "selection": {
-    "title": "选择词汇",
-    "byLevel": "按JLPT级别",
-    "byCategory": "按类别",
-    "selectAll": "全选",
-    "deselectAll": "取消全选",
+    "title": "Select Spelling Sets",
+    "byLevel": "By Tier",
+    "byCategory": "By Category",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
     "levels": {
-      "n5": "JLPT N5",
-      "n4": "JLPT N4",
-      "n3": "JLPT N3",
-      "n2": "JLPT N2",
-      "n1": "JLPT N1"
+      "n5": "Tier 1",
+      "n4": "Tier 2",
+      "n3": "Tier 3",
+      "n2": "Tier 4",
+      "n1": "Tier 5"
     },
     "categories": {
-      "all": "全部",
-      "nouns": "名词",
-      "verbs": "动词",
-      "adjectives": "形容词",
-      "adverbs": "副词",
-      "expressions": "表达"
+      "all": "All",
+      "nouns": "Short words",
+      "verbs": "Long words",
+      "adjectives": "Callsigns",
+      "adverbs": "Numbers",
+      "expressions": "Phrases"
     }
   },
   "game": {
-    "title": "词汇游戏",
-    "start": "开始游戏",
-    "pause": "暂停",
-    "resume": "继续",
-    "finish": "完成",
-    "nextQuestion": "下一题",
-    "submit": "提交答案",
-    "score": "得分：{{points}}",
-    "timeLeft": "剩余时间：{{seconds}}秒",
-    "streak": "连击：{{count}}",
-    "correct": "正确！",
-    "incorrect": "错误",
-    "showAnswer": "显示答案"
+    "title": "Spelling Game",
+    "start": "Start Game",
+    "pause": "Pause",
+    "resume": "Resume",
+    "finish": "Finish",
+    "nextQuestion": "Next Question",
+    "submit": "Submit Answer",
+    "score": "Score: {{points}}",
+    "timeLeft": "Time left: {{seconds}}s",
+    "streak": "Streak: {{count}}",
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "showAnswer": "Show Answer"
   },
   "modes": {
-    "pick": "选择模式",
-    "reversePick": "反向选择",
-    "input": "输入模式",
-    "reverseInput": "反向输入",
+    "pick": "Pick Mode",
+    "reversePick": "Reverse Pick",
+    "input": "Input Mode",
+    "reverseInput": "Reverse Input",
     "description": {
-      "pick": "看单词，选择意思",
-      "reversePick": "看意思，选择单词",
-      "input": "看单词，输入意思",
-      "reverseInput": "看意思，输入单词"
+      "pick": "See a word, choose its code word spelling",
+      "reversePick": "See a code word spelling, choose the word",
+      "input": "See a word, type its code words",
+      "reverseInput": "See code words, type the word"
     }
   },
   "results": {
-    "title": "结果",
-    "congratulations": "恭喜！",
-    "correct": "正确：{{count}}",
-    "incorrect": "错误：{{count}}",
-    "accuracy": "准确率：{{percentage}}%",
-    "timeSpent": "用时：{{time}}",
-    "playAgain": "再玩一次",
-    "backToMenu": "返回菜单"
+    "title": "Results",
+    "congratulations": "Congratulations!",
+    "correct": "Correct: {{count}}",
+    "incorrect": "Incorrect: {{count}}",
+    "accuracy": "Accuracy: {{percentage}}%",
+    "timeSpent": "Time spent: {{time}}",
+    "playAgain": "Play Again",
+    "backToMenu": "Back to Menu"
   },
   "details": {
-    "word": "单词",
-    "reading": "读音",
-    "meaning": "意思",
-    "examples": "例句",
-    "type": "词性",
-    "jlptLevel": "JLPT级别"
+    "word": "Word",
+    "reading": "Code words",
+    "meaning": "Meaning",
+    "examples": "Example spellings",
+    "type": "Type",
+    "jlptLevel": "Tier"
   }
 }

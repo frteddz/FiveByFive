@@ -15,7 +15,7 @@ const renderLabelWithSeparator = (label: string, useTildeSeparator: boolean) => 
   const parts = label.split(', ');
   if (parts.length === 1) return label;
 
-  const separator = useTildeSeparator ? '~' : '・';
+  const separator = useTildeSeparator ? '~' : '/';
 
   return parts.map((part, index) => (
     <span key={`${part}-${index}`} className='inline'>

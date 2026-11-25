@@ -1,45 +1,47 @@
 {
-  "title": "统计",
-  "description": "查看您的学习进度",
+  "title": "Statistics",
+  "description": "Your training results and statistics",
   "overview": {
-    "title": "概览",
-    "totalStudyTime": "总学习时间",
-    "totalSessions": "总学习次数",
-    "totalQuestions": "总题目数",
-    "averageAccuracy": "平均准确率",
-    "currentStreak": "当前连续天数",
-    "longestStreak": "最长连续天数"
+    "title": "Overview",
+    "totalStudyTime": "Total Training Time",
+    "questionsAnswered": "Questions Answered",
+    "accuracy": "Overall Accuracy",
+    "currentStreak": "Current Streak",
+    "longestStreak": "Longest Streak"
   },
   "charts": {
-    "dailyActivity": "每日活动",
-    "weeklyProgress": "每周进度",
-    "monthlyProgress": "每月进度",
-    "accuracyByType": "按类型准确率"
+    "dailyActivity": "Daily Activity",
+    "accuracyOverTime": "Accuracy Over Time",
+    "progressByLevel": "Progress by Tier",
+    "timeByDojo": "Time by Training"
   },
   "kana": {
-    "title": "假名统计",
-    "hiragana": "平假名",
-    "katakana": "片假名",
-    "mastered": "已掌握",
-    "learning": "学习中",
-    "needsPractice": "需要练习"
+    "title": "Letters Statistics",
+    "mastered": "Mastered",
+    "learning": "Learning",
+    "notStarted": "Not Started",
+    "hiraganaProgress": "Letter Progress",
+    "katakanaProgress": "Code Progress"
   },
   "kanji": {
-    "title": "汉字统计",
-    "byLevel": "按级别",
-    "mastered": "已掌握",
-    "learning": "学习中"
+    "title": "Codes Statistics",
+    "mastered": "Mastered",
+    "learning": "Learning",
+    "notStarted": "Not Started",
+    "byLevel": "By Tier"
   },
   "vocabulary": {
-    "title": "词汇统计",
-    "byLevel": "按级别",
-    "mastered": "已掌握",
-    "learning": "学习中"
+    "title": "Spelling Statistics",
+    "wordsLearned": "Words Learned",
+    "mastered": "Mastered",
+    "learning": "Learning",
+    "byLevel": "By Tier"
   },
-  "time": {
-    "today": "今天",
-    "thisWeek": "本周",
-    "thisMonth": "本月",
-    "allTime": "全部时间"
+  "performance": {
+    "title": "Performance",
+    "bestAccuracy": "Best Accuracy",
+    "fastestTime": "Fastest Time",
+    "longestSession": "Longest Session",
+    "mostImproved": "Most Improved"
   }
 }

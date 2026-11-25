@@ -4,7 +4,7 @@
  * Good internal linking improves crawlability and page authority distribution
  */
 
-const SITE_URL = 'https://kanadojo.com';
+const SITE_URL = 'https://fivebyfive.vercel.app';
 
 export interface InternalLink {
   href: string;
@@ -18,93 +18,93 @@ export interface InternalLink {
 export const mainLinks = {
   home: {
     href: '/',
-    text: 'KanaDojo',
-    title: 'KanaDojo - Learn Japanese Online',
+    text: 'FiveByFive',
+    title: 'FiveByFive - Learn the NATO Phonetic Alphabet',
   },
   kana: {
     href: '/kana',
-    text: 'Kana',
-    title: 'Learn Hiragana and Katakana',
+    text: 'Letters',
+    title: 'Learn ICAO Code Words A to Z',
   },
   kanaHiragana: {
     href: '/kana/learn-hiragana',
-    text: 'Learn Hiragana',
-    title: 'Learn Hiragana with Interactive Practice',
+    text: 'Learn Letters',
+    title: 'Learn Letters with Interactive Practice',
   },
   kanaKatakana: {
     href: '/kana/learn-katakana',
-    text: 'Learn Katakana',
-    title: 'Learn Katakana with Interactive Practice',
+    text: 'Learn Radio Codes',
+    title: 'Learn Radio Codes with Interactive Practice',
   },
   kanji: {
     href: '/kanji',
-    text: 'Kanji',
-    title: 'Learn Japanese Kanji by JLPT Level',
+    text: 'Codes',
+    title: 'Learn Radio Phrases by Tier',
   },
   kanjiN5: {
     href: '/kanji/jlpt-n5',
-    text: 'JLPT N5 Kanji',
-    title: 'Practice JLPT N5 Kanji',
+    text: 'Tier 1 Codes',
+    title: 'Practice Tier 1 Radio Codes',
   },
   kanjiN4: {
     href: '/kanji/jlpt-n4',
-    text: 'JLPT N4 Kanji',
-    title: 'Practice JLPT N4 Kanji',
+    text: 'Tier 2 Codes',
+    title: 'Practice Tier 2 Radio Codes',
   },
   kanjiN3: {
     href: '/kanji/jlpt-n3',
-    text: 'JLPT N3 Kanji',
-    title: 'Practice JLPT N3 Kanji',
+    text: 'Tier 3 Codes',
+    title: 'Practice Tier 3 Radio Codes',
   },
   kanjiN2: {
     href: '/kanji/jlpt-n2',
-    text: 'JLPT N2 Kanji',
-    title: 'Practice JLPT N2 Kanji',
+    text: 'Tier 4 Codes',
+    title: 'Practice Tier 4 Radio Codes',
   },
   kanjiN1: {
     href: '/kanji/jlpt-n1',
-    text: 'JLPT N1 Kanji',
-    title: 'Practice JLPT N1 Kanji',
+    text: 'Tier 5 Codes',
+    title: 'Practice Tier 5 Radio Codes',
   },
   vocabulary: {
     href: '/vocabulary',
-    text: 'Vocabulary',
-    title: 'Learn Japanese Vocabulary',
+    text: 'Spelling',
+    title: 'Spell Words with Code Words',
   },
   vocabularyN5: {
     href: '/vocabulary/jlpt-n5',
-    text: 'JLPT N5 Vocabulary',
-    title: 'Practice JLPT N5 Vocabulary',
+    text: 'Tier 1 Spelling',
+    title: 'Practice Tier 1 Spelling',
   },
   vocabularyN4: {
     href: '/vocabulary/jlpt-n4',
-    text: 'JLPT N4 Vocabulary',
-    title: 'Practice JLPT N4 Vocabulary',
+    text: 'Tier 2 Spelling',
+    title: 'Practice Tier 2 Spelling',
   },
   vocabularyN3: {
     href: '/vocabulary/jlpt-n3',
-    text: 'JLPT N3 Vocabulary',
-    title: 'Practice JLPT N3 Vocabulary',
+    text: 'Tier 3 Spelling',
+    title: 'Practice Tier 3 Spelling',
   },
   vocabularyN2: {
     href: '/vocabulary/jlpt-n2',
-    text: 'JLPT N2 Vocabulary',
-    title: 'Practice JLPT N2 Vocabulary',
+    text: 'Tier 4 Spelling',
+    title: 'Practice Tier 4 Spelling',
   },
   vocabularyN1: {
     href: '/vocabulary/jlpt-n1',
-    text: 'JLPT N1 Vocabulary',
-    title: 'Practice JLPT N1 Vocabulary',
+    text: 'Tier 5 Spelling',
+    title: 'Practice Tier 5 Spelling',
   },
   translate: {
     href: '/translate',
-    text: 'Japanese Translator',
-    title: 'Japanese Translator with Romaji',
+    text: 'Code Word Reference',
+    title: 'NATO Code Word Reference',
   },
   academy: {
     href: '/academy',
     text: 'Academy',
-    title: 'Japanese Learning Guides and Articles',
+    title: 'Phonetic Alphabet Guides and Articles',
   },
 } as const;
 
@@ -114,64 +114,64 @@ export const mainLinks = {
 export const learningLinks = {
   hiraganaPractice: {
     href: '/hiragana-practice',
-    text: 'Hiragana Practice',
-    title: 'Practice Hiragana Online',
+    text: 'Letters Practice',
+    title: 'Practice Letters Online',
   },
   katakanaPractice: {
     href: '/katakana-practice',
-    text: 'Katakana Practice',
-    title: 'Practice Katakana Online',
+    text: 'Codes Practice',
+    title: 'Practice Radio Codes Online',
   },
   kanjiPractice: {
     href: '/kanji-practice',
-    text: 'Kanji Practice',
-    title: 'Practice Japanese Kanji',
+    text: 'Radio Code Practice',
+    title: 'Practice Radio Phrases',
   },
   kanaBlitz: {
     href: '/kana/blitz',
-    text: 'Kana Blitz',
-    title: 'Test Your Kana Speed',
+    text: 'Letters Blitz',
+    title: 'Test Your Letter Speed',
   },
   kanjiBlitz: {
     href: '/kanji/blitz',
-    text: 'Kanji Blitz',
-    title: 'Test Your Kanji Speed',
+    text: 'Codes Blitz',
+    title: 'Test Your Radio Code Speed',
   },
   vocabularyBlitz: {
     href: '/vocabulary/blitz',
-    text: 'Vocabulary Blitz',
-    title: 'Test Your Vocabulary Speed',
+    text: 'Spelling Blitz',
+    title: 'Test Your Spelling Speed',
   },
 } as const;
 
 /**
- * JLPT level links
+ * Tier links
  */
 export const jlptLinks = {
   n5: {
     href: '/jlpt/n5',
-    text: 'JLPT N5',
-    title: 'JLPT N5 Study Materials',
+    text: 'Tier 1',
+    title: 'Tier 1 Practice Materials',
   },
   n4: {
     href: '/jlpt/n4',
-    text: 'JLPT N4',
-    title: 'JLPT N4 Study Materials',
+    text: 'Tier 2',
+    title: 'Tier 2 Practice Materials',
   },
   n3: {
     href: '/jlpt/n3',
-    text: 'JLPT N3',
-    title: 'JLPT N3 Study Materials',
+    text: 'Tier 3',
+    title: 'Tier 3 Practice Materials',
   },
   n2: {
     href: '/jlpt/n2',
-    text: 'JLPT N2',
-    title: 'JLPT N2 Study Materials',
+    text: 'Tier 4',
+    title: 'Tier 4 Practice Materials',
   },
   n1: {
     href: '/jlpt/n1',
-    text: 'JLPT N1',
-    title: 'JLPT N1 Study Materials',
+    text: 'Tier 5',
+    title: 'Tier 5 Practice Materials',
   },
 } as const;
 
@@ -182,12 +182,12 @@ export const utilityLinks = {
   progress: {
     href: '/progress',
     text: 'Progress',
-    title: 'View Your Learning Progress',
+    title: 'View Your Training Progress',
   },
   preferences: {
     href: '/preferences',
     text: 'Preferences',
-    title: 'Customize Your Learning Experience',
+    title: 'Customize Your Training Experience',
   },
   achievements: {
     href: '/achievements',
@@ -220,67 +220,63 @@ export function getAllInternalLinks(): InternalLink[] {
 export function getContextualLink(keyword: string): InternalLink | null {
   const keywordLower = keyword.toLowerCase();
 
-  // Hiragana variations
+  // Letter variations
   if (
-    ['hiragana', 'ひらがな', 'hiragana characters', 'hiragana chart'].includes(
+    ['letters', 'letter code words', 'letter chart'].includes(
       keywordLower,
     )
   ) {
     return learningLinks.hiraganaPractice;
   }
 
-  // Katakana variations
+  // Code variations
   if (
-    ['katakana', 'カタカナ', 'katakana characters', 'katakana chart'].includes(
+    ['codes', 'radio codes', 'code word chart'].includes(
       keywordLower,
     )
   ) {
     return learningLinks.katakanaPractice;
   }
 
-  // Kanji variations
+  // Radio code variations
   if (
     [
-      'kanji',
-      'kanji characters',
-      '漢字',
-      'kanji practice',
-      'learn kanji',
+      'radio codes',
+      'code phrases',
+      'phrase practice',
+      'radiotelephony',
     ].includes(keywordLower)
   ) {
     return mainLinks.kanji;
   }
 
-  // Vocabulary
+  // Spelling
   if (
-    ['vocabulary', 'japanese vocabulary', 'japanese words', 'vocab'].includes(
+    ['spelling', 'word spelling', 'callsign spelling'].includes(
       keywordLower,
     )
   ) {
     return mainLinks.vocabulary;
   }
 
-  // Translator
+  // Code reference
   if (
     [
-      'translator',
-      'translate',
-      'translation',
-      'japanese translator',
-      'english to japanese',
-      'japanese to english',
-      'romaji translator',
+      'reference',
+      'lookup',
+      'code word reference',
+      'code word lookup',
     ].includes(keywordLower)
   ) {
     return mainLinks.translate;
   }
 
-  // JLPT levels
-  if (['jlpt n5', 'n5'].includes(keywordLower)) return jlptLinks.n5;
-  if (['jlpt n4', 'n4'].includes(keywordLower)) return jlptLinks.n4;
-  if (['jlpt n3', 'n3'].includes(keywordLower)) return jlptLinks.n3;
-  if (['jlpt n2', 'n2'].includes(keywordLower)) return jlptLinks.n2;
-  if (['jlpt n1', 'n1'].includes(keywordLower)) return jlptLinks.n1;
+  // Tiers
+  if (['tier 1', 'n5'].includes(keywordLower)) return jlptLinks.n5;
+  if (['tier 2', 'n4'].includes(keywordLower)) return jlptLinks.n4;
+  if (['tier 3', 'n3'].includes(keywordLower)) return jlptLinks.n3;
+  if (['tier 4', 'n2'].includes(keywordLower)) return jlptLinks.n2;
+  if (['tier 5', 'n1'].includes(keywordLower)) return jlptLinks.n1;
 
   return null;
 }
@@ -292,7 +288,7 @@ export function getContextualLink(keyword: string): InternalLink | null {
 export function getRelatedLinks(currentPath: string): InternalLink[] {
   const related: InternalLink[] = [];
 
-  // Kana-related pages
+  // Letter-related pages
   if (currentPath.includes('kana') || currentPath.includes('hiragana')) {
     related.push(
       mainLinks.kanaHiragana,
@@ -303,7 +299,7 @@ export function getRelatedLinks(currentPath: string): InternalLink[] {
     );
   }
 
-  // Kanji-related pages
+  // Code-related pages
   if (currentPath.includes('kanji')) {
     related.push(
       learningLinks.kanjiPractice,
@@ -316,7 +312,7 @@ export function getRelatedLinks(currentPath: string): InternalLink[] {
     );
   }
 
-  // Vocabulary-related pages
+  // Spelling-related pages
   if (currentPath.includes('vocabulary') || currentPath.includes('vocab')) {
     related.push(
       learningLinks.vocabularyBlitz,
@@ -328,7 +324,7 @@ export function getRelatedLinks(currentPath: string): InternalLink[] {
     );
   }
 
-  // JLPT-related pages
+  // Tier-related pages
   if (currentPath.includes('jlpt')) {
     related.push(
       mainLinks.kanji,
@@ -381,13 +377,13 @@ export function generateBreadcrumbLinks(
       .join(' ');
 
     // Special cases
-    if (segment === 'kana') name = 'Kana';
-    if (segment === 'kanji') name = 'Kanji';
-    if (segment === 'vocabulary') name = 'Vocabulary';
+    if (segment === 'kana') name = 'Letters';
+    if (segment === 'kanji') name = 'Codes';
+    if (segment === 'vocabulary') name = 'Spelling';
     if (segment === 'academy') name = 'Academy';
     if (segment === 'translate') name = 'Translator';
     if (segment === 'faq') name = 'FAQ';
-    if (segment === 'jlpt') name = 'JLPT';
+    if (segment === 'jlpt') name = 'Tiers';
 
     breadcrumbs.push({
       name,
@@ -425,19 +421,19 @@ export function getContinueLearningLinks(
 ): InternalLink[] {
   const suggestions: InternalLink[] = [];
 
-  // If user visited Hiragana, suggest Katakana
+  // If user visited Letters, suggest Codes
   if (lastVisited.some(path => path.includes('hiragana'))) {
     suggestions.push(learningLinks.katakanaPractice);
   }
 
-  // If user visited Kana, suggest Kanji
+  // If user visited Codes, suggest Spelling
   if (
     lastVisited.some(path => path.includes('kana') || path.includes('katakana'))
   ) {
     suggestions.push(mainLinks.kanji);
   }
 
-  // If user visited Kanji, suggest Vocabulary
+  // If user visited Spelling, suggest more practice
   if (lastVisited.some(path => path.includes('kanji'))) {
     suggestions.push(mainLinks.vocabulary);
   }

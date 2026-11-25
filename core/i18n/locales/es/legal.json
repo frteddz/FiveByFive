@@ -1,17 +1,17 @@
 {
   "privacy": {
     "title": "Privacy Policy",
-    "subtitle": "Your Data Protection at KanaDojo",
+    "subtitle": "Your Data Protection at FiveByFive",
     "lastUpdated": "Last updated"
   },
   "terms": {
     "title": "Terms of Service",
-    "subtitle": "KanaDojo Usage Guidelines",
+    "subtitle": "FiveByFive Usage Guidelines",
     "lastUpdated": "Last updated"
   },
   "security": {
     "title": "Security Policy",
-    "subtitle": "How We Keep KanaDojo Safe",
+    "subtitle": "How We Keep FiveByFive Safe",
     "lastUpdated": "Last updated"
   },
   "credits": {
@@ -19,7 +19,7 @@
     "subtitle": "Contributors & Supporters",
     "contributors": {
       "title": "Contributors",
-      "description": "Thank you to all our amazing contributors"
+      "description": "Thank you to everyone who has contributed"
     },
     "sponsors": {
       "title": "Sponsors",
@@ -27,7 +27,7 @@
     },
     "openSource": {
       "title": "Open Source",
-      "description": "Built with these amazing open source projects"
+      "description": "Built with these open source projects"
     }
   }
 }

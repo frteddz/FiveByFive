@@ -49,7 +49,7 @@ describe('parseTallyBackfillExport', () => {
           formName: 'Bug report',
           fields: [
             { label: 'What happened?', value: 'Kana page broke' },
-            { label: 'Page URL', value: 'https://kanadojo.com/kana' },
+            { label: 'Page URL', value: 'https://fivebyfive.vercel.app/kana' },
           ],
         },
       ]),
@@ -63,7 +63,7 @@ describe('parseTallyBackfillExport', () => {
       'Kana page broke',
     );
     expect(result.reports[0].normalizedPayload.pageUrl).toBe(
-      'https://kanadojo.com/kana',
+      'https://fivebyfive.vercel.app/kana',
     );
   });
 

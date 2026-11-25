@@ -1,47 +1,47 @@
 {
-  "title": "Estadísticas",
-  "description": "Tu progreso de aprendizaje y estadísticas",
+  "title": "Statistics",
+  "description": "Your training results and statistics",
   "overview": {
-    "title": "Resumen",
-    "totalStudyTime": "Tiempo Total de Estudio",
-    "questionsAnswered": "Preguntas Respondidas",
-    "accuracy": "Precisión General",
-    "currentStreak": "Racha Actual",
-    "longestStreak": "Racha Más Larga"
+    "title": "Overview",
+    "totalStudyTime": "Total Training Time",
+    "questionsAnswered": "Questions Answered",
+    "accuracy": "Overall Accuracy",
+    "currentStreak": "Current Streak",
+    "longestStreak": "Longest Streak"
   },
   "charts": {
-    "dailyActivity": "Actividad Diaria",
-    "accuracyOverTime": "Precisión a lo Largo del Tiempo",
-    "progressByLevel": "Progreso por Nivel",
-    "timeByDojo": "Tiempo por Dojo"
+    "dailyActivity": "Daily Activity",
+    "accuracyOverTime": "Accuracy Over Time",
+    "progressByLevel": "Progress by Tier",
+    "timeByDojo": "Time by Training"
   },
   "kana": {
-    "title": "Estadísticas de Kana",
-    "mastered": "Dominados",
-    "learning": "Aprendiendo",
-    "notStarted": "No Iniciados",
-    "hiraganaProgress": "Progreso de Hiragana",
-    "katakanaProgress": "Progreso de Katakana"
+    "title": "Letters Statistics",
+    "mastered": "Mastered",
+    "learning": "Learning",
+    "notStarted": "Not Started",
+    "hiraganaProgress": "Letter Progress",
+    "katakanaProgress": "Code Progress"
   },
   "kanji": {
-    "title": "Estadísticas de Kanji",
-    "mastered": "Dominados",
-    "learning": "Aprendiendo",
-    "notStarted": "No Iniciados",
-    "byLevel": "Por Nivel JLPT"
+    "title": "Codes Statistics",
+    "mastered": "Mastered",
+    "learning": "Learning",
+    "notStarted": "Not Started",
+    "byLevel": "By Tier"
   },
   "vocabulary": {
-    "title": "Estadísticas de Vocabulario",
-    "wordsLearned": "Palabras Aprendidas",
-    "mastered": "Dominadas",
-    "learning": "Aprendiendo",
-    "byLevel": "Por Nivel JLPT"
+    "title": "Spelling Statistics",
+    "wordsLearned": "Words Learned",
+    "mastered": "Mastered",
+    "learning": "Learning",
+    "byLevel": "By Tier"
   },
   "performance": {
-    "title": "Rendimiento",
-    "bestAccuracy": "Mejor Precisión",
-    "fastestTime": "Tiempo Más Rápido",
-    "longestSession": "Sesión Más Larga",
-    "mostImproved": "Mayor Mejora"
+    "title": "Performance",
+    "bestAccuracy": "Best Accuracy",
+    "fastestTime": "Fastest Time",
+    "longestSession": "Longest Session",
+    "mostImproved": "Most Improved"
   }
 }

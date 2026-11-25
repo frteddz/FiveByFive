@@ -10,7 +10,7 @@ export interface BreadcrumbSchemaProps {
 }
 
 export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://kanadojo.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://fivebyfive.vercel.app';
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

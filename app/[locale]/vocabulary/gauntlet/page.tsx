@@ -28,22 +28,22 @@ export default function GauntletPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Vocabulary', url: 'https://kanadojo.com/vocabulary' },
-          { name: 'Gauntlet', url: 'https://kanadojo.com/vocabulary/gauntlet' },
+          { name: 'Home', url: 'https://fivebyfive.vercel.app' },
+          { name: 'Spelling', url: 'https://fivebyfive.vercel.app/vocabulary' },
+          { name: 'Gauntlet', url: 'https://fivebyfive.vercel.app/vocabulary/gauntlet' },
         ]}
       />
       <LearningResourceSchema
-        name='Japanese Vocabulary Gauntlet Mode'
-        description='Progressive Japanese vocabulary mastery challenge. Build comprehensive word knowledge across JLPT levels.'
-        url='https://kanadojo.com/vocabulary/gauntlet'
+        name='Spelling Gauntlet Mode'
+        description='Spell every word in the trainer with code words. Check coverage across all five tiers.'
+        url='https://fivebyfive.vercel.app/vocabulary/gauntlet'
         learningResourceType='Assessment'
         educationalLevel={['Beginner', 'Intermediate', 'Advanced']}
-        teaches='Complete vocabulary mastery across JLPT N5-N1 levels'
-        assesses='Progressive vocabulary recognition and comprehension'
+        teaches='Word spelling with NATO code words'
+        assesses='Spelling recall across five tiers'
         timeRequired='PT20M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
       />
       <VocabGauntlet />
     </>

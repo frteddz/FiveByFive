@@ -1,6 +1,6 @@
 {
-  "title": "Welcome to KanaDojo!",
-  "subtitle": "Let's personalize your learning experience",
+  "title": "Welcome to FiveByFive!",
+  "subtitle": "Let's set up your training experience",
   "steps": {
     "welcome": {
       "demoCta": "Play a quick demo"
@@ -10,9 +10,9 @@
       "subtitle": "Set your display and sound preferences",
       "displayLanguage": {
         "title": "Display Language",
-        "description": "In the character selection menu, for readings, display:",
-        "romaji": "Romaji, Translations 🇺🇸",
-        "kana": "Kana, Kanji 🇯🇵"
+        "description": "In the selection menu, show the answer as:",
+        "romaji": "Code words",
+        "kana": "Letters"
       },
       "soundEffects": {
         "title": "Sound Effects",
@@ -30,7 +30,7 @@
     },
     "fonts": {
       "title": "Choose Your Font",
-      "subtitle": "Choose the perfect font for characters",
+      "subtitle": "Choose the font used for letters and code words",
       "randomFont": "Random Font",
       "default": "(default)",
       "moreInfo": "More fonts available in",
@@ -38,15 +38,15 @@
     },
     "complete": {
       "title": "All Set!",
-      "subtitle": "Your KanaDojo is now personalized",
+      "subtitle": "Your FiveByFive is now personalized",
       "canChange": "You can always change these settings later in the Preferences.",
-      "happyLearning": "Happy learning!"
+      "happyLearning": "Happy training!"
     }
   },
   "features": {
     "behavior": {
       "title": "Configure Behavior",
-      "description": "Set display language and sound preferences"
+      "description": "Set display and sound preferences"
     },
     "theme": {
       "title": "Choose Your Theme",
@@ -54,7 +54,7 @@
     },
     "font": {
       "title": "Select Your Font",
-      "description": "Choose your perfect font for characters"
+      "description": "Choose a comfortable font for letters and code words"
     }
   },
   "navigation": {

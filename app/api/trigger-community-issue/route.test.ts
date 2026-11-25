@@ -17,7 +17,7 @@ import { POST } from './route';
 const originalFetch = globalThis.fetch;
 
 function makeRequest() {
-  return new Request('https://kanadojo.com/api/trigger-community-issue', {
+  return new Request('https://fivebyfive.vercel.app/api/trigger-community-issue', {
     method: 'POST',
     headers: { authorization: 'Bearer cron-secret' },
   });

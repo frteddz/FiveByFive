@@ -1,125 +1,125 @@
 {
   "meta": {
-    "title": "Traductor de Japonés - Traduce Inglés a Japonés y Japonés a Inglés | KanaDojo",
-    "description": "Traductor de japonés en línea gratuito. Traduce de inglés a japonés o de japonés a inglés al instante. Incluye romanización (romaji), historial de traducciones y traducciones precisas con Google Translate."
+    "title": "Code Word Reference - NATO Alphabet Lookup | FiveByFive",
+    "description": "Look up NATO code words and radio phrase meanings. A quick reference for letters, digits, callsign spelling and radiotelephony."
   },
   "header": {
-    "title": "Traductor de Japonés"
+    "title": "Code Word Reference"
   },
   "languages": {
-    "english": "Inglés",
-    "japanese": "日本語",
-    "en": "EN",
-    "ja": "JA"
+    "english": "Plain text",
+    "japanese": "Code words",
+    "en": "TEXT",
+    "ja": "CODE"
   },
   "input": {
     "placeholder": {
-      "en": "Escribe el texto a traducir...",
-      "ja": "テキストを入力してください..."
+      "en": "Enter a letter or phrase...",
+      "ja": "Enter a letter or word to spell..."
     },
-    "clearButton": "Borrar entrada",
+    "clearButton": "Clear input",
     "characterCount": "{count} / {max}",
-    "keyboardHint": "Presiona Ctrl+Enter (⌘+Enter en Mac) para traducir",
-    "characterLimitWarning": "El texto excede la longitud máxima de {max} caracteres"
+    "keyboardHint": "Press Ctrl+Enter (Command+Enter on Mac) to look up",
+    "characterLimitWarning": "Text exceeds maximum length of {max} characters"
   },
   "output": {
     "placeholder": {
-      "en": "La traducción aparecerá aquí...",
-      "ja": "翻訳がここに表示されます..."
+      "en": "The code word will appear here...",
+      "ja": "The spelled result will appear here..."
     },
-    "copyButton": "Copiar traducción",
-    "copied": "¡Copiado!",
-    "copiedMessage": "¡Copiado al portapapeles!",
-    "romanization": "Romanización (Romaji)"
+    "copyButton": "Copy result",
+    "copied": "Copied!",
+    "copiedMessage": "Copied to clipboard!",
+    "romanization": "Code word spelling"
   },
   "actions": {
-    "translate": "Traducir",
-    "translating": "Traduciendo...",
-    "swapLanguages": "Intercambiar idiomas"
+    "translate": "Look up",
+    "translating": "Looking up...",
+    "swapLanguages": "Swap directions"
   },
   "history": {
-    "title": "Historial",
-    "empty": "Aún no hay historial de traducciones",
-    "emptyHint": "Tus traducciones aparecerán aquí",
-    "clearAll": "Borrar todo",
-    "deleteEntry": "Eliminar entrada",
+    "title": "History",
+    "empty": "No lookups yet",
+    "emptyHint": "Your results will appear here",
+    "clearAll": "Clear All",
+    "deleteEntry": "Delete entry",
     "clearDialog": {
-      "title": "¿Borrar historial de traducciones?",
-      "description": "Esto eliminará permanentemente todo tu historial de traducciones. Esta acción no se puede deshacer.",
-      "cancel": "Cancelar",
-      "confirm": "Borrar todo"
+      "title": "Clear lookup history?",
+      "description": "This will permanently delete all your saved lookups. This action cannot be undone.",
+      "cancel": "Cancel",
+      "confirm": "Clear All"
     },
     "timeAgo": {
-      "justNow": "Ahora mismo",
-      "minutesAgo": "hace {count}m",
-      "hoursAgo": "hace {count}h",
-      "daysAgo": "hace {count}d"
+      "justNow": "Just now",
+      "minutesAgo": "{count}m ago",
+      "hoursAgo": "{count}h ago",
+      "daysAgo": "{count}d ago"
     }
   },
   "offline": {
-    "message": "Estás sin conexión. La traducción no está disponible hasta que te reconectes."
+    "message": "You are offline. Lookups are unavailable until you reconnect."
   },
   "errors": {
-    "networkError": "No se puede conectar. Por favor, verifica tu conexión a internet.",
-    "rateLimit": "Demasiadas solicitudes. Por favor, espera un momento e intenta de nuevo.",
-    "invalidInput": "Por favor, ingresa un texto válido para traducir.",
-    "emptyInput": "Por favor, ingresa texto para traducir",
-    "serverError": "El servicio de traducción no está disponible temporalmente.",
-    "authError": "Error de configuración del servicio de traducción.",
-    "unknownError": "Ocurrió un error durante la traducción. Por favor, intenta de nuevo."
+    "networkError": "Unable to connect. Please check your internet connection.",
+    "rateLimit": "Too many requests. Please wait a moment and try again.",
+    "invalidInput": "Please enter valid text to look up.",
+    "emptyInput": "Please enter text to look up",
+    "serverError": "The lookup service is temporarily unavailable.",
+    "authError": "Lookup service configuration error.",
+    "unknownError": "An error occurred during lookup. Please try again."
   },
   "seo": {
-    "guideTitle": "Guía de Traducción de Japonés",
+    "guideTitle": "NATO Alphabet Reference Guide",
     "howToUse": {
-      "title": "Cómo Usar el Traductor de Japonés",
-      "intro": "Nuestro traductor de japonés gratuito facilita la traducción de texto entre inglés y japonés. Así es como empezar:",
+      "title": "How to use the code word reference",
+      "intro": "Use this page to check a code word or spell a word before a drill. Here is how to get started:",
       "steps": {
-        "step1": "Ingresa tu texto en el campo de entrada a la izquierda",
-        "step2": "Selecciona tu idioma de origen (inglés o japonés)",
-        "step3": "Haz clic en el botón traducir o presiona Ctrl+Enter",
-        "step4": "Ve tu traducción con romanización (romaji) para texto en japonés",
-        "step5": "Copia la traducción o guárdala en tu historial"
+        "step1": "Enter a letter, digit or short word in the input field",
+        "step2": "Choose the direction you need",
+        "step3": "Click the lookup button or press Ctrl+Enter",
+        "step4": "Read the code word spelling in the result",
+        "step5": "Copy the result or save it to your history"
       },
-      "proTip": "Consejo: Usa el botón de intercambio para invertir rápidamente la dirección de traducción y traducir el resultado de vuelta."
+      "proTip": "Tip: Use the swap button to move between plain text and code word spelling."
     },
     "writingSystems": {
-      "title": "Sobre los Sistemas de Escritura Japoneses",
-      "intro": "El japonés usa tres sistemas de escritura principales, a menudo combinados en el mismo texto:",
+      "title": "About the NATO phonetic alphabet",
+      "intro": "The alphabet gives every letter a fixed code word so speech sounds cannot be mistaken for another letter:",
       "hiragana": {
-        "name": "Hiragana (ひらがな)",
-        "description": "Un silabario fonético usado para palabras japonesas nativas, elementos gramaticales y lecturas furigana"
+        "name": "Letters A to Z",
+        "description": "Alfa, Bravo, Charlie and the rest of the 26 letter code words"
       },
       "katakana": {
-        "name": "Katakana (カタカナ)",
-        "description": "Un silabario fonético usado principalmente para palabras extranjeras, onomatopeyas y énfasis"
+        "name": "Digits and radio phrases",
+        "description": "Digit code words such as Niner and short phrases such as Roger or Wilco"
       },
       "kanji": {
-        "name": "Kanji (漢字)",
-        "description": "Caracteres chinos adaptados para el japonés, que representan significados y conceptos. Hay más de 2,000 kanji de uso común"
+        "name": "Callsign spelling",
+        "description": "Spell a whole word one letter at a time with its code word"
       },
-      "outro": "Nuestro traductor maneja los tres sistemas de escritura y proporciona romanización (romaji) para ayudarte a leer texto en japonés usando el alfabeto latino."
+      "outro": "Use this reference while training, or check a spelling before you send a call."
     },
     "faq": {
-      "title": "Preguntas Frecuentes",
+      "title": "Frequently Asked Questions",
       "isFree": {
-        "question": "¿Este traductor de japonés es gratuito?",
-        "answer": "¡Sí! Nuestro traductor de japonés es completamente gratuito sin necesidad de registro. Traduce todo el texto que necesites."
+        "question": "Is this reference free?",
+        "answer": "Yes. There is no registration and no limit on how many lookups you make."
       },
       "accuracy": {
-        "question": "¿Qué tan precisa es la traducción?",
-        "answer": "Nuestro traductor usa la API de Google Cloud Translation, uno de los servicios de traducción automática más precisos disponibles. Aunque ninguna traducción automática es perfecta, proporciona traducciones de alta calidad para la mayoría de los casos de uso cotidianos."
+        "question": "Which spellings does it use?",
+        "answer": "The trainer follows ICAO spellings such as Alfa with one l and Juliett with two t. Common variants are accepted in drills."
       },
       "romanization": {
-        "question": "¿Qué es la romanización (romaji)?",
-        "answer": "La romanización, o romaji, es la representación del texto japonés usando el alfabeto latino. Ayuda a los hablantes no japoneses a leer y pronunciar palabras japonesas. Nuestro traductor proporciona automáticamente romanización para texto en japonés."
+        "question": "What is a code word?",
+        "answer": "A code word is a word used to represent a letter in the NATO phonetic alphabet. Saying Sierra for S avoids confusion with other letters over radio."
       },
       "historySaved": {
-        "question": "¿Se guarda mi historial de traducciones?",
-        "answer": "Sí, tu historial de traducciones se guarda localmente en tu navegador. Esto significa que tus traducciones son privadas y solo accesibles en tu dispositivo. Puedes borrar tu historial en cualquier momento."
+        "question": "Is my lookup history saved?",
+        "answer": "Yes, your history is saved locally in your browser and stays on your device. You can clear it at any time."
       },
       "maxLength": {
-        "question": "¿Cuál es la longitud máxima del texto?",
-        "answer": "Puedes traducir hasta 5,000 caracteres a la vez. Para textos más largos, recomendamos dividirlos en secciones más pequeñas."
+        "question": "What is the maximum text length?",
+        "answer": "You can look up up to 5,000 characters at a time. For longer text, break it into smaller sections."
       }
     }
   }

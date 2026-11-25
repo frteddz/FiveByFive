@@ -28,17 +28,17 @@ export default function Train() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Kana', url: 'https://kanadojo.com/kana' },
-          { name: 'Training', url: 'https://kanadojo.com/kana/train' },
+          { name: 'Home', url: 'https://fivebyfive.vercel.app' },
+          { name: 'Letters', url: 'https://fivebyfive.vercel.app/kana' },
+          { name: 'Training', url: 'https://fivebyfive.vercel.app/kana/train' },
         ]}
       />
       <CourseSchema
-        name='Hiragana & Katakana Training'
-        description='Master Japanese Hiragana and Katakana with interactive training modes including multiple choice, input practice, and speed tests.'
-        url='https://kanadojo.com/kana/train'
+        name='Letters Training - A to Z Code Words'
+        description='Practice letter to code word recall with pick, reverse pick, input and reverse input drills.'
+        url='https://fivebyfive.vercel.app/kana/train'
         skillLevel='Beginner to Intermediate'
-        learningResourceType='Interactive Training Game'
+        learningResourceType='Interactive Training'
       />
       <KanaGame />
     </>

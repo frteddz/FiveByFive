@@ -83,7 +83,7 @@ const KanjiSetDictionary = memo(function KanjiSetDictionary({
                 text={kanjiObj.kanjiChar}
                 reading={kanjiObj.onyomi[0] || kanjiObj.kunyomi[0]}
                 className='relative z-10 pb-2 text-7xl'
-                lang='ja'
+                lang='en'
               />
             </a>
 

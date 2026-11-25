@@ -1,27 +1,27 @@
 {
   "menu": {
-    "home": "Inicio",
-    "kana": "Kana",
-    "kanji": "Kanji",
-    "vocabulary": "Vocabulario",
-    "academy": "Academia",
-    "achievements": "Logros",
-    "statistics": "Estadísticas",
-    "progress": "Progreso",
-    "settings": "Configuración",
-    "preferences": "Preferencias",
-    "about": "Acerca de",
-    "help": "Ayuda",
-    "logout": "Cerrar sesión"
+    "home": "Home",
+    "kana": "Letters",
+    "kanji": "Codes",
+    "vocabulary": "Spelling",
+    "academy": "Academy",
+    "achievements": "Achievements",
+    "statistics": "Statistics",
+    "progress": "Progress",
+    "settings": "Settings",
+    "preferences": "Preferences",
+    "about": "About",
+    "help": "Help",
+    "logout": "Logout"
   },
   "breadcrumbs": {
-    "home": "Inicio",
-    "back": "Volver a {{name}}"
+    "home": "Home",
+    "back": "Back to {{name}}"
   },
   "footer": {
-    "copyright": "© {{year}} KanaDojo. Todos los derechos reservados.",
-    "privacy": "Política de Privacidad",
-    "terms": "Términos de Servicio",
-    "contact": "Contáctanos"
+    "copyright": "© {{year}} FiveByFive. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us"
   }
 }

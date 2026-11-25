@@ -19,143 +19,90 @@ export default function translationGen(t: (key: string) => string) {
           <p className='text-lg text-(--secondary-color)'>
             {t('instructions')}
           </p>
-          {/*         <p className='text-sm text-secondary'>
-          Want to support an independent project built by the community, for the
-          community, and help KanaDojo continue growing? Then please consider
-          donating{' '}
-          <Link
-            href='https://ko-fi.com/kanadojo'
-            target='_blank'
-            className='underline'
-          >
-            here
-          </Link>{' '}
-          - thank you!
-        </p> */}
         </>
       ),
     },
     '/kana': {
-      header: <span>Welcome to the kana (hiragana and katakana) dojo!</span>,
+      header: <span>Welcome to the Letters training!</span>,
       content: (
         <>
           <p className='text-lg text-(--secondary-color)'>
-            This is the place where you can learn and practice the two core
-            syllabaries of Japanese - Hiragana and Katakana.
+            Here you can match every letter from A to Z with its ICAO code
+            word, and practice digits and radio phrases.
           </p>
           <p className='text-lg text-(--secondary-color)'>
-            To begin, select at least 1 set of characters, select or change the
-            training mode, then hit <b>Go!</b> below and start training now!
+            To begin, select at least 1 group, choose a training mode, then hit{' '}
+            <b>Go!</b> below and start drilling now!
           </p>
         </>
       ),
     },
     '/kanji': {
-      header: <span>Welcome to the kanji dojo!</span>,
+      header: <span>Welcome to the Codes training!</span>,
       content: (
         <>
           <p className='text-lg text-(--secondary-color)'>
-            This is the place where you can learn and practice the main
-            component of the Japanese writing system - the kanji characters.
+            Here you can practice radio phrases and call signs across five
+            tiers, from common replies to procedure words.
           </p>
           <p className='text-lg text-(--secondary-color)'>
-            To begin, select at least 1 level, select your training mode, then
-            hit <b>Go!</b> below and start training!
-          </p>
-          <p className='text-lg italic'>
-            New: click on a kanji character to find out more about it on{' '}
-            <a
-              href='http://kanjiheatmap.com/'
-              className='hover:underline'
-              rel='noopener'
-              target='_blank'
-            >
-              Kanji Heatmap!
-            </a>
+            To begin, select at least 1 tier, choose a training mode, then hit{' '}
+            <b>Go!</b> below and start drilling!
           </p>
         </>
       ),
     },
     '/vocabulary': {
-      header: <span>Welcome to the vocabulary dojo!</span>,
+      header: <span>Welcome to the Spelling training!</span>,
       content: (
         <>
           <p className='text-lg text-(--secondary-color)'>
-            This is the place where you can learn and practice the most common
-            words used in day-to-day Japanese.
+            Here you can spell words with ICAO code words, one letter at a
+            time.
           </p>
           <p className='text-lg text-(--secondary-color)'>
-            To begin, select at least 1 level, select your training mode, then
-            hit <b>Go!</b> below and start training!
-          </p>
-          <p className='text-lg italic'>
-            New: click on a word to find out more about it on{' '}
-            <a
-              href='https://jisho.org/'
-              className='hover:underline'
-              rel='noopener'
-              target='_blank'
-            >
-              Jisho!
-            </a>
+            To begin, select at least 1 tier, choose a training mode, then hit{' '}
+            <b>Go!</b> below and start drilling!
           </p>
         </>
       ),
     },
 
     jlptMenu: {
-      header: <span>About the JLPT kanji/vocabulary groups</span>,
+      header: <span>About the training tiers</span>,
       content: (
         <p className='text-lg text-(--secondary-color)'>
-          The test consists of five levels, with N1 being the highest level and
-          N5 the lowest. N1 covers kanji characters and vocabulary that allow
-          the user to understand Japanese used in business, academia and other
-          high-level environments, N2 covers kanji characters and vocabulary
-          allow the user to have the ability to understand Japanese used in
-          everyday situations, and in a variety of circumstances to a proficient
-          degree, N3 represents vocabulary that allows the user to understand
-          Japanese used in everyday situations to an intermediate degree, N4
-          represents the ability to understand some basic real-life Japanese,
-          and N5 represents the ability to understand some simple Japanese at a
-          basic level.
+          Codes and Spelling are split into five tiers. Tier 1 holds the most
+          common items and Tier 5 holds the most demanding ones. Each tier is a
+          set you can finish in a short session, so you can work on one group
+          without seeing everything at once.
         </p>
       ),
     },
     groupMenu: {
-      header: <span>About the Japanese Language Proficiency Test (JLPT)</span>,
+      header: <span>About the NATO phonetic alphabet</span>,
       content: (
         <p className='text-lg text-(--secondary-color)'>
-          JLPT (short for Japanese-Language Proficiency Test) is a standardized
-          criterion-referenced test to evaluate and certify Japanese language
-          proficiency for non-native speakers.
+          The NATO phonetic alphabet gives every letter a fixed code word.
+          Alfa stands for A, Bravo for B, Charlie for C, and so on through
+          Zulu for Z. Digits have their own words too, such as Niner for nine.
           <br />
-          The JLPT vocabulary lists categorize kanji characters and words based
-          on their appearance in the Japanese Language Proficiency Test (JLPT).
-          The test has five levels, from N5 (easiest) to N1 (most difficult),
-          each requiring knowledge of a specific set of kanji. N5 and N4 focus
-          on basic kanji and words used in day-to-day life, while N3, N2, and N1
-          introduce more complex and specialized characters and vocabulary.
-          Originally designed for JLPT preparation, these vocabulary are also
-          widely used by learners all over the world to study Japanese
-          effectively and systematically.
+          The purpose is clarity over voice links. Letters such as B and D, or
+          M and N, sound alike in noisy conditions. Saying Bravo or Mike removes
+          the guesswork. FiveByFive uses these code words in letter drills,
+          radio phrase practice and spelling exercises.
         </p>
       ),
     },
     wordClassMenu: {
-      header: <span>About word types</span>,
+      header: <span>About word groups</span>,
       content: (
         <p className='text-lg text-(--secondary-color)'>
-          Word types categorize words based on their function and meaning in a
-          sentence. Nouns name people, places, things, or ideas - like
-          &quot;dog&quot;, &quot;city&quot;, &quot;happiness&quot;, and so on.
-          Adjectives describe or modify nouns, giving details about certain
-          qualities of a noun - like &quot;happy&quot;, &quot;beautiful&quot;,
-          &quot;tall&quot;, &quot;blue&quot;. Verbs express actions, states, or
-          occurrences - like &quot;run&quot;, &quot;think&quot;,
-          &quot;exist&quot;. And finally, adverbs modify verbs, adjectives or
-          even other adverbs, often indicating manner, time, or degree - like
-          &quot;quickly&quot;, &quot;slowly&quot;, &quot;poorly&quot;,
-          &quot;very&quot;, &quot;yesterday&quot;, and so on.
+          Spelling sets group words by length and use. Short words build
+          confidence with the code word for each letter. Longer words and
+          callsigns train you to keep the sequence in order. Radio phrases are
+          grouped separately because you learn their meaning rather than spell
+          them letter by letter.
         </p>
       ),
     },

@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
 
 const WORKFLOW_FILE = 'stale-community-issues.yml';
-const REPO_OWNER = 'lingdojo';
-const REPO_NAME = 'kana-dojo';
+const REPO_OWNER = 'frteddz';
+const REPO_NAME = 'FiveByFive';
 const GITHUB_DISPATCH_TIMEOUT_MS = 8000;
 
 export const runtime = 'edge';
@@ -16,8 +16,8 @@ export const runtime = 'edge';
  * Dispatches the stale community issues workflow via workflow_dispatch.
  *
  * Required env vars:
- *   CRON_SECRET  — shared secret used by cron-job.org Authorization header
- *   GITHUB_PAT   — fine-grained PAT with Actions: Read & Write on this repo
+ *   CRON_SECRET - shared secret used by cron-job.org Authorization header
+ *   GITHUB_PAT - fine-grained PAT with Actions: Read & Write on this repo
  */
 export async function POST(request: Request) {
   const cronSecret = process.env.CRON_SECRET;

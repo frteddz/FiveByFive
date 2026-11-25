@@ -257,7 +257,6 @@ IGNORE_PATTERNS=(
   
   # Custom type definitions (non-affecting)
   "^canvas-confetti\\.d\\.ts$"
-  "^kuroshiro\\.d\\.ts$"
   "^sql\\.js\\.d\\.ts$"
   "^global\\.d\\.ts$"
   "^vitest\\.shims\\.d\\.ts$"

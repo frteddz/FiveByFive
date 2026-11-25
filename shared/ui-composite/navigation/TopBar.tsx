@@ -7,10 +7,7 @@ import clsx from 'clsx';
 import {
   Sparkles,
   House,
-  BookOpen,
   Library,
-  Languages,
-  Repeat,
   Package,
   type LucideIcon,
 } from 'lucide-react';
@@ -76,35 +73,28 @@ export default function TopBar() {
 
   // Determine which tab to show based on current route
   const getContextTab = () => {
-    if (pathWithoutLocale.startsWith('/resources')) {
-      return { name: 'Resources', href: '/resources', icon: Library };
-    } else if (pathWithoutLocale.startsWith('/translate')) {
-      return { name: 'Translate', href: '/translate', icon: Languages };
-    } else if (pathWithoutLocale.startsWith('/conjugate')) {
-      return { name: 'Conjugate', href: '/conjugate', icon: Repeat };
-    } else if (pathWithoutLocale.startsWith('/anki-converter')) {
+    if (pathWithoutLocale.startsWith('/anki-converter')) {
       return { name: 'Converter', href: '/anki-converter', icon: Package };
     }
-    // Default to Academy
-    return { name: 'Academy', href: '/academy', icon: BookOpen };
+    return { name: 'Resources', href: '/resources', icon: Library };
   };
 
   const contextTab = getContextTab();
 
   const navItems: NavItem[] = [
     contextTab,
-    { name: 'Kana', href: '/kana', charIcon: 'あ' },
-    { name: 'Kanji', href: '/kanji', charIcon: '字' },
-    { name: 'Vocab', href: '/vocabulary', charIcon: '語' },
+    { name: 'Letters', href: '/kana', charIcon: 'A' },
+    { name: 'Codes', href: '/kanji', charIcon: 'R' },
+    { name: 'Spelling', href: '/vocabulary', charIcon: 'S' },
     { name: 'Preferences', href: '/preferences', icon: Sparkles },
   ];
 
   const mobileNavItems: NavItem[] = [
     { name: 'Home', href: '/', icon: House },
     contextTab,
-    { name: 'Kana', href: '/kana', charIcon: 'あ' },
-    { name: 'Vocab', href: '/vocabulary', charIcon: '語' },
-    { name: 'Kanji', href: '/kanji', charIcon: '字' },
+    { name: 'Letters', href: '/kana', charIcon: 'A' },
+    { name: 'Spelling', href: '/vocabulary', charIcon: 'S' },
+    { name: 'Codes', href: '/kanji', charIcon: 'R' },
     { name: 'Preferences', href: '/preferences', icon: Sparkles },
   ];
 
@@ -139,8 +129,10 @@ export default function TopBar() {
             onClick={() => playClick()}
             className='flex items-center gap-3 text-lg font-medium text-(--main-color) transition-opacity hover:opacity-80'
           >
-            <span className='text-3xl'>KanaDojo</span>
-            <span className='text-3xl text-(--secondary-color)'>かな道場</span>
+            <span className='text-3xl'>FiveByFive</span>
+            <span className='text-3xl text-(--secondary-color)'>
+              PHONETIC TRAINER
+            </span>
           </Link>
 
           {/* Navigation Links */}

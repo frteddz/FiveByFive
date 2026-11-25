@@ -2,176 +2,253 @@
   "resources": [
     {
       "id": "reddit-learnjapanese",
-      "name": "r/LearnJapanese",
-      "nameJa": "r/LearnJapanese",
-      "description": "Reddit's largest Japanese learning community.",
-      "descriptionLong": "r/LearnJapanese is Reddit's largest community for Japanese learners with over 1 million members. The subreddit features questions, resources, study tips, and discussions about all aspects of learning Japanese. Great for getting advice and staying motivated.",
+      "name": "r/amateurradio",
+      "nameJa": "",
+      "description": "Main Reddit community for amateur radio.",
+      "descriptionLong": "Posts cover equipment, operating, licensing, and questions from new operators.",
       "category": "community",
       "subcategory": "forums",
-      "tags": ["Reddit", "questions", "resources", "discussion", "large"],
+      "tags": [
+        "reddit",
+        "amateur-radio",
+        "forum",
+        "questions"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.reddit.com/r/LearnJapanese/",
-      "rating": 4.6,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.reddit.com/r/amateurradio/",
+      "rating": 0,
       "featured": true,
-      "notes": "Check the wiki and starter's guide for beginners."
+      "notes": ""
     },
     {
       "id": "wanikani-community",
-      "name": "WaniKani Community",
-      "nameJa": "WaniKaniコミュニティ",
-      "description": "Active forum for WaniKani users and Japanese learners.",
-      "descriptionLong": "The WaniKani Community forums are active discussion boards for Japanese learners. While centered around WaniKani, discussions cover all aspects of Japanese learning. The community is known for being helpful and supportive.",
+      "name": "Ham Stack Exchange",
+      "nameJa": "",
+      "description": "Question and answer site with archived answers.",
+      "descriptionLong": "Search for your question first, then post a focused one if it has not been answered.",
       "category": "community",
       "subcategory": "forums",
-      "tags": ["forum", "WaniKani", "supportive", "discussion"],
+      "tags": [
+        "q-and-a",
+        "amateur-radio",
+        "archive",
+        "questions"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://community.wanikani.com/",
-      "rating": 4.7,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://ham.stackexchange.com/",
+      "rating": 0,
       "featured": true,
-      "notes": "Very active and helpful community."
+      "notes": ""
     },
     {
       "id": "japanese-discord",
-      "name": "Japanese Language Discord Servers",
-      "nameJa": "日本語Discordサーバー",
-      "description": "Discord communities for Japanese learners.",
-      "descriptionLong": "Various Discord servers bring together Japanese learners for real-time chat, voice practice, and community support. Popular servers include EJLX (English-Japanese Language Exchange) and others focused on specific learning methods.",
+      "name": "Discord",
+      "nameJa": "",
+      "description": "Live chat for radio communities.",
+      "descriptionLong": "Look for a public amateur radio server and join a text or voice discussion.",
       "category": "community",
       "subcategory": "discord",
-      "tags": ["Discord", "chat", "voice", "real-time", "community"],
+      "tags": [
+        "discord",
+        "chat",
+        "live",
+        "community"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web", "ios", "android", "windows", "macos"],
-      "url": "https://discord.gg/japanese",
-      "rating": 4.5,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://discord.com/",
+      "rating": 0,
       "featured": true,
-      "notes": "Search for servers matching your interests and level."
+      "notes": ""
     },
     {
       "id": "hellotalk-community",
-      "name": "HelloTalk",
-      "nameJa": "HelloTalk",
-      "description": "Language exchange app with community features.",
-      "descriptionLong": "HelloTalk connects you with native Japanese speakers for language exchange. Beyond one-on-one chat, the app includes community features like moments (posts) and group chats where you can interact with many learners and native speakers.",
+      "name": "r/HamRadio",
+      "nameJa": "",
+      "description": "Second general amateur radio subreddit.",
+      "descriptionLong": "Another place to read posts and ask about operating practice and wording.",
       "category": "community",
       "subcategory": "language-exchange",
-      "tags": ["exchange", "native-speakers", "chat", "posts", "app"],
+      "tags": [
+        "reddit",
+        "amateur-radio",
+        "posts",
+        "community"
+      ],
       "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Free with optional premium features",
-      "platforms": ["ios", "android"],
-      "url": "https://www.hellotalk.com/",
-      "rating": 4.5,
-      "featured": true,
-      "notes": "Great for finding language exchange partners."
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.reddit.com/r/HamRadio/",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     },
     {
       "id": "tandem-community",
-      "name": "Tandem",
-      "nameJa": "Tandem",
-      "description": "Language exchange platform for conversation partners.",
-      "descriptionLong": "Tandem connects language learners with native speakers for mutual language exchange. Find Japanese speakers who want to learn your language and practice together through text, voice, and video.",
+      "name": "eHam.net",
+      "nameJa": "",
+      "description": "Forums and reviews from radio operators.",
+      "descriptionLong": "The forums are a place to discuss operating practice and to get answers from experienced hams.",
       "category": "community",
       "subcategory": "language-exchange",
-      "tags": ["exchange", "conversation", "video", "native-speakers"],
+      "tags": [
+        "forums",
+        "amateur-radio",
+        "reviews",
+        "community"
+      ],
       "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Free with optional premium features",
-      "platforms": ["ios", "android"],
-      "url": "https://www.tandem.net/",
-      "rating": 4.4,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.eham.net/",
+      "rating": 0,
       "featured": false,
-      "notes": "Good alternative to HelloTalk."
+      "notes": ""
     },
     {
       "id": "italki-community",
-      "name": "italki Community",
-      "nameJa": "italkiコミュニティ",
-      "description": "Language learning community with tutors and exchange.",
-      "descriptionLong": "italki's community features include language exchange partners, community tutors, and discussion forums. Beyond paid lessons, you can find free language exchange and get writing corrections.",
+      "name": "ARRL club finder",
+      "nameJa": "",
+      "description": "Find operators to practise with locally.",
+      "descriptionLong": "ARRL lists affiliated clubs, which are the easiest way to meet people for regular practice.",
       "category": "community",
       "subcategory": "language-exchange",
-      "tags": ["exchange", "tutors", "community", "writing"],
+      "tags": [
+        "clubs",
+        "arrl",
+        "partners",
+        "practice"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.italki.com/community",
-      "rating": 4.5,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.arrl.org/find-a-club",
+      "rating": 0,
       "featured": false,
-      "notes": "Free community features alongside paid tutoring."
+      "notes": ""
     },
     {
       "id": "hinative-community",
-      "name": "HiNative",
-      "nameJa": "HiNative",
-      "description": "Q&A platform for language questions.",
-      "descriptionLong": "HiNative is a Q&A platform where you can ask native Japanese speakers questions about language and culture. Get answers about grammar, vocabulary, pronunciation, and natural expressions from real native speakers.",
+      "name": "r/MorseCode",
+      "nameJa": "",
+      "description": "Community for Morse code learners and operators.",
+      "descriptionLong": "Posts cover practice methods, keying, and questions about Morse abbreviations.",
       "category": "community",
       "subcategory": "forums",
-      "tags": ["Q&A", "native-speakers", "questions", "answers"],
+      "tags": [
+        "reddit",
+        "morse",
+        "community",
+        "questions"
+      ],
       "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Free tier available. Premium for additional features.",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://hinative.com/",
-      "rating": 4.5,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.reddit.com/r/MorseCode/",
+      "rating": 0,
       "featured": false,
-      "notes": "Great for getting quick answers from native speakers."
+      "notes": ""
     },
     {
       "id": "lang-8-community",
-      "name": "Lang-8",
-      "nameJa": "Lang-8",
-      "description": "Writing exchange community.",
-      "descriptionLong": "Lang-8 is a language exchange platform focused on writing. Write journal entries in Japanese and get corrections from native speakers. Help others learn your language in return.",
+      "name": "r/flying",
+      "nameJa": "",
+      "description": "Aviation community with pilot and controller discussion.",
+      "descriptionLong": "Use it to read how pilots describe radio calls and phraseology in practice.",
       "category": "community",
       "subcategory": "language-exchange",
-      "tags": ["writing", "correction", "exchange", "journal"],
+      "tags": [
+        "reddit",
+        "aviation",
+        "pilots",
+        "discussion"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://lang-8.com/",
-      "rating": 4.3,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.reddit.com/r/flying/",
+      "rating": 0,
       "featured": false,
-      "notes": "Currently not accepting new registrations."
+      "notes": ""
     },
     {
       "id": "japanese-stack-exchange",
-      "name": "Japanese Stack Exchange",
-      "nameJa": "Japanese Stack Exchange",
-      "description": "Q&A site for Japanese language questions.",
-      "descriptionLong": "Japanese Stack Exchange is a Q&A site for questions about Japanese language, grammar, usage, and translation. The site has a large archive of answered questions and active community of experts.",
+      "name": "QRZ",
+      "nameJa": "",
+      "description": "Callsign database used by amateur radio operators.",
+      "descriptionLong": "Look up call signs to see real examples while you read radio community posts.",
       "category": "community",
       "subcategory": "forums",
-      "tags": ["Q&A", "grammar", "expert", "archive"],
+      "tags": [
+        "callsigns",
+        "database",
+        "amateur-radio",
+        "reference"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://japanese.stackexchange.com/",
-      "rating": 4.6,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.qrz.com/",
+      "rating": 0,
       "featured": false,
-      "notes": "Great for detailed grammar questions."
+      "notes": "Some database features require an account."
     },
     {
       "id": "refold-community",
-      "name": "Refold Community",
-      "nameJa": "Refoldコミュニティ",
-      "description": "Community for immersion-based language learning.",
-      "descriptionLong": "The Refold community brings together learners following the immersion-based Refold method. The Discord server and forums provide support, resources, and discussion for those learning Japanese through immersion.",
+      "name": "r/aviation",
+      "nameJa": "",
+      "description": "Broad aviation discussion community.",
+      "descriptionLong": "Read threads about air traffic communication and the wording used in different regions.",
       "category": "community",
       "subcategory": "discord",
-      "tags": ["immersion", "method", "Discord", "support"],
+      "tags": [
+        "reddit",
+        "aviation",
+        "phraseology",
+        "discussion"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://refold.la/",
-      "rating": 4.4,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.reddit.com/r/aviation/",
+      "rating": 0,
       "featured": false,
-      "notes": "Great for immersion learners."
+      "notes": ""
     }
   ]
 }

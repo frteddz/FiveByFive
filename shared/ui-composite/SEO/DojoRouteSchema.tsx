@@ -15,26 +15,26 @@ interface DojoRouteSchemaProps {
   };
 }
 
-const BASE_URL = 'https://kanadojo.com';
+const BASE_URL = 'https://fivebyfive.vercel.app';
 
 function withLocalePath(locale: string, path: string) {
   return `${BASE_URL}/${locale}${path}`;
 }
 
 function getRouteName(routeKey: DojoRouteSchemaProps['routeKey']) {
-  if (routeKey === 'kana') return 'Kana';
-  if (routeKey === 'kanji') return 'Kanji';
-  return 'Vocabulary';
+  if (routeKey === 'kana') return 'Letters';
+  if (routeKey === 'kanji') return 'Codes';
+  return 'Spelling';
 }
 
 function getRouteAliases(routeKey: DojoRouteSchemaProps['routeKey']) {
   if (routeKey === 'kana') {
-    return ['learn kana', 'hiragana practice', 'katakana practice'];
+    return ['NATO phonetic alphabet', 'letter code words', 'ICAO letters'];
   }
   if (routeKey === 'kanji') {
-    return ['learn kanji', 'kanji practice', 'jlpt kanji'];
+    return ['radio phrases', 'radiotelephony codes', 'radio code practice'];
   }
-  return ['learn japanese vocabulary', 'jlpt vocabulary', 'vocabulary practice'];
+  return ['callsign spelling', 'spell with code words', 'word spelling practice'];
 }
 
 export function DojoRouteSchema({
@@ -74,7 +74,7 @@ export function DojoRouteSchema({
     {
       '@type': 'SoftwareApplication',
       '@id': `${pageUrl}#software`,
-      name: `KanaDojo ${routeName} Practice`,
+      name: `FiveByFive ${routeName} Practice`,
       applicationCategory: 'EducationalApplication',
       operatingSystem: 'Web',
       url: appRouteUrl,
@@ -95,7 +95,7 @@ export function DojoRouteSchema({
     {
       '@type': 'LearningResource',
       '@id': `${pageUrl}#learning-resource`,
-      name: `${routeName} Learning Resource`,
+      name: `${routeName} Training Resource`,
       description,
       url: appRouteUrl,
       learningResourceType: ['Interactive', 'Quiz', 'Game'],
@@ -106,7 +106,7 @@ export function DojoRouteSchema({
       provider: {
         '@type': 'Organization',
         '@id': `${BASE_URL}/#organization`,
-        name: 'KanaDojo',
+        name: 'FiveByFive',
         url: BASE_URL,
       },
       ...(educationalAlignment

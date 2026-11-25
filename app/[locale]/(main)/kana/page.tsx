@@ -44,33 +44,33 @@ export default async function KanaPage({
         ]}
       />
       <CourseSchema
-        name='Japanese Hiragana and Katakana Course for Beginners (KanaDojo)'
-        description='Master Japanese Hiragana and Katakana syllabaries with interactive games, drills, and quizzes. Learn all 92 basic kana plus dakuon, yoon, and katakana foreign sounds with feedback and progress tracking.'
-        url={`https://kanadojo.com/${locale}/kana`}
+        name='Letters Course - Learn A to Z with ICAO Code Words'
+        description='Learn the code word for every letter from A to Z with pick, reverse pick, input and reverse input drills. Track accuracy and review the letters you miss.'
+        url={`https://fivebyfive.vercel.app/${locale}/kana`}
         educationalLevel='Beginner'
         skillLevel='Beginner'
         learningResourceType='Interactive Course, Exercise and Games'
       />
       <LearningResourceSchema
-        name='Interactive Kana Practice Games and Quizzes'
-        description='Practice Hiragana and Katakana with interactive quizzes, flashcards, recognition drills, and speed games. Build kana reading accuracy for beginner Japanese study and JLPT preparation.'
-        url={`https://kanadojo.com/${locale}/kana`}
+        name='Interactive Letters Practice Games and Quizzes'
+        description='Practice letter to code word recall with quizzes, drills and speed games. Build accurate recall of the NATO phonetic alphabet.'
+        url={`https://fivebyfive.vercel.app/${locale}/kana`}
         learningResourceType={['Game', 'Quiz', 'Interactive']}
         educationalLevel={['Beginner', 'Intermediate']}
-        teaches='Japanese Hiragana and Katakana reading, recognition, and pronunciation'
-        assesses='Kana recognition accuracy, recall speed, and reading fluency'
+        teaches='NATO letters A to Z and their code words'
+        assesses='Letter recall accuracy and speed'
         timeRequired='PT30M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
       />
       <DojoRouteSchema
         routeKey='kana'
         locale={locale}
-        title='Kana Dojo - Learn Japanese Hiragana & Katakana by Level'
-        description='Master Hiragana and Katakana with interactive games, quizzes, and drills. Practice Japanese kana characters by level with instant feedback, progress tracking, and beginner-friendly study flows.'
+        title='Letters Dojo - Learn the NATO Alphabet by Level'
+        description='Practice letter to code word recall with interactive games, quizzes and drills. Get instant feedback, track progress and focus on the sets you need.'
         canonicalPath='/kana'
-        teaches='Japanese Hiragana and Katakana reading, recognition, and pronunciation'
-        assesses='Kana recognition accuracy, recall speed, and reading fluency'
+        teaches='NATO letters A to Z and their code words'
+        assesses='Letter recall accuracy and speed'
       />
       <FAQSchema faqs={hiraganaFAQs} />
       <KanaMenu />

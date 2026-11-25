@@ -1,25 +1,26 @@
-# Security Policy
+# Security policy
 
-## Reporting a Vulnerability
+FiveByFive is a fork of [lingdojo/kana-dojo](https://github.com/lingdojo/kana-dojo). Report issues that affect this fork here.
 
-For vulnerabilities that impact the confidentiality, integrity, and availability of Monkeytype services, please send your disclosure via
-email.
-Include as much detail as possible to ensure reproducibility. At a minimum, vulnerability disclosures should include:
+## Reporting a vulnerability
 
-- Vulnerability Description
-- Proof of Concept
-- Impact
-- Screenshots or Proof
+Use GitHub's private vulnerability reporting on [github.com/frteddz/FiveByFive](https://github.com/frteddz/FiveByFive) if it is enabled. Otherwise contact the maintainer privately through their GitHub profile and say that you are reporting a security issue. Please do not open a public issue with exploit details.
 
-If you discover a security vulnerability in this project, please report it responsibly:
+Include enough to reproduce the problem:
 
-- **Report via:** [dev@kanadojo.com](mailto:dev@kanadojo.com), open a **issue** on this repository or contact the developer directly through our Discord server.
-- **Response time:** We aim to acknowledge all reports within **48 hours**.
-- **Next steps:** Once verified, we will provide a timeline for a fix. If the report is declined, we will provide an explanation.
-- **Confidentiality:** Please do **not publicly disclose** the actual vulnerability itself until a fix has been released.
+- What the vulnerability is
+- Steps or a proof of concept
+- What an attacker could do with it
+- Any logs or screenshots that help
 
-We take security seriously and will work to ensure all users remain protected.
+## What to expect
 
-## Notes
+The maintainer will look at the report and follow up with a timeline if it is confirmed. If it is not treated as a vulnerability, you should get an explanation. Give a fix time to ship before disclosing the details publicly.
 
-Please do not engage in activities that might cause a denial of service condition, create significant strains on critical resources, or negatively impact users of our website.
+## Ground rules
+
+Do not run tests that could take the site down, degrade service for other users, or access data that is not yours. Stick to your own accounts and deployments.
+
+## Scope
+
+The training flow runs mostly in the browser. Saved progress lives in localStorage, and there is no sign-in step in the training screens. Server routes inherited from upstream exist under `app/api/`, and some depend on external services. If you find a problem in one of those, include the route in your report.

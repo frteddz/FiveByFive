@@ -30,13 +30,13 @@ const categoryIdArb: fc.Arbitrary<CategoryId> = fc.constantFrom(
 // Generate unique strings to avoid collision issues
 const uniqueStringArb = fc.uuid().map(uuid => `test-${uuid.slice(0, 8)}`);
 
-// Generate a complete valid category object with unique values
+// Generate a complete valid category object with distinguishable values
 const categoryArb: fc.Arbitrary<Category> = fc.record({
   id: categoryIdArb,
-  name: uniqueStringArb,
-  nameJa: uniqueStringArb,
-  description: uniqueStringArb,
-  descriptionLong: uniqueStringArb,
+  name: uniqueStringArb.map(value => `${value}-name`),
+  nameJa: uniqueStringArb.map(value => `${value}-ja`),
+  description: uniqueStringArb.map(value => `${value}-description`),
+  descriptionLong: uniqueStringArb.map(value => `${value}-long`),
   icon: fc.constantFrom('book', 'app', 'video', 'headphones', 'gamepad'),
   subcategories: fc.constant([]),
   order: fc.integer({ min: 1, max: 20 }),
@@ -69,7 +69,7 @@ describe('Property 15: Category Content Presence', () => {
     );
   });
 
-  it('renders Japanese name when provided', () => {
+  it('renders the category name without a separate Japanese name', () => {
     fc.assert(
       fc.property(categoryArb, resourceCountArb, (category, resourceCount) => {
         const { container } = render(
@@ -78,8 +78,9 @@ describe('Property 15: Category Content Presence', () => {
 
         const html = container.innerHTML;
 
-        // Japanese name should be present
-        expect(html).toContain(category.nameJa);
+        // Only the category name is rendered
+        expect(html).toContain(category.name);
+        expect(html).not.toContain(category.nameJa);
 
         // Clean up
         cleanup();
@@ -172,28 +173,28 @@ describe('Property 15: Category Content Presence', () => {
     );
   });
 
-  it('displays correct singular/plural resource text', () => {
+  it('displays the resource item count when it is positive', () => {
     fc.assert(
       fc.property(categoryArb, category => {
         // Test with count of 1
         const { container: container1 } = render(
           <CategoryHeader category={category} resourceCount={1} />,
         );
-        expect(container1.innerHTML).toContain('1 resource');
+        expect(container1.innerHTML).toContain('/ 1 items');
         cleanup();
 
         // Test with count of 0
         const { container: container0 } = render(
           <CategoryHeader category={category} resourceCount={0} />,
         );
-        expect(container0.innerHTML).toContain('0 resources');
+        expect(container0.textContent).not.toContain('items');
         cleanup();
 
         // Test with count > 1
         const { container: containerMany } = render(
           <CategoryHeader category={category} resourceCount={5} />,
         );
-        expect(containerMany.innerHTML).toContain('5 resources');
+        expect(containerMany.innerHTML).toContain('/ 5 items');
         cleanup();
       }),
       { numRuns: 50 },

@@ -11,7 +11,7 @@ vi.mock('../scheduler', () => ({
 import { POST } from './route';
 
 function makeRequest(body: unknown, authorization = 'Bearer callback-secret') {
-  return new Request('https://kanadojo.com/api/trigger-community-issue/complete', {
+  return new Request('https://fivebyfive.vercel.app/api/trigger-community-issue/complete', {
     method: 'POST',
     headers: { authorization, 'content-type': 'application/json' },
     body: JSON.stringify(body),

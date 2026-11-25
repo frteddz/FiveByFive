@@ -15,30 +15,32 @@ const kanjiByLevel = {
 } satisfies Record<string, IKanjiObj[]>;
 
 describe('kanji readings data', () => {
-  it('includes loom as a meaning of 機 (hata)', () => {
-    const loomKanji = n3Kanji.find(kanji => kanji.kanjiChar === '機');
+  it('includes the short answer and definition of the roger phrase', () => {
+    const roger = n5Kanji.find(card => card.kanjiChar === 'roger');
 
-    expect(loomKanji?.kunyomi).toContain('hata はた');
-    expect(loomKanji?.meanings[0]).toBe('loom');
+    expect(roger?.onyomi).toContain('roger');
+    expect(roger?.kunyomi).toContain('message received');
+    expect(roger?.meanings[0]).toBe('I have received your last message');
   });
 
-  it('includes association as a meaning of 会', () => {
-    const meetingKanji = n4Kanji.find(kanji => kanji.kanjiChar === '会');
+  it('includes the short answer and definition of the mayday phrase', () => {
+    const mayday = n3Kanji.find(
+      card => card.kanjiChar === 'mayday mayday mayday',
+    );
 
-    expect(meetingKanji?.meanings[0]).toBe('meeting');
-    expect(meetingKanji?.meanings).toContain('association');
+    expect(mayday?.kunyomi).toContain('distress call');
+    expect(mayday?.meanings[0]).toBe(
+      'Repeated distress call for a life threatening emergency',
+    );
   });
 
   it('keeps alternate readings as separate array entries', () => {
-    const combinedReadingPattern =
-      /\b[a-z][a-z()]*\s+[ァ-ヶーぁ-ゖ]+\s*,\s*[a-z]/i;
-
     const combinedReadings = Object.entries(kanjiByLevel).flatMap(
-      ([level, kanjiList]) =>
-        kanjiList.flatMap(kanji =>
-          [...kanji.onyomi, ...kanji.kunyomi]
-            .filter(reading => combinedReadingPattern.test(reading))
-            .map(reading => `${level} ${kanji.kanjiChar}: ${reading}`),
+      ([level, cards]) =>
+        cards.flatMap(card =>
+          [...card.onyomi, ...card.kunyomi]
+            .filter(reading => reading.includes(','))
+            .map(reading => `${level} ${card.kanjiChar}: ${reading}`),
         ),
     );
 

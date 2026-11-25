@@ -16,24 +16,24 @@ interface KanaUnitSelectorProps {
 
 const SUBSET_OPTIONS: Record<KanaType, { id: string; label: string }[]> = {
   hiragana: [
-    { id: 'base', label: 'Base' },
-    { id: 'dakuon', label: 'Dakuon' },
-    { id: 'yoon', label: 'Yoon' },
+    { id: 'base', label: 'A-Z' },
+    { id: 'dakuon', label: 'A-M' },
+    { id: 'yoon', label: 'N-Z' },
   ],
   katakana: [
-    { id: 'base', label: 'Base' },
-    { id: 'dakuon', label: 'Dakuon' },
-    { id: 'yoon', label: 'Yoon' },
-    { id: 'foreign', label: 'Foreign' },
+    { id: 'base', label: 'Digits' },
+    { id: 'dakuon', label: 'Phrases' },
+    { id: 'yoon', label: 'All Codes' },
+    { id: 'foreign', label: 'Challenges' },
   ],
 };
 
 const KanaUnitSelector = ({ selected, onSelect, selectedSubset, onSubsetSelect }: KanaUnitSelectorProps) => {
   const { playClick } = useClick();
 
-  const options: { type: KanaType; label: string; jpLabel: string }[] = [
-    { type: 'hiragana', label: 'Hiragana', jpLabel: 'ひらがな' },
-    { type: 'katakana', label: 'Katakana', jpLabel: 'カタカナ' },
+  const options: { type: KanaType; label: string; subLabel: string }[] = [
+    { type: 'hiragana', label: 'Letters', subLabel: 'A-Z' },
+    { type: 'katakana', label: 'Codes', subLabel: '0-9 / R/T' },
   ];
 
   const subsetOptions = SUBSET_OPTIONS[selected];
@@ -41,7 +41,7 @@ const KanaUnitSelector = ({ selected, onSelect, selectedSubset, onSubsetSelect }
   return (
     <motion.div className='flex flex-col rounded-[1.5rem] border-1 border-(--border-color) bg-(--background-color) p-1 shadow-[0_12px_40px_rgba(0,0,0,0.12)] backdrop-blur-xl'>
       <div className='flex w-full flex-col rounded-[1.25rem] bg-(--card-color) p-2'>
-        {/* Main Hiragana/Katakana Selector */}
+        {/* Letters and Codes selector */}
         <div className='flex flex-col gap-2 md:flex-row'>
           {options.map(option => {
             const isSelected = option.type === selected;
@@ -76,14 +76,14 @@ const KanaUnitSelector = ({ selected, onSelect, selectedSubset, onSubsetSelect }
                   )}
                 >
                   <span>{option.label}</span>
-                  <span>{option.jpLabel}</span>
+                  <span>{option.subLabel}</span>
                 </ActionButton>
               </div>
             );
           })}
         </div>
 
-        {/* Subset Selector (Base/Dakuon/Yoon/Foreign) */}
+        {/* Subset selector */}
         <div className='-mx-2 my-3 h-0.5 bg-(--border-color)' />
         <div className='grid grid-cols-2 gap-2 sm:grid-cols-[repeat(auto-fit,minmax(120px,1fr))]'>
           {subsetOptions.map(subset => {

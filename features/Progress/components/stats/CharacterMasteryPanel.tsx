@@ -362,7 +362,7 @@ export default function CharacterMasteryPanel({
               exit={{ opacity: 0 }}
               className='flex flex-col items-center justify-center py-16 text-center'
             >
-              <div className='mb-4 text-6xl opacity-30'>文</div>
+              <div className='mb-4 text-6xl opacity-30'>A</div>
               <p className='text-(--secondary-color)'>
                 No characters practiced yet
               </p>

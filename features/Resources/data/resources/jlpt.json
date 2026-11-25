@@ -2,286 +2,410 @@
   "resources": [
     {
       "id": "jlpt-official",
-      "name": "JLPT Official Website",
-      "nameJa": "日本語能力試験公式サイト",
-      "description": "Official JLPT information and sample questions.",
-      "descriptionLong": "The official Japanese Language Proficiency Test website provides essential information about the exam, including test dates, registration, and official sample questions. A must-visit resource for anyone planning to take the JLPT.",
+      "name": "ICAO",
+      "nameJa": "",
+      "description": "Official site of the International Civil Aviation Organization.",
+      "descriptionLong": "ICAO publishes information about civil aviation standards, including the communications standards used by pilots and controllers.",
       "category": "jlpt",
       "subcategory": "n5",
-      "tags": ["official", "sample-questions", "registration", "information"],
+      "tags": [
+        "icao",
+        "official",
+        "aviation",
+        "standards"
+      ],
       "difficulty": "all-levels",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www.jlpt.jp/e/",
-      "rating": 4.5,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.icao.int/",
+      "rating": 0,
       "featured": true,
-      "notes": "Check for official sample questions and test format information."
+      "notes": ""
     },
     {
       "id": "nihongo-pro-jlpt",
-      "name": "Nihongo-Pro JLPT Practice",
-      "nameJa": "Nihongo-Pro JLPT練習",
-      "description": "Free JLPT practice tests for all levels.",
-      "descriptionLong": "Nihongo-Pro offers free JLPT practice tests covering all sections and levels. The tests simulate the actual exam format and provide instant feedback. Great for assessing your readiness for the real test.",
+      "name": "NATO phonetic alphabet",
+      "nameJa": "",
+      "description": "Reference list for the twenty six code words.",
+      "descriptionLong": "Check each letter and its word, then use the trainer to practise the full list.",
       "category": "jlpt",
       "subcategory": "n5",
-      "tags": ["practice-tests", "free", "all-levels", "assessment"],
-      "difficulty": "all-levels",
+      "tags": [
+        "alphabet",
+        "code-words",
+        "reference",
+        "stage-1"
+      ],
+      "difficulty": "beginner",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://www.nihongo-pro.com/jlpt",
-      "rating": 4.4,
-      "featured": false,
-      "notes": "Good for practice but not official questions."
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/NATO_phonetic_alphabet",
+      "rating": 0,
+      "featured": true,
+      "notes": ""
     },
     {
       "id": "jlpt-boot-camp",
-      "name": "JLPT Boot Camp",
-      "nameJa": "JLPT Boot Camp",
-      "description": "JLPT study guides and practice materials.",
-      "descriptionLong": "JLPT Boot Camp provides comprehensive study guides, vocabulary lists, and practice materials for all JLPT levels. The site includes tips for each section of the test and strategies for effective preparation.",
+      "name": "NATO alphabet video search",
+      "nameJa": "",
+      "description": "Video results for alphabet practice.",
+      "descriptionLong": "Find a short video that says the letters clearly and repeat it before checking your list.",
       "category": "jlpt",
       "subcategory": "n5",
-      "tags": ["study-guide", "vocabulary", "tips", "strategies"],
-      "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Free content available. Premium courses for purchase.",
-      "platforms": ["web"],
-      "url": "https://jlptbootcamp.com/",
-      "rating": 4.5,
-      "featured": true,
-      "notes": "Excellent study tips and strategies."
+      "tags": [
+        "alphabet",
+        "video",
+        "practice",
+        "stage-1"
+      ],
+      "difficulty": "beginner",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/results?search_query=NATO+phonetic+alphabet",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     },
     {
       "id": "todai-jlpt",
-      "name": "Todai JLPT Practice",
-      "nameJa": "Todai JLPT練習",
-      "description": "JLPT practice with reading materials.",
-      "descriptionLong": "Todai offers JLPT-focused reading practice with articles categorized by difficulty level. The app includes vocabulary support and is great for building reading comprehension skills needed for the test.",
+      "name": "Quizlet",
+      "nameJa": "",
+      "description": "Card sets for numbers and abbreviations.",
+      "descriptionLong": "Use a set to drill digits and common abbreviations once the alphabet is familiar.",
       "category": "jlpt",
       "subcategory": "n3",
-      "tags": ["reading", "practice", "vocabulary", "intermediate"],
+      "tags": [
+        "flashcards",
+        "numbers",
+        "abbreviations",
+        "stage-2"
+      ],
       "difficulty": "intermediate",
       "priceType": "freemium",
-      "priceDetails": "Free tier available. Premium for full access.",
-      "platforms": ["ios", "android"],
-      "url": "https://todaieasyjapanese.com/",
-      "rating": 4.4,
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "url": "https://quizlet.com/",
+      "rating": 0,
       "featured": false,
-      "notes": "Good for reading section preparation."
+      "notes": ""
     },
     {
       "id": "kanzen-master-n5",
-      "name": "Shin Kanzen Master N5",
-      "nameJa": "新完全マスター N5",
-      "description": "Comprehensive N5 preparation textbook series.",
-      "descriptionLong": "Shin Kanzen Master is one of the most thorough JLPT preparation series available. The N5 books cover grammar, vocabulary, reading, and listening with detailed explanations and extensive practice questions.",
+      "name": "Anki",
+      "nameJa": "",
+      "description": "Review app for stage one words.",
+      "descriptionLong": "Make a small deck from the alphabet table and review it daily.",
       "category": "jlpt",
       "subcategory": "n5",
-      "tags": ["textbook", "comprehensive", "grammar", "vocabulary", "N5"],
+      "tags": [
+        "flashcards",
+        "srs",
+        "alphabet",
+        "stage-1"
+      ],
       "difficulty": "beginner",
-      "priceType": "paid",
-      "priceDetails": "~$25 per book",
-      "platforms": ["physical"],
-      "url": "https://www.3anet.co.jp/np/en/",
-      "rating": 4.7,
+      "priceType": "freemium",
+      "priceDetails": "Varies by provider",
+      "platforms": [
+        "web",
+        "ios",
+        "android",
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "url": "https://apps.ankiweb.net/",
+      "rating": 0,
       "featured": true,
-      "notes": "Separate books for each skill. Very thorough."
+      "notes": ""
     },
     {
       "id": "kanzen-master-n4",
-      "name": "Shin Kanzen Master N4",
-      "nameJa": "新完全マスター N4",
-      "description": "Comprehensive N4 preparation textbook series.",
-      "descriptionLong": "Shin Kanzen Master N4 continues the series with materials for the N4 level. The books provide in-depth coverage of all test sections with practice questions that match the exam format.",
+      "name": "Q code reference",
+      "nameJa": "",
+      "description": "Common three letter abbreviations.",
+      "descriptionLong": "Read the list and pick out the codes you are most likely to hear.",
       "category": "jlpt",
       "subcategory": "n4",
-      "tags": ["textbook", "comprehensive", "grammar", "vocabulary", "N4"],
+      "tags": [
+        "q-code",
+        "abbreviations",
+        "stage-2",
+        "reference"
+      ],
       "difficulty": "beginner",
-      "priceType": "paid",
-      "priceDetails": "~$25 per book",
-      "platforms": ["physical"],
-      "url": "https://www.3anet.co.jp/np/en/",
-      "rating": 4.7,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Q_code",
+      "rating": 0,
       "featured": false,
-      "notes": "Essential for serious N4 preparation."
+      "notes": ""
     },
     {
       "id": "kanzen-master-n3",
-      "name": "Shin Kanzen Master N3",
-      "nameJa": "新完全マスター N3",
-      "description": "Comprehensive N3 preparation textbook series.",
-      "descriptionLong": "Shin Kanzen Master N3 provides thorough preparation for the intermediate N3 level. The series covers the increased complexity of grammar and vocabulary required at this level.",
+      "name": "Radiotelephony procedure",
+      "nameJa": "",
+      "description": "The structure of a standard radio call.",
+      "descriptionLong": "Study call signs, readbacks, and procedural words before you try full phrases.",
       "category": "jlpt",
       "subcategory": "n3",
-      "tags": ["textbook", "comprehensive", "grammar", "vocabulary", "N3"],
+      "tags": [
+        "procedure",
+        "readback",
+        "phraseology",
+        "stage-3"
+      ],
       "difficulty": "intermediate",
-      "priceType": "paid",
-      "priceDetails": "~$25 per book",
-      "platforms": ["physical"],
-      "url": "https://www.3anet.co.jp/np/en/",
-      "rating": 4.7,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Radiotelephony_procedure",
+      "rating": 0,
       "featured": true,
-      "notes": "N3 is a significant step up in difficulty."
+      "notes": ""
     },
     {
       "id": "kanzen-master-n2",
-      "name": "Shin Kanzen Master N2",
-      "nameJa": "新完全マスター N2",
-      "description": "Comprehensive N2 preparation textbook series.",
-      "descriptionLong": "Shin Kanzen Master N2 is considered essential for N2 preparation. The books cover advanced grammar patterns, extensive vocabulary, and challenging reading passages needed for this level.",
+      "name": "Call sign reference",
+      "nameJa": "",
+      "description": "How call signs are built and used.",
+      "descriptionLong": "Combine letters and numbers into a call sign, then check it against the formats in the article.",
       "category": "jlpt",
       "subcategory": "n2",
-      "tags": ["textbook", "comprehensive", "grammar", "vocabulary", "N2"],
+      "tags": [
+        "call-signs",
+        "spelling",
+        "stage-4",
+        "reference"
+      ],
       "difficulty": "intermediate",
-      "priceType": "paid",
-      "priceDetails": "~$25 per book",
-      "platforms": ["physical"],
-      "url": "https://www.3anet.co.jp/np/en/",
-      "rating": 4.8,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Call_sign",
+      "rating": 0,
       "featured": true,
-      "notes": "Most recommended N2 preparation resource."
+      "notes": ""
     },
     {
       "id": "kanzen-master-n1",
-      "name": "Shin Kanzen Master N1",
-      "nameJa": "新完全マスター N1",
-      "description": "Comprehensive N1 preparation textbook series.",
-      "descriptionLong": "Shin Kanzen Master N1 prepares learners for the highest level of the JLPT. The books cover sophisticated grammar, nuanced vocabulary, and complex reading comprehension required for N1.",
+      "name": "Mayday distress call",
+      "nameJa": "",
+      "description": "Wording for emergency traffic.",
+      "descriptionLong": "Learn when Mayday is used and how the call is made. Exact wording matters here.",
       "category": "jlpt",
       "subcategory": "n1",
-      "tags": ["textbook", "comprehensive", "grammar", "vocabulary", "N1"],
+      "tags": [
+        "mayday",
+        "distress",
+        "emergency",
+        "stage-5"
+      ],
       "difficulty": "advanced",
-      "priceType": "paid",
-      "priceDetails": "~$25 per book",
-      "platforms": ["physical"],
-      "url": "https://www.3anet.co.jp/np/en/",
-      "rating": 4.8,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Mayday_(distress_signal)",
+      "rating": 0,
       "featured": true,
-      "notes": "The gold standard for N1 preparation."
+      "notes": ""
     },
     {
       "id": "somatome-n5",
-      "name": "Nihongo So-matome N5",
-      "nameJa": "日本語総まとめ N5",
-      "description": "Daily study JLPT N5 preparation books.",
-      "descriptionLong": "Nihongo So-matome provides a structured daily study approach to JLPT preparation. The N5 books organize content into manageable daily lessons, making it easy to maintain a consistent study schedule.",
+      "name": "ARRL W1AW code practice",
+      "nameJa": "",
+      "description": "Scheduled Morse practice from ARRL.",
+      "descriptionLong": "Listen to a short session and write down the characters you recognise.",
       "category": "jlpt",
       "subcategory": "n5",
-      "tags": ["textbook", "daily-study", "structured", "N5"],
+      "tags": [
+        "morse",
+        "practice",
+        "arrl",
+        "stage-1"
+      ],
       "difficulty": "beginner",
-      "priceType": "paid",
-      "priceDetails": "~$20 per book",
-      "platforms": ["physical"],
-      "url": "https://www.ask-books.com/",
-      "rating": 4.4,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.arrl.org/w1aw",
+      "rating": 0,
       "featured": false,
-      "notes": "Good for learners who prefer structured daily study."
+      "notes": ""
     },
     {
       "id": "try-n5",
-      "name": "TRY! JLPT N5",
-      "nameJa": "TRY! 日本語能力試験 N5",
-      "description": "Grammar-focused N5 preparation with clear explanations.",
-      "descriptionLong": "TRY! is a JLPT preparation series known for its clear grammar explanations. The N5 book covers all grammar points needed for the test with example sentences and practice exercises.",
+      "name": "Morse code reference",
+      "nameJa": "",
+      "description": "The International Morse alphabet.",
+      "descriptionLong": "Use the table to connect each letter with its Morse pattern.",
       "category": "jlpt",
       "subcategory": "n5",
-      "tags": ["textbook", "grammar", "clear", "N5"],
+      "tags": [
+        "morse",
+        "alphabet",
+        "reference",
+        "stage-1"
+      ],
       "difficulty": "beginner",
-      "priceType": "paid",
-      "priceDetails": "~$25",
-      "platforms": ["physical"],
-      "url": "https://www.ask-books.com/",
-      "rating": 4.5,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Morse_code",
+      "rating": 0,
       "featured": false,
-      "notes": "Excellent grammar explanations."
+      "notes": ""
     },
     {
       "id": "jlpt-taisaku",
-      "name": "JLPT Taisaku",
-      "nameJa": "JLPT対策",
-      "description": "Online JLPT practice questions and mock tests.",
-      "descriptionLong": "JLPT Taisaku offers online practice questions and mock tests for all JLPT levels. The platform provides immediate feedback and tracks your progress over time.",
+      "name": "FAA Airman's Information Manual",
+      "nameJa": "",
+      "description": "Official phraseology examples.",
+      "descriptionLong": "The AIM shows how standard phrases are used in real pilot and controller exchanges.",
       "category": "jlpt",
       "subcategory": "n3",
-      "tags": ["online", "practice", "mock-tests", "all-levels"],
-      "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Free questions available. Premium for full tests.",
-      "platforms": ["web"],
-      "url": "https://jlpttaisaku.com/",
-      "rating": 4.3,
+      "tags": [
+        "faa",
+        "phraseology",
+        "examples",
+        "stage-3"
+      ],
+      "difficulty": "intermediate",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/",
+      "rating": 0,
       "featured": false,
-      "notes": "Good for online practice."
+      "notes": ""
     },
     {
       "id": "jtest4you",
-      "name": "JTest4You",
-      "nameJa": "JTest4You",
-      "description": "Free JLPT practice tests and vocabulary lists.",
-      "descriptionLong": "JTest4You provides free JLPT practice tests, vocabulary lists, and grammar explanations for all levels. The site includes thousands of practice questions to help prepare for the exam.",
+      "name": "Aviation English",
+      "nameJa": "",
+      "description": "Why fixed phraseology is required.",
+      "descriptionLong": "Read the background on standard English in aviation before studying the stock phrases.",
       "category": "jlpt",
       "subcategory": "n4",
-      "tags": ["free", "practice-tests", "vocabulary", "grammar"],
-      "difficulty": "all-levels",
+      "tags": [
+        "aviation",
+        "english",
+        "background",
+        "stage-2"
+      ],
+      "difficulty": "intermediate",
       "priceType": "free",
-      "platforms": ["web"],
-      "url": "https://japanesetest4you.com/",
-      "rating": 4.3,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Aviation_English",
+      "rating": 0,
       "featured": false,
-      "notes": "Extensive free practice questions."
+      "notes": ""
     },
     {
       "id": "bunpro-jlpt",
-      "name": "Bunpro JLPT Grammar",
-      "nameJa": "Bunpro JLPT文法",
-      "description": "SRS-based JLPT grammar study platform.",
-      "descriptionLong": "Bunpro organizes Japanese grammar by JLPT level, making it easy to study exactly what you need for your target level. The SRS system ensures you review grammar points at optimal intervals.",
+      "name": "International Telecommunication Union",
+      "nameJa": "",
+      "description": "The international rules behind radio services.",
+      "descriptionLong": "Use the ITU site to understand where radio procedures come from.",
       "category": "jlpt",
       "subcategory": "n3",
-      "tags": ["grammar", "SRS", "online", "all-levels"],
-      "difficulty": "all-levels",
-      "priceType": "subscription",
-      "priceDetails": "$5/month or $55/year",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://bunpro.jp/",
-      "rating": 4.6,
-      "featured": true,
-      "notes": "Excellent for systematic grammar study by JLPT level."
+      "tags": [
+        "itu",
+        "international",
+        "rules",
+        "stage-3"
+      ],
+      "difficulty": "advanced",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.itu.int/",
+      "rating": 0,
+      "featured": false,
+      "notes": ""
     },
     {
       "id": "anki-jlpt-decks",
-      "name": "Anki JLPT Decks",
-      "nameJa": "Anki JLPTデッキ",
-      "description": "Community-created JLPT vocabulary decks for Anki.",
-      "descriptionLong": "The Anki community has created numerous JLPT-focused vocabulary decks. Popular decks include Core 2k/6k/10k and level-specific vocabulary lists. Using SRS with these decks is highly effective for vocabulary retention.",
+      "name": "AnkiWeb Shared Decks",
+      "nameJa": "",
+      "description": "Community decks for alphabet and code practice.",
+      "descriptionLong": "Search the shared deck library and check the cards against a trusted reference.",
       "category": "jlpt",
       "subcategory": "n2",
-      "tags": ["Anki", "vocabulary", "SRS", "flashcards", "community"],
-      "difficulty": "all-levels",
+      "tags": [
+        "anki",
+        "shared-decks",
+        "review",
+        "stage-4"
+      ],
+      "difficulty": "intermediate",
       "priceType": "free",
-      "platforms": ["web", "ios", "android", "windows", "macos", "linux"],
-      "url": "https://ankiweb.net/shared/decks/japanese%20jlpt",
-      "rating": 4.7,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://ankiweb.net/shared/decks/",
+      "rating": 0,
       "featured": true,
-      "notes": "Search for decks specific to your target JLPT level."
+      "notes": ""
     },
     {
       "id": "kotonoha",
-      "name": "Kotonoha",
-      "nameJa": "言の葉",
-      "description": "JLPT words, grammar and reading by level, with practice questions.",
-      "descriptionLong": "Kotonoha is a JLPT study site. It has 9,040 words, 828 grammar points and 802 reading sentences sorted by level, N5 to N1, and 7,200 original practice questions from Starter to N2. Each question shows the reading, pitch accent, an example and an explanation. The interface is in Simplified Chinese, Traditional Chinese, English and Korean.",
+      "name": "Prosigns for Morse code",
+      "nameJa": "",
+      "description": "Morse sequences sent as single signals.",
+      "descriptionLong": "Read the list of prosigns as the final piece of code study in this path.",
       "category": "jlpt",
       "subcategory": "n5",
-      "tags": ["vocabulary", "grammar", "reading", "practice", "pitch-accent"],
-      "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Study materials and Starter/N5 practice free. N4-N2 practice and audio: ¥480/month or ¥4,800/year.",
-      "platforms": ["web"],
-      "url": "https://japaneseskills.com/en/",
+      "tags": [
+        "morse",
+        "prosigns",
+        "reference",
+        "stage-5"
+      ],
+      "difficulty": "advanced",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Prosigns_for_Morse_code",
+      "rating": 0,
       "featured": false,
-      "notes": "Practice questions are original, not past JLPT papers. Not affiliated with the JLPT organisers."
+      "notes": ""
     }
   ]
 }

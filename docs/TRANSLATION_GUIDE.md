@@ -1,536 +1,74 @@
-# Translation Guide
+# Translation guide
 
-Welcome to the KanaDojo translation project! This guide will help you contribute translations to make the app accessible to more learners worldwide.
+FiveByFive uses next-intl with namespace JSON files. This is upstream machinery from [lingdojo/kana-dojo](https://github.com/lingdojo/kana-dojo). The structure is unchanged, so the existing tooling still works.
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Translation Structure](#translation-structure)
-- [Getting Started](#getting-started)
-- [Translation Workflow](#translation-workflow)
-- [Naming Conventions](#naming-conventions)
-- [Interpolation Variables](#interpolation-variables)
-- [Best Practices](#best-practices)
-- [Tools & Scripts](#tools--scripts)
-- [FAQ](#faq)
-
----
-
-## Overview
-
-KanaDojo uses **namespace-based JSON files** for translations. Each feature has its own translation file, making it easy to:
-
-- **Work independently**: Multiple translators can work on different files without conflicts
-- **Stay organized**: Related translations are grouped together
-- **Track changes**: Git shows exactly what changed in each file
-- **Validate easily**: Scripts ensure all keys exist across all languages
-
-### Supported Languages
-
-Currently, we support:
-
-- 🇬🇧 **English (en)** - Reference language
-- 🇪🇸 **Spanish (es)**
-- 🇯🇵 **Japanese (ja)**
-
-We're planning to add: Portuguese, French, German, Italian, Chinese, Korean, Russian, and Arabic.
-
----
-
-## Translation Structure
-
-All translation files are located in:
+## Where files live
 
 ```
 core/i18n/locales/
-├── en/          # English (reference)
-│   ├── common.json
-│   ├── navigation.json
-│   ├── kana.json
-│   ├── kanji.json
-│   ├── vocabulary.json
-│   ├── achievements.json
-│   ├── statistics.json
-│   ├── settings.json
-│   └── errors.json
-├── es/          # Spanish
-│   └── (same files)
-└── ja/          # Japanese
-    └── (same files)
+  en/
+    common.json
+    navigation.json
+    settings.json
+    ...
+  es/
+  fr/
+  zh/
+  de/
 ```
 
-### Namespaces
+There are also flat files such as `en.json`, `es.json` and `zh.json` at the locale root. They are inherited from upstream. The namespace folders under `core/i18n/locales/<locale>/` are what `core/i18n/request.ts` loads.
 
-| Namespace           | Description                              | Example Keys                                      |
-| ------------------- | ---------------------------------------- | ------------------------------------------------- |
-| `common.json`       | Reusable UI elements (buttons, messages) | `buttons.submit`, `messages.loading`              |
-| `navigation.json`   | Menu, breadcrumbs, footer                | `menu.home`, `footer.privacy`                     |
-| `kana.json`         | Hiragana/Katakana learning feature       | `game.score`, `results.accuracy`                  |
-| `kanji.json`        | Kanji learning feature                   | `selection.byLevel`, `details.meaning`            |
-| `vocabulary.json`   | Vocabulary learning feature              | `categories.verbs`, `game.streak`                 |
-| `achievements.json` | Achievement system                       | `unlocked`, `rarity.legendary`                    |
-| `statistics.json`   | Progress tracking and stats              | `overview.totalStudyTime`, `charts.dailyActivity` |
-| `settings.json`     | App configuration                        | `appearance.theme`, `audio.volume`                |
-| `errors.json`       | Error messages                           | `validation.required`, `network.timeout`          |
+Which locales are active is declared in `core/i18n/routing.ts` and `core/i18n/config.ts`. Those two files disagree at the moment, so check both before assuming a language is live. `routing.ts` is the one next-intl uses at runtime.
 
----
+## Namespaces
 
-## Getting Started
-
-### Prerequisites
-
-- Basic understanding of JSON format
-- Text editor (VS Code recommended)
-- Git (for contributing)
-
-### Option 1: Edit JSON Files Directly (Recommended for Developers)
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/yourusername/kanadojo.git
-   cd kanadojo
-   ```
-
-2. **Find your language folder**
-
-   ```bash
-   cd core/i18n/locales/es  # For Spanish
-   ```
-
-3. **Edit the JSON files**
-   - Use any text editor
-   - Keep the same structure as English
-   - Translate only the **values**, not the **keys**
-
-4. **Validate your translations**
-
-   ```bash
-   npm run i18n:validate
-   ```
-
-5. **Submit a pull request**
-
-### Option 2: Use CSV Export (Recommended for Non-Technical Translators)
-
-1. **Export translations to CSV**
-
-   ```bash
-   npm run i18n:export-csv
-   ```
-
-   This creates CSV files in `scripts/i18n/reports/`
-
-2. **Edit in Excel/Google Sheets**
-   - Open the CSV files
-   - Translate the columns for your language
-   - Leave the `Key` column unchanged
-
-3. **Send the CSV files back**
-   - Email them to the project maintainer
-   - Or upload them in a GitHub issue
-
-4. **We'll import them for you**
-   (Import script coming soon)
-
----
-
-## Translation Workflow
-
-### 1. Choose a File
-
-Start with the file you're most comfortable with. We recommend:
-
-- Beginners: `common.json` (buttons, simple messages)
-- Intermediate: `navigation.json`, `errors.json`
-- Advanced: Feature-specific files (`kana.json`, `kanji.json`)
-
-### 2. Understand the Structure
-
-JSON files use nested objects. For example:
-
-```json
-{
-  "buttons": {
-    "submit": "Submit",
-    "cancel": "Cancel"
-  },
-  "messages": {
-    "loading": "Loading...",
-    "success": "Success!"
-  }
-}
-```
-
-**Keys** (left side): Never translate these - they're used in code
-**Values** (right side): Translate these to your language
-
-### 3. Translate Values
-
-#### ✅ Correct Example
-
-**English (en/common.json):**
-
-```json
-{
-  "buttons": {
-    "submit": "Submit",
-    "cancel": "Cancel"
-  }
-}
-```
-
-**Spanish (es/common.json):**
-
-```json
-{
-  "buttons": {
-    "submit": "Enviar",
-    "cancel": "Cancelar"
-  }
-}
-```
-
-#### ❌ Incorrect Example
-
-```json
-{
-  "botones": {              ← DON'T translate keys!
-    "enviar": "Enviar",     ← Keys must match English
-    "cancelar": "Cancelar"
-  }
-}
-```
-
-### 4. Handle Special Cases
-
-#### Interpolation Variables
-
-Some translations have **variables** in `{{double braces}}`:
-
-```json
-{
-  "score": "Score: {{points}}",
-  "greeting": "Hello, {{name}}!"
-}
-```
-
-**Rules:**
-
-- Keep the variable names **exactly** as they are: `{{points}}`, `{{name}}`
-- You can change the text around them
-- The order can change based on your language's grammar
-
-**Examples:**
-
-English: `"timeLeft": "Time left: {{seconds}} seconds"`
-Spanish: `"timeLeft": "Tiempo restante: {{seconds}} segundos"`
-Japanese: `"timeLeft": "残り時間：{{seconds}}秒"`
-
-#### Pluralization
-
-If a key has pluralization (like `{{count}}`), consider your language's plural rules:
-
-```json
-{
-  "itemCount": "{{count}} item",
-  "itemCount_plural": "{{count}} items"
-}
-```
-
-Some languages may need more plural forms - check next-intl documentation.
-
-#### Context-Dependent Translations
-
-Some words change meaning based on context. Look at the **key path**:
-
-```json
-{
-  "game": {
-    "pause": "Pause"    ← Pause a game
-  },
-  "audio": {
-    "pause": "Pause"    ← Pause audio playback
-  }
-}
-```
-
-In some languages, these might be different words!
-
----
-
-## Naming Conventions
-
-### Key Naming
-
-Keys use **dot notation** to organize translations:
+`core/i18n/request.ts` keeps the list of namespaces it loads. At the time of writing it includes:
 
 ```
-namespace.section.component.action
+common, navigation, kana, kanji, vocabulary, achievements,
+statistics, settings, errors, menuInfo, blog, translator,
+metadata, faq, practiceLanding, welcome, experiments,
+legal, kanaChart, conjugator, resources
 ```
 
-Examples:
+The names `kana`, `kanji` and `vocabulary` are upstream leftovers. They back the Letters, Codes and Spelling screens respectively. Do not rename a namespace without updating `request.ts`, every locale folder and every caller.
 
-- `common.buttons.submit` → Common namespace → Buttons section → Submit action
-- `kana.game.nextQuestion` → Kana namespace → Game section → Next question
-- `settings.appearance.theme` → Settings namespace → Appearance section → Theme
+## Workflow
 
-### File Naming
-
-- Use **lowercase** for folder names: `en`, `es`, `ja`
-- Use **lowercase + kebab-case** for multi-word languages: `pt-br`, `zh-cn`
-- JSON files must have **exact** names: `common.json`, not `Common.json`
-
----
-
-## Interpolation Variables
-
-### Common Variables
-
-| Variable         | Description      | Example                           |
-| ---------------- | ---------------- | --------------------------------- |
-| `{{count}}`      | Numeric count    | "You have {{count}} achievements" |
-| `{{points}}`     | Score/points     | "Score: {{points}}"               |
-| `{{seconds}}`    | Time in seconds  | "Time left: {{seconds}}s"         |
-| `{{name}}`       | User/item name   | "Hello, {{name}}!"                |
-| `{{date}}`       | Date/timestamp   | "Earned on {{date}}"              |
-| `{{percentage}}` | Percentage value | "Accuracy: {{percentage}}%"       |
-| `{{current}}`    | Current value    | "Progress: {{current}}/{{total}}" |
-| `{{total}}`      | Total value      | "Progress: {{current}}/{{total}}" |
-
-### Rules for Variables
-
-1. **Never translate variable names**
-
-   ```json
-   // ✅ Correct
-   "greeting": "Hola, {{name}}!"
-
-   // ❌ Wrong
-   "greeting": "Hola, {{nombre}}!"
-   ```
-
-2. **Keep exact spacing inside braces**
-
-   ```json
-   // ✅ Correct
-   "score": "{{points}} points"
-
-   // ❌ Wrong (extra spaces)
-   "score": "{{ points }} points"
-   ```
-
-3. **Adjust word order for your language**
-
-   ```json
-   // English: Adjective before noun
-   "description": "Your {{count}} correct answers"
-
-   // Spanish: Adjective after noun
-   "description": "Tus {{count}} respuestas correctas"
-   ```
-
----
-
-## Best Practices
-
-### Translation Quality
-
-1. **Be consistent**: Use the same terms throughout the app
-   - Example: If you translate "submit" as "Enviar", use it everywhere
-
-2. **Match the tone**: KanaDojo is educational and friendly
-   - Use polite, encouraging language
-   - Avoid overly formal or casual tone
-
-3. **Consider length**: Some languages are longer than English
-   - Buttons should be concise
-   - Tooltips can be more verbose
-
-4. **Respect cultural context**:
-   - Japanese honorifics (です/ます forms)
-   - Formal vs informal (Spanish tú/usted)
-   - Right-to-left languages (Arabic)
-
-### Technical Guidelines
-
-1. **Preserve special characters**
-
-   ```json
-   // ✅ Keep punctuation marks
-   "loading": "Loading..."
-   "success": "Success!"
-
-   // ✅ Keep HTML entities if present
-   "copyright": "&copy; 2024 KanaDojo"
-   ```
-
-2. **Don't add extra whitespace**
-
-   ```json
-   // ✅ Correct
-   "submit": "Enviar"
-
-   // ❌ Wrong (trailing space)
-   "submit": "Enviar "
-   ```
-
-3. **Use UTF-8 encoding**
-   - Saves files in UTF-8 to support all characters
-   - VS Code does this by default
-
-4. **Validate JSON syntax**
-   - Use a JSON validator or `npm run i18n:validate`
-   - Common mistakes: Missing commas, unescaped quotes
-
----
-
-## Tools & Scripts
-
-### Validation Script
-
-Check that all translation keys match across languages:
+1. Pick a namespace. `common.json` and `navigation.json` are good small starts.
+2. Open the same file in your language folder and in `en/`. English is the reference.
+3. Translate the values. Leave every key, nesting level and `{{placeholder}}` untouched.
+4. Run the checks:
 
 ```bash
-npm run i18n:validate
+npm run i18n:validate        # key parity across languages
+npm run i18n:config:check    # config sanity
+npm run i18n:generate-types  # regenerate types
 ```
 
-**Output:**
+Or run all three with `npm run i18n:check`.
 
-```
-✅ All translations are valid!
-```
+5. Commit the JSON files.
 
-Or if there are errors:
+## Interpolation
 
-```
-❌ ES: Missing 3 keys:
-  - kana.game.hint
-  - kanji.details.radical
-  ...
-```
+Placeholders use double braces. A value like `"score": "Score: {{points}}"` is called with a `points` argument. If you drop the placeholder or rename it in one language, that language breaks at runtime. Keep the exact spelling of every variable.
 
-### Generate TypeScript Types
+## Adding a key
 
-Creates autocomplete for developers:
+Add it to every locale file for that namespace, not just English. The validator compares key sets, so a partial addition will fail the check. If a string exists only for one language on purpose, that is a sign it should not be in the shared namespace.
 
-```bash
-npm run i18n:generate-types
-```
+## Adding a namespace
 
-### Export to CSV
+Create `<namespace>.json` in every locale folder, then add the namespace to `NAMESPACES` in `core/i18n/request.ts` and run `npm run i18n:check`.
 
-Export all translations to CSV files for easier editing:
+## Content versus copy
 
-```bash
-npm run i18n:export-csv
-```
+Do not translate code words or radio phrases. `alfa`, `juliett`, `roger` and `mayday` are the material being trained and live in data files such as `features/Kana/data/kana.ts` and the JSON datasets under `public/`. Translating them would change the answers.
 
-Files are saved to: `scripts/i18n/reports/*.csv`
+What does need translating is the surrounding UI: instructions, mode names, result screens, settings and metadata. Be aware that several locale files still contain upstream text about Japanese learning. Updating that text is part of the fork work.
 
-### Scan for Hardcoded Strings
+## Style
 
-Find untranslated strings in the codebase:
-
-```bash
-npm run i18n:scan
-```
-
----
-
-## FAQ
-
-### Q: How do I add a new language?
-
-1. Create a new folder: `core/i18n/locales/pt/` (for Portuguese)
-2. Copy all JSON files from `en/` to `pt/`
-3. Translate each file
-4. Add the language code to `core/i18n/config.ts`
-5. Run `npm run i18n:validate`
-
-### Q: What if a translation key is missing?
-
-The validation script will catch it! Run:
-
-```bash
-npm run i18n:validate
-```
-
-Fix by adding the missing key to your language file.
-
-### Q: Can I use Google Translate for initial translations?
-
-**Initial draft**: Yes, to get started quickly
-**Final version**: No, please review and improve machine translations
-
-Machine translations often:
-
-- Miss cultural context
-- Use wrong formality levels
-- Translate UI terms incorrectly
-
-### Q: How do I handle gendered language (Spanish/French)?
-
-Use the most neutral/inclusive option when possible:
-
-- Spanish: Use "todos/todas" → "todas las personas" or "todo el mundo"
-- French: Use inclusive forms when appropriate
-
-If the context requires a specific gender, match the subject.
-
-### Q: What if English has a typo or unclear text?
-
-**Don't translate the typo!** Instead:
-
-1. Open a GitHub issue describing the problem
-2. Suggest the correct English text
-3. Wait for the fix, then translate the corrected version
-
-### Q: How long does it take?
-
-Approximate time per file:
-
-- `common.json`: 30-45 minutes (54 keys)
-- `navigation.json`: 10-15 minutes (19 keys)
-- `kana.json`: 45-60 minutes (45 keys)
-- `kanji.json`: 60-75 minutes (50 keys)
-- `vocabulary.json`: 60-75 minutes (53 keys)
-- `achievements.json`: 25-30 minutes (23 keys)
-- `statistics.json`: 40-50 minutes (33 keys)
-- `settings.json`: 50-60 minutes (42 keys)
-- `errors.json`: 25-30 minutes (23 keys)
-
-**Total**: ~6-8 hours for all files (for experienced translators)
-
----
-
-## Contributing
-
-### Submit Translations
-
-1. **Fork** the repository
-2. **Create a branch**: `git checkout -b translations/spanish-updates`
-3. **Make changes** to JSON files
-4. **Validate**: `npm run i18n:validate`
-5. **Commit**: `git commit -m "feat(i18n): Update Spanish translations"`
-6. **Push**: `git push origin translations/spanish-updates`
-7. **Create Pull Request** on GitHub
-
-### Translation Credits
-
-All translators will be credited in:
-
-- `README.md` Contributors section
-- In-app credits page (coming soon)
-
----
-
-## Need Help?
-
-- **GitHub Issues**: [Report a problem or ask questions](https://github.com/yourusername/kanadojo/issues)
-- **Email**: dev@kanadojo.com
-- **Discord**: [Join our community](https://discord.gg/kanadojo) _(if available)_
-
----
-
-Thank you for helping make KanaDojo accessible to learners worldwide! 🌍✨
+Write short, direct strings. Match the voice of the existing English file rather than the polished tone of a marketing page. No emojis, and no em dashes. Those are repo rules for all written content, including UI copy.

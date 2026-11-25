@@ -107,7 +107,7 @@ export function generateHowToSchema(props: HowToSchemaProps) {
  *   description="Master all 46 Hiragana characters with this proven method"
  *   totalTime="PT7D"
  *   steps={[
- *     { name: "Learn vowels", text: "Start with the 5 basic vowels: あいうえお" },
+ *     { name: "Learn letters", text: "Start with A through F: alfa, bravo, charlie, delta, echo, foxtrot" },
  *     { name: "Practice daily", text: "Spend 20 minutes each day practicing" }
  *   ]}
  * />

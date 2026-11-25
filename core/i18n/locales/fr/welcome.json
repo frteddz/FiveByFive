@@ -1,67 +1,67 @@
 {
-  "title": "Bienvenue sur KanaDojo !",
-  "subtitle": "Personnalisons votre expérience d'apprentissage",
+  "title": "Welcome to FiveByFive!",
+  "subtitle": "Let's set up your training experience",
   "steps": {
     "welcome": {
-      "demoCta": "Essayez-le"
+      "demoCta": "Play a quick demo"
     },
     "behavior": {
-      "title": "Configurer le comportement",
-      "subtitle": "Définissez vos préférences d'affichage et de son",
+      "title": "Configure Behavior",
+      "subtitle": "Set your display and sound preferences",
       "displayLanguage": {
-        "title": "Langue d'affichage",
-        "description": "Dans le menu de sélection des caractères, pour les lectures, afficher :",
-        "romaji": "Romaji, Traductions 🇫🇷",
-        "kana": "Kana, Kanji 🇯🇵"
+        "title": "Display Language",
+        "description": "In the selection menu, show the answer as:",
+        "romaji": "Code words",
+        "kana": "Letters"
       },
       "soundEffects": {
-        "title": "Effets sonores",
-        "description": "Jouer les effets sonores de l'interface et du retour :",
-        "on": "Activé",
-        "off": "Désactivé"
+        "title": "Sound Effects",
+        "description": "Play UI and feedback sound effects:",
+        "on": "On",
+        "off": "Off"
       }
     },
     "themes": {
-      "title": "Choisissez votre thème",
-      "subtitle": "Sélectionnez un thème qui correspond à votre style",
-      "randomTheme": "Thème aléatoire",
-      "moreInfo": "Plus de thèmes disponibles dans",
-      "preferences": "Préférences"
+      "title": "Choose Your Theme",
+      "subtitle": "Select a theme that matches your style",
+      "randomTheme": "Random Theme",
+      "moreInfo": "More themes available in",
+      "preferences": "Preferences"
     },
     "fonts": {
-      "title": "Choisissez votre police",
-      "subtitle": "Choisissez la police idéale pour les caractères",
-      "randomFont": "Police aléatoire",
-      "default": "(par défaut)",
-      "moreInfo": "Plus de polices disponibles dans",
-      "preferences": "Préférences"
+      "title": "Choose Your Font",
+      "subtitle": "Choose the font used for letters and code words",
+      "randomFont": "Random Font",
+      "default": "(default)",
+      "moreInfo": "More fonts available in",
+      "preferences": "Preferences"
     },
     "complete": {
-      "title": "C'est prêt !",
-      "subtitle": "Votre KanaDojo est maintenant personnalisé",
-      "canChange": "Vous pouvez modifier ces paramètres à tout moment dans les Préférences.",
-      "happyLearning": "Bon apprentissage !"
+      "title": "All Set!",
+      "subtitle": "Your FiveByFive is now personalized",
+      "canChange": "You can always change these settings later in the Preferences.",
+      "happyLearning": "Happy training!"
     }
   },
   "features": {
     "behavior": {
-      "title": "Configurer le comportement",
-      "description": "Définir la langue d'affichage et les préférences sonores"
+      "title": "Configure Behavior",
+      "description": "Set display and sound preferences"
     },
     "theme": {
-      "title": "Choisissez votre thème",
-      "description": "Sélectionnez un thème qui correspond à votre style"
+      "title": "Choose Your Theme",
+      "description": "Select a theme that matches your style"
     },
     "font": {
-      "title": "Sélectionnez votre police",
-      "description": "Choisissez la police idéale pour les caractères"
+      "title": "Select Your Font",
+      "description": "Choose a comfortable font for letters and code words"
     }
   },
   "navigation": {
-    "previous": "Précédent",
-    "back": "Retour",
-    "next": "Suivant",
-    "getStarted": "Commencer",
-    "finishSetup": "Terminer la configuration"
+    "previous": "Previous",
+    "back": "Back",
+    "next": "Next",
+    "getStarted": "Get Started",
+    "finishSetup": "Finish Setup"
   }
 }

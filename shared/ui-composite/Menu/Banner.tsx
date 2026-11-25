@@ -25,11 +25,11 @@ const Banner = () => {
   }
 
   const subheading = isKanaRoute
-    ? 'Kana あ'
+    ? 'Letters A-Z'
     : isKanjiRoute
-      ? 'Kanji 字'
+      ? 'Codes 0-9'
       : isVocabRoute
-        ? 'Vocabulary 語'
+        ? 'Spelling W'
         : isPreferencesRoute
           ? 'Preferences'
           : '';

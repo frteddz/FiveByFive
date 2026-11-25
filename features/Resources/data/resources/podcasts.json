@@ -2,176 +2,253 @@
   "resources": [
     {
       "id": "nihongo-con-teppei",
-      "name": "Nihongo con Teppei",
-      "nameJa": "日本語 con Teppei",
-      "description": "Daily Japanese podcast for beginners with slow, clear speech.",
-      "descriptionLong": "Nihongo con Teppei is a popular podcast for Japanese learners featuring daily episodes spoken in slow, clear Japanese. Teppei discusses various topics in simple language, making it perfect for beginners to practice listening comprehension. The podcast has versions for different levels.",
+      "name": "Amateur Radio Newsline",
+      "nameJa": "",
+      "description": "Recorded amateur radio news bulletins.",
+      "descriptionLong": "The site carries audio news about amateur radio activities and events.",
       "category": "podcasts",
       "subcategory": "beginner-podcasts",
-      "tags": ["beginner", "daily", "slow", "clear", "comprehensible"],
+      "tags": [
+        "amateur-radio",
+        "news",
+        "audio",
+        "listening"
+      ],
       "difficulty": "beginner",
       "priceType": "free",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://nihongoconteppei.com/",
-      "rating": 4.8,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.arnewsline.org/",
+      "rating": 0,
       "featured": true,
-      "notes": "Multiple versions available for different levels."
+      "notes": ""
     },
     {
       "id": "learn-japanese-pod",
-      "name": "Learn Japanese Pod",
-      "nameJa": "Learn Japanese Pod",
-      "description": "Structured Japanese lessons in podcast format.",
-      "descriptionLong": "Learn Japanese Pod offers structured Japanese lessons covering grammar, vocabulary, and conversation. Each episode focuses on specific topics with clear explanations and example dialogues. Great for learning on the go.",
+      "name": "W1AW code practice",
+      "nameJa": "",
+      "description": "Morse practice transmissions explained by ARRL.",
+      "descriptionLong": "The ARRL page describes the W1AW schedule and how to listen to code practice sessions.",
       "category": "podcasts",
       "subcategory": "beginner-podcasts",
-      "tags": ["lessons", "grammar", "vocabulary", "structured", "beginner"],
+      "tags": [
+        "morse",
+        "practice",
+        "arrl",
+        "audio"
+      ],
       "difficulty": "beginner",
-      "priceType": "freemium",
-      "priceDetails": "Free episodes available. Premium for full access.",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://learnjapanesepod.com/",
-      "rating": 4.5,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.arrl.org/w1aw",
+      "rating": 0,
       "featured": false,
-      "notes": "Good structured content for beginners."
+      "notes": ""
     },
     {
       "id": "japanese-pod-101-podcast",
-      "name": "JapanesePod101 Podcast",
-      "nameJa": "JapanesePod101",
-      "description": "Extensive podcast library with lessons for all levels.",
-      "descriptionLong": "JapanesePod101's podcast offers thousands of audio lessons for all levels. Episodes cover grammar, vocabulary, culture, and conversation with native speaker hosts. The extensive library ensures there's always something new to learn.",
+      "name": "NATO alphabet audio",
+      "nameJa": "",
+      "description": "Audio results for code word practice.",
+      "descriptionLong": "Use the search page to find recordings that say each letter and code word clearly.",
       "category": "podcasts",
       "subcategory": "beginner-podcasts",
-      "tags": ["lessons", "comprehensive", "all-levels", "native-speakers"],
-      "difficulty": "all-levels",
-      "priceType": "freemium",
-      "priceDetails": "Some free content. Full access requires subscription.",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.japanesepod101.com/",
-      "rating": 4.3,
+      "tags": [
+        "alphabet",
+        "audio",
+        "pronunciation",
+        "practice"
+      ],
+      "difficulty": "beginner",
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/results?search_query=NATO+phonetic+alphabet",
+      "rating": 0,
       "featured": false,
-      "notes": "Huge library but can be overwhelming."
+      "notes": ""
     },
     {
       "id": "sakura-tips",
-      "name": "Sakura Tips",
-      "nameJa": "Sakura Tips",
-      "description": "Japanese podcast covering culture and language tips.",
-      "descriptionLong": "Sakura Tips is a Japanese learning podcast that combines language lessons with cultural insights. Episodes cover useful expressions, cultural topics, and practical Japanese for various situations.",
+      "name": "ICQ Amateur Radio Podcast",
+      "nameJa": "",
+      "description": "Podcast about amateur radio and ham radio topics.",
+      "descriptionLong": "Episodes cover amateur radio activities, equipment, and operating from across the community.",
       "category": "podcasts",
       "subcategory": "intermediate-podcasts",
-      "tags": ["culture", "expressions", "practical", "intermediate"],
+      "tags": [
+        "amateur-radio",
+        "podcast",
+        "operating",
+        "community"
+      ],
       "difficulty": "intermediate",
       "priceType": "free",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://sakuratips.com/",
-      "rating": 4.4,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.icqpodcast.com/",
+      "rating": 0,
       "featured": false,
-      "notes": "Good mix of language and culture content."
+      "notes": ""
     },
     {
       "id": "bilingual-news",
-      "name": "Bilingual News",
-      "nameJa": "バイリンガルニュース",
-      "description": "News discussion podcast in Japanese and English.",
-      "descriptionLong": "Bilingual News features discussions of current events and interesting topics in both Japanese and English. The hosts naturally switch between languages, making it accessible for intermediate learners while providing exposure to natural Japanese conversation.",
+      "name": "HamRadioNow",
+      "nameJa": "",
+      "description": "Amateur radio video podcast.",
+      "descriptionLong": "The site publishes recorded discussions and reports about amateur radio.",
       "category": "podcasts",
       "subcategory": "intermediate-podcasts",
-      "tags": ["bilingual", "news", "conversation", "natural", "intermediate"],
+      "tags": [
+        "amateur-radio",
+        "podcast",
+        "video",
+        "discussion"
+      ],
       "difficulty": "intermediate",
       "priceType": "free",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://bilingualnews.jp/",
-      "rating": 4.6,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://hamradionow.tv/",
+      "rating": 0,
       "featured": true,
-      "notes": "Great for transitioning to native content."
+      "notes": ""
     },
     {
       "id": "nihongo-switch",
-      "name": "Nihongo Switch",
-      "nameJa": "日本語スイッチ",
-      "description": "Intermediate Japanese podcast with transcripts.",
-      "descriptionLong": "Nihongo Switch is designed for intermediate Japanese learners, featuring conversations on various topics with transcripts available. The natural but accessible speech helps bridge the gap between textbook Japanese and native content.",
+      "name": "Morse code practice audio",
+      "nameJa": "",
+      "description": "Audio results for receiving practice.",
+      "descriptionLong": "Find recordings at different speeds and practise writing down what you hear.",
       "category": "podcasts",
       "subcategory": "intermediate-podcasts",
-      "tags": ["intermediate", "transcripts", "conversation", "natural"],
+      "tags": [
+        "morse",
+        "audio",
+        "receiving",
+        "practice"
+      ],
       "difficulty": "intermediate",
       "priceType": "free",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://nihongoswitch.com/",
-      "rating": 4.5,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Morse+code+practice",
+      "rating": 0,
       "featured": false,
-      "notes": "Transcripts help with comprehension."
+      "notes": ""
     },
     {
       "id": "rebuild-fm",
-      "name": "Rebuild.fm",
-      "nameJa": "Rebuild.fm",
-      "description": "Tech podcast in Japanese for advanced learners.",
-      "descriptionLong": "Rebuild.fm is a popular Japanese tech podcast discussing technology, programming, and industry news. While not designed for learners, it's excellent for advanced students interested in tech vocabulary and natural Japanese conversation.",
+      "name": "NIST Radio Station WWV",
+      "nameJa": "",
+      "description": "Time and frequency broadcasts on shortwave.",
+      "descriptionLong": "NIST explains what WWV broadcasts and how the station can be received. It is an example of a real radio service.",
       "category": "podcasts",
       "subcategory": "native-content",
-      "tags": ["tech", "native", "advanced", "conversation", "industry"],
+      "tags": [
+        "radio",
+        "shortwave",
+        "nist",
+        "signals"
+      ],
       "difficulty": "advanced",
       "priceType": "free",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://rebuild.fm/",
-      "rating": 4.5,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.nist.gov/pml/time-and-frequency-division/time-distribution/radio-station-wwv",
+      "rating": 0,
       "featured": false,
-      "notes": "Great for tech-interested advanced learners."
+      "notes": ""
     },
     {
       "id": "yuyu-japanese-podcast",
-      "name": "YuYu Japanese Podcast",
-      "nameJa": "ゆうゆう日本語ポッドキャスト",
-      "description": "Conversational Japanese podcast for intermediate learners.",
-      "descriptionLong": "YuYu Japanese Podcast features natural conversations in Japanese on everyday topics. The hosts speak at a natural pace but clearly, making it suitable for intermediate learners looking to improve listening comprehension.",
+      "name": "Radio phraseology audio",
+      "nameJa": "",
+      "description": "Audio results for standard phraseology.",
+      "descriptionLong": "Use the recordings to hear readbacks and routine calls at natural speed.",
       "category": "podcasts",
       "subcategory": "intermediate-podcasts",
-      "tags": ["conversation", "natural", "intermediate", "everyday"],
+      "tags": [
+        "phraseology",
+        "audio",
+        "readback",
+        "listening"
+      ],
       "difficulty": "intermediate",
       "priceType": "free",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://www.youtube.com/@yuyunihongopodcast",
-      "rating": 4.4,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/results?search_query=aviation+radio+phraseology",
+      "rating": 0,
       "featured": false,
-      "notes": "Natural conversations on relatable topics."
+      "notes": ""
     },
     {
       "id": "noriko-japanese",
-      "name": "Learn Japanese with Noriko",
-      "nameJa": "Learn Japanese with Noriko",
-      "description": "Japanese podcast with clear speech for learners.",
-      "descriptionLong": "Learn Japanese with Noriko features episodes spoken in clear, learner-friendly Japanese. Noriko discusses various topics while keeping the language accessible, making it great for building listening skills.",
+      "name": "ARRL video audio",
+      "nameJa": "",
+      "description": "Recorded material from ARRL videos.",
+      "descriptionLong": "Listen to ARRL videos for examples of plain speech about radio topics.",
       "category": "podcasts",
       "subcategory": "beginner-podcasts",
-      "tags": ["clear", "learner-friendly", "beginner", "listening"],
+      "tags": [
+        "arrl",
+        "audio",
+        "video",
+        "listening"
+      ],
       "difficulty": "beginner",
       "priceType": "free",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://learnjapanesepod.com/noriko/",
-      "rating": 4.5,
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/@ARRL",
+      "rating": 0,
       "featured": false,
-      "notes": "Clear speech perfect for beginners."
+      "notes": ""
     },
     {
       "id": "news-in-slow-japanese",
-      "name": "News in Slow Japanese",
-      "nameJa": "News in Slow Japanese",
-      "description": "Japanese news delivered at a slower pace for learners.",
-      "descriptionLong": "News in Slow Japanese presents current events and news stories in Japanese at a slower, more comprehensible pace. Great for learners who want to stay informed while practicing listening skills.",
+      "name": "Amateur radio contacts on video",
+      "nameJa": "",
+      "description": "Recorded on air exchanges.",
+      "descriptionLong": "Listen to complete contacts and note the wording used at the start and end.",
       "category": "podcasts",
       "subcategory": "intermediate-podcasts",
-      "tags": ["news", "slow", "intermediate", "current-events"],
+      "tags": [
+        "contacts",
+        "operating",
+        "audio",
+        "listening"
+      ],
       "difficulty": "intermediate",
-      "priceType": "freemium",
-      "priceDetails": "Some free content. Premium for full access.",
-      "platforms": ["web", "ios", "android"],
-      "url": "https://newsinslowjapanese.com/",
-      "rating": 4.3,
+      "priceType": "free",
+      "priceDetails": "Free to browse",
+      "platforms": [
+        "web"
+      ],
+      "url": "https://www.youtube.com/results?search_query=amateur+radio+contact",
+      "rating": 0,
       "featured": false,
-      "notes": "Good for news vocabulary and listening practice."
+      "notes": ""
     }
   ]
 }

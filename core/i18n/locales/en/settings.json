@@ -1,6 +1,6 @@
 {
   "title": "Settings",
-  "description": "Customize your learning experience",
+  "description": "Customize your training experience",
   "general": {
     "title": "General",
     "language": "Language",
@@ -11,7 +11,7 @@
   "appearance": {
     "title": "Appearance",
     "colorTheme": "Color Theme",
-    "font": "Japanese Font",
+    "font": "Display Font",
     "fontSize": "Font Size",
     "darkMode": "Dark Mode",
     "customTheme": "Custom Theme"
@@ -34,8 +34,8 @@
   },
   "preferences": {
     "title": "Preferences",
-    "showRomaji": "Show Romaji",
-    "showFurigana": "Show Furigana",
+    "showRomaji": "Show Code Words",
+    "showFurigana": "Show Letters",
     "inputMethod": "Input Method",
     "keyboardShortcuts": "Keyboard Shortcuts"
   },

@@ -1,76 +1,15 @@
-# AI Assistant Guide
+# Gemini guide
 
-This file provides comprehensive guidance for AI coding assistants (GitHub Copilot, Claude, Kiro, Cursor, and other AI models) when working with the KanaDojo codebase.
+FiveByFive is a NATO/ICAO phonetic alphabet trainer forked from [lingdojo/kana-dojo](https://github.com/lingdojo/kana-dojo). The engine and UI are upstream. The content is new. Maintained at [github.com/frteddz/FiveByFive](https://github.com/frteddz/FiveByFive).
 
----
+Read [AGENTS.md](./AGENTS.md) for the full rules. They apply here unchanged.
 
-**Never use `npm run build` for verification** — it takes 1-2 minutes and adds no validation value.
+Short version:
 
----
-
-## Shell Environment
-
-**Windows PowerShell**: use `;` — **Linux/macOS/WSL**: use `&&`.
-
-<!-- examples commented out: `npm run lint; npm run test` -->
-
----
-
-## Project Overview
-
-**KanaDojo** is a Japanese learning platform built with Next.js 15, React 19, and TypeScript. It provides gamified training for Hiragana, Katakana, Kanji, and Vocabulary.
-
-| Aspect    | Technology                               |
-| --------- | ---------------------------------------- |
-| Framework | Next.js 15 with App Router and Turbopack |
-| Language  | TypeScript (strict mode)                 |
-| Styling   | Tailwind CSS + shadcn/ui                 |
-| State     | Zustand with localStorage persistence    |
-| i18n      | next-intl (namespace-based)              |
-| Testing   | Vitest with jsdom                        |
-
-**URLs**: [kanadojo.com](https://kanadojo.com) · [GitHub](https://github.com/lingdojo/kana-dojo)
-
----
-
-## Architecture — feature-based (short)
-
-KanaDojo is organized by feature: app/, features/, shared/, core/. Keep business logic inside features and avoid cross-feature internal imports.
-
----
-
----
-
-## Code style & state — quick rules
-
-- Imports: use path aliases (`@/...`), avoid cross-feature relative imports.
-- TypeScript: strict mode; fix errors; prefer `interface` for public APIs.
-- Components: functional + explicit props; hooks/stores start with `use`.
-- Styling: Tailwind + `cn()` for conditional classes.
-- State: Zustand (persisted) for feature stores.
-
----
-
-## i18n, commits & rules (compact)
-
-- i18n: `next-intl` (namespace-based). <!-- `npm run i18n:check` instructions omitted here -->
-- Git: use conventional commits `type(scope): desc` (example in repo).
-
-### Rules summary
-
-- Keep logic in `features/`. No cross-feature internals.
-- Avoid circular deps. Use path aliases.
-
-### Do's / Don'ts (short)
-
-- ✅ Use TypeScript types, path aliases, and translations.
-- ❌ Don’t add business logic to `app/` or create circular deps.
-
-### Common tasks
-
-- New feature: create `features/NewFeature/` + `components/`, `store/`, `data/`, `lib/` and route.
-- Add translations: update `core/i18n/locales/*` and validate via repo scripts when needed.
-
----
-
-**Last Updated**: 2026-02-15
+- Next.js 16, React 19, TypeScript strict, Tailwind 4, Zustand 5, next-intl, Vitest.
+- Three trainings: Letters, Codes, Spelling. Four modes: pick, reverse pick, input, reverse input.
+- Verify with `npm run check` and `npm run test`. Do not use `npm run build` for verification.
+- Keep logic inside `features/`. Import via `@/...` aliases and feature entrypoints. No cross-feature internals.
+- Do not rename inherited `kana`, `kanji`, `vocabulary` or `kanadojo` identifiers as part of unrelated work. Existing saved progress depends on some of them.
+- Conventional commits. Owner requested changes go straight to `main` unless a PR is asked for.
+- Docs: no em dashes, no emojis, no invented facts.

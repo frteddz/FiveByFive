@@ -1,16 +1,16 @@
 {
   "pageTitle": "Blog",
-  "pageDescription": "Explore our collection of Japanese learning articles covering Hiragana, Katakana, Kanji, vocabulary, grammar, and Japanese culture.",
-  "metaTitle": "Blog - Japanese Learning Articles | KanaDojo",
-  "metaDescription": "Explore our collection of Japanese learning articles covering Hiragana, Katakana, Kanji, vocabulary, grammar, and Japanese culture. Free educational content for all levels.",
+  "pageDescription": "Guides on the NATO phonetic alphabet, radio phrases, callsign spelling and radiotelephony practice.",
+  "metaTitle": "Blog - Phonetic Alphabet Guides | FiveByFive",
+  "metaDescription": "Read guides on ICAO code words, radio phrase meaning and callsign spelling. Free articles for every level of practice.",
   "categories": {
     "all": "All",
-    "hiragana": "Hiragana",
-    "katakana": "Katakana",
-    "kanji": "Kanji",
-    "vocabulary": "Vocabulary",
-    "grammar": "Grammar",
-    "culture": "Culture"
+    "hiragana": "Letters",
+    "katakana": "Codes",
+    "kanji": "Radio Phrases",
+    "vocabulary": "Spelling",
+    "grammar": "Procedure",
+    "culture": "General"
   },
   "filter": {
     "label": "Filter posts by category",

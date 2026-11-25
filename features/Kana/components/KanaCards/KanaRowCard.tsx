@@ -23,7 +23,7 @@ const renderSeparatedText = (items: string[], separatorClassName: string) =>
       {item}
       {index < items.length - 1 && (
         <span aria-hidden='true' className={separatorClassName}>
-          ・
+          /
         </span>
       )}
     </span>
@@ -98,7 +98,7 @@ const KanaRowCard = ({ kanaGroup, globalIndex }: KanaRowCardProps) => {
       <div className='flex w-full flex-col items-start gap-1'>
         <div
           className='text-[2.1rem] font-normal tracking-wide text-(--main-color) sm:text-[2.5rem]'
-          lang='ja'
+          lang='en'
         >
           {renderSeparatedText(kanaGroup.kana, 'text-(--border-color)')}
         </div>

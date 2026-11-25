@@ -1,15 +1,15 @@
 import {
-  Zen_Maru_Gothic,
-  Rampart_One,
-  Klee_One,
-  Hachi_Maru_Pop,
-  Yuji_Mai,
-  RocknRoll_One,
-  Yusei_Magic,
-  Mochiy_Pop_One,
+  Inter,
+  Roboto,
+  Lora,
+  JetBrains_Mono,
+  Nunito,
+  Space_Grotesk,
+  DM_Sans,
+  Work_Sans,
 } from 'next/font/google';
 
-const zenMaruGothic = Zen_Maru_Gothic({
+const inter = Inter({
   subsets: ['latin'],
   weight: ['400'],
   display: 'swap',
@@ -17,7 +17,7 @@ const zenMaruGothic = Zen_Maru_Gothic({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const rampartOne = Rampart_One({
+const roboto = Roboto({
   subsets: ['latin'],
   weight: ['400'],
   display: 'swap',
@@ -25,7 +25,7 @@ const rampartOne = Rampart_One({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const kleeOne = Klee_One({
+const lora = Lora({
   subsets: ['latin'],
   weight: ['400'],
   display: 'swap',
@@ -33,7 +33,7 @@ const kleeOne = Klee_One({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const hachiMaruPop = Hachi_Maru_Pop({
+const jetBrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   weight: ['400'],
   display: 'swap',
@@ -41,7 +41,7 @@ const hachiMaruPop = Hachi_Maru_Pop({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const yujiMai = Yuji_Mai({
+const nunito = Nunito({
   subsets: ['latin'],
   weight: ['400'],
   display: 'swap',
@@ -49,7 +49,7 @@ const yujiMai = Yuji_Mai({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const rocknRollOne = RocknRoll_One({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   weight: ['400'],
   display: 'swap',
@@ -57,7 +57,7 @@ const rocknRollOne = RocknRoll_One({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const yuseiMagic = Yusei_Magic({
+const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['400'],
   display: 'swap',
@@ -65,7 +65,7 @@ const yuseiMagic = Yusei_Magic({
   fallback: ['system-ui', 'sans-serif'],
 });
 
-const mochiyPopOne = Mochiy_Pop_One({
+const workSans = Work_Sans({
   subsets: ['latin'],
   weight: ['400'],
   display: 'swap',
@@ -75,35 +75,35 @@ const mochiyPopOne = Mochiy_Pop_One({
 
 export const decorationFonts = [
   {
-    name: 'Zen Maru Gothic',
-    font: zenMaruGothic,
+    name: 'Inter',
+    font: inter,
   },
   {
-    name: 'Rampart One',
-    font: rampartOne,
+    name: 'Roboto',
+    font: roboto,
   },
   {
-    name: 'Klee One',
-    font: kleeOne,
+    name: 'Lora',
+    font: lora,
   },
   {
-    name: 'Hachi Maru Pop',
-    font: hachiMaruPop,
+    name: 'JetBrains Mono',
+    font: jetBrainsMono,
   },
   {
-    name: 'Yuji Mai',
-    font: yujiMai,
+    name: 'Nunito',
+    font: nunito,
   },
   {
-    name: 'RocknRoll One',
-    font: rocknRollOne,
+    name: 'Space Grotesk',
+    font: spaceGrotesk,
   },
   {
-    name: 'Yusei Magic',
-    font: yuseiMagic,
+    name: 'DM Sans',
+    font: dmSans,
   },
   {
-    name: 'Mochiy Pop One',
-    font: mochiyPopOne,
+    name: 'Work Sans',
+    font: workSans,
   },
 ];

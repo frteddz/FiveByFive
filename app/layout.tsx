@@ -7,7 +7,7 @@ import GoogleAnalytics from '@/core/analytics/GoogleAnalytics';
 // import MSClarity from '@/core/analytics/MSClarity';
 import {
   StructuredData,
-  kanaDojoSchema,
+  fiveByFiveSchema,
 } from '@/shared/ui-composite/SEO/StructuredData';
 import { Metadata, Viewport } from 'next';
 import { headers } from 'next/headers';
@@ -29,15 +29,14 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kanadojo.com'),
+  metadataBase: new URL('https://fivebyfive.vercel.app'),
   manifest: '/manifest.json',
   title: {
-    default:
-      'KanaDojo - Learn Japanese Hiragana, Katakana, Kanji & Vocabulary Online',
-    template: '%s | KanaDojo',
+    default: 'FiveByFive - Learn the NATO Phonetic Alphabet',
+    template: '%s | FiveByFive',
   },
   description:
-    'Master Japanese with KanaDojo - a fun, aesthetic platform for learning Hiragana, Katakana, Kanji, and Vocabulary. Practice with interactive games, track progress, and customize your learning experience.',
+    'Learn Alpha, Bravo, Charlie and every ICAO code word with typing drills. Practice letters, radio phrases and callsign spelling with instant feedback.',
   icons: {
     icon: [
       { url: '/favicon.ico?v=2' },
@@ -56,51 +55,43 @@ export const metadata: Metadata = {
     },
   },
   keywords: [
-    'learn japanese',
-    'learn hiragana',
-    'learn katakana',
-    'learn kana',
-    'learn kanji',
-    'japanese vocabulary',
-    'hiragana practice',
-    'katakana practice',
-    'kanji practice',
-    'japanese learning app',
-    'japanese online lessons',
-    'japanese writing system',
-    'JLPT preparation',
-    'japanese language learning',
-    'kana dojo',
-    'japanese study tool',
-    'free japanese lessons',
+    'NATO phonetic alphabet',
+    'ICAO code words',
+    'radio phrase training',
+    'callsign spelling',
+    'learn Alpha Bravo Charlie',
+    'phonetic alphabet practice',
+    'radiotelephony phrases',
+    'letter code word drills',
+    'spelling with code words',
+    'typing drills for code words',
   ],
-  authors: [{ name: 'LingDojo', url: 'https://kanadojo.com' }],
-  creator: 'LingDojo',
-  publisher: 'LingDojo',
+  authors: [{ name: 'frteddz', url: 'https://fivebyfive.vercel.app' }],
+  creator: 'frteddz',
+  publisher: 'frteddz',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'KanaDojo - Learn Japanese Hiragana, Katakana, Kanji & Vocabulary',
+    title: 'FiveByFive - Learn the NATO Phonetic Alphabet',
     description:
-      'Master Japanese with KanaDojo - an aesthetic, minimalist platform for learning Hiragana, Katakana, Kanji, and Vocabulary. Interactive games, progress tracking, and 100+ themes.',
-    url: 'https://kanadojo.com',
-    siteName: 'KanaDojo',
+      'Learn Alpha, Bravo, Charlie and every ICAO code word with typing drills, radio phrase practice and callsign spelling.',
+    url: 'https://fivebyfive.vercel.app',
+    siteName: 'FiveByFive',
     type: 'website',
     locale: 'en_US',
     alternateLocale: ['es_ES'],
   },
   twitter: {
     card: 'summary',
-    title: 'KanaDojo - Learn Japanese Online',
+    title: 'FiveByFive - Learn the NATO Phonetic Alphabet',
     description:
-      'Master Japanese Hiragana, Katakana, Kanji & Vocabulary with interactive games and beautiful themes.',
-    creator: '@kanadojo',
+      'Practice ICAO code words, radio phrases and callsign spelling with typing drills.',
   },
   alternates: {
-    canonical: 'https://kanadojo.com',
+    canonical: 'https://fivebyfive.vercel.app',
   },
   robots: {
     index: true,
@@ -139,7 +130,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <StructuredData data={kanaDojoSchema} />
+        <StructuredData data={fiveByFiveSchema} />
         {/* DNS prefetch for external domains - resolve DNS early */}
         {isAnalyticsEnabled && (
           <>

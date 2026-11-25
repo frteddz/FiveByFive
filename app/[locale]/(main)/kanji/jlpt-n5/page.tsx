@@ -36,33 +36,33 @@ export default async function KanjiJlptN5Page({
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: `https://kanadojo.com/${locale}` },
-          { name: 'Kanji', url: `https://kanadojo.com/${locale}/kanji` },
+          { name: 'Home', url: `https://fivebyfive.vercel.app/${locale}` },
+          { name: 'Codes', url: `https://fivebyfive.vercel.app/${locale}/kanji` },
           {
-            name: 'JLPT N5',
-            url: `https://kanadojo.com/${locale}/kanji/jlpt-n5`,
+            name: 'Tier 1',
+            url: `https://fivebyfive.vercel.app/${locale}/kanji/jlpt-n5`,
           },
         ]}
       />
       <CourseSchema
-        name='JLPT N5 Kanji Course - Japanese Kanji Practice'
-        description='Study JLPT N5 kanji with interactive drills and set-based practice. Improve kanji recognition, readings, and meanings with immediate feedback and progress tracking.'
-        url={`https://kanadojo.com/${locale}/kanji/jlpt-n5`}
+        name='Tier 1 Radio Codes - Practice and Meaning'
+        description='Study tier 1 radio codes with interactive drills and set-based practice. Improve phrase recognition and meaning recall with immediate feedback.'
+        url={`https://fivebyfive.vercel.app/${locale}/kanji/jlpt-n5`}
         educationalLevel='Beginner'
-        skillLevel='JLPT N5'
+        skillLevel='Tier 1'
         learningResourceType='Interactive Course'
       />
       <LearningResourceSchema
-        name='JLPT N5 Kanji Practice'
-        description='Targeted JLPT N5 kanji practice with selectable levels, quick selection tools, and kanji set dictionaries for exam-focused study.'
-        url={`https://kanadojo.com/${locale}/kanji/jlpt-n5`}
+        name='Tier 1 Radio Codes Practice'
+        description='Practice tier 1 radio codes with selectable sets, quick selection tools and instant feedback.'
+        url={`https://fivebyfive.vercel.app/${locale}/kanji/jlpt-n5`}
         learningResourceType={['Quiz', 'Interactive', 'Game']}
         educationalLevel={['Beginner']}
-        teaches='JLPT N5 kanji readings, meanings, and recognition'
-        assesses='JLPT N5 kanji recall speed and accuracy'
+        teaches='Tier 1 radio phrases and their meanings'
+        assesses='Tier 1 phrase recall speed and accuracy'
         timeRequired='PT20M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
         educationalAlignment={{
           alignmentType: 'educationalLevel',
           educationalFramework: 'JLPT',

@@ -44,24 +44,24 @@ export default async function KanjiPage({
         ]}
       />
       <CourseSchema
-        name='Japanese Kanji Learning Course by JLPT Level (N5-N1)'
-        description='Learn Japanese Kanji characters organized by JLPT levels from N5 to N1. Master over 2,000 essential kanji with readings, meanings, and context through interactive training and spaced repetition.'
-        url={`https://kanadojo.com/${locale}/kanji`}
+        name='Codes Course - Radio Phrases by Tier'
+        description='Practice radio phrases across five tiers with quick set selection, typing drills and progress tracking. Learn what each phrase means in voice communication.'
+        url={`https://fivebyfive.vercel.app/${locale}/kanji`}
         educationalLevel='Beginner to Advanced'
         skillLevel='All Levels'
         learningResourceType='Interactive Course, Exercise and Games'
       />
       <LearningResourceSchema
-        name='Interactive Kanji Practice and JLPT Quiz'
-        description='Master over 2,000 Japanese Kanji characters by JLPT levels N5 through N1. Practice readings, meanings, and recognition with interactive quizzes and adaptive repetition.'
-        url={`https://kanadojo.com/${locale}/kanji`}
+        name='Interactive Codes Practice and Radio Phrase Quiz'
+        description='Practice radiotelephony phrases across five tiers with quick set selection and interactive drills. Learn the meaning and use of each phrase.'
+        url={`https://fivebyfive.vercel.app/${locale}/kanji`}
         learningResourceType={['Quiz', 'Interactive', 'Game']}
         educationalLevel={['Beginner', 'Intermediate', 'Advanced']}
-        teaches='Japanese Kanji Characters, Readings, and Meanings'
-        assesses='Kanji recognition, onyomi and kunyomi recall, and meaning comprehension'
+        teaches='Radio phrases, digits and radiotelephony codes'
+        assesses='Phrase meaning recall and recognition speed'
         timeRequired='PT1H'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
         educationalAlignment={{
           alignmentType: 'educationalLevel',
           educationalFramework: 'JLPT',
@@ -71,11 +71,11 @@ export default async function KanjiPage({
       <DojoRouteSchema
         routeKey='kanji'
         locale={locale}
-        title='Kanji Dojo - Learn Japanese Kanji Characters by JLPT Level'
-        description='Learn Japanese kanji organized by JLPT levels N5 to N1. Practice readings and meanings with interactive exercises, quick set selection, and progress tracking.'
+        title='Codes Dojo - Practice Radio Phrases by Tier'
+        description='Practice radio phrases across five tiers with interactive exercises, quick set selection and progress tracking.'
         canonicalPath='/kanji'
-        teaches='Japanese Kanji Characters, Readings, and Meanings'
-        assesses='Kanji recognition, onyomi and kunyomi recall, and meaning comprehension'
+        teaches='Radio phrases, digits and radiotelephony codes'
+        assesses='Phrase meaning recall and recognition speed'
         educationalAlignment={{
           alignmentType: 'educationalLevel',
           educationalFramework: 'JLPT',

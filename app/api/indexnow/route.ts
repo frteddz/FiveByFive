@@ -7,7 +7,7 @@ import { NextRequest, NextResponse } from 'next/server';
  */
 
 const INDEXNOW_KEY = process.env.INDEXNOW_KEY || '';
-const SITE_URL = 'https://kanadojo.com';
+const SITE_URL = 'https://fivebyfive.vercel.app';
 
 // IndexNow endpoints (Bing, Yandex, Seznam.cz, Naver, etc. all support it)
 const INDEXNOW_ENDPOINT = 'https://api.indexnow.org/indexnow';
@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
     const validUrls = urlList.filter(u => {
       try {
         const parsed = new URL(u);
-        return parsed.hostname === 'kanadojo.com';
+        return parsed.hostname === 'fivebyfive.vercel.app';
       } catch {
         return false;
       }
@@ -58,14 +58,14 @@ export async function POST(request: NextRequest) {
 
     if (validUrls.length === 0) {
       return NextResponse.json(
-        { error: 'No valid URLs for kanadojo.com domain' },
+        { error: 'No valid URLs for fivebyfive.vercel.app domain' },
         { status: 400 },
       );
     }
 
     // Submit to IndexNow API
     const indexNowPayload = {
-      host: 'kanadojo.com',
+      host: 'fivebyfive.vercel.app',
       key: INDEXNOW_KEY,
       keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
       urlList: validUrls,

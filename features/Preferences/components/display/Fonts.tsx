@@ -63,7 +63,7 @@ const Fonts = ({ useNewIconDesign = false }: FontsProps) => {
           }}
         >
           {fontObj.name}
-          {fontObj.name === 'Zen Maru Gothic' && (
+          {fontObj.name === 'Inter' && (
             <span
               style={{
                 color:
@@ -85,7 +85,7 @@ const Fonts = ({ useNewIconDesign = false }: FontsProps) => {
                 : 'var(--secondary-color)',
           }}
         >
-          かな道場
+          FiveByFive
         </span>
       </p>
     </label>
@@ -152,30 +152,18 @@ const Fonts = ({ useNewIconDesign = false }: FontsProps) => {
         </fieldset>
       </CollapsibleSection>
       <div className='flex flex-col gap-2'>
-        <h4 className='text-xl'>Hiragana:</h4>
-        <p className='text-3xl text-(--secondary-color)' lang='ja'>
-          {'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん'.slice(
-            0,
-            20,
-          )}
+        <h4 className='text-xl'>Alphabet:</h4>
+        <p className='text-3xl text-(--secondary-color)' lang='en'>
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ
         </p>
-        <h4 className='text-xl'>Katakana:</h4>
-        <p className='text-3xl text-(--secondary-color)' lang='ja'>
-          {'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメもヤユヨラリルレロワヲン'.slice(
-            0,
-            20,
-          )}
+        <h4 className='text-xl'>Code words:</h4>
+        <p className='text-3xl text-(--secondary-color)' lang='en'>
+          Alfa Bravo Charlie Delta Echo Foxtrot
         </p>
-        <h4 className='text-xl'>Kanji:</h4>
-        <p className='text-3xl text-(--secondary-color)' lang='ja'>
-          人日大小学 校生先円上下中外右左名前時分国
+        <h4 className='text-xl'>Radio:</h4>
+        <p className='text-3xl text-(--secondary-color)' lang='en'>
+          Roger Wilco Over Out Mayday Squawk
         </p>
-        {/* 
-        <h4 className='text-xl'>Sample sentence:</h4>
-        <p className='text-3xl text-(--secondary-color)' lang='ja'>
-          人類社会のすべての構成員の固有の尊厳と平等で譲ることのできない権利とを承認することは
-        </p>
- */}
       </div>
     </div>
   );

@@ -28,7 +28,7 @@ const renderLabelWithDotSeparator = (label: string) => {
       {part}
       {index < parts.length - 1 && (
         <span aria-hidden='true' className='mx-1 text-(--main-color)'>
-          ・
+          /
         </span>
       )}
     </span>

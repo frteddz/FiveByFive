@@ -34,7 +34,7 @@ const GauntletKana: React.FC<GauntletKanaProps> = ({ onCancel }) => {
 
   const config: GauntletConfig<KanaCharacter> = {
     dojoType: 'kana',
-    dojoLabel: 'Kana',
+    dojoLabel: 'Letters',
     initialGameMode: selectedGameModeKana === 'Type' ? 'Type' : 'Pick',
     items: selectedKana,
     selectedSets: selectedKanaGroups,

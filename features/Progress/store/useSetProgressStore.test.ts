@@ -62,15 +62,15 @@ describe('useSetProgressStore', () => {
     expect(useSetProgressStore.getState().data.vocabulary).toEqual({});
   });
 
-  it('caps kanji progress at 30 correct answers', async () => {
+  it('caps kanji progress at 24 correct answers', async () => {
     await useSetProgressStore.getState().hydrate();
 
     for (let i = 0; i < 250; i++) {
-      await useSetProgressStore.getState().recordKanjiProgress('日');
+      await useSetProgressStore.getState().recordKanjiProgress('MAYDAY');
     }
 
-    expect(useSetProgressStore.getState().data.kanji['日']).toEqual({
-      correct: 30,
+    expect(useSetProgressStore.getState().data.kanji['MAYDAY']).toEqual({
+      correct: 24,
     });
   });
 
@@ -80,23 +80,23 @@ describe('useSetProgressStore', () => {
     for (let i = 0; i < 120; i++) {
       await useSetProgressStore
         .getState()
-        .recordVocabularyProgress('日本語', 'meaning');
+        .recordVocabularyProgress('SOS', 'meaning');
     }
     for (let i = 0; i < 130; i++) {
       await useSetProgressStore
         .getState()
-        .recordVocabularyProgress('日本語', 'reading');
+        .recordVocabularyProgress('SOS', 'reading');
     }
 
-    expect(useSetProgressStore.getState().data.vocabulary['日本語']).toEqual({
-      meaningCorrect: 15,
-      readingCorrect: 15,
+    expect(useSetProgressStore.getState().data.vocabulary['SOS']).toEqual({
+      meaningCorrect: 12,
+      readingCorrect: 12,
     });
   });
 
   it('clears the set progress index', async () => {
     await useSetProgressStore.getState().hydrate();
-    await useSetProgressStore.getState().recordKanjiProgress('火');
+    await useSetProgressStore.getState().recordKanjiProgress('roger');
 
     await useSetProgressStore.getState().clearSetProgress();
 
@@ -106,7 +106,7 @@ describe('useSetProgressStore', () => {
 
   it('clearAllProgress also clears the set progress index', async () => {
     await useSetProgressStore.getState().hydrate();
-    await useSetProgressStore.getState().recordKanjiProgress('水');
+    await useSetProgressStore.getState().recordKanjiProgress('over');
     useAutoLearningStore.getState().setReviewCursor('kanji', 8);
 
     useStatsStore.getState().clearAllProgress();

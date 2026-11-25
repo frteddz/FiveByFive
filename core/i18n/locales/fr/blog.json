@@ -1,34 +1,34 @@
 {
   "pageTitle": "Blog",
-  "pageDescription": "Explorez notre collection d'articles sur l'apprentissage du japonais couvrant les Hiragana, Katakana, Kanji, le vocabulaire, la grammaire et la culture japonaise.",
-  "metaTitle": "Blog - Articles sur l'apprentissage du japonais | KanaDojo",
-  "metaDescription": "Explorez notre collection d'articles sur l'apprentissage du japonais couvrant les Hiragana, Katakana, Kanji, le vocabulaire, la grammaire et la culture japonaise. Contenu éducatif gratuit pour tous les niveaux.",
+  "pageDescription": "Guides on the NATO phonetic alphabet, radio phrases, callsign spelling and radiotelephony practice.",
+  "metaTitle": "Blog - Phonetic Alphabet Guides | FiveByFive",
+  "metaDescription": "Read guides on ICAO code words, radio phrase meaning and callsign spelling. Free articles for every level of practice.",
   "categories": {
-    "all": "Tout",
-    "hiragana": "Hiragana",
-    "katakana": "Katakana",
-    "kanji": "Kanji",
-    "vocabulary": "Vocabulaire",
-    "grammar": "Grammaire",
-    "culture": "Culture"
+    "all": "All",
+    "hiragana": "Letters",
+    "katakana": "Codes",
+    "kanji": "Radio Phrases",
+    "vocabulary": "Spelling",
+    "grammar": "Procedure",
+    "culture": "General"
   },
   "filter": {
-    "label": "Filtrer les articles par catégorie",
-    "noResults": "Aucun article trouvé dans cette catégorie."
+    "label": "Filter posts by category",
+    "noResults": "No posts found in this category."
   },
   "card": {
-    "readMore": "En savoir plus sur {title}"
+    "readMore": "Read more about {title}"
   },
   "post": {
-    "by": "Par {author}",
-    "updated": "Mis à jour : {date}",
-    "readingTime": "{minutes} min de lecture",
-    "tableOfContents": "Sur cette page",
-    "relatedPosts": "Articles similaires"
+    "by": "By {author}",
+    "updated": "Updated: {date}",
+    "readingTime": "{minutes} min read",
+    "tableOfContents": "On this page",
+    "relatedPosts": "Related Posts"
   },
   "difficulty": {
-    "beginner": "Débutant",
-    "intermediate": "Intermédiaire",
-    "advanced": "Avancé"
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
   }
 }

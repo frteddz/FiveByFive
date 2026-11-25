@@ -1,243 +1,287 @@
 {
   "home": {
-    "title": "KanaDojo - 在线学习日语平假名、片假名、汉字和词汇",
-    "titleShort": "KanaDojo - 在线学习日语",
-    "description": "通过KanaDojo掌握日语——一个有趣、美观、简约的平台，用于学习平假名、片假名、汉字和词汇。通过互动游戏练习，追踪进度，使用100多种主题自定义您的学习体验。",
-    "descriptionShort": "通过互动游戏、进度追踪和精美的自定义选项掌握日语平假名、片假名、汉字和词汇。",
-    "keywords": "学习日语, 在线学习平假名, 免费学习片假名, 快速学习假名, 免费学习汉字, 日语词汇构建, 在线平假名练习, 免费片假名练习, 汉字练习应用, 日语学习应用, 免费在线日语课程, 日语书写系统, JLPT备考, 日语语言学习, 假名道场, 日语学习工具, 免费日语课程, 如何学习平假名, 如何学习片假名, 如何学习汉字, 最佳日语学习应用, 日语初学者, 免费在线学习日语, 日语字母练习, 平假名片假名图表, 在线日语闪卡, 互动日语课程, 游戏化日语学习, 日语自学, 日语练习游戏"
+    "title": "FiveByFive - Learn the NATO Phonetic Alphabet",
+    "titleShort": "FiveByFive - Learn ICAO Code Words",
+    "description": "Learn Alpha, Bravo, Charlie and every NATO code word with typing drills. Practice letters, radio phrases and callsign spelling, with progress saved in your browser.",
+    "descriptionShort": "Practice NATO code words, radio phrases and callsign spelling with fast typing drills and instant feedback.",
+    "keywords": "NATO phonetic alphabet, ICAO code words, learn Alpha Bravo Charlie, radio phrase training, callsign spelling, phonetic alphabet practice, radiotelephony codes, typing drills, code word quiz, free phonetic alphabet trainer"
   },
   "kana": {
-    "title": "假名道场 - 按级别学习日语平假名和片假名",
-    "titleShort": "假名道场 - 学习平假名和片假名",
-    "description": "通过互动游戏、测验和练习掌握平假名和片假名。按级别练习日语假名字符，即时反馈、进度追踪和初学者友好的学习流程。",
-    "keywords": "学习假名, 假名图表, 日语假名图表, 平假名和片假名, 在线平假名练习, 在线片假名练习, 日语字母练习, 假名测验, 假名闪卡, 假名练习, 假名识别训练, 假名阅读练习, 带发音的平假名图表, 带发音的片假名图表, 日语音节练习, 初学者日语书写系统"
+    "title": "Letters - Match A to Z with ICAO Code Words | FiveByFive",
+    "titleShort": "Letters - NATO Code Words",
+    "description": "Learn the code word for every letter from A to Z. Pick, reverse pick, input and reverse input drills give instant feedback and track your accuracy.",
+    "keywords": "NATO letters, ICAO code words, A to Z code words, letter drills, Alpha Bravo Charlie, phonetic alphabet practice, letter quiz, code word recognition"
   },
   "learnHiragana": {
-    "title": "学习平假名 - 完整平假名图表、练习和实践 | KanaDojo",
-    "titleShort": "学习平假名",
-    "description": "通过互动练习、可选假名卡片和引导式练习快速学习平假名。掌握完整的平假名图表、浊音和拗音，即时反馈和专注记忆学习。",
-    "keywords": "学习平假名, 平假名图表, 平假名表, 平假名练习, 平假名实践, 平假名测验, 平假名闪卡, 日语平假名字母, 平假名发音指南, 平假名阅读练习, 初学者平假名, 平假名浊音, 平假名拗音, 完整平假名图表, 快速记忆平假名"
+    "title": "Learn Letters A to Z with Code Words | FiveByFive",
+    "titleShort": "Learn Letters A to Z",
+    "description": "Learn the full A to Z letter set with selectable cards, typing drills and instant feedback. Practice the whole alphabet or focus on A to M and N to Z.",
+    "keywords": "learn NATO letters, A to Z code words, Alpha Bravo Charlie, letter drills, phonetic alphabet A to Z, code word practice, letter recognition"
   },
   "learnKatakana": {
-    "title": "学习片假名 - 完整片假名图表、练习和实践 | KanaDojo",
-    "titleShort": "学习片假名",
-    "description": "通过互动练习、可选假名卡片和引导式练习快速学习片假名。掌握完整的片假名图表、浊音、拗音和外来语音，即时反馈。",
-    "keywords": "学习片假名, 片假名图表, 片假名表, 片假名练习, 片假名实践, 片假名测验, 片假名闪卡, 日语片假名字母, 片假名发音指南, 片假名阅读练习, 初学者片假名, 片假名浊音, 片假名拗音, 片假名外来音, 完整片假名图表"
+    "title": "Learn Radio Codes and Phrases | FiveByFive",
+    "titleShort": "Learn Radio Codes",
+    "description": "Learn digits, radio phrases and common radiotelephony codes with short drills. Practice at your own pace and review the items you miss most.",
+    "keywords": "radio codes, radiotelephony phrases, ICAO digits, radio phrase drills, mayday roger wilco, code word practice"
   },
   "kanaBlitz": {
-    "title": "假名闪电战 - 测试您的平假名和片假名速度",
-    "titleShort": "假名闪电战 - 测试您的速度",
-    "description": "通过假名闪电战测试您的日语假名识别速度。使用计时练习挑战自己，追踪您的进度。",
-    "keywords": "假名速度测试, 平假名速度, 片假名速度, 日语假名练习, 假名闪卡, 快速阅读假名, 计时假名测验, 快速回忆平假名, 快速片假名识别, 假名练习"
+    "title": "Letters Blitz - Test Your Code Word Speed",
+    "titleShort": "Letters Blitz - Test Your Speed",
+    "description": "Race through letter to code word drills with a timer. Letters Blitz builds fast recall for the NATO phonetic alphabet.",
+    "keywords": "code word speed test, NATO letters speed, timed letter drills, phonetic alphabet quiz, rapid code word recall"
   },
   "kanaGauntlet": {
-    "title": "假名挑战 - 掌握每个字符",
-    "titleShort": "假名挑战 - 掌握每个字符",
-    "description": "通过假名挑战掌握每个平假名和片假名字符。所有日语假名的综合练习。",
-    "keywords": "假名精通, 平假名精通, 片假名精通, 综合假名练习"
+    "title": "Letters Gauntlet - Master Every Code Word",
+    "titleShort": "Letters Gauntlet - Master Every Letter",
+    "description": "Work through the full A to Z letter set in one session. Letters Gauntlet checks recall for every NATO code word.",
+    "keywords": "NATO letter mastery, all code words, full alphabet drill, phonetic alphabet mastery"
   },
   "kanji": {
-    "title": "汉字道场 - 按JLPT级别学习日语汉字字符",
-    "titleShort": "汉字道场 - 学习日语汉字",
-    "description": "按JLPT级别N5到N1学习日语汉字。通过互动练习、快速选择和进度追踪练习读音和意思。",
-    "keywords": "学习汉字, 日语汉字字符, 在线汉字练习, JLPT汉字, JLPT N5汉字, JLPT N4汉字, JLPT N3汉字, JLPT N2汉字, JLPT N1汉字, 按级别学习汉字, 汉字测验, 汉字闪卡, 音读训读, 汉字意思, 汉字读音, 汉字识别练习, 汉字学习应用"
+    "title": "Codes - Learn Radio Phrases by Tier | FiveByFive",
+    "titleShort": "Codes - Radio Phrases",
+    "description": "Practice radio phrases across five tiers with quick set selection, typing drills and progress tracking. Learn what each phrase means in voice communication.",
+    "keywords": "radio phrases, radiotelephony codes, ICAO phrase practice, radio code tiers, mayday, roger, wilco, phrase meaning drills"
   },
   "kanjiJlptN5": {
-    "title": "JLPT N5汉字列表和练习 - 学习初级汉字 | KanaDojo",
-    "titleShort": "JLPT N5汉字练习",
-    "description": "通过互动练习、级别选择和即时反馈学习JLPT N5汉字。建立扎实的初学者汉字识别和阅读准确性。",
-    "keywords": "JLPT N5汉字, N5汉字列表, 初学者汉字练习, 学习N5汉字, N5汉字测验, 日语N5字符, N5汉字读音, N5汉字意思, N5汉字闪卡"
+    "title": "Tier 1 Radio Codes - Practice and Meaning | FiveByFive",
+    "titleShort": "Tier 1 Radio Codes",
+    "description": "Practice the first tier of radio codes with short drills and instant feedback. Build confident recall of common phrases such as roger, over and out.",
+    "keywords": "tier 1 radio codes, beginner radio phrases, roger over out, radiotelephony practice, code meaning drills"
   },
   "kanjiJlptN4": {
-    "title": "JLPT N4汉字列表和练习 - 学习中级汉字 | KanaDojo",
-    "titleShort": "JLPT N4汉字练习",
-    "description": "通过互动级别选择、测验和追踪练习JLPT N4汉字。提高汉字回忆速度、读音和意思识别。",
-    "keywords": "JLPT N4汉字, N4汉字列表, N4汉字练习, 学习N4汉字, N4汉字测验, 日语N4字符, N4汉字读音, N4汉字意思, N4汉字闪卡"
+    "title": "Tier 2 Radio Codes - Practice and Meaning | FiveByFive",
+    "titleShort": "Tier 2 Radio Codes",
+    "description": "Train the second tier of radio codes with focused sets and quizzes. Improve recall speed and phrase meaning accuracy.",
+    "keywords": "tier 2 radio codes, radio phrase practice, radiotelephony drills, code recall speed"
   },
   "kanjiJlptN3": {
-    "title": "JLPT N3汉字列表和练习 - 学习中级汉字 | KanaDojo",
-    "titleShort": "JLPT N3汉字练习",
-    "description": "通过专注的选择和互动汉字测验训练JLPT N3汉字。加强识别、读音和考试准备。",
-    "keywords": "JLPT N3汉字, N3汉字列表, N3汉字练习, 学习N3汉字, N3汉字测验, 日语N3字符, N3汉字读音, N3汉字意思, N3汉字闪卡"
+    "title": "Tier 3 Radio Codes - Practice and Meaning | FiveByFive",
+    "titleShort": "Tier 3 Radio Codes",
+    "description": "Practice the third tier of radio codes with selected sets and interactive drills. Strengthen phrase recognition and meaning recall.",
+    "keywords": "tier 3 radio codes, radio phrase quiz, radiotelephony training, phrase recall"
   },
   "kanjiJlptN2": {
-    "title": "JLPT N2汉字列表和练习 - 高级汉字学习 | KanaDojo",
-    "titleShort": "JLPT N2汉字练习",
-    "description": "通过高级级别选择和互动练习学习JLPT N2汉字。提高高级汉字阅读准确性和意思回忆，为考试做准备。",
-    "keywords": "JLPT N2汉字, N2汉字列表, N2汉字练习, 学习N2汉字, N2汉字测验, 日语N2字符, N2汉字读音, N2汉字意思, N2汉字闪卡"
+    "title": "Tier 4 Radio Codes - Practice and Meaning | FiveByFive",
+    "titleShort": "Tier 4 Radio Codes",
+    "description": "Study the fourth tier of radio codes with advanced drills and set review. Improve accuracy on longer and less common phrases.",
+    "keywords": "tier 4 radio codes, advanced radio phrases, radiotelephony drills, phrase practice"
   },
   "kanjiJlptN1": {
-    "title": "JLPT N1汉字列表和练习 - 掌握高级汉字 | KanaDojo",
-    "titleShort": "JLPT N1汉字练习",
-    "description": "通过专注的高级练习和选择式练习掌握JLPT N1汉字。训练顶级汉字识别、读音和意思回忆。",
-    "keywords": "JLPT N1汉字, N1汉字列表, N1汉字练习, 学习N1汉字, N1汉字测验, 日语N1字符, N1汉字读音, N1汉字意思, N1汉字闪卡"
+    "title": "Tier 5 Radio Codes - Practice and Meaning | FiveByFive",
+    "titleShort": "Tier 5 Radio Codes",
+    "description": "Master the fifth tier of radio codes with focused drills and full set review. Train the most detailed phrases in the trainer.",
+    "keywords": "tier 5 radio codes, advanced radiotelephony, full phrase mastery, radio code review"
   },
   "kanjiBlitz": {
-    "title": "汉字闪电战 - 测试您的汉字识别速度",
-    "titleShort": "汉字闪电战 - 测试您的速度",
-    "description": "通过汉字闪电战测试您的日语汉字识别速度。快速练习提高您的汉字技能。",
-    "keywords": "汉字速度测试, 汉字识别, 快速汉字练习, 汉字闪卡, 汉字练习, 快速阅读汉字, 计时汉字测验, 快速汉字回忆, 汉字快速阅读, JLPT汉字练习"
+    "title": "Codes Blitz - Test Your Radio Phrase Speed",
+    "titleShort": "Codes Blitz - Test Your Speed",
+    "description": "Race through radio phrase drills against the clock. Codes Blitz helps you recognize and type phrases faster.",
+    "keywords": "radio phrase speed test, timed code drills, radiotelephony speed, rapid phrase recall"
   },
   "kanjiGauntlet": {
-    "title": "汉字挑战 - 掌握每个字符",
-    "titleShort": "汉字挑战 - 掌握每个字符",
-    "description": "通过汉字挑战掌握每个汉字字符。所有JLPT级别的综合练习。",
-    "keywords": "汉字精通, 综合汉字练习, 所有JLPT汉字"
+    "title": "Codes Gauntlet - Master Every Radio Phrase",
+    "titleShort": "Codes Gauntlet - Master Every Phrase",
+    "description": "Work through every radio phrase in the trainer. Codes Gauntlet checks recall across all five tiers.",
+    "keywords": "radio phrase mastery, all radiotelephony codes, full code set drill"
   },
   "vocabulary": {
-    "title": "词汇道场 - 按JLPT级别学习日语单词和词汇",
-    "titleShort": "词汇道场 - 学习日语单词",
-    "description": "按JLPT级别通过互动选择练习、测验和快速复习构建日语词汇。从N5到N1练习意思、读音和用法。",
-    "keywords": "学习日语词汇, JLPT词汇, 按级别学习词汇, JLPT N5词汇, JLPT N4词汇, JLPT N3词汇, JLPT N2词汇, JLPT N1词汇, 日语单词列表, 日语词汇测验, 在线词汇练习, 日语词汇闪卡, 日语单词意思, 初学者日语词汇, 高级日语词汇"
+    "title": "Spelling - Spell Words with Code Words | FiveByFive",
+    "titleShort": "Spelling - Code Word Drills",
+    "description": "Spell full words using ICAO code words. Practice sets by tier, check your spelling with instant feedback and track the words you miss.",
+    "keywords": "callsign spelling, spell with code words, NATO spelling drills, word spelling practice, phonetic alphabet spelling"
   },
   "vocabularyJlptN5": {
-    "title": "JLPT N5词汇列表和练习 - 学习初级日语单词 | KanaDojo",
-    "titleShort": "JLPT N5词汇练习",
-    "description": "通过互动级别选择和快速练习练习JLPT N5词汇。提高初学者单词识别、意思和阅读回忆。",
-    "keywords": "JLPT N5词汇, N5单词列表, 初学者日语词汇, N5词汇练习, 学习N5日语单词, N5词汇测验, N5词汇意思"
+    "title": "Tier 1 Spelling - Short Words | FiveByFive",
+    "titleShort": "Tier 1 Spelling",
+    "description": "Spell short words with NATO code words in the first tier. Quick drills build accurate letter by letter recall.",
+    "keywords": "tier 1 spelling, short word spelling, code word drills, beginner callsign practice"
   },
   "vocabularyJlptN4": {
-    "title": "JLPT N4词汇列表和练习 - 中级日语单词 | KanaDojo",
-    "titleShort": "JLPT N4词汇练习",
-    "description": "通过选择式测验和练习训练JLPT N4词汇。提高词汇回忆速度、阅读信心和意思准确性。",
-    "keywords": "JLPT N4词汇, N4单词列表, N4词汇练习, 学习N4日语单词, N4词汇测验, N4词汇意思"
+    "title": "Tier 2 Spelling - Common Words | FiveByFive",
+    "titleShort": "Tier 2 Spelling",
+    "description": "Spell common words with code words in the second tier. Improve spelling speed and recognition with short sessions.",
+    "keywords": "tier 2 spelling, common word spelling, ICAO spelling practice, code word recall"
   },
   "vocabularyJlptN3": {
-    "title": "JLPT N3词汇列表和练习 - 中级日语学习 | KanaDojo",
-    "titleShort": "JLPT N3词汇练习",
-    "description": "通过专注练习和快速选择学习JLPT N3词汇。建立更强的中级日语单词识别和记忆。",
-    "keywords": "JLPT N3词汇, N3单词列表, N3词汇练习, 学习N3日语单词, N3词汇测验, N3词汇意思"
+    "title": "Tier 3 Spelling - Longer Words | FiveByFive",
+    "titleShort": "Tier 3 Spelling",
+    "description": "Spell longer words with code words in the third tier. Focused sets help you keep letters in the right order.",
+    "keywords": "tier 3 spelling, longer word spelling, callsign drills, code word order"
   },
   "vocabularyJlptN2": {
-    "title": "JLPT N2词汇列表和练习 - 高级日语单词 | KanaDojo",
-    "titleShort": "JLPT N2词汇练习",
-    "description": "通过高级互动练习和选择复习练习JLPT N2词汇。提高高级日语单词回忆和用法识别。",
-    "keywords": "JLPT N2词汇, N2单词列表, N2词汇练习, 学习N2日语单词, N2词汇测验, N2词汇意思"
+    "title": "Tier 4 Spelling - Callsigns | FiveByFive",
+    "titleShort": "Tier 4 Spelling",
+    "description": "Spell callsign style words with code words in the fourth tier. Build speed on multi letter sequences.",
+    "keywords": "tier 4 spelling, callsign spelling, code word sequence, spelling drills"
   },
   "vocabularyJlptN1": {
-    "title": "JLPT N1词汇列表和练习 - 掌握高级日语词汇 | KanaDojo",
-    "titleShort": "JLPT N1词汇练习",
-    "description": "通过专注的高级练习、选择练习和快速复习工作流程掌握JLPT N1词汇，为顶级日语考试做准备。",
-    "keywords": "JLPT N1词汇, N1单词列表, N1词汇练习, 学习N1日语单词, N1词汇测验, N1词汇意思"
+    "title": "Tier 5 Spelling - Full Word Mastery | FiveByFive",
+    "titleShort": "Tier 5 Spelling",
+    "description": "Master the most demanding spelling sets in the fifth tier. Practice complete words with code words and review weak items.",
+    "keywords": "tier 5 spelling, advanced callsign spelling, full word mastery, NATO spelling"
   },
   "vocabularyBlitz": {
-    "title": "词汇闪电战 - 测试您的日语词汇速度",
-    "titleShort": "词汇闪电战 - 测试您的速度",
-    "description": "通过词汇闪电战测试您的日语词汇速度。快速单词识别练习。",
-    "keywords": "词汇速度测试, 日语单词, 快速词汇练习, 词汇闪卡, 单词练习, 快速阅读日语, 计时词汇测验, 快速单词回忆, JLPT词汇练习, 日语单词识别"
+    "title": "Spelling Blitz - Test Your Code Word Spelling Speed",
+    "titleShort": "Spelling Blitz - Test Your Speed",
+    "description": "Race through spelling drills against the clock. Spelling Blitz builds fast and accurate code word spelling.",
+    "keywords": "spelling speed test, timed code word spelling, callsign speed, rapid spelling drills"
   },
   "vocabularyGauntlet": {
-    "title": "词汇挑战 - 掌握每个单词",
-    "titleShort": "词汇挑战 - 掌握每个单词",
-    "description": "通过词汇挑战掌握综合日语词汇。练习所有JLPT单词。",
-    "keywords": "词汇精通, 综合词汇, 所有JLPT单词"
+    "title": "Spelling Gauntlet - Master Every Word",
+    "titleShort": "Spelling Gauntlet - Master Every Word",
+    "description": "Spell every word in the trainer with code words. Spelling Gauntlet checks full coverage across all five tiers.",
+    "keywords": "spelling mastery, all word sets, full code word spelling drill"
   },
   "academy": {
-    "title": "学院 - 日语学习文章 | KanaDojo",
-    "titleShort": "学院 - 日语学习文章",
-    "description": "阅读关于学习日语的综合指南和文章。掌握平假名、片假名、汉字和词汇的技巧、窍门和见解。",
-    "keywords": "日语学习指南, 日语技巧, 平假名指南, 片假名指南, 汉字指南"
+    "title": "Academy - Phonetic Alphabet Guides | FiveByFive",
+    "titleShort": "Academy - Training Guides",
+    "description": "Read guides on the NATO alphabet, radio phrase meaning and callsign spelling. Short articles that support the training modes.",
+    "keywords": "phonetic alphabet guide, radio phrase guide, callsign spelling tips, training articles"
   },
   "preferences": {
-    "title": "偏好设置 - 自定义您的学习体验",
-    "titleShort": "偏好设置 - 自定义KanaDojo",
-    "description": "自定义您的KanaDojo学习体验。选择主题、字体并配置您的学习偏好。",
-    "keywords": "自定义KanaDojo, 学习偏好, 主题, 字体"
+    "title": "Preferences - Customize Your Training",
+    "titleShort": "Preferences - Customize FiveByFive",
+    "description": "Customize your FiveByFive training. Choose themes, fonts and display preferences.",
+    "keywords": "customize FiveByFive, training preferences, themes, fonts"
   },
   "progress": {
-    "title": "进度 - 追踪您的日语学习统计",
-    "titleShort": "进度 - 您的学习统计",
-    "description": "追踪您的日语学习进度。查看详细统计、成就和学习里程碑。",
-    "keywords": "学习进度, 日语统计, 学习分析"
+    "title": "Progress - Track Your Training Statistics",
+    "titleShort": "Progress - Your Training Stats",
+    "description": "Track your FiveByFive results. View accuracy, speed, streaks and mastery by letter, code phrase or word.",
+    "keywords": "training progress, phonetic alphabet statistics, accuracy tracking, speed charts"
   },
   "privacy": {
-    "title": "隐私政策 - KanaDojo的数据保护",
-    "titleShort": "隐私政策",
-    "description": "了解KanaDojo如何保护您的隐私和处理您的数据。我们对用户隐私和数据安全的承诺。",
-    "keywords": "隐私政策, 数据保护, 用户隐私"
+    "title": "Privacy Policy - Your Data Protection at FiveByFive",
+    "titleShort": "Privacy Policy",
+    "description": "Learn how FiveByFive handles your data. Progress and preferences stay in your browser.",
+    "keywords": "privacy policy, data protection, local browser storage"
   },
   "terms": {
-    "title": "服务条款 - KanaDojo使用指南",
-    "titleShort": "服务条款",
-    "description": "阅读KanaDojo服务条款。使用我们日语学习平台的指南。",
-    "keywords": "服务条款, 使用指南, 条款和条件"
+    "title": "Terms of Service - FiveByFive Usage Guidelines",
+    "titleShort": "Terms of Service",
+    "description": "Read the FiveByFive Terms of Service and the guidelines for using the trainer.",
+    "keywords": "terms of service, usage guidelines, terms and conditions"
   },
   "security": {
-    "title": "安全政策 - 我们如何保持KanaDojo安全",
-    "titleShort": "安全政策",
-    "description": "了解KanaDojo的安全措施以及我们如何保护我们的平台和用户。",
-    "keywords": "安全政策, 平台安全, 数据安全"
+    "title": "Security Policy - How We Keep FiveByFive Safe",
+    "titleShort": "Security Policy",
+    "description": "Learn about the security practices that protect the FiveByFive site and its users.",
+    "keywords": "security policy, platform security, data security"
   },
   "credits": {
-    "title": "致谢 - 贡献者和支持者",
-    "titleShort": "致谢",
-    "description": "认识让KanaDojo成为可能的贡献者和支持者。我们的开发者、设计师和支持者社区。",
-    "keywords": "致谢, 贡献者, 支持者, 社区"
+    "title": "Credits - Contributors & Supporters",
+    "titleShort": "Credits",
+    "description": "Meet the contributors and supporters who help maintain FiveByFive.",
+    "keywords": "credits, contributors, supporters, community"
   },
   "patchNotes": {
-    "title": "更新日志 - 最新更新和功能",
-    "titleShort": "更新日志",
-    "description": "了解KanaDojo的最新功能、改进和错误修复。查看我们的更新日志和历史记录。",
-    "keywords": "更新日志, 更新, 变更日志, 新功能"
+    "title": "Patch Notes - Latest Updates & Features",
+    "titleShort": "Patch Notes",
+    "description": "Stay updated with the latest FiveByFive features, improvements and fixes.",
+    "keywords": "patch notes, updates, changelog, new features"
   },
   "faq": {
-    "title": "常见问题 - KanaDojo帮助和支持",
-    "titleShort": "常见问题 - 帮助和支持",
-    "description": "KanaDojo常见问题：关于在线学习平假名、片假名、汉字和JLPT词汇的清晰答案。了解进度追踪如何工作、使用哪种练习模式、隐私/数据存储详情以及最佳初学者学习路径。",
-    "keywords": "KanaDojo常见问题, 日语学习常见问题, 学习平假名常见问题, 学习片假名常见问题, 学习汉字常见问题, 假名练习问题, 汉字练习问题, JLPT备考常见问题, JLPT N5学习计划, 日语词汇练习, 如何在线学习日语, 日语学习应用帮助, 如何使用KanaDojo, 假名闪卡练习, 打字假名练习, 识别与回忆, 进度追踪日语学习, 本地浏览器存储进度, 无账户日语学习, 免费日语学习网站, 日语学习故障排除"
+    "title": "Frequently Asked Questions - FiveByFive Help & Support",
+    "titleShort": "FAQ - Help & Support",
+    "description": "FiveByFive FAQ: answers about letter drills, radio codes, callsign spelling, training modes and local progress storage.",
+    "keywords": "FiveByFive FAQ, NATO alphabet questions, code word practice, radio phrase help, callsign spelling FAQ, local progress storage, no account trainer"
   },
   "experiments": {
-    "title": "实验功能 - 探索替代学习方法",
-    "titleShort": "实验功能",
-    "description": "探索实验性功能和替代日语学习方法。尝试新的练习和学习方式。",
-    "keywords": "实验功能, 替代学习, 日语练习方法"
+    "title": "Experiments - Alternative Training Methods",
+    "titleShort": "Experiments",
+    "description": "Try experimental ways to practice code words, phrases and spelling.",
+    "keywords": "experiments, alternative training, code word practice methods"
   },
   "translate": {
-    "title": "英日互译和日英互译翻译器 | KanaDojo",
-    "titleShort": "带罗马字的日语翻译器",
-    "description": "免费在线日语翻译器，支持英译日和日译英。包括平假名、片假名和汉字翻译的罗马字发音支持。",
-    "keywords": "英日翻译器, 日英翻译器, 免费日语翻译器, 在线日语翻译器, 英日翻译, 日英翻译, 带罗马字的日语翻译器, 日语文本翻译器, 平假名转英语, 片假名转英语, 汉字转英语, 罗马字翻译器, 日语转罗马字, 翻译动漫日语, 日语名字翻译器"
+    "title": "Code Word Reference | FiveByFive",
+    "titleShort": "Code Word Reference",
+    "description": "Look up code words and phrase meanings while you train. Keep a reference close by during drills.",
+    "keywords": "code word reference, NATO alphabet lookup, radio phrase meaning, phonetic alphabet reference"
   },
   "zen": {
-    "title": "禅模式 - 无干扰日语练习",
-    "titleShort": "禅模式",
-    "description": "在无干扰、简约的环境中练习日语。专注于您的学习。",
-    "keywords": "禅模式, 专注练习, 简约学习, 无干扰"
+    "title": "Zen Mode - Distraction-Free Code Word Practice",
+    "titleShort": "Zen Mode",
+    "description": "Practice code words in a minimal, distraction-free interface.",
+    "keywords": "zen mode, focused practice, minimalist training, distraction-free drills"
   },
   "kanaTrain": {
-    "title": "假名训练 - 练习平假名和片假名",
-    "titleShort": "假名训练",
-    "description": "通过结构化练习训练您的平假名和片假名技能。建立肌肉记忆并提高识别能力。",
-    "keywords": "假名训练, 平假名练习, 片假名练习, 结构化学习"
+    "title": "Letters Training - Practice Code Words A to Z",
+    "titleShort": "Letters Training",
+    "description": "Train letter to code word recall with structured sessions. Build accuracy first, then improve speed.",
+    "keywords": "letters training, code word practice, NATO alphabet drills, structured training"
   },
   "kanjiTrain": {
-    "title": "汉字训练 - 练习日语汉字",
-    "titleShort": "汉字训练",
-    "description": "通过结构化练习训练您的汉字识别和书写。循序渐进地掌握日语字符。",
-    "keywords": "汉字训练, 汉字练习, 结构化汉字学习"
+    "title": "Codes Training - Practice Radio Phrases",
+    "titleShort": "Codes Training",
+    "description": "Train radio phrase recognition and meaning with structured sessions across five tiers.",
+    "keywords": "codes training, radio phrase practice, radiotelephony drills"
   },
   "vocabularyTrain": {
-    "title": "词汇训练 - 练习日语单词",
-    "titleShort": "词汇训练",
-    "description": "通过结构化练习训练您的日语词汇。有效学习和记忆新单词。",
-    "keywords": "词汇训练, 单词练习, 结构化词汇学习, 日语词汇练习, 单词记忆, 间隔重复词汇, 词汇练习, JLPT词汇训练"
+    "title": "Spelling Training - Practice Code Word Spelling",
+    "titleShort": "Spelling Training",
+    "description": "Train word spelling with ICAO code words. Short sessions build accurate letter by letter recall.",
+    "keywords": "spelling training, word drills, code word spelling, callsign practice"
+  },
+  "kanaSubset": {
+    "hiraganaBase": {
+      "title": "Letters A to Z - Full Code Word Set | FiveByFive",
+      "titleShort": "Letters A to Z",
+      "description": "Practice all 26 letters with their NATO code words, from Alfa to Zulu.",
+      "keywords": "letters A to Z, Alfa Bravo Charlie, full NATO alphabet, code word set"
+    },
+    "hiraganaDakuon": {
+      "title": "Letters N to Z - Code Word Set | FiveByFive",
+      "titleShort": "Letters N to Z",
+      "description": "Practice the letters N through Z with November, Oscar, Papa and the rest of the code word set.",
+      "keywords": "letters N to Z, November Oscar Papa, code word practice, NATO alphabet"
+    },
+    "hiraganaYoon": {
+      "title": "Letters A to M - Code Word Set | FiveByFive",
+      "titleShort": "Letters A to M",
+      "description": "Practice the letters A through M with Alfa, Bravo, Charlie and the rest of the code word set.",
+      "keywords": "letters A to M, Alfa Bravo Charlie, code word practice, NATO alphabet"
+    },
+    "katakanaBase": {
+      "title": "Digits 0 to 9 - ICAO Code Words | FiveByFive",
+      "titleShort": "Digits 0 to 9",
+      "description": "Practice digit code words from Zero to Niner with fast drills.",
+      "keywords": "ICAO digits, Zero One Two Three, niner, digit code words, radiotelephony numbers"
+    },
+    "katakanaDakuon": {
+      "title": "Radio Phrases - Set One | FiveByFive",
+      "titleShort": "Radio Phrases",
+      "description": "Practice common radio phrases such as roger, wilco, over and mayday with their meanings.",
+      "keywords": "radio phrases, roger wilco over, mayday, radiotelephony practice"
+    },
+    "katakanaYoon": {
+      "title": "All Radio Codes - Full Set | FiveByFive",
+      "titleShort": "All Radio Codes",
+      "description": "Work through every radio code and phrase in the trainer in one set.",
+      "keywords": "all radio codes, full phrase set, radiotelephony codes"
+    },
+    "katakanaForeign": {
+      "title": "Confusable Pairs - Code Word Drills | FiveByFive",
+      "titleShort": "Confusable Pairs",
+      "description": "Practice pairs that are easy to mix up, such as B and D or M and N, with targeted drills.",
+      "keywords": "confusable letters, B and D, M and N, code word drills, letter pairs"
+    }
   },
   "hiraganaPractice": {
-    "title": "平假名练习 - 快速学习平假名 | KanaDojo",
-    "titleShort": "平假名练习",
-    "description": "通过互动练习和游戏练习日语平假名。学习平假名图表，提高阅读速度，通过即时反馈建立信心。",
-    "keywords": "平假名练习, 练习平假名, 学习平假名, 平假名图表, 平假名练习, 平假名测验, 平假名游戏, 日语平假名"
+    "title": "Letters Practice - Learn Code Words A to Z | FiveByFive",
+    "titleShort": "Letters Practice",
+    "description": "Practice every letter with NATO code words. Pick mode builds recognition and input mode builds typing recall.",
+    "keywords": "letters practice, code word drills, NATO alphabet practice, A to Z quiz"
   },
   "katakanaPractice": {
-    "title": "片假名练习 - 快速学习片假名 | KanaDojo",
-    "titleShort": "片假名练习",
-    "description": "通过互动练习和游戏练习日语片假名。通过即时反馈和进度追踪快速掌握片假名。",
-    "keywords": "片假名练习, 练习片假名, 学习片假名, 片假名图表, 片假名练习, 片假名测验, 片假名游戏, 日语片假名"
+    "title": "Codes Practice - Radio Phrases | FiveByFive",
+    "titleShort": "Codes Practice",
+    "description": "Practice radio codes and phrases with short drills and instant feedback. Track the phrases you miss.",
+    "keywords": "radio codes practice, radio phrase drills, radiotelephony practice, code quiz"
   },
   "kanjiPractice": {
-    "title": "汉字练习 - 按JLPT级别学习汉字 | KanaDojo",
-    "titleShort": "汉字练习",
-    "description": "通过互动训练按JLPT级别练习日语汉字。通过快速练习和进度追踪提高识别、读音和记忆。",
-    "keywords": "汉字练习, 练习汉字, 学习汉字, JLPT汉字, 按级别学习汉字, 汉字练习, 汉字测验, 日语汉字"
+    "title": "Radio Code Practice by Tier | FiveByFive",
+    "titleShort": "Radio Code Practice",
+    "description": "Practice radio phrases by tier with interactive drills. Improve meaning recall and speed over short sessions.",
+    "keywords": "radio code practice, phrase drills by tier, radiotelephony training"
   }
 }

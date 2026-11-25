@@ -1,51 +1,51 @@
 {
   "meta": {
-    "title": "Japanese Translator - Translate English to Japanese & Japanese to English | KanaDojo",
-    "description": "Free online Japanese translator. Translate English to Japanese or Japanese to English instantly. Features romanization (romaji), translation history, and accurate translations powered by Google Translate."
+    "title": "Code Word Reference - NATO Alphabet Lookup | FiveByFive",
+    "description": "Look up NATO code words and radio phrase meanings. A quick reference for letters, digits, callsign spelling and radiotelephony."
   },
   "header": {
-    "title": "Japanese Translator"
+    "title": "Code Word Reference"
   },
   "languages": {
-    "english": "English",
-    "japanese": "日本語",
-    "en": "EN",
-    "ja": "JA"
+    "english": "Plain text",
+    "japanese": "Code words",
+    "en": "TEXT",
+    "ja": "CODE"
   },
   "input": {
     "placeholder": {
-      "en": "Enter text to translate...",
-      "ja": "テキストを入力してください..."
+      "en": "Enter a letter or phrase...",
+      "ja": "Enter a letter or word to spell..."
     },
     "clearButton": "Clear input",
     "characterCount": "{count} / {max}",
-    "keyboardHint": "Press Ctrl+Enter (⌘+Enter on Mac) to translate",
+    "keyboardHint": "Press Ctrl+Enter (Command+Enter on Mac) to look up",
     "characterLimitWarning": "Text exceeds maximum length of {max} characters"
   },
   "output": {
     "placeholder": {
-      "en": "Translation will appear here...",
-      "ja": "翻訳がここに表示されます..."
+      "en": "The code word will appear here...",
+      "ja": "The spelled result will appear here..."
     },
-    "copyButton": "Copy translation",
+    "copyButton": "Copy result",
     "copied": "Copied!",
     "copiedMessage": "Copied to clipboard!",
-    "romanization": "Romanization (Romaji)"
+    "romanization": "Code word spelling"
   },
   "actions": {
-    "translate": "Translate",
-    "translating": "Translating...",
-    "swapLanguages": "Swap languages"
+    "translate": "Look up",
+    "translating": "Looking up...",
+    "swapLanguages": "Swap directions"
   },
   "history": {
     "title": "History",
-    "empty": "No translation history yet",
-    "emptyHint": "Your translations will appear here",
+    "empty": "No lookups yet",
+    "emptyHint": "Your results will appear here",
     "clearAll": "Clear All",
     "deleteEntry": "Delete entry",
     "clearDialog": {
-      "title": "Clear Translation History?",
-      "description": "This will permanently delete all your translation history. This action cannot be undone.",
+      "title": "Clear lookup history?",
+      "description": "This will permanently delete all your saved lookups. This action cannot be undone.",
       "cancel": "Cancel",
       "confirm": "Clear All"
     },
@@ -57,69 +57,69 @@
     }
   },
   "offline": {
-    "message": "You are offline. Translation is unavailable until you reconnect."
+    "message": "You are offline. Lookups are unavailable until you reconnect."
   },
   "errors": {
     "networkError": "Unable to connect. Please check your internet connection.",
     "rateLimit": "Too many requests. Please wait a moment and try again.",
-    "invalidInput": "Please enter valid text to translate.",
-    "emptyInput": "Please enter text to translate",
-    "serverError": "Translation service is temporarily unavailable.",
-    "authError": "Translation service configuration error.",
-    "unknownError": "An error occurred during translation. Please try again."
+    "invalidInput": "Please enter valid text to look up.",
+    "emptyInput": "Please enter text to look up",
+    "serverError": "The lookup service is temporarily unavailable.",
+    "authError": "Lookup service configuration error.",
+    "unknownError": "An error occurred during lookup. Please try again."
   },
   "seo": {
-    "guideTitle": "Japanese Translation Guide",
+    "guideTitle": "NATO Alphabet Reference Guide",
     "howToUse": {
-      "title": "How to Use the Japanese Translator",
-      "intro": "Our free Japanese translator makes it easy to translate text between English and Japanese. Here's how to get started:",
+      "title": "How to use the code word reference",
+      "intro": "Use this page to check a code word or spell a word before a drill. Here is how to get started:",
       "steps": {
-        "step1": "Enter your text in the input field on the left",
-        "step2": "Select your source language (English or Japanese)",
-        "step3": "Click the translate button or press Ctrl+Enter",
-        "step4": "View your translation with romanization (romaji) for Japanese text",
-        "step5": "Copy the translation or save it to your history"
+        "step1": "Enter a letter, digit or short word in the input field",
+        "step2": "Choose the direction you need",
+        "step3": "Click the lookup button or press Ctrl+Enter",
+        "step4": "Read the code word spelling in the result",
+        "step5": "Copy the result or save it to your history"
       },
-      "proTip": "Pro tip: Use the swap button to quickly reverse the translation direction and translate the output back."
+      "proTip": "Tip: Use the swap button to move between plain text and code word spelling."
     },
     "writingSystems": {
-      "title": "About Japanese Writing Systems",
-      "intro": "Japanese uses three main writing systems, often combined in the same text:",
+      "title": "About the NATO phonetic alphabet",
+      "intro": "The alphabet gives every letter a fixed code word so speech sounds cannot be mistaken for another letter:",
       "hiragana": {
-        "name": "Hiragana (ひらがな)",
-        "description": "A phonetic syllabary used for native Japanese words, grammatical elements, and furigana readings"
+        "name": "Letters A to Z",
+        "description": "Alfa, Bravo, Charlie and the rest of the 26 letter code words"
       },
       "katakana": {
-        "name": "Katakana (カタカナ)",
-        "description": "A phonetic syllabary primarily used for foreign loanwords, onomatopoeia, and emphasis"
+        "name": "Digits and radio phrases",
+        "description": "Digit code words such as Niner and short phrases such as Roger or Wilco"
       },
       "kanji": {
-        "name": "Kanji (漢字)",
-        "description": "Chinese characters adapted for Japanese, representing meanings and concepts. There are over 2,000 commonly used kanji"
+        "name": "Callsign spelling",
+        "description": "Spell a whole word one letter at a time with its code word"
       },
-      "outro": "Our translator handles all three writing systems and provides romanization (romaji) to help you read Japanese text using the Latin alphabet."
+      "outro": "Use this reference while training, or check a spelling before you send a call."
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "isFree": {
-        "question": "Is this Japanese translator free?",
-        "answer": "Yes! Our Japanese translator is completely free to use with no registration required. Translate as much text as you need."
+        "question": "Is this reference free?",
+        "answer": "Yes. There is no registration and no limit on how many lookups you make."
       },
       "accuracy": {
-        "question": "How accurate is the translation?",
-        "answer": "Our translator uses Google Cloud Translation API, one of the most accurate machine translation services available. While no machine translation is perfect, it provides high-quality translations for most everyday use cases."
+        "question": "Which spellings does it use?",
+        "answer": "The trainer follows ICAO spellings such as Alfa with one l and Juliett with two t. Common variants are accepted in drills."
       },
       "romanization": {
-        "question": "What is romanization (romaji)?",
-        "answer": "Romanization, or romaji, is the representation of Japanese text using the Latin alphabet. It helps non-Japanese speakers read and pronounce Japanese words. Our translator automatically provides romanization for Japanese text."
+        "question": "What is a code word?",
+        "answer": "A code word is a word used to represent a letter in the NATO phonetic alphabet. Saying Sierra for S avoids confusion with other letters over radio."
       },
       "historySaved": {
-        "question": "Is my translation history saved?",
-        "answer": "Yes, your translation history is saved locally in your browser. This means your translations are private and only accessible on your device. You can clear your history at any time."
+        "question": "Is my lookup history saved?",
+        "answer": "Yes, your history is saved locally in your browser and stays on your device. You can clear it at any time."
       },
       "maxLength": {
         "question": "What is the maximum text length?",
-        "answer": "You can translate up to 5,000 characters at a time. For longer texts, we recommend breaking them into smaller sections."
+        "answer": "You can look up up to 5,000 characters at a time. For longer text, break it into smaller sections."
       }
     }
   }

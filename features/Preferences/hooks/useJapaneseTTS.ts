@@ -2,7 +2,9 @@
 import { useCallback, useState, useEffect, useRef } from 'react';
 import { useAudioPreferences } from '@/features/Preferences';
 
-interface JapaneseVoice {
+// This hook used to be Japanese TTS; it now reads plain Latin text with en-US voices.
+
+interface EnglishVoice {
   name: string;
   lang: string;
   voice: SpeechSynthesisVoice;
@@ -11,10 +13,22 @@ interface JapaneseVoice {
 interface TTSState {
   isPlaying: boolean;
   isSupported: boolean;
-  availableVoices: JapaneseVoice[];
-  currentVoice: JapaneseVoice | null;
+  availableVoices: EnglishVoice[];
+  currentVoice: EnglishVoice | null;
   hasJapaneseVoices: boolean;
 }
+
+const isEnUsVoice = (voice: SpeechSynthesisVoice) =>
+  voice.lang === 'en-US' || voice.lang.startsWith('en-US-');
+
+const toEnglishVoice = (voice: SpeechSynthesisVoice): EnglishVoice => ({
+  name: voice.name,
+  lang: voice.lang,
+  voice,
+});
+
+const sortVoices = (a: EnglishVoice, b: EnglishVoice) =>
+  a.name.localeCompare(b.name);
 
 export const useJapaneseTTS = () => {
   const {
@@ -31,7 +45,7 @@ export const useJapaneseTTS = () => {
   });
 
   // Use ref to store current voice for access in callbacks without stale closures
-  const currentVoiceRef = useRef<JapaneseVoice | null>(null);
+  const currentVoiceRef = useRef<EnglishVoice | null>(null);
   const speakRequestIdRef = useRef(0);
 
   // Update ref whenever currentVoice changes
@@ -69,73 +83,43 @@ export const useJapaneseTTS = () => {
         // Firefox sometimes returns empty array initially, skip if so
         if (voices.length === 0) return;
 
-        // Strictly filter for Japanese voices only
-        // Only accept voices with Japanese language code or Japanese in name
-        const japaneseVoices = voices
-          .filter(voice => {
-            // Only accept actual Japanese voices
-            return (
-              voice.lang.startsWith('ja') ||
-              voice.lang === 'ja-JP' ||
-              voice.lang === 'ja' ||
-              voice.name.toLowerCase().includes('japanese') ||
-              voice.name.toLowerCase().includes('japan')
-            );
-          })
-          .map(voice => ({
-            name: voice.name,
-            lang: voice.lang,
-            voice: voice,
-          }))
-          .sort((a, b) => {
-            // Prioritize actual Japanese voices
-            if (a.lang === 'ja-JP' && b.lang !== 'ja-JP') return -1;
-            if (b.lang === 'ja-JP' && a.lang !== 'ja-JP') return 1;
-            if (a.lang.startsWith('ja') && !b.lang.startsWith('ja')) return -1;
-            if (b.lang.startsWith('ja') && !a.lang.startsWith('ja')) return 1;
-            return a.name.localeCompare(b.name);
-          });
+        const englishVoices = voices
+          .filter(isEnUsVoice)
+          .map(toEnglishVoice)
+          .sort(sortVoices);
 
         // Choose current voice by preference if available
         const preferred = pronunciationVoiceName
-          ? japaneseVoices.find(v => v.name === pronunciationVoiceName) || null
+          ? englishVoices.find(v => v.name === pronunciationVoiceName) || null
           : null;
 
-        const newCurrentVoice = preferred || japaneseVoices[0] || null;
+        const newCurrentVoice = preferred || englishVoices[0] || null;
 
-        // Update state with Japanese voices
-        const hasJapaneseVoices = japaneseVoices.length > 0;
         setState((prev: TTSState) => ({
           ...prev,
           isSupported: true,
-          availableVoices: japaneseVoices,
+          availableVoices: englishVoices,
           currentVoice: newCurrentVoice,
-          hasJapaneseVoices,
+          hasJapaneseVoices: englishVoices.length > 0,
         }));
 
         // Update ref immediately to avoid race conditions
         currentVoiceRef.current = newCurrentVoice;
 
-        // Fallback: If no Japanese voices found, use any available voice but log warning
-        if (voices.length > 0 && japaneseVoices.length === 0) {
+        // Fallback: if no en-US voices are available, use any voice
+        if (voices.length > 0 && englishVoices.length === 0) {
           console.warn(
-            'No Japanese voices found. Using fallback voice. Pronunciation may not be accurate.',
+            'No en-US voices found. Using fallback voice. Pronunciation may not be accurate.',
           );
-          const fallbackVoice =
-            voices.find(v => v.lang.startsWith('ja')) || voices[0];
-          const fallbackJapaneseVoice = {
-            name: fallbackVoice.name,
-            lang: fallbackVoice.lang,
-            voice: fallbackVoice,
-          };
+          const fallbackVoice = toEnglishVoice(voices[0]);
           setState((prev: TTSState) => ({
             ...prev,
             isSupported: true,
-            availableVoices: [fallbackJapaneseVoice],
-            currentVoice: fallbackJapaneseVoice,
+            availableVoices: [fallbackVoice],
+            currentVoice: fallbackVoice,
             hasJapaneseVoices: false,
           }));
-          currentVoiceRef.current = fallbackJapaneseVoice;
+          currentVoiceRef.current = fallbackVoice;
         }
       };
 
@@ -170,14 +154,12 @@ export const useJapaneseTTS = () => {
         rate?: number;
         pitch?: number;
         volume?: number;
-        voice?: JapaneseVoice;
+        voice?: EnglishVoice;
       },
     ) => {
       if (!isClient || !pronunciationEnabled) {
         return Promise.resolve();
       }
-
-      // TTS is always supported in modern browsers
 
       return new Promise<void>(resolve => {
         const requestId = ++speakRequestIdRef.current;
@@ -218,7 +200,7 @@ export const useJapaneseTTS = () => {
 
             // Create utterance fresh each time (Firefox requirement)
             const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = 'ja-JP';
+            utterance.lang = 'en-US';
 
             // Validate and apply rate (0.5-1.5)
             const rate = options?.rate ?? 1.0;
@@ -232,70 +214,29 @@ export const useJapaneseTTS = () => {
             const volume = options?.volume ?? 0.8;
             utterance.volume = Math.max(0, Math.min(1, volume));
 
-            // Set voice - Always prioritize Japanese voices
-            // Firefox requires voice to be matched from current voices list
             const selectedVoice = options?.voice || currentVoiceRef.current;
-
-            // First, try to find Japanese voices
-            const japaneseVoices = voices.filter(
-              v =>
-                v.lang.startsWith('ja') ||
-                v.lang === 'ja-JP' ||
-                v.lang === 'ja' ||
-                v.name.toLowerCase().includes('japanese') ||
-                v.name.toLowerCase().includes('japan'),
-            );
+            const englishVoices = voices.filter(isEnUsVoice);
 
             if (selectedVoice) {
-              // Try to match selected voice from current voices list (Firefox requirement)
+              // Match from the current voices list (Firefox requirement)
               const matchedVoice = voices.find(
                 v =>
                   v.name === selectedVoice.name &&
                   v.lang === selectedVoice.lang,
               );
 
-              // Check if matched voice is Japanese
-              const isMatchedVoiceJapanese =
-                matchedVoice &&
-                (matchedVoice.lang.startsWith('ja') ||
-                  matchedVoice.lang === 'ja-JP' ||
-                  matchedVoice.lang === 'ja' ||
-                  matchedVoice.name.toLowerCase().includes('japanese') ||
-                  matchedVoice.name.toLowerCase().includes('japan'));
-
-              // If matched voice is Japanese, use it; otherwise prefer Japanese voices
-              if (isMatchedVoiceJapanese && matchedVoice) {
+              if (matchedVoice && isEnUsVoice(matchedVoice)) {
                 utterance.voice = matchedVoice;
-              } else if (japaneseVoices.length > 0) {
-                // Prefer Japanese voice even if selected voice is not Japanese
-                // Sort: ja-JP first, then ja, then others
-                const sortedJapanese = japaneseVoices.sort((a, b) => {
-                  if (a.lang === 'ja-JP' && b.lang !== 'ja-JP') return -1;
-                  if (b.lang === 'ja-JP' && a.lang !== 'ja-JP') return 1;
-                  return 0;
-                });
-                utterance.voice = sortedJapanese[0];
+              } else if (englishVoices.length > 0) {
+                utterance.voice = englishVoices[0];
               } else {
-                // Fallback to matched voice or any voice
                 utterance.voice = matchedVoice || voices[0];
               }
-            } else {
-              // No voice selected, prioritize Japanese voices
-              if (japaneseVoices.length > 0) {
-                // Sort: ja-JP first, then ja, then others
-                const sortedJapanese = japaneseVoices.sort((a, b) => {
-                  if (a.lang === 'ja-JP' && b.lang !== 'ja-JP') return -1;
-                  if (b.lang === 'ja-JP' && a.lang !== 'ja-JP') return 1;
-                  return 0;
-                });
-                utterance.voice = sortedJapanese[0];
-              } else if (voices.length > 0) {
-                // Fallback if no Japanese voices
-                utterance.voice = voices[0];
-                console.warn(
-                  'No Japanese voices available, using fallback voice',
-                );
-              }
+            } else if (englishVoices.length > 0) {
+              utterance.voice = englishVoices[0];
+            } else if (voices.length > 0) {
+              utterance.voice = voices[0];
+              console.warn('No en-US voices available, using fallback voice');
             }
 
             // Firefox requires voice to be explicitly set
@@ -366,7 +307,7 @@ export const useJapaneseTTS = () => {
   }, [isClient, state.isSupported]);
 
   const setVoice = useCallback(
-    (voice: JapaneseVoice) => {
+    (voice: EnglishVoice) => {
       setState((prev: TTSState) => ({ ...prev, currentVoice: voice }));
       setPronunciationVoiceName(voice?.name ?? null);
       // Update ref immediately to avoid race conditions
@@ -384,70 +325,41 @@ export const useJapaneseTTS = () => {
     // Firefox sometimes returns empty array, skip if so
     if (voices.length === 0) return;
 
-    // Strictly filter for Japanese voices only (same logic as loadVoices)
-    const japaneseVoices = voices
-      .filter(voice => {
-        // Only accept actual Japanese voices
-        return (
-          voice.lang.startsWith('ja') ||
-          voice.lang === 'ja-JP' ||
-          voice.lang === 'ja' ||
-          voice.name.toLowerCase().includes('japanese') ||
-          voice.name.toLowerCase().includes('japan')
-        );
-      })
-      .map(voice => ({
-        name: voice.name,
-        lang: voice.lang,
-        voice: voice,
-      }))
-      .sort((a, b) => {
-        if (a.lang === 'ja-JP' && b.lang !== 'ja-JP') return -1;
-        if (b.lang === 'ja-JP' && a.lang !== 'ja-JP') return 1;
-        if (a.lang.startsWith('ja') && !b.lang.startsWith('ja')) return -1;
-        if (b.lang.startsWith('ja') && !a.lang.startsWith('ja')) return 1;
-        return a.name.localeCompare(b.name);
-      });
+    const englishVoices = voices
+      .filter(isEnUsVoice)
+      .map(toEnglishVoice)
+      .sort(sortVoices);
 
     const preferred = pronunciationVoiceName
-      ? japaneseVoices.find(v => v.name === pronunciationVoiceName) || null
+      ? englishVoices.find(v => v.name === pronunciationVoiceName) || null
       : null;
 
-    const newCurrentVoice = preferred || japaneseVoices[0] || null;
+    const newCurrentVoice = preferred || englishVoices[0] || null;
 
-    // Update state with Japanese voices
-    const hasJapaneseVoices = japaneseVoices.length > 0;
     setState((prev: TTSState) => ({
       ...prev,
       isSupported: true,
-      availableVoices: japaneseVoices,
+      availableVoices: englishVoices,
       currentVoice: newCurrentVoice,
-      hasJapaneseVoices,
+      hasJapaneseVoices: englishVoices.length > 0,
     }));
 
     // Update ref immediately to avoid race conditions
     currentVoiceRef.current = newCurrentVoice;
 
-    // Fallback: If no Japanese voices found, use any available voice but log warning
-    if (voices.length > 0 && japaneseVoices.length === 0) {
+    if (voices.length > 0 && englishVoices.length === 0) {
       console.warn(
-        'No Japanese voices found. Using fallback voice. Pronunciation may not be accurate.',
+        'No en-US voices found. Using fallback voice. Pronunciation may not be accurate.',
       );
-      const fallbackVoice =
-        voices.find(v => v.lang.startsWith('ja')) || voices[0];
-      const fallbackJapaneseVoice = {
-        name: fallbackVoice.name,
-        lang: fallbackVoice.lang,
-        voice: fallbackVoice,
-      };
+      const fallbackVoice = toEnglishVoice(voices[0]);
       setState((prev: TTSState) => ({
         ...prev,
         isSupported: true,
-        availableVoices: [fallbackJapaneseVoice],
-        currentVoice: fallbackJapaneseVoice,
+        availableVoices: [fallbackVoice],
+        currentVoice: fallbackVoice,
         hasJapaneseVoices: false,
       }));
-      currentVoiceRef.current = fallbackJapaneseVoice;
+      currentVoiceRef.current = fallbackVoice;
     }
   }, [isClient, pronunciationVoiceName]);
 

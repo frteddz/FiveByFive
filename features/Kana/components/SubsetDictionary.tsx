@@ -4,14 +4,15 @@ import { kana } from '@/features/Kana/data/kana';
 import { useParams } from 'next/navigation';
 import usePreferencesStore from '@/features/Preferences/store/usePreferencesStore';
 
+// Unit keys are inherited from the upstream app so existing links still work.
 const sliceRanges = {
-  hiraganabase: [0, 10],
-  hiraganadakuon: [10, 15],
-  hiraganayoon: [15, 26],
+  hiraganabase: [0, 26],
+  hiraganadakuon: [0, 13],
+  hiraganayoon: [13, 26],
   katakanabase: [26, 36],
-  katakanadakuon: [36, 41],
-  katakanayoon: [41, 52],
-  katakanaforeign: [52, 60],
+  katakanadakuon: [36, 60],
+  katakanayoon: [26, 60],
+  katakanaforeign: [60, 69],
 };
 
 const SetDictionary = () => {
@@ -40,7 +41,7 @@ const SetDictionary = () => {
               'border-b-2 border-(--border-color)',
             )}
           >
-            <p lang='ja' className='text-6xl'>
+            <p lang='en' className='text-6xl'>
               {kanaSubgroup.kana.join(' ')}
             </p>
             <div className='flex flex-col items-start gap-2'>

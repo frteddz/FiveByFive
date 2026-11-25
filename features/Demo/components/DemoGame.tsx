@@ -37,44 +37,30 @@ const SHOW_STATS_LINE = true;
 // Pre-selected simple items - maximally simple characters for beginners
 // These characters are chosen for visual simplicity and distinctiveness
 
-// Simple Kana: 10 visually distinct, simple hiragana
-// TEMPORARILY DISABLED - focusing on kanji only
-// const DEMO_KANA = [
-//   { kana: 'あ', romaji: 'a' },
-//   { kana: 'い', romaji: 'i' },
-//   { kana: 'う', romaji: 'u' },
-//   { kana: 'え', romaji: 'e' },
-//   { kana: 'お', romaji: 'o' },
-//   { kana: 'か', romaji: 'ka' },
-//   { kana: 'き', romaji: 'ki' },
-//   { kana: 'く', romaji: 'ku' },
-//   { kana: 'し', romaji: 'shi' },
-//   { kana: 'た', romaji: 'ta' },
-// ];
-
-// Simple Kanji: 29 visually simple, high-frequency kanji with clear meanings and minimal strokes
+// Demo items reuse the old field names. The display side is a code word and
+// the answer side is the letter it stands for.
 const DEMO_KANJI = [
-  { kanji: '一', meaning: 'one', reading: 'ichi' },
-  { kanji: '二', meaning: 'two', reading: 'ni' },
-  { kanji: '三', meaning: 'three', reading: 'san' },
-  { kanji: '大', meaning: 'big', reading: 'dai' },
-  { kanji: '小', meaning: 'small', reading: 'shō' },
-  { kanji: '山', meaning: 'mountain', reading: 'yama' },
-  { kanji: '川', meaning: 'river', reading: 'kawa' },
-  { kanji: '日', meaning: 'sun', reading: 'hi' },
-  { kanji: '月', meaning: 'moon', reading: 'tsuki' },
-  { kanji: '木', meaning: 'tree', reading: 'ki' },
-  { kanji: '口', meaning: 'mouth', reading: 'kuchi' },
-  { kanji: '人', meaning: 'person', reading: 'hito' },
-  { kanji: '五', meaning: 'five', reading: 'go' },
-  { kanji: '雨', meaning: 'rain', reading: 'ame' },
-  { kanji: '田', meaning: 'field', reading: 'ta' },
-  { kanji: '猫', meaning: 'cat', reading: 'neko' },
-  { kanji: '虫', meaning: 'insect', reading: 'mushi' },
-  { kanji: '火', meaning: 'fire', reading: 'hi' },
-  { kanji: '水', meaning: 'water', reading: 'mizu' },
-  { kanji: '子', meaning: 'child', reading: 'ko' },
-  { kanji: '女', meaning: 'woman', reading: 'onna' },
+  { kanji: 'alfa', meaning: 'A', reading: 'alfa' },
+  { kanji: 'bravo', meaning: 'B', reading: 'bravo' },
+  { kanji: 'charlie', meaning: 'C', reading: 'charlie' },
+  { kanji: 'delta', meaning: 'D', reading: 'delta' },
+  { kanji: 'echo', meaning: 'E', reading: 'echo' },
+  { kanji: 'foxtrot', meaning: 'F', reading: 'foxtrot' },
+  { kanji: 'golf', meaning: 'G', reading: 'golf' },
+  { kanji: 'hotel', meaning: 'H', reading: 'hotel' },
+  { kanji: 'india', meaning: 'I', reading: 'india' },
+  { kanji: 'juliett', meaning: 'J', reading: 'juliett' },
+  { kanji: 'kilo', meaning: 'K', reading: 'kilo' },
+  { kanji: 'lima', meaning: 'L', reading: 'lima' },
+  { kanji: 'mike', meaning: 'M', reading: 'mike' },
+  { kanji: 'november', meaning: 'N', reading: 'november' },
+  { kanji: 'oscar', meaning: 'O', reading: 'oscar' },
+  { kanji: 'papa', meaning: 'P', reading: 'papa' },
+  { kanji: 'quebec', meaning: 'Q', reading: 'quebec' },
+  { kanji: 'romeo', meaning: 'R', reading: 'romeo' },
+  { kanji: 'sierra', meaning: 'S', reading: 'sierra' },
+  { kanji: 'tango', meaning: 'T', reading: 'tango' },
+  { kanji: 'uniform', meaning: 'U', reading: 'uniform' },
 ];
 
 type QuestionType = 'kana' | 'kanji'; // | 'vocab' - vocab commented out for now
@@ -605,7 +591,7 @@ const DemoGame = () => {
                 )}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                lang='ja'
+                lang='en'
               >
                 {currentQuestion.display}
               </motion.p>

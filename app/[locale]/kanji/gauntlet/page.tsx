@@ -28,22 +28,22 @@ export default function GauntletPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Kanji', url: 'https://kanadojo.com/kanji' },
-          { name: 'Gauntlet', url: 'https://kanadojo.com/kanji/gauntlet' },
+          { name: 'Home', url: 'https://fivebyfive.vercel.app' },
+          { name: 'Codes', url: 'https://fivebyfive.vercel.app/kanji' },
+          { name: 'Gauntlet', url: 'https://fivebyfive.vercel.app/kanji/gauntlet' },
         ]}
       />
       <LearningResourceSchema
-        name='Kanji Gauntlet Mode'
-        description='Progressive Japanese Kanji mastery challenge. Test your knowledge across JLPT levels with increasing difficulty.'
-        url='https://kanadojo.com/kanji/gauntlet'
+        name='Codes Gauntlet Mode'
+        description='Work through every radio phrase in the trainer. Check recall across all five tiers.'
+        url='https://fivebyfive.vercel.app/kanji/gauntlet'
         learningResourceType='Assessment'
         educationalLevel={['Beginner', 'Intermediate', 'Advanced']}
-        teaches='Complete Kanji mastery across JLPT N5-N1 levels'
-        assesses='Progressive Kanji recognition and understanding'
+        teaches='All radio phrases in the trainer'
+        assesses='Phrase recall across five tiers'
         timeRequired='PT20M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
       />
       <KanjiGauntlet />
     </>

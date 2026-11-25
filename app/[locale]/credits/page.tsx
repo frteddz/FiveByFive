@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { routing } from '@/core/i18n/routing';
 import { ExternalLink, Sparkle } from 'lucide-react';
+import { routing } from '@/core/i18n/routing';
 import LegalLayout from '@/shared/ui-composite/layout/LegalLayout';
 
 export function generateStaticParams() {
@@ -11,27 +10,25 @@ export function generateStaticParams() {
 export const revalidate = 3600;
 
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Credits & Data Sources | KanaDojo';
+  const title = 'Credits & Sources | FiveByFive';
   const description =
-    'KanaDojo uses trusted Japanese language data sources including JMdict, KANJIDIC, and open-source libraries to provide accurate learning tools.';
+    'FiveByFive is built on the ICAO spelling alphabet and the open-source kana-dojo engine.';
 
   return {
     title,
     description,
     keywords: [
-      'japanese learning data sources',
-      'jmdict',
-      'kanjidic',
-      'japanese dictionary',
-      'open source japanese',
+      'ICAO spelling alphabet',
+      'NATO alphabet source',
+      'open source radio trainer',
     ],
     alternates: {
-      canonical: 'https://kanadojo.com/credits',
+      canonical: 'https://fivebyfive.vercel.app/credits',
     },
     openGraph: {
       title,
       description,
-      url: 'https://kanadojo.com/credits',
+      url: 'https://fivebyfive.vercel.app/credits',
       type: 'website',
     },
     robots: {
@@ -41,97 +38,74 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+const sources = [
+  {
+    name: 'ICAO spelling alphabet',
+    description:
+      'The international standard for spelling letters over radiotelephony. The code words and pronunciation in this app follow it.',
+    url: 'https://www.icao.int/',
+    license: 'International standard',
+  },
+  {
+    name: 'lingdojo/kana-dojo',
+    description:
+      'The upstream project. The training engine, game modes, themes and progress tracking all came from here.',
+    url: 'https://github.com/lingdojo/kana-dojo',
+    license: 'AGPL-3.0',
+  },
+  {
+    name: 'SQL.js',
+    description:
+      'SQLite compiled to JavaScript, used by the Anki deck converter in the browser.',
+    url: 'https://github.com/sql-js/sql.js',
+    license: 'MIT',
+  },
+];
+
+const technologies = [
+  {
+    name: 'Next.js',
+    description: 'React framework',
+    url: 'https://nextjs.org',
+  },
+  {
+    name: 'TypeScript',
+    description: 'Typed JavaScript',
+    url: 'https://www.typescriptlang.org',
+  },
+  {
+    name: 'Tailwind CSS',
+    description: 'Utility-first CSS',
+    url: 'https://tailwindcss.com',
+  },
+  {
+    name: 'Zustand',
+    description: 'State management',
+    url: 'https://github.com/pmndrs/zustand',
+  },
+  {
+    name: 'Vercel',
+    description: 'Hosting',
+    url: 'https://vercel.com',
+  },
+];
+
 export default function CreditsPage() {
-  const dataSources = [
-    {
-      name: 'JMdict',
-      description:
-        'Japanese-English dictionary database maintained by the Electronic Dictionary Research and Development Group. Powers our translation features.',
-      url: 'https://www.edrdg.org/jmdict/j_jmdict.html',
-      license: 'Creative Commons Attribution-ShareAlike 4.0',
-    },
-    {
-      name: 'KANJIDIC',
-      description:
-        'Comprehensive kanji character database with readings, meanings, and metadata. Used in our kanji learning features.',
-      url: 'http://www.edrdg.org/wiki/index.php/KANJIDIC_Project',
-      license: 'Creative Commons Attribution-ShareAlike 4.0',
-    },
-    {
-      name: 'Kuroshiro',
-      description:
-        'Japanese language utility library for converting between Japanese scripts and romaji. Enables our pronunciation support.',
-      url: 'https://github.com/hexenq/kuroshiro',
-      license: 'MIT License',
-    },
-    {
-      name: 'SQL.js',
-      description:
-        'SQLite compiled to JavaScript via Emscripten. Powers our Anki deck converter for client-side database processing.',
-      url: 'https://github.com/sql-js/sql.js',
-      license: 'MIT License',
-    },
-    {
-      name: 'JLPT Vocabulary Lists',
-      description:
-        'Curated vocabulary lists organized by JLPT levels (N5-N1) from community-maintained sources.',
-      url: 'https://jlptstudy.net/',
-      license: 'Public Domain / Community Maintained',
-    },
-    {
-      name: 'Wanakana',
-      description:
-        'JavaScript library for detecting and transliterating Hiragana, Katakana, and Romaji. Used in our text input processing.',
-      url: 'https://github.com/WaniKani/WanaKana',
-      license: 'MIT License',
-    },
-  ];
-
-  const technologies = [
-    {
-      name: 'Next.js',
-      description: 'React framework for production-grade web applications',
-      url: 'https://nextjs.org',
-    },
-    {
-      name: 'TypeScript',
-      description: 'Typed JavaScript for enhanced code quality',
-      url: 'https://www.typescriptlang.org',
-    },
-    {
-      name: 'Tailwind CSS',
-      description: 'Utility-first CSS framework',
-      url: 'https://tailwindcss.com',
-    },
-    {
-      name: 'Zustand',
-      description: 'State management for React applications',
-      url: 'https://github.com/pmndrs/zustand',
-    },
-    {
-      name: 'Vercel',
-      description: 'Deployment and hosting platform',
-      url: 'https://vercel.com',
-    },
-  ];
-
   return (
     <LegalLayout
       icon={<Sparkle className='size-6' />}
-      title='Credits & Data Sources'
-      lastUpdated='April 8, 2026'
+      title='Credits & Sources'
+      lastUpdated='November 25, 2026'
     >
       <p className='mb-8 text-lg text-(--secondary-color)'>
-        KanaDojo is built on trusted Japanese language data sources and
-        open-source technologies. We&apos;re grateful to the maintainers and
-        contributors who make these resources available.
+        This app stands on an international standard and a lot of upstream work.
       </p>
 
       <h2 className='mb-6 text-2xl font-semibold text-(--main-color)'>
-        Japanese Language Data Sources
+        Sources
       </h2>
       <div className='mb-12 space-y-6'>
-        {dataSources.map(source => (
+        {sources.map(source => (
           <div key={source.name}>
             <div className='mb-2 flex items-start justify-between'>
               <h3 className='text-xl font-semibold text-(--main-color)'>
@@ -147,9 +121,7 @@ export default function CreditsPage() {
                 Visit <ExternalLink className='h-4 w-4' />
               </a>
             </div>
-            <p className='mb-3 text-(--secondary-color)'>
-              {source.description}
-            </p>
+            <p className='mb-3 text-(--secondary-color)'>{source.description}</p>
             <div className='text-sm text-(--secondary-color)/80'>
               <strong>License:</strong> {source.license}
             </div>
@@ -159,7 +131,7 @@ export default function CreditsPage() {
       </div>
 
       <h2 className='mb-6 text-2xl font-semibold text-(--main-color)'>
-        Technologies & Frameworks
+        Technologies
       </h2>
       <div className='mb-12 space-y-4'>
         {technologies.map(tech => (
@@ -184,89 +156,15 @@ export default function CreditsPage() {
       </div>
 
       <h2 className='mb-4 text-2xl font-semibold text-(--main-color)'>
-        Acknowledgments
+        Thanks
       </h2>
       <div className='mb-12 space-y-4 text-(--secondary-color)'>
         <p>
-          Special thanks to the{' '}
-          <a
-            href='https://www.edrdg.org/'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='text-(--main-color) hover:underline'
-          >
-            Electronic Dictionary Research and Development Group
-          </a>{' '}
-          (EDRDG) led by Jim Breen, whose decades of work creating and
-          maintaining Japanese language databases has enabled countless learning
-          tools and applications.
+          Thanks to the maintainers of kana-dojo for building a trainer worth
+          reusing, and to everyone who has ever tried to spell a callsign over a
+          noisy radio.
         </p>
-        <p>
-          We also thank the broader open-source community for creating and
-          maintaining the libraries and tools that power modern web
-          applications. Without their contributions, projects like KanaDojo
-          wouldn&apos;t be possible.
-        </p>
-      </div>
-
-      <h2 className='mb-4 text-2xl font-semibold text-(--main-color)'>
-        License & Attribution
-      </h2>
-      <div className='mb-12 space-y-4 text-(--secondary-color)'>
-        <p>
-          KanaDojo respects the licenses of all data sources and libraries used.
-          Where required by license terms, we provide proper attribution:
-        </p>
-        <ul className='list-disc space-y-2 pl-6'>
-          <li>
-            JMdict and KANJIDIC data are used under the Creative Commons
-            Attribution-ShareAlike 4.0 International License.
-          </li>
-          <li>
-            All open-source libraries are used in accordance with their
-            respective licenses (MIT, Apache 2.0, etc.).
-          </li>
-          <li>
-            KanaDojo&apos;s original code and content are created by the
-            development team and released under our own license terms.
-          </li>
-        </ul>
-        <p className='mt-4'>
-          If you have questions about our use of any data source or library,
-          please contact us through our{' '}
-          <Link href='/about' className='text-(--main-color) hover:underline'>
-            About page
-          </Link>
-          .
-        </p>
-      </div>
-
-      <div className='border-t border-(--border-color) pt-6'>
-        <h2 className='mb-4 text-lg font-semibold text-(--main-color)'>
-          Related Pages
-        </h2>
-        <div className='flex flex-wrap gap-3'>
-          <Link
-            href='/about'
-            className='rounded-lg border border-(--border-color) px-4 py-2 font-medium text-(--main-color) transition-colors hover:bg-(--main-color) hover:text-white'
-          >
-            About KanaDojo
-          </Link>
-          <Link
-            href='/privacy'
-            className='rounded-lg border border-(--border-color) px-4 py-2 font-medium text-(--main-color) transition-colors hover:bg-(--main-color) hover:text-white'
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            href='/terms'
-            className='rounded-lg border border-(--border-color) px-4 py-2 font-medium text-(--main-color) transition-colors hover:bg-(--main-color) hover:text-white'
-          >
-            Terms of Service
-          </Link>
-        </div>
       </div>
     </LegalLayout>
   );
 }
-

@@ -28,17 +28,17 @@ export default function Train() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Kanji', url: 'https://kanadojo.com/kanji' },
-          { name: 'Training', url: 'https://kanadojo.com/kanji/train' },
+          { name: 'Home', url: 'https://fivebyfive.vercel.app' },
+          { name: 'Codes', url: 'https://fivebyfive.vercel.app/kanji' },
+          { name: 'Training', url: 'https://fivebyfive.vercel.app/kanji/train' },
         ]}
       />
       <CourseSchema
-        name='Kanji Training'
-        description='Learn Japanese Kanji characters organized by JLPT levels with interactive recognition and writing practice.'
-        url='https://kanadojo.com/kanji/train'
-        skillLevel='Beginner to Advanced'
-        learningResourceType='Interactive Kanji Training'
+        name='Codes Training - Radio Phrases'
+        description='Practice radio phrase recognition and meaning across five tiers with interactive drills.'
+        url='https://fivebyfive.vercel.app/kanji/train'
+        skillLevel='All Levels'
+        learningResourceType='Interactive Training'
       />
       <KanjiGame />
     </>

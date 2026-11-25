@@ -3,9 +3,9 @@ import type { IVocabObj } from '@/entities/vocabulary';
 import { isVocabularyMeaningAnswerCorrect } from '@/features/Vocabulary/lib/isVocabularyMeaningAnswerCorrect';
 
 const vocabulary = {
-  word: 'アメリカ',
-  reading: 'アメリカ',
-  meanings: ['America', 'United States'],
+  word: 'SOS',
+  reading: 'sierra oscar sierra',
+  meanings: ['distress signal', 'emergency call'],
 } as IVocabObj;
 
 describe('isVocabularyMeaningAnswerCorrect', () => {
@@ -14,7 +14,9 @@ describe('isVocabularyMeaningAnswerCorrect', () => {
     answer => {
       const phrase = { ...vocabulary, meanings: ['well then…'] };
 
-      expect(isVocabularyMeaningAnswerCorrect(phrase, answer, false)).toBe(true);
+      expect(isVocabularyMeaningAnswerCorrect(phrase, answer, false)).toBe(
+        true,
+      );
     },
   );
 
@@ -27,9 +29,9 @@ describe('isVocabularyMeaningAnswerCorrect', () => {
   });
 
   it('normalizes meaning case and whitespace', () => {
-    expect(isVocabularyMeaningAnswerCorrect(vocabulary, ' america ', false)).toBe(
-      true,
-    );
+    expect(
+      isVocabularyMeaningAnswerCorrect(vocabulary, ' distress signal ', false),
+    ).toBe(true);
   });
 
   it.each(['speak', 'Speak', 'to speak', '  TO   SPEAK  '])(
@@ -63,10 +65,12 @@ describe('isVocabularyMeaningAnswerCorrect', () => {
   it('preserves compound prefixes whose removal could change meaning', () => {
     const phrase = { ...vocabulary, meanings: ['to the point'] };
 
-    expect(isVocabularyMeaningAnswerCorrect(phrase, 'to the point', false)).toBe(
-      true,
+    expect(
+      isVocabularyMeaningAnswerCorrect(phrase, 'to the point', false),
+    ).toBe(true);
+    expect(isVocabularyMeaningAnswerCorrect(phrase, 'point', false)).toBe(
+      false,
     );
-    expect(isVocabularyMeaningAnswerCorrect(phrase, 'point', false)).toBe(false);
 
     const spacedPhrase = { ...vocabulary, meanings: ['to   the point'] };
     expect(isVocabularyMeaningAnswerCorrect(spacedPhrase, 'point', false)).toBe(
@@ -101,13 +105,13 @@ describe('isVocabularyMeaningAnswerCorrect', () => {
       reading: 'to speak',
     };
 
-    expect(
-      isVocabularyMeaningAnswerCorrect(prefixedWord, 'speak', true),
-    ).toBe(false);
+    expect(isVocabularyMeaningAnswerCorrect(prefixedWord, 'speak', true)).toBe(
+      false,
+    );
   });
 
-  it.each([' アメリカ ', 'amerika', 'あめりか'])(
-    'accepts reverse answer %s without requiring an IME',
+  it.each([' SOS ', 'sierra oscar sierra', 'SIERRA OSCAR SIERRA'])(
+    'accepts reverse answer %s as plain Latin text',
     answer => {
       expect(isVocabularyMeaningAnswerCorrect(vocabulary, answer, true)).toBe(
         true,
@@ -115,9 +119,12 @@ describe('isVocabularyMeaningAnswerCorrect', () => {
     },
   );
 
-  it.each(['', 'China', 'ameriko'])('rejects invalid answer %s', answer => {
-    expect(isVocabularyMeaningAnswerCorrect(vocabulary, answer, true)).toBe(
-      false,
-    );
-  });
+  it.each(['', 'China', 'sierra oscar sierraa'])(
+    'rejects invalid answer %s',
+    answer => {
+      expect(isVocabularyMeaningAnswerCorrect(vocabulary, answer, true)).toBe(
+        false,
+      );
+    },
+  );
 });

@@ -26,28 +26,30 @@ import { useRouter } from '@/core/i18n/routing';
 
 type KanaMenuFilter = 'all' | 'hiragana' | 'katakana';
 
+// Old unit names are kept as internal keys so persisted selections still load.
+// hiragana now means Letters, katakana now means Digits and Radio Phrases.
 const SUBSET_SLICE_RANGES: Record<string, [number, number]> = {
-  'hiragana-base': [0, 10],
-  'hiragana-dakuon': [10, 15],
-  'hiragana-yoon': [15, 26],
+  'hiragana-base': [0, 26],
+  'hiragana-dakuon': [0, 13],
+  'hiragana-yoon': [13, 26],
   'katakana-base': [26, 36],
-  'katakana-dakuon': [36, 41],
-  'katakana-yoon': [41, 52],
-  'katakana-foreign': [52, 60],
+  'katakana-dakuon': [36, 60],
+  'katakana-yoon': [26, 60],
+  'katakana-foreign': [60, 69],
 };
 
 const KANA_TYPE_LABELS: Record<KanaType, string> = {
-  hiragana: 'Hiragana',
-  katakana: 'Katakana',
+  hiragana: 'Letters',
+  katakana: 'Codes',
 };
 
 const SUBSET_LABELS: Record<KanaType, Record<string, string>> = {
-  hiragana: { base: 'Base', dakuon: 'Dakuon', yoon: 'Yoon' },
+  hiragana: { base: 'A-Z', dakuon: 'A-M', yoon: 'N-Z' },
   katakana: {
-    base: 'Base',
-    dakuon: 'Dakuon',
-    yoon: 'Yoon',
-    foreign: 'Foreign',
+    base: 'Digits',
+    dakuon: 'Phrases',
+    yoon: 'All Codes',
+    foreign: 'Challenges',
   },
 };
 
@@ -97,7 +99,7 @@ const KanaMenu = ({ filter = 'all' }: { filter?: KanaMenuFilter }) => {
 
   const kanaTypeLabel = KANA_TYPE_LABELS[filterOverride];
   const subsetLabel = SUBSET_LABELS[filterOverride]?.[selectedSubset];
-  const selectAllLabel = `Select  ${kanaTypeLabel} ${subsetLabel}`;
+  const selectAllLabel = `Select ${kanaTypeLabel} ${subsetLabel}`;
 
   const hasKanaProgress = useMemo(
     () =>
@@ -128,7 +130,7 @@ const KanaMenu = ({ filter = 'all' }: { filter?: KanaMenuFilter }) => {
       const selection = selectAutoLearningSets(orderedSets, reviewCursor);
 
       if (selection.selected.length === 0) {
-        throw new Error('No Kana groups are available for training.');
+        throw new Error('No letter groups are available for training.');
       }
 
       playClick();
@@ -229,7 +231,7 @@ const KanaMenu = ({ filter = 'all' }: { filter?: KanaMenuFilter }) => {
               borderRadius='3xl'
             >
               <MousePointer className={cn('fill-current')} />
-              {viewMode === 'full' ? selectAllLabel : 'Select All Kana'}
+              {viewMode === 'full' ? selectAllLabel : 'Select All Letters'}
             </ActionButton>
           )}
           {/*
@@ -266,7 +268,7 @@ const KanaMenu = ({ filter = 'all' }: { filter?: KanaMenuFilter }) => {
               borderRadius='3xl'
             >
               <MousePointer className={cn('fill-current')} />
-              {viewMode === 'full' ? selectAllLabel : 'Select All Kana'}
+              {viewMode === 'full' ? selectAllLabel : 'Select All Letters'}
             </ActionButton>
           */}
           <ActionButton

@@ -7,27 +7,32 @@ vi.mock('@/features/Preferences', () => ({
 }));
 
 describe('FuriganaText', () => {
-  it('removes the romaji prefix from data-formatted readings in both render paths', () => {
+  it('renders plain text and ignores the reading prop in both render paths', () => {
     const { rerender } = render(
-      <FuriganaText text='男' reading='otoko おとこ' />,
+      <FuriganaText text='MAYDAY' reading='mayday distress call' />,
     );
 
-    expect(screen.getByText('おとこ')).not.toBeNull();
-    expect(screen.queryByText('otoko おとこ')).toBeNull();
+    expect(screen.getByText('MAYDAY')).not.toBeNull();
+    expect(screen.queryByText('mayday distress call')).toBeNull();
 
     rerender(
-      <FuriganaText text='unused' reading='otoko おとこ'>
-        男
+      <FuriganaText text='unused' reading='mayday distress call'>
+        MAYDAY
       </FuriganaText>,
     );
 
-    expect(screen.getByText('おとこ')).not.toBeNull();
-    expect(screen.queryByText('otoko おとこ')).toBeNull();
+    expect(screen.getByText('MAYDAY')).not.toBeNull();
+    expect(screen.queryByText('unused')).toBeNull();
+    expect(screen.queryByText('mayday distress call')).toBeNull();
   });
 
-  it('leaves kana-only readings unchanged', () => {
-    render(<FuriganaText text='男' reading='おとこ' />);
+  it('renders plain text without ruby annotations', () => {
+    const { container } = render(
+      <FuriganaText text='MAYDAY' reading='distress call' />,
+    );
 
-    expect(screen.getByText('おとこ')).not.toBeNull();
+    expect(screen.getByText('MAYDAY')).not.toBeNull();
+    expect(container.querySelector('ruby')).toBeNull();
+    expect(container.querySelector('rt')).toBeNull();
   });
 });

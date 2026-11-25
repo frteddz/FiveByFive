@@ -7,9 +7,9 @@
   "earnedOn": "Earned on {{date}}",
   "categories": {
     "all": "All",
-    "kana": "Kana",
-    "kanji": "Kanji",
-    "vocabulary": "Vocabulary",
+    "kana": "Letters",
+    "kanji": "Codes",
+    "vocabulary": "Spelling",
     "general": "General",
     "special": "Special"
   },

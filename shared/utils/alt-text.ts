@@ -5,7 +5,7 @@
  */
 
 interface AltTextOptions {
-  /** Include the site name (KanaDojo) in alt text */
+  /** Include the site name (FiveByFive) in alt text */
   includeSiteName?: boolean;
   /** Add context keywords for SEO */
   includeKeywords?: boolean;
@@ -14,7 +14,7 @@ interface AltTextOptions {
 }
 
 /**
- * Generate alt text for character/kana images
+ * Generate alt text for letter and code images
  */
 export function generateKanaAltText(
   character: string,
@@ -24,21 +24,21 @@ export function generateKanaAltText(
 ): string {
   const { includeSiteName = false, includeKeywords = true } = options;
 
-  let alt = `${type === 'hiragana' ? 'Hiragana' : 'Katakana'} character ${character}`;
+  let alt = `${type === 'hiragana' ? 'Letter' : 'Code'} ${character}`;
 
   if (includeKeywords) {
-    alt += ` (${romanization}) - Japanese ${type} syllable`;
+    alt += ` (${romanization}) - NATO code word`;
   }
 
   if (includeSiteName) {
-    alt += ' | KanaDojo';
+    alt += ' | FiveByFive';
   }
 
   return truncateAlt(alt, options.maxLength);
 }
 
 /**
- * Generate alt text for kanji images
+ * Generate alt text for radio code images
  */
 export function generateKanjiAltText(
   character: string,
@@ -49,7 +49,7 @@ export function generateKanjiAltText(
 ): string {
   const { includeSiteName = false, includeKeywords = true } = options;
 
-  let alt = `Kanji ${character} meaning "${meaning}"`;
+  let alt = `Code ${character} meaning "${meaning}"`;
 
   if (includeKeywords) {
     const readingsStr = [
@@ -62,19 +62,19 @@ export function generateKanjiAltText(
     }
 
     if (jlptLevel) {
-      alt += ` - ${jlptLevel}`;
+      alt += ` - tier ${jlptLevel}`;
     }
   }
 
   if (includeSiteName) {
-    alt += ' | KanaDojo';
+    alt += ' | FiveByFive';
   }
 
   return truncateAlt(alt, options.maxLength);
 }
 
 /**
- * Generate alt text for vocabulary/word images
+ * Generate alt text for spelling word images
  */
 export function generateVocabularyAltText(
   word: string,
@@ -84,14 +84,14 @@ export function generateVocabularyAltText(
 ): string {
   const { includeSiteName = false, includeKeywords = true } = options;
 
-  let alt = `Japanese word ${word}`;
+  let alt = `Word ${word}`;
 
   if (includeKeywords) {
     alt += ` (${reading}) meaning "${meaning}"`;
   }
 
   if (includeSiteName) {
-    alt += ' | KanaDojo';
+    alt += ' | FiveByFive';
   }
 
   return truncateAlt(alt, options.maxLength);
@@ -108,10 +108,10 @@ export function generateChartAltText(
   const { includeSiteName = true, includeKeywords = true } = options;
 
   const typeMap = {
-    hiragana: 'Hiragana',
-    katakana: 'Katakana',
-    kanji: 'Kanji',
-    vocabulary: 'Vocabulary',
+    hiragana: 'Letters',
+    katakana: 'Codes',
+    kanji: 'Radio codes',
+    vocabulary: 'Spelling',
   };
 
   let alt = `${typeMap[type]} chart`;
@@ -121,11 +121,11 @@ export function generateChartAltText(
   }
 
   if (includeKeywords) {
-    alt += ` with pronunciation guide and romanization`;
+    alt += ` with code word reference`;
   }
 
   if (includeSiteName) {
-    alt += ' | KanaDojo';
+    alt += ' | FiveByFive';
   }
 
   return truncateAlt(alt, options.maxLength);
@@ -144,7 +144,7 @@ export function generateScreenshotAltText(
   let alt = `${feature}: ${description}`;
 
   if (includeSiteName) {
-    alt += ' - KanaDojo Japanese learning platform';
+    alt += ' - FiveByFive phonetic alphabet trainer';
   }
 
   return truncateAlt(alt, options.maxLength);
@@ -162,11 +162,11 @@ export function generateThemeAltText(
   let alt = `${themeName} theme preview`;
 
   if (includeKeywords) {
-    alt += ' - customizable Japanese learning interface';
+    alt += ' - customizable phonetic alphabet trainer interface';
   }
 
   if (includeSiteName) {
-    alt += ' | KanaDojo';
+    alt += ' | FiveByFive';
   }
 
   return truncateAlt(alt, options.maxLength);
@@ -185,11 +185,11 @@ export function generateBlogImageAltText(
   let alt = imageDescription || postTitle;
 
   if (includeKeywords && !imageDescription) {
-    alt += ' - Japanese learning guide';
+    alt += ' - phonetic alphabet guide';
   }
 
   if (includeSiteName) {
-    alt += ' | KanaDojo Academy';
+    alt += ' | FiveByFive';
   }
 
   return truncateAlt(alt, options.maxLength);
@@ -208,7 +208,7 @@ export function generateAchievementAltText(
   let alt = `Achievement badge: ${achievementName} - ${description}`;
 
   if (includeSiteName) {
-    alt += ' | KanaDojo';
+    alt += ' | FiveByFive';
   }
 
   return truncateAlt(alt, options.maxLength);
@@ -266,7 +266,7 @@ export function generateInfographicAltText(
   }
 
   if (includeSiteName) {
-    alt += ' | KanaDojo';
+    alt += ' | FiveByFive';
   }
 
   return truncateAlt(alt, options.maxLength);

@@ -29,36 +29,34 @@ export async function generateMetadata({
   const totalCount = resources.length;
 
   const title =
-    'Best Japanese Learning Resources - Apps, Textbooks, YouTube & More | KanaDojo';
-  const description = `Discover ${totalCount}+ curated Japanese learning resources. Find the best apps, textbooks, YouTube channels, podcasts, games, and tools for learning Japanese at any level.`;
+    'Resource Library - Apps, Dictionaries and Study Tools | FiveByFive';
+  const description = `Browse ${totalCount}+ curated learning resources. Find apps, textbooks, dictionaries and reference tools grouped by category.`;
 
   return {
     title,
     description,
     keywords: [
-      'japanese learning resources',
-      'learn japanese',
-      'japanese apps',
-      'japanese textbooks',
-      'japanese youtube channels',
-      'jlpt resources',
-      'japanese study materials',
-      'best japanese learning apps',
-      'japanese language resources',
+      'learning resources',
+      'study tools',
+      'code word reference',
+      'phonetic alphabet practice',
+      'language apps',
+      'dictionaries',
+      'textbooks',
     ],
     openGraph: {
-      title: 'Best Japanese Learning Resources | KanaDojo',
+      title: 'Resource Library | FiveByFive',
       description,
-      url: 'https://kanadojo.com/resources',
+      url: 'https://fivebyfive.vercel.app/resources',
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Best Japanese Learning Resources | KanaDojo',
+      title: 'Resource Library | FiveByFive',
       description,
     },
     alternates: {
-      canonical: 'https://kanadojo.com/resources',
+      canonical: 'https://fivebyfive.vercel.app/resources',
     },
   };
 }
@@ -71,9 +69,8 @@ function generateItemListSchema(
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Japanese Learning Resources',
-    description:
-      'Comprehensive collection of curated Japanese learning resources',
+    name: 'Curated Learning Resources',
+    description: 'A categorized index of study tools and reference material',
     numberOfItems: resources.length,
     itemListOrder: 'https://schema.org/ItemListUnordered',
     itemListElement: resources.slice(0, 25).map((resource, index) => ({
@@ -108,8 +105,8 @@ export default async function ResourcesPage({
   const availableFilters = getFilterOptions(resources);
 
   const breadcrumbItems = [
-    { name: 'Home', url: 'https://kanadojo.com' },
-    { name: 'Resources', url: 'https://kanadojo.com/resources' },
+    { name: 'Home', url: 'https://fivebyfive.vercel.app' },
+    { name: 'Resources', url: 'https://fivebyfive.vercel.app/resources' },
   ];
 
   const itemListSchema = generateItemListSchema(resources, locale);
@@ -124,15 +121,15 @@ export default async function ResourcesPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       <LearningResourceSchema
-        name='Japanese Learning Resources Library'
-        description={`Curated collection of ${resources.length}+ Japanese learning resources including apps, textbooks, YouTube channels, podcasts, games, and JLPT preparation materials.`}
-        url='https://kanadojo.com/resources'
+        name='Learning Resource Library'
+        description={`Curated collection of ${resources.length}+ learning resources, including apps, dictionaries, textbooks and reference tools.`}
+        url='https://fivebyfive.vercel.app/resources'
         learningResourceType='Course'
         educationalLevel={['Beginner', 'Intermediate', 'Advanced']}
-        teaches='Japanese Language — Hiragana, Katakana, Kanji, Vocabulary, Grammar'
+        teaches='Study tools and reference material'
         isAccessibleForFree={true}
-        inLanguage={['en', 'ja']}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        inLanguage={['en']}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
       />
 
       {/* Page Content */}

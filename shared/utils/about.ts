@@ -1,39 +1,20 @@
-const about = `Welcome to KanaDojo – Your Japanese Training Ground!
-If you've ever studied Japanese, you know that learning the language isn't just about memorizing words and grammar rules—it's about practice, repetition, and real-world application. That's exactly what KanaDojo is all about!
+const about = `Welcome to FiveByFive, a trainer for the NATO phonetic alphabet.
 
-Just like a real dojo, KanaDojo is a place for training, discipline, and mastery—but instead of martial arts, we're here to help you sharpen your Japanese language skills. Whether you're a complete beginner or an intermediate learner looking to level up, you're in the right place.
+Clear speech depends on agreed words. Alfa means A, Bravo means B, Charlie means C. FiveByFive gives you short drills that make those pairs automatic.
 
-Why "Dojo"? Because Practice Makes Perfect!
-A dojo (道場) is not just a classroom—it's a training hall where students practice their skills until they become second nature. Learning Japanese works the same way. It's not enough to simply read textbooks or watch anime with subtitles—you need structured, consistent training to become truly fluent.
+Letters
+Match every letter from A to Z with its ICAO code word. Pick mode builds recognition. Input mode builds typing recall. Blitz adds a timer when you are ready for speed.
 
-At KanaDojo, we focus on active learning. This means:
+Codes
+Practice radio phrases across five tiers. Each tier keeps a set small enough to finish in one session, from common phrases such as Roger and Over to less frequent procedure words.
 
-✅ Hands-on exercises that make you use what you’ve learned
+Spelling
+Spell a word one letter at a time with code words. Saying Sierra Oscar Sierra is clearer than spelling S O S over a noisy link. Spelling drills turn the alphabet into something you can use.
 
-✅ Interactive drills to strengthen your reading, writing, and listening skills
+Every training shares the same four modes: pick, reverse pick, input and reverse input. Progress and preferences stay in your browser, so you can start without an account and pick up where you left off.
 
-✅ Engaging lessons designed to make Japanese feel natural and intuitive
+FiveByFive is maintained by frteddz as a fork of the kana-dojo engine. The source is available at github.com/frteddz/FiveByFive.
 
-✅ A step-by-step approach so you can build your skills with confidence
-
-What You’ll Find at KanaDojo
-🔹 Hiragana & Katakana Mastery – Learn the Japanese writing system the right way
-
-🔹 Kanji Training – Build a solid foundation with structured kanji exercises
-
-🔹 Grammar Workouts – Practical grammar lessons without unnecessary jargon
-
-🔹 Listening & Speaking Practice – Tips and drills to improve your real-world communication skills
-
-🔹 Japanese Culture & Insights – Because language and culture go hand in hand!
-
-We believe that learning Japanese should be an exciting journey, not a frustrating chore. That’s why we emphasize practice, engagement, and real progress—so you can go from struggling to confident in no time.
-
-Are You Ready to Train?
-No matter where you are in your Japanese learning journey, KanaDojo is here to help you become stronger, more skilled, and more confident in your abilities. Whether you're preparing for the JLPT, planning a trip to Japan, or just passionate about the language, we're here to guide you every step of the way.
-
-So, tighten your obi (belt), step onto the tatami (training mat), and let’s train together. The path to Japanese fluency starts NOW!
-
-🚀 Start your training today with KanaDojo 🚀`;
+Start with the letters, move on to codes, then spell your first word.`;
 
 export default about;

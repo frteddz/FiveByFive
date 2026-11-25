@@ -1,133 +1,133 @@
 {
-  "kicker": "CENTRO DE AYUDA",
-  "title": "Preguntas frecuentes",
-  "subtitle": "Respuestas claras, detalles útiles y el camino más rápido de ‘no puedo leer japonés’ a practicar kana, kanji y vocabulario con confianza.",
+  "kicker": "HELP CENTER",
+  "title": "Frequently Asked Questions",
+  "subtitle": "Clear answers, real details, and the fastest path from ‘what is Alfa’ to confident code word, radio phrase and spelling practice.",
   "links": {
-    "howToUse": "Cómo usar KanaDojo",
-    "glossary": "Glosario de japonés",
-    "translator": "Traductor Inglés ↔ Japonés",
-    "academy": "Guías de aprendizaje",
-    "privacy": "Política de privacidad",
-    "terms": "Términos de servicio"
+    "howToUse": "How to use FiveByFive",
+    "glossary": "Phonetic glossary",
+    "translator": "Code word reference",
+    "academy": "Training guides",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service"
   },
   "nav": {
-    "title": "Ir a",
-    "backToTop": "Inicio",
-    "aria": "Navegación por secciones de preguntas frecuentes",
-    "note": "Consejo: usa el Glosario si ves un término como ‘dakuon’, ‘yoon’, ‘onyomi’ o ‘kunyomi’."
+    "title": "Jump to",
+    "backToTop": "Top",
+    "aria": "FAQ section navigation",
+    "note": "Tip: Use the Glossary if you see a term like ‘code word’, ‘radiotelephony’, or ‘callsign’."
   },
   "intro": {
-    "title": "Orientación rápida",
-    "body": "KanaDojo es una app web gratuita para practicar Hiragana, Katakana, Kanji y vocabulario por niveles JLPT. No necesitas cuenta. Tu progreso se guarda localmente en el navegador y puedes personalizar la experiencia con temas y fuentes."
+    "title": "Quick orientation",
+    "body": "FiveByFive is a free trainer for the NATO phonetic alphabet. Practice letters, radio phrases and callsign spelling without an account. Your progress is saved locally in your browser, and you can change themes and fonts at any time."
   },
   "cta": {
-    "hiragana": "Empezar práctica de Hiragana",
-    "katakana": "Empezar práctica de Katakana",
-    "kanji": "Empezar práctica de Kanji"
+    "hiragana": "Start Letters practice",
+    "katakana": "Start Codes practice",
+    "kanji": "Start Spelling practice"
   },
   "footer": {
-    "title": "¿Aún tienes dudas?",
-    "body": "Si algo no encaja, casi siempre es por una de dos razones: un conjunto demasiado grande (demasiados caracteres nuevos) o un modo inadecuado (reconocimiento vs recuerdo). Usa los enlaces de abajo para reajustar en un minuto.",
+    "title": "Still stuck?",
+    "body": "If something feels off, it is usually one of two things: a set that is too large, or a mode that does not match your goal. Use the links below to reset your setup in under a minute.",
     "links": {
-      "kana": "Ver conjuntos de Kana",
-      "progress": "Abrir panel de progreso"
+      "kana": "Browse Letter sets",
+      "progress": "Open Progress dashboard"
     }
   },
   "sections": {
     "gettingStarted": {
-      "title": "Primeros pasos",
-      "description": "Qué es KanaDojo, cómo funciona y qué hacer primero.",
+      "title": "Getting started",
+      "description": "What FiveByFive is, how it works, and what you should do first.",
       "q1": {
-        "question": "¿Qué es KanaDojo?",
-        "answer": "KanaDojo es una plataforma gratuita para aprender japonés y practicar Hiragana, Katakana, Kanji y vocabulario con ejercicios rápidos y modos tipo juego. Está pensada para autoestudio, retroalimentación inmediata y progreso constante."
+        "question": "What is FiveByFive?",
+        "answer": "FiveByFive is a free trainer for the NATO phonetic alphabet. It teaches the ICAO code word for every letter, radio phrases used in voice communication, and spelling words with code words."
       },
       "q2": {
-        "question": "¿KanaDojo es realmente gratis?",
-        "answer": "Sí. KanaDojo es gratis: no requiere cuenta y no hay contenido de práctica bloqueado por pago."
+        "question": "Is FiveByFive really free?",
+        "answer": "Yes. FiveByFive is free to use with no required account and no paywalled training content."
       },
       "q3": {
-        "question": "¿Necesito crear una cuenta?",
-        "answer": "No. Tus preferencias y estadísticas se guardan localmente en tu navegador. Si borras los datos del sitio o cambias de dispositivo/navegador, tu progreso local no se transfiere automáticamente."
+        "question": "Do I need to create an account?",
+        "answer": "No. Your preferences and statistics are stored locally in your browser. If you clear site data or switch devices, your local progress will not follow you."
       }
     },
     "learningPath": {
-      "title": "Ruta de aprendizaje",
-      "description": "Un orden práctico para aprender a leer japonés.",
+      "title": "Suggested order",
+      "description": "A practical order for learning the phonetic alphabet.",
       "q1": {
-        "question": "¿Qué debo aprender primero: Hiragana o Katakana?",
-        "answer": "La mayoría empieza con Hiragana y luego pasa a Katakana. Cuando ya leas kana con cierta comodidad (aunque sea lento), empieza Kanji básico y vocabulario juntos para retener mejor."
+        "question": "Should I learn letters or radio phrases first?",
+        "answer": "Start with the letters A to Z so every code word is familiar. Then move to radio codes and phrases, and finish with spelling full words and callsigns."
       },
       "q2": {
-        "question": "¿Cuánto se tarda en aprender Hiragana y Katakana?",
-        "answer": "Con práctica diaria constante, muchas personas memorizan cada conjunto en 1–2 semanas y se sienten cómodas leyendo en un mes. Sesiones cortas y frecuentes funcionan mejor que estudiar de golpe."
+        "question": "How long does it take to learn the code words?",
+        "answer": "Short daily sessions work best. Most learners get comfortable with the alphabet within a couple of weeks, then keep improving speed with Blitz drills."
       },
       "q3": {
-        "question": "¿Cuándo debería empezar Kanji?",
-        "answer": "Cuando ya conozcas kana lo suficiente como para leer palabras básicas, empieza Kanji (idealmente por niveles JLPT: N5 → N4 → N3 → N2 → N1). Aprender Kanji junto con vocabulario ayuda mucho a la retención."
+        "question": "When should I start spelling words?",
+        "answer": "Once you can match letters to code words without hesitating, start spelling short words. Spelling practice reinforces the same code words in a different context."
       }
     },
     "features": {
-      "title": "Funciones y modos",
-      "description": "Cómo funciona la práctica y qué modo elegir según tu objetivo.",
+      "title": "Features & training modes",
+      "description": "How practice works and which mode to pick for your goal.",
       "q1": {
-        "question": "¿Qué modos de entrenamiento existen?",
-        "answer": "KanaDojo incluye modos de reconocimiento y recuerdo (pick/reverse-pick, input/reverse-input) y también retos de velocidad como Blitz y pruebas más largas como Gauntlet. Cambia de modo según busques precisión, recuerdo o velocidad."
+        "question": "What are the training modes?",
+        "answer": "FiveByFive includes recognition and recall modes (pick/reverse-pick, input/reverse-input) plus timed Blitz challenges and full-set Gauntlet runs. Switch modes depending on whether you want accuracy, recall, or speed."
       },
       "q2": {
-        "question": "¿Cuál es el mejor modo para principiantes?",
-        "answer": "Empieza con reconocimiento (pick) para construir identificación rápida, y añade input para practicar el recuerdo activo. Alternar reconocimiento y escritura/tecleo suele funcionar muy bien para kana."
+        "question": "What is the best mode for beginners?",
+        "answer": "Start with pick mode to build fast recognition, then add input mode for typing recall. Alternating the two works well for code words and spelling."
       },
       "q3": {
-        "question": "¿Puedo personalizar temas y fuentes?",
-        "answer": "Sí. KanaDojo ofrece mucha personalización (temas, fuentes y preferencias) para que encuentres un estilo cómodo para estudiar durante mucho tiempo."
+        "question": "Can I customize themes and fonts?",
+        "answer": "Yes. FiveByFive supports themes, fonts and display preferences so long practice sessions stay comfortable."
       }
     },
     "privacy": {
-      "title": "Privacidad y datos",
-      "description": "Qué se guarda, dónde se guarda y qué significa para ti.",
+      "title": "Privacy & data",
+      "description": "What is stored, where it is stored, and what that means for you.",
       "q1": {
-        "question": "¿Dónde se guarda mi progreso?",
-        "answer": "Tu progreso se guarda localmente en tu navegador (en tu dispositivo). Esto mantiene tus estadísticas privadas y te permite empezar al instante sin registro."
+        "question": "Where is my progress saved?",
+        "answer": "Your progress is saved locally in your browser. Statistics stay on your device and you can start training without signing up."
       },
       "q2": {
-        "question": "¿Mi progreso se sincroniza entre dispositivos?",
-        "answer": "No automáticamente. Como el progreso se guarda localmente, al cambiar de navegador/dispositivo no se transfiere a menos que lo muevas manualmente."
+        "question": "Will my progress sync across devices?",
+        "answer": "Not automatically. Progress is stored locally, so switching browsers or devices will not carry it over unless you move the data yourself."
       },
       "q3": {
-        "question": "¿KanaDojo funciona sin internet?",
-        "answer": "Puede funcionar sin conexión para la práctica básica una vez que los recursos estén en caché, pero la mejor experiencia es con internet, especialmente la primera vez que cargas la página."
+        "question": "Does FiveByFive work offline?",
+        "answer": "Core practice can work offline once assets are cached, but the first load and any network-backed features need a connection."
       }
     },
     "jlpt": {
-      "title": "Preparación JLPT",
-      "description": "Cómo encaja KanaDojo en un plan de estudio del JLPT.",
+      "title": "Training tiers",
+      "description": "How the five tiers are organized.",
       "q1": {
-        "question": "¿KanaDojo ayuda con el JLPT?",
-        "answer": "Sí. KanaDojo organiza Kanji y vocabulario por nivel JLPT (N5–N1), lo que facilita practicar exactamente lo que necesitas para tu objetivo."
+        "question": "What are the five tiers?",
+        "answer": "Codes and Spelling are split into five tiers. Tier 1 holds the most common items and Tier 5 holds the most demanding ones. You can select any tier directly."
       },
       "q2": {
-        "question": "¿KanaDojo es suficiente para aprobar el JLPT?",
-        "answer": "Es una gran herramienta para reconocimiento, recuerdo y velocidad, pero el JLPT también evalúa comprensión lectora, gramática en contexto y comprensión auditiva. Combínalo con lectura graduada, escucha y una buena guía de gramática."
+        "question": "Do I need to finish a tier before the next one?",
+        "answer": "No. The tiers are a way to keep practice sets manageable. Pick the tier that matches your current accuracy and move on when it feels easy."
       },
       "q3": {
-        "question": "¿Qué debería estudiar primero para JLPT N5?",
-        "answer": "Empieza por Hiragana + Katakana, luego Kanji N5 y vocabulario básico. La constancia diaria supera al estudio ocasional: revisa a menudo tus elementos más débiles."
+        "question": "What should I practice first?",
+        "answer": "Start with letters A to Z, then Tier 1 radio codes. After that, spell short words and review the items you miss most often."
       }
     },
     "troubleshooting": {
-      "title": "Solución de problemas",
-      "description": "Arregla los problemas más comunes de ‘no estoy mejorando’.",
+      "title": "Troubleshooting",
+      "description": "Fix the most common ‘why am I not improving?’ problems.",
       "q1": {
-        "question": "Confundo caracteres parecidos. ¿Qué hago?",
-        "answer": "Reduce el conjunto activo, practica primero reconocimiento y añade sesiones cortas de recuerdo. En kana, trabaja pares mínimos y fíjate en los trazos que distinguen (por ejemplo, さ vs ち, シ vs ツ)."
+        "question": "I keep mixing up similar code words. What should I do?",
+        "answer": "Reduce your active set and drill recognition first. Confusable pairs such as B and D or M and N deserve their own short sessions."
       },
       "q2": {
-        "question": "Tengo buena precisión, pero soy lento/a.",
-        "answer": "Añade práctica con tiempo (Blitz) usando un conjunto pequeño. La velocidad suele mejorar después de estabilizar la precisión."
+        "question": "My accuracy is fine but I am slow.",
+        "answer": "Add timed practice with a small set. Speed usually improves once accuracy is stable."
       },
       "q3": {
-        "question": "Mi progreso parece reiniciado. ¿Lo perdí?",
-        "answer": "El progreso se guarda localmente. Borrar datos del navegador, usar modo incógnito o cambiar de dispositivo/navegador puede hacer que parezca reiniciado. Verifica que estás en el mismo perfil del navegador y que no se borren datos automáticamente."
+        "question": "My progress looks reset. Did I lose everything?",
+        "answer": "Progress is stored locally. Clearing browser data, using private mode, or switching devices can make it look reset. Check that you are in the same browser profile and that site data is not being cleared automatically."
       }
     }
   }

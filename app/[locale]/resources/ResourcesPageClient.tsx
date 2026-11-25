@@ -114,12 +114,12 @@ export function ResourcesPageClient({
                 <div className='h-px w-12 bg-(--border-color)' />
               </div>
               <h1 className='mb-8 text-6xl leading-[0.9] font-black tracking-tighter text-(--main-color) md:text-8xl'>
-                Learn <br className='hidden md:block' />
-                Japanese.
+                Study <br className='hidden md:block' />
+                Resources.
               </h1>
               <p className='max-w-xl text-xl leading-relaxed font-medium text-(--secondary-color) opacity-60 md:text-2xl'>
-                A curated indexing of the most effective tools, texts, and
-                platforms for mastering the Japanese language.
+                A curated index of study tools, texts and reference platforms,
+                organized by category.
               </p>
             </div>
 

@@ -4,7 +4,7 @@ At **KanaDojo**, we take security seriously and strive to protect our website an
 
 ## 1. Scope
 
-This Security Policy applies to the **KanaDojo** website (kanadojo.com), including its infrastructure, content, and third-party services used (such as Google Analytics, Microsoft Clarity, and PostHog).
+This Security Policy applies to the **KanaDojo** website (fivebyfive.vercel.app), including its infrastructure, content, and third-party services used (such as Google Analytics, Microsoft Clarity, and PostHog).
 
 
 ## 2. Website Security Practices
@@ -42,8 +42,8 @@ If you discover a security vulnerability on our website, we encourage responsibl
 
 If you believe you have found a security issue, please contact us immediately via:
 
-- 📧 **Email:** dev@kanadojo.com
-- 📩 **Bug Report Form:** kanadojo.com/report 
+- 📧 **Email:** dev@fivebyfive.vercel.app
+- 📩 **Bug Report Form:** fivebyfive.vercel.app/report 
 
 We appreciate **ethical hacking and responsible disclosure** and will investigate reported vulnerabilities promptly.
 
@@ -79,7 +79,7 @@ We may update this Security Policy from time to time. Any changes will be **publ
 
 For any questions or concerns about this Security Policy, you can reach us at:
 
-📧 **Email:** *dev@kanadojo.com* 
+📧 **Email:** *dev@fivebyfive.vercel.app* 
 
 ---
 

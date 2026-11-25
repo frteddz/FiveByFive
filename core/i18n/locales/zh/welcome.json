@@ -1,67 +1,67 @@
 {
-  "title": "欢迎使用 KanaDojo！",
-  "subtitle": "让我们来个性化您的学习体验",
+  "title": "Welcome to FiveByFive!",
+  "subtitle": "Let's set up your training experience",
   "steps": {
     "welcome": {
-      "demoCta": "试一试"
+      "demoCta": "Play a quick demo"
     },
     "behavior": {
-      "title": "配置行为",
-      "subtitle": "设置显示和声音偏好",
+      "title": "Configure Behavior",
+      "subtitle": "Set your display and sound preferences",
       "displayLanguage": {
-        "title": "显示语言",
-        "description": "在角色选择菜单中，显示：",
-        "romaji": "罗马字，翻译 🇺🇸",
-        "kana": "假名，汉字 🇯🇵"
+        "title": "Display Language",
+        "description": "In the selection menu, show the answer as:",
+        "romaji": "Code words",
+        "kana": "Letters"
       },
       "soundEffects": {
-        "title": "音效",
-        "description": "播放界面和反馈音效：",
-        "on": "开启",
-        "off": "关闭"
+        "title": "Sound Effects",
+        "description": "Play UI and feedback sound effects:",
+        "on": "On",
+        "off": "Off"
       }
     },
     "themes": {
-      "title": "选择主题",
-      "subtitle": "选择一个适合您风格的主题",
-      "randomTheme": "随机主题",
-      "moreInfo": "更多主题请前往",
-      "preferences": "偏好设置"
+      "title": "Choose Your Theme",
+      "subtitle": "Select a theme that matches your style",
+      "randomTheme": "Random Theme",
+      "moreInfo": "More themes available in",
+      "preferences": "Preferences"
     },
     "fonts": {
-      "title": "选择字体",
-      "subtitle": "为角色选择完美的字体",
-      "randomFont": "随机字体",
-      "default": "（默认）",
-      "moreInfo": "更多字体请前往",
-      "preferences": "偏好设置"
+      "title": "Choose Your Font",
+      "subtitle": "Choose the font used for letters and code words",
+      "randomFont": "Random Font",
+      "default": "(default)",
+      "moreInfo": "More fonts available in",
+      "preferences": "Preferences"
     },
     "complete": {
-      "title": "设置完成！",
-      "subtitle": "您的 KanaDojo 已个性化设置",
-      "canChange": "您可以随时在偏好设置中更改这些设置。",
-      "happyLearning": "祝学习愉快！"
+      "title": "All Set!",
+      "subtitle": "Your FiveByFive is now personalized",
+      "canChange": "You can always change these settings later in the Preferences.",
+      "happyLearning": "Happy training!"
     }
   },
   "features": {
     "behavior": {
-      "title": "配置行为",
-      "description": "设置显示语言和声音偏好"
+      "title": "Configure Behavior",
+      "description": "Set display and sound preferences"
     },
     "theme": {
-      "title": "选择主题",
-      "description": "选择一个适合您风格的主题"
+      "title": "Choose Your Theme",
+      "description": "Select a theme that matches your style"
     },
     "font": {
-      "title": "选择字体",
-      "description": "为角色选择完美的字体"
+      "title": "Select Your Font",
+      "description": "Choose a comfortable font for letters and code words"
     }
   },
   "navigation": {
-    "previous": "上一步",
-    "back": "返回",
-    "next": "下一步",
-    "getStarted": "开始使用",
-    "finishSetup": "完成设置"
+    "previous": "Previous",
+    "back": "Back",
+    "next": "Next",
+    "getStarted": "Get Started",
+    "finishSetup": "Finish Setup"
   }
 }

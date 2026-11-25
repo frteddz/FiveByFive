@@ -1,71 +1,71 @@
 {
-  "title": "Entraînement Vocabulaire",
-  "description": "Enrichissez votre vocabulaire japonais",
+  "title": "Spelling Training",
+  "description": "Spell everyday words using ICAO code words",
   "selection": {
-    "title": "Sélectionnez le vocabulaire",
-    "byLevel": "Par niveau JLPT",
-    "byCategory": "Par catégorie",
-    "selectAll": "Tout sélectionner",
-    "deselectAll": "Tout désélectionner",
+    "title": "Select Spelling Sets",
+    "byLevel": "By Tier",
+    "byCategory": "By Category",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
     "levels": {
-      "n5": "JLPT N5",
-      "n4": "JLPT N4",
-      "n3": "JLPT N3",
-      "n2": "JLPT N2",
-      "n1": "JLPT N1"
+      "n5": "Tier 1",
+      "n4": "Tier 2",
+      "n3": "Tier 3",
+      "n2": "Tier 4",
+      "n1": "Tier 5"
     },
     "categories": {
-      "all": "Tout",
-      "nouns": "Noms",
-      "verbs": "Verbes",
-      "adjectives": "Adjectifs",
-      "adverbs": "Adverbes",
-      "expressions": "Expressions"
+      "all": "All",
+      "nouns": "Short words",
+      "verbs": "Long words",
+      "adjectives": "Callsigns",
+      "adverbs": "Numbers",
+      "expressions": "Phrases"
     }
   },
   "game": {
-    "title": "Jeu Vocabulaire",
-    "start": "Commencer",
+    "title": "Spelling Game",
+    "start": "Start Game",
     "pause": "Pause",
-    "resume": "Reprendre",
-    "finish": "Terminer",
-    "nextQuestion": "Question suivante",
-    "submit": "Valider la réponse",
-    "score": "Score : {{points}}",
-    "timeLeft": "Temps restant : {{seconds}}s",
-    "streak": "Série : {{count}}",
-    "correct": "Correct !",
+    "resume": "Resume",
+    "finish": "Finish",
+    "nextQuestion": "Next Question",
+    "submit": "Submit Answer",
+    "score": "Score: {{points}}",
+    "timeLeft": "Time left: {{seconds}}s",
+    "streak": "Streak: {{count}}",
+    "correct": "Correct!",
     "incorrect": "Incorrect",
-    "showAnswer": "Voir la réponse"
+    "showAnswer": "Show Answer"
   },
   "modes": {
-    "pick": "Mode choix",
-    "reversePick": "Choix inversé",
-    "input": "Mode saisie",
-    "reverseInput": "Saisie inversée",
+    "pick": "Pick Mode",
+    "reversePick": "Reverse Pick",
+    "input": "Input Mode",
+    "reverseInput": "Reverse Input",
     "description": {
-      "pick": "Voir le mot, choisir le sens",
-      "reversePick": "Voir le sens, choisir le mot",
-      "input": "Voir le mot, taper le sens",
-      "reverseInput": "Voir le sens, taper le mot"
+      "pick": "See a word, choose its code word spelling",
+      "reversePick": "See a code word spelling, choose the word",
+      "input": "See a word, type its code words",
+      "reverseInput": "See code words, type the word"
     }
   },
   "results": {
-    "title": "Résultats",
-    "congratulations": "Félicitations !",
-    "correct": "Correct : {{count}}",
-    "incorrect": "Incorrect : {{count}}",
-    "accuracy": "Précision : {{percentage}}%",
-    "timeSpent": "Temps passé : {{time}}",
-    "playAgain": "Rejouer",
-    "backToMenu": "Retour au menu"
+    "title": "Results",
+    "congratulations": "Congratulations!",
+    "correct": "Correct: {{count}}",
+    "incorrect": "Incorrect: {{count}}",
+    "accuracy": "Accuracy: {{percentage}}%",
+    "timeSpent": "Time spent: {{time}}",
+    "playAgain": "Play Again",
+    "backToMenu": "Back to Menu"
   },
   "details": {
-    "word": "Mot",
-    "reading": "Lecture",
-    "meaning": "Signification",
-    "examples": "Phrases exemples",
+    "word": "Word",
+    "reading": "Code words",
+    "meaning": "Meaning",
+    "examples": "Example spellings",
     "type": "Type",
-    "jlptLevel": "Niveau JLPT"
+    "jlptLevel": "Tier"
   }
 }

@@ -1,33 +1,33 @@
 {
   "general": {
-    "unknownError": "发生未知错误",
-    "networkError": "网络错误，请检查您的连接。",
-    "serverError": "服务器错误，请稍后再试。",
-    "notFound": "未找到",
-    "unauthorized": "未授权访问",
-    "forbidden": "禁止访问",
-    "timeout": "请求超时"
+    "unknownError": "An unknown error occurred",
+    "networkError": "Network error. Please check your connection.",
+    "serverError": "Server error. Please try again later.",
+    "notFound": "Not found",
+    "unauthorized": "Unauthorized access",
+    "forbidden": "Access forbidden",
+    "timeout": "Request timeout"
   },
   "validation": {
-    "required": "此字段为必填项",
-    "invalidFormat": "格式无效",
-    "tooShort": "输入太短",
-    "tooLong": "输入太长",
-    "invalidEmail": "无效的邮箱地址",
-    "invalidNumber": "必须是数字",
-    "outOfRange": "值超出范围"
+    "required": "This field is required",
+    "invalidFormat": "Invalid format",
+    "tooShort": "Input is too short",
+    "tooLong": "Input is too long",
+    "invalidEmail": "Invalid email address",
+    "invalidNumber": "Must be a number",
+    "outOfRange": "Value out of range"
   },
   "game": {
-    "noSelection": "请至少选择一项开始",
-    "loadFailed": "加载游戏数据失败",
-    "saveFailed": "保存进度失败",
-    "invalidAnswer": "答案格式无效"
+    "noSelection": "Please select at least one item to start",
+    "loadFailed": "Failed to load game data",
+    "saveFailed": "Failed to save progress",
+    "invalidAnswer": "Invalid answer format"
   },
   "data": {
-    "loadFailed": "加载数据失败",
-    "saveFailed": "保存数据失败",
-    "exportFailed": "导出数据失败",
-    "importFailed": "导入数据失败",
-    "invalidData": "数据格式无效"
+    "loadFailed": "Failed to load data",
+    "saveFailed": "Failed to save data",
+    "exportFailed": "Failed to export data",
+    "importFailed": "Failed to import data",
+    "invalidData": "Invalid data format"
   }
 }

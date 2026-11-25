@@ -1,33 +1,33 @@
 {
-  "title": "Logros",
-  "description": "Sigue tu progreso y gana logros",
-  "unlocked": "Desbloqueado",
-  "locked": "Bloqueado",
-  "progress": "Progreso: {{current}}/{{total}}",
-  "earnedOn": "Obtenido el {{date}}",
+  "title": "Achievements",
+  "description": "Track your progress and earn achievements",
+  "unlocked": "Unlocked",
+  "locked": "Locked",
+  "progress": "Progress: {{current}}/{{total}}",
+  "earnedOn": "Earned on {{date}}",
   "categories": {
-    "all": "Todos",
-    "kana": "Kana",
-    "kanji": "Kanji",
-    "vocabulary": "Vocabulario",
+    "all": "All",
+    "kana": "Letters",
+    "kanji": "Codes",
+    "vocabulary": "Spelling",
     "general": "General",
-    "special": "Especial"
+    "special": "Special"
   },
   "rarity": {
-    "common": "Común",
-    "rare": "Raro",
-    "epic": "Épico",
-    "legendary": "Legendario"
+    "common": "Common",
+    "rare": "Rare",
+    "epic": "Epic",
+    "legendary": "Legendary"
   },
   "notifications": {
-    "achievementUnlocked": "¡Logro Desbloqueado!",
-    "congratulations": "¡Felicitaciones!",
-    "youEarned": "Has obtenido"
+    "achievementUnlocked": "Achievement Unlocked!",
+    "congratulations": "Congratulations!",
+    "youEarned": "You earned"
   },
   "stats": {
-    "totalAchievements": "Total de Logros",
-    "unlockedAchievements": "Desbloqueados",
-    "completionRate": "Tasa de Finalización",
-    "recentAchievements": "Logros Recientes"
+    "totalAchievements": "Total Achievements",
+    "unlockedAchievements": "Unlocked",
+    "completionRate": "Completion Rate",
+    "recentAchievements": "Recent Achievements"
   }
 }

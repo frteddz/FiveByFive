@@ -27,8 +27,6 @@ vi.mock('@/shared/hooks/generic/useScrollVisibility', () => ({
   useScrollVisibility: () => true,
 }));
 
-vi.mock('@/shared/data/experiments', () => ({ experiments: [] }));
-
 vi.mock('@/shared/ui/components/magicui/AuroraText', () => ({
   default: ({ children }: { children: React.ReactNode }) => children,
 }));

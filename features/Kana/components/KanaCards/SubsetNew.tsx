@@ -71,7 +71,7 @@ const SubsetNew = ({ sliceRange, subgroup }: SubsetProps) => {
         {item}
         {index < items.length - 1 && (
           <span aria-hidden='true' className={separatorClassName}>
-            ・
+            /
           </span>
         )}
       </span>
@@ -140,7 +140,7 @@ const SubsetNew = ({ sliceRange, subgroup }: SubsetProps) => {
             <div className='flex w-full flex-col items-start gap-2'>
               <div
                 className='text-[3rem] font-normal tracking-wide text-(--main-color)'
-                lang='ja'
+                lang='en'
               >
                 {renderSeparatedText(group.kana, 'text-(--border-color)')}
               </div>

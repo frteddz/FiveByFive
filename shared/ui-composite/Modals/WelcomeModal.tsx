@@ -89,7 +89,7 @@ function FontOptionButton({
           {fontObj.name}
           {fontObj.name === 'Zen Maru Gothic' && ` ${t('steps.fonts.default')}`}
         </span>
-        <span className='ml-2 text-(--secondary-color)'>かな道場</span>
+        <span className='ml-2 text-(--secondary-color)'>FiveByFive</span>
       </p>
     </button>
   );

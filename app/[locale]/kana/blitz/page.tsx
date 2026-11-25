@@ -28,22 +28,22 @@ export default function BlitzPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Kana', url: 'https://kanadojo.com/kana' },
-          { name: 'Blitz', url: 'https://kanadojo.com/kana/blitz' },
+          { name: 'Home', url: 'https://fivebyfive.vercel.app' },
+          { name: 'Letters', url: 'https://fivebyfive.vercel.app/kana' },
+          { name: 'Blitz', url: 'https://fivebyfive.vercel.app/kana/blitz' },
         ]}
       />
       <LearningResourceSchema
-        name='Hiragana & Katakana Blitz Mode'
-        description='Fast-paced Japanese Kana practice game. Test your speed and accuracy with Hiragana and Katakana recognition in timed challenges.'
-        url='https://kanadojo.com/kana/blitz'
+        name='Letters Blitz Mode'
+        description='Race through letter to code word drills against the clock. Build fast recall for the NATO alphabet.'
+        url='https://fivebyfive.vercel.app/kana/blitz'
         learningResourceType='Game'
         educationalLevel={['Beginner', 'Intermediate']}
-        teaches='Japanese Hiragana and Katakana speed recognition'
-        assesses='Hiragana and Katakana reading speed and accuracy'
+        teaches='NATO letters and their code words'
+        assesses='Letter to code word speed and accuracy'
         timeRequired='PT5M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
       />
       <KanaBlitz />
     </>

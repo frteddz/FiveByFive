@@ -4,13 +4,9 @@ import {
   House,
   Star,
   Sparkles,
-  BookOpen,
-  FlaskConical,
-  Languages,
   ChevronDown,
   ChevronRight,
   Library,
-  Repeat,
   Package,
   PanelLeftClose,
   PanelLeftOpen,
@@ -23,7 +19,6 @@ import { useScrollVisibility } from '@/shared/hooks/generic/useScrollVisibility'
 import { ReactNode, useEffect, useRef, memo, useState } from 'react';
 import { useInputPreferences } from '@/features/Preferences';
 import { removeLocaleFromPath } from '@/shared/utils/pathUtils';
-import type { Experiment } from '@/shared/data/experiments';
 import AuroraText from '@/shared/ui/components/magicui/AuroraText';
 
 const SIDEBAR_SECTION_STORAGE_PREFIX = 'sidebar-collapsible-';
@@ -40,7 +35,7 @@ type NavItem = {
   href: string;
   label: string;
   icon?: LucideIcon | null;
-  /** Japanese character to use as icon (e.g., あ, 語, 字) */
+  /** Character to use as icon */
   charIcon?: string;
   /** Custom icon class overrides */
   iconClassName?: string;
@@ -61,9 +56,9 @@ type NavSection = {
 const mainNavItems: NavItem[] = [
   { href: '/', label: 'Home', icon: House },
   { href: '/progress', label: 'Progress', icon: Star },
-  { href: '/kana', label: 'Kana', charIcon: 'あ' },
-  { href: '/vocabulary', label: ' Vocabulary', charIcon: '語' },
-  { href: '/kanji', label: ' Kanji', charIcon: '字' },
+  { href: '/kana', label: 'Letters', charIcon: 'A' },
+  { href: '/vocabulary', label: 'Spelling', charIcon: 'S' },
+  { href: '/kanji', label: 'Codes', charIcon: 'R' },
   {
     href: '/preferences',
     label: 'Preferences',
@@ -75,31 +70,14 @@ const mainNavItems: NavItem[] = [
 // Static sections that don't need lazy loading
 const staticSecondaryNavSections: NavSection[] = [
   {
-    title: 'Academy',
+    title: 'More',
     items: [
-      { href: '/academy', label: 'Guides', icon: BookOpen },
       { href: '/resources', label: 'Resources', icon: Library },
-    ],
-    collapsible: true,
-  },
-  {
-    title: 'Tools',
-    items: [
-      { href: '/translate', label: 'Translate', icon: Languages },
-      { href: '/conjugate', label: 'Conjugate', icon: Repeat },
       { href: '/anki-converter', label: 'Converter', icon: Package },
     ],
     collapsible: true,
   },
 ];
-
-// Base experiments section (without dynamic experiments)
-const baseExperimentsSection: NavSection = {
-  title: 'Experiments',
-  // items: [{ href: '/experiments', label: 'All Experiments', icon: Sparkles }],
-  items: [],
-  collapsible: true,
-};
 
 /** Toggle between aurora gradient heading (true) and original heading style (false) */
 const USE_AURORA_SIDEBAR_HEADING = false;
@@ -353,18 +331,14 @@ const Sidebar = () => {
 
   const escButtonRef = useRef<HTMLButtonElement | null>(null);
 
-  // Lazy load experiments
-  const [loadedExperiments, setLoadedExperiments] = useState<Experiment[]>([]);
   const [isMobileViewport, setIsMobileViewport] = useState(false);
   const isVisible = useScrollVisibility();
   const [isDesktopSidebarCollapsed, setIsDesktopSidebarCollapsed] =
     useState(false);
   const [hasVisitedPreferences, setHasVisitedPreferences] = useState(false);
 
-  // Collapse state for all collapsible sections
-  const [isAcademyExpanded, setIsAcademyExpanded] = useState(false);
-  const [isToolsExpanded, setIsToolsExpanded] = useState(false);
-  const [isExperimentsExpanded, setIsExperimentsExpanded] = useState(false);
+  // Collapse state for collapsible sections
+  const [isMoreExpanded, setIsMoreExpanded] = useState(false);
   const [hasRestoredSidebarState, setHasRestoredSidebarState] = useState(false);
 
   // Sync from sessionStorage/localStorage on mount (browser only)
@@ -375,108 +349,21 @@ const Sidebar = () => {
     setHasVisitedPreferences(
       localStorage.getItem(SIDEBAR_PREFERENCES_VISITED_STORAGE_KEY) === 'true',
     );
-    for (const [stateKey, setter] of [
-      ['academy', setIsAcademyExpanded],
-      ['tools', setIsToolsExpanded],
-      ['experiments', setIsExperimentsExpanded],
-    ] as const) {
-      const stored = sessionStorage.getItem(
-        `${SIDEBAR_SECTION_STORAGE_PREFIX}${stateKey}`,
-      );
-      if (stored !== null) setter(stored === 'true');
-    }
+    const storedMore = sessionStorage.getItem(
+      `${SIDEBAR_SECTION_STORAGE_PREFIX}more`,
+    );
+    if (storedMore !== null) setIsMoreExpanded(storedMore === 'true');
     setHasRestoredSidebarState(true);
   }, []);
 
   useEffect(() => {
-    const EXPERIMENTS_ORDER_KEY = 'sidebar-experiments-order';
-
-    const shuffleExperiments = (experiments: Experiment[]) => {
-      const shuffled = [...experiments];
-      for (let i = shuffled.length - 1; i > 0; i -= 1) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-      }
-      return shuffled;
-    };
-
-    const persistOrder = (experimentsList: Experiment[]) => {
-      if (typeof window === 'undefined') return;
-      sessionStorage.setItem(
-        EXPERIMENTS_ORDER_KEY,
-        JSON.stringify(experimentsList.map(exp => exp.href)),
-      );
-    };
-
-    // Dynamically import experiments data
-    import('@/shared/data/experiments').then(module => {
-      const experiments = module.experiments;
-
-      if (typeof window === 'undefined') {
-        setLoadedExperiments(experiments);
-        return;
-      }
-
-      const storedOrder = sessionStorage.getItem(EXPERIMENTS_ORDER_KEY);
-
-      if (storedOrder) {
-        try {
-          const hrefOrder: string[] = JSON.parse(storedOrder);
-          const orderMap = new Map(
-            hrefOrder.map((href, index) => [href, index]),
-          );
-
-          const knownExperiments = experiments
-            .filter(exp => orderMap.has(exp.href))
-            .sort(
-              (a, b) =>
-                (orderMap.get(a.href) ?? 0) - (orderMap.get(b.href) ?? 0),
-            );
-          const newExperiments = experiments.filter(
-            exp => !orderMap.has(exp.href),
-          );
-          const combined = [...knownExperiments, ...newExperiments];
-
-          persistOrder(combined);
-          setLoadedExperiments(combined);
-          return;
-        } catch {
-          sessionStorage.removeItem(EXPERIMENTS_ORDER_KEY);
-        }
-      }
-
-      const shuffledExperiments = shuffleExperiments(experiments);
-      persistOrder(shuffledExperiments);
-      setLoadedExperiments(shuffledExperiments);
-    });
-  }, []);
-
-  useEffect(() => {
     if (!hasRestoredSidebarState) return;
 
     sessionStorage.setItem(
-      `${SIDEBAR_SECTION_STORAGE_PREFIX}academy`,
-      String(isAcademyExpanded),
+      `${SIDEBAR_SECTION_STORAGE_PREFIX}more`,
+      String(isMoreExpanded),
     );
-  }, [hasRestoredSidebarState, isAcademyExpanded]);
-
-  useEffect(() => {
-    if (!hasRestoredSidebarState) return;
-
-    sessionStorage.setItem(
-      `${SIDEBAR_SECTION_STORAGE_PREFIX}tools`,
-      String(isToolsExpanded),
-    );
-  }, [hasRestoredSidebarState, isToolsExpanded]);
-
-  useEffect(() => {
-    if (!hasRestoredSidebarState) return;
-
-    sessionStorage.setItem(
-      `${SIDEBAR_SECTION_STORAGE_PREFIX}experiments`,
-      String(isExperimentsExpanded),
-    );
-  }, [hasRestoredSidebarState, isExperimentsExpanded]);
+  }, [hasRestoredSidebarState, isMoreExpanded]);
 
   useEffect(() => {
     if (!hasRestoredSidebarState) return;
@@ -495,12 +382,6 @@ const Sidebar = () => {
   }, [hasVisitedPreferences, pathWithoutLocale]);
 
   useEffect(() => {
-    if (pathWithoutLocale.startsWith('/experiments')) {
-      setIsExperimentsExpanded(prev => (prev ? prev : true));
-    }
-  }, [pathWithoutLocale]);
-
-  useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 1023px)');
     const updateViewport = () => setIsMobileViewport(mediaQuery.matches);
 
@@ -512,23 +393,7 @@ const Sidebar = () => {
     };
   }, []);
 
-  // Build secondary nav sections with lazy-loaded experiments
-  const secondaryNavSections: NavSection[] = [
-    ...staticSecondaryNavSections,
-    {
-      ...baseExperimentsSection,
-      items: [
-        ...baseExperimentsSection.items,
-        ...(isExperimentsExpanded
-          ? loadedExperiments.map(exp => ({
-              href: exp.href,
-              label: exp.name,
-              icon: exp.icon || null,
-            }))
-          : []),
-      ],
-    },
-  ];
+  const secondaryNavSections: NavSection[] = staticSecondaryNavSections;
 
   useEffect(() => {
     if (!hotkeysOn) return;
@@ -616,14 +481,14 @@ const Sidebar = () => {
         <h1 className='max-3xl:flex-col max-3xl:items-start flex items-center gap-1.5 pl-4 text-3xl'>
           {USE_AURORA_SIDEBAR_HEADING ? (
             <>
-              <AuroraText className='font-bold'>KanaDojo</AuroraText>
-              <AuroraText className='font-normal'>かな道場️</AuroraText>
+              <AuroraText className='font-bold'>FiveByFive</AuroraText>
+              <AuroraText className='font-normal'>PHONETIC TRAINER</AuroraText>
             </>
           ) : (
             <>
-              <span className='font-bold'>KanaDojo</span>
+              <span className='font-bold'>FiveByFive</span>
               <span className='font-normal text-(--secondary-color)'>
-                かな道場️
+                PHONETIC TRAINER
               </span>
             </>
           )}
@@ -656,37 +521,17 @@ const Sidebar = () => {
       {/* Secondary Navigation Sections */}
       {!isDesktopSidebarCollapsed &&
         secondaryNavSections.map(section => {
-          // Determine which expand state and toggle function to use based on section title
-          const isExpanded =
-            section.title === 'Academy'
-              ? isAcademyExpanded
-              : section.title === 'Tools'
-                ? isToolsExpanded
-                : isExperimentsExpanded;
-          const onToggle =
-            section.title === 'Academy'
-              ? () => setIsAcademyExpanded(prev => !prev)
-              : section.title === 'Tools'
-                ? () => setIsToolsExpanded(prev => !prev)
-                : () => setIsExperimentsExpanded(prev => !prev);
-
           return (
             <div key={section.title} className='contents'>
               <SectionHeader
                 title={section.title}
-                icon={
-                  section.title === 'Academy'
-                    ? BookOpen
-                    : section.title === 'Tools'
-                      ? Languages
-                      : FlaskConical
-                }
+                icon={Library}
                 collapsible={section.collapsible}
-                isExpanded={isExpanded}
-                onToggle={onToggle}
+                isExpanded={isMoreExpanded}
+                onToggle={() => setIsMoreExpanded(prev => !prev)}
               />
               {/* Only show items if section is expanded or not collapsible */}
-              {(!section.collapsible || isExpanded) &&
+              {(!section.collapsible || isMoreExpanded) &&
                 section.items.length > 0 && (
                   <div className='flex w-full flex-col gap-0 max-lg:hidden'>
                     {section.items.map(item => (

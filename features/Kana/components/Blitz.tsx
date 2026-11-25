@@ -43,17 +43,17 @@ export default function BlitzKana() {
     dojoType: 'kana',
     dojoLabel: 'Kana',
     localStorageKey: 'blitzDuration',
-    goalTimerContext: 'Kana Blitz',
+    goalTimerContext: 'Letters Blitz',
     initialGameMode: selectedGameModeKana === 'Type' ? 'Type' : 'Pick',
     items: selectedKana,
     selectedSets: selectedKanaGroups,
     generateQuestion: items => generateKanaQuestion(items),
-    // Reverse mode: show romaji, answer is kana
-    // Normal mode: show kana, answer is romaji
+    // Reverse mode: show the code word, answer is the letter
+    // Normal mode: show the letter, answer is the code word
     renderQuestion: (question, isReverse) =>
       isReverse ? question.romaji : question.kana,
-    inputPlaceholder: 'Type the romaji...',
-    modeDescription: 'Mode: Type (See kana → Type romaji)',
+    inputPlaceholder: 'Type the code word...',
+    modeDescription: 'Mode: Type (See letter, type code word)',
     checkAnswer: (question, answer, isReverse) =>
       isKanaGameAnswerCorrect(question, answer, isReverse),
     getCorrectAnswer: (question, isReverse) =>
@@ -61,7 +61,7 @@ export default function BlitzKana() {
     // Pick mode support with reverse mode
     generateOptions: (question, items, count, isReverse) => {
       if (isReverse) {
-        // Reverse: options are kana characters
+        // Reverse: options are letters
         const correctAnswer = question.kana;
         const incorrectOptions = getUniqueIncorrectOptions(
           correctAnswer,
@@ -70,7 +70,7 @@ export default function BlitzKana() {
         );
         return [correctAnswer, ...incorrectOptions];
       }
-      // Normal: options are romaji
+      // Normal: options are code words
       const correctAnswer = question.romaji;
       const incorrectOptions = getUniqueIncorrectOptions(
         correctAnswer,

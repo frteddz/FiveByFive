@@ -1,30 +1,30 @@
 {
-  "title": "Vocabulary Training",
-  "description": "Expand your Japanese vocabulary",
+  "title": "Spelling Training",
+  "description": "Spell everyday words using ICAO code words",
   "selection": {
-    "title": "Select Vocabulary",
-    "byLevel": "By JLPT Level",
+    "title": "Select Spelling Sets",
+    "byLevel": "By Tier",
     "byCategory": "By Category",
     "selectAll": "Select All",
     "deselectAll": "Deselect All",
     "levels": {
-      "n5": "JLPT N5",
-      "n4": "JLPT N4",
-      "n3": "JLPT N3",
-      "n2": "JLPT N2",
-      "n1": "JLPT N1"
+      "n5": "Tier 1",
+      "n4": "Tier 2",
+      "n3": "Tier 3",
+      "n2": "Tier 4",
+      "n1": "Tier 5"
     },
     "categories": {
       "all": "All",
-      "nouns": "Nouns",
-      "verbs": "Verbs",
-      "adjectives": "Adjectives",
-      "adverbs": "Adverbs",
-      "expressions": "Expressions"
+      "nouns": "Short words",
+      "verbs": "Long words",
+      "adjectives": "Callsigns",
+      "adverbs": "Numbers",
+      "expressions": "Phrases"
     }
   },
   "game": {
-    "title": "Vocabulary Game",
+    "title": "Spelling Game",
     "start": "Start Game",
     "pause": "Pause",
     "resume": "Resume",
@@ -44,10 +44,10 @@
     "input": "Input Mode",
     "reverseInput": "Reverse Input",
     "description": {
-      "pick": "See word, choose the meaning",
-      "reversePick": "See meaning, choose the word",
-      "input": "See word, type the meaning",
-      "reverseInput": "See meaning, type the word"
+      "pick": "See a word, choose its code word spelling",
+      "reversePick": "See a code word spelling, choose the word",
+      "input": "See a word, type its code words",
+      "reverseInput": "See code words, type the word"
     }
   },
   "results": {
@@ -62,10 +62,10 @@
   },
   "details": {
     "word": "Word",
-    "reading": "Reading",
+    "reading": "Code words",
     "meaning": "Meaning",
-    "examples": "Example Sentences",
+    "examples": "Example spellings",
     "type": "Type",
-    "jlptLevel": "JLPT Level"
+    "jlptLevel": "Tier"
   }
 }

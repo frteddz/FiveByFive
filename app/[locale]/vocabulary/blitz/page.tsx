@@ -28,22 +28,22 @@ export default function BlitzPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://kanadojo.com' },
-          { name: 'Vocabulary', url: 'https://kanadojo.com/vocabulary' },
-          { name: 'Blitz', url: 'https://kanadojo.com/vocabulary/blitz' },
+          { name: 'Home', url: 'https://fivebyfive.vercel.app' },
+          { name: 'Spelling', url: 'https://fivebyfive.vercel.app/vocabulary' },
+          { name: 'Blitz', url: 'https://fivebyfive.vercel.app/vocabulary/blitz' },
         ]}
       />
       <LearningResourceSchema
-        name='Japanese Vocabulary Blitz Mode'
-        description='Fast-paced Japanese vocabulary practice game. Test your speed with vocabulary recognition across all JLPT levels in timed challenges.'
-        url='https://kanadojo.com/vocabulary/blitz'
+        name='Spelling Blitz Mode'
+        description='Race through spelling drills against the clock. Build fast and accurate code word spelling.'
+        url='https://fivebyfive.vercel.app/vocabulary/blitz'
         learningResourceType='Game'
         educationalLevel={['Beginner', 'Intermediate', 'Advanced']}
-        teaches='Japanese vocabulary words and meanings (JLPT N5-N1)'
-        assesses='Vocabulary recognition speed and accuracy'
+        teaches='Spelling words with ICAO code words'
+        assesses='Spelling speed and accuracy'
         timeRequired='PT5M'
         isAccessibleForFree={true}
-        provider={{ name: 'KanaDojo', url: 'https://kanadojo.com' }}
+        provider={{ name: 'FiveByFive', url: 'https://fivebyfive.vercel.app' }}
       />
       <VocabBlitz />
     </>

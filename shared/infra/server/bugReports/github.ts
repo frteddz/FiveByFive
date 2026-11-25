@@ -148,8 +148,8 @@ export async function createGitHubIssue({
   labels: string[];
 }): Promise<{ number: number; htmlUrl: string }> {
   const githubPat = process.env.GITHUB_PAT;
-  const owner = process.env.GITHUB_REPO_OWNER || 'lingdojo';
-  const repo = process.env.GITHUB_REPO_NAME || 'kana-dojo';
+  const owner = process.env.GITHUB_REPO_OWNER || 'frteddz';
+  const repo = process.env.GITHUB_REPO_NAME || 'FiveByFive';
 
   if (!githubPat) {
     throw new Error('GITHUB_PAT is not configured');
@@ -191,8 +191,8 @@ export async function getGitHubIssue(issueNumber: number): Promise<{
   body: string;
 }> {
   const githubPat = process.env.GITHUB_PAT;
-  const owner = process.env.GITHUB_REPO_OWNER || 'lingdojo';
-  const repo = process.env.GITHUB_REPO_NAME || 'kana-dojo';
+  const owner = process.env.GITHUB_REPO_OWNER || 'frteddz';
+  const repo = process.env.GITHUB_REPO_NAME || 'FiveByFive';
 
   if (!githubPat) {
     throw new Error('GITHUB_PAT is not configured');
@@ -226,8 +226,8 @@ export async function updateGitHubIssueBody({
   body: string;
 }): Promise<void> {
   const githubPat = process.env.GITHUB_PAT;
-  const owner = process.env.GITHUB_REPO_OWNER || 'lingdojo';
-  const repo = process.env.GITHUB_REPO_NAME || 'kana-dojo';
+  const owner = process.env.GITHUB_REPO_OWNER || 'frteddz';
+  const repo = process.env.GITHUB_REPO_NAME || 'FiveByFive';
 
   if (!githubPat) {
     throw new Error('GITHUB_PAT is not configured');

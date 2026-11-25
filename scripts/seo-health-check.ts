@@ -1,7 +1,7 @@
 /**
  * SEO Health Check Script
  *
- * Validates SEO implementation across the KanaDojo app:
+ * Validates SEO implementation across the FiveByFive app:
  * - Sitemap URL accessibility (status codes)
  * - Structured data presence on key pages
  * - Meta tag completeness
@@ -14,125 +14,32 @@
  */
 
 const BASE_URL = process.argv.includes('--live')
-  ? 'https://kanadojo.com'
+  ? 'https://fivebyfive.vercel.app'
   : 'http://localhost:3000';
 
 // Key pages that MUST have proper SEO
 const CRITICAL_PAGES = [
   '/',
   '/kana',
-  '/kana/learn-hiragana',
-  '/kana/learn-katakana',
   '/kanji',
-  '/kanji/jlpt-n5',
-  '/kanji/jlpt-n4',
-  '/kanji/jlpt-n3',
-  '/kanji/jlpt-n2',
-  '/kanji/jlpt-n1',
   '/vocabulary',
-  '/vocabulary/jlpt-n5',
-  '/vocabulary/jlpt-n4',
-  '/vocabulary/jlpt-n3',
-  '/vocabulary/jlpt-n2',
-  '/vocabulary/jlpt-n1',
-  '/conjugate',
-  '/translate',
-  '/academy',
   '/resources',
   '/faq',
   '/how-to-use',
   '/anki-converter',
-  '/kana-chart',
-  '/jlpt/n5',
-  '/jlpt/n4',
-  '/jlpt/n3',
+  '/about',
+  '/credits',
   '/progress',
-  '/glossary',
 ];
 
 // Pages that should have specific structured data
 const SCHEMA_EXPECTATIONS: Record<string, string[]> = {
   '/kana': ['CourseSchema', 'BreadcrumbList', 'LearningResource', 'FAQPage'],
-  '/kana/learn-hiragana': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
-  '/kana/learn-katakana': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
   '/kanji': ['CourseSchema', 'BreadcrumbList', 'LearningResource', 'FAQPage'],
-  '/kanji/jlpt-n5': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
-  '/kanji/jlpt-n4': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
-  '/kanji/jlpt-n3': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
-  '/kanji/jlpt-n2': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
-  '/kanji/jlpt-n1': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
   '/vocabulary': ['CourseSchema', 'BreadcrumbList', 'LearningResource'],
-  '/vocabulary/jlpt-n5': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
-  '/vocabulary/jlpt-n4': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
-  '/vocabulary/jlpt-n3': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
-  '/vocabulary/jlpt-n2': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
-  '/vocabulary/jlpt-n1': [
-    'CourseSchema',
-    'BreadcrumbList',
-    'LearningResource',
-    'FAQPage',
-  ],
-  '/academy': ['BreadcrumbList', 'ItemList', 'CollectionPage'],
   '/resources': ['BreadcrumbList', 'ItemList', 'LearningResource'],
-  '/conjugate': ['BreadcrumbList', 'WebApplication'],
   '/faq': ['FAQPage', 'BreadcrumbList'],
   '/how-to-use': ['HowTo', 'BreadcrumbList'],
-  '/kana-chart': ['BreadcrumbList'],
   '/anki-converter': ['FAQPage', 'HowTo'],
 };
 

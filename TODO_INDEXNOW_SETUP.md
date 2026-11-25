@@ -1,184 +1,80 @@
-# 🚨 REQUIRED: IndexNow Setup Instructions
+# IndexNow setup
 
-**⚠️ CRITICAL: Complete these steps to activate instant Bing indexing**
+IndexNow lets a site tell Bing, Yandex and other search engines when a page is published or updated. The code is already in the repo. The key and a few hardcoded values are what is left.
 
-## Step 1: Generate UUID Key
+Relevant files:
 
-Run this command in your terminal:
+- `app/api/indexnow/route.ts`
+- `shared/utils/indexnow.ts`
+- `public/browserconfig.xml`
+- `next-sitemap.config.js`
+
+## 1. Make a key
+
+Generate a UUID:
 
 ```bash
 node -e "console.log(crypto.randomUUID())"
 ```
 
-**Copy the output** (it will look like: `a1b2c3d4-e5f6-7890-abcd-ef1234567890`)
+Keep the output somewhere. It is both the key name, the key value and the environment variable value.
 
----
+## 2. Publish the key file
 
-## Step 2: Create Public Key File
-
-Create a new file in the `public/` directory with the UUID as the filename:
-
-**Example:** If your UUID is `a1b2c3d4-e5f6-7890-abcd-ef1234567890`
+Create `public/<your-uuid>.txt` containing only that same UUID. No extra text, no trailing newline if you can help it.
 
 ```bash
-# Create the file:
-echo "a1b2c3d4-e5f6-7890-abcd-ef1234567890" > public/a1b2c3d4-e5f6-7890-abcd-ef1234567890.txt
+echo -n "your-uuid-here" > public/your-uuid-here.txt
 ```
 
-**Important:**
-- Filename is: `[YOUR-UUID].txt`
-- Content is: `[YOUR-UUID]` (same UUID, just the text)
-- No extra whitespace or line breaks
-- Must be in the `public/` folder
+Commit the file. Vercel serves everything in `public/` at the site root.
 
----
+## 3. Set the environment variable
 
-## Step 3: Add Environment Variable
+Locally, add to `.env.local`:
 
-Add to your `.env.local` file:
+```
+INDEXNOW_KEY=your-uuid-here
+```
+
+On Vercel, add `INDEXNOW_KEY` under Settings, Environment Variables, for Production and Preview if you want both. Redeploy after adding it.
+
+## 4. Fix the hardcoded host on a fork
+
+This step matters if you are deploying [frteddz/FiveByFive](https://github.com/frteddz/FiveByFive) or your own fork rather than the upstream site.
+
+Both `app/api/indexnow/route.ts` and `shared/utils/indexnow.ts` define `SITE_URL` as `https://kanadojo.com`. The route also rejects any submitted URL whose hostname is not `kanadojo.com`. Change those to your domain, or make them read from `SITE_URL`, before testing. Without this, every submission from your domain is filtered out even when the key is correct.
+
+## 5. Verify
+
+After deploy, the key file should return the UUID as plain text:
+
+```
+https://your-domain.com/your-uuid-here.txt
+```
+
+Check that the endpoint reports the key as configured:
+
+```
+GET https://your-domain.com/api/indexnow
+```
+
+Submit a URL:
 
 ```bash
-INDEXNOW_KEY=a1b2c3d4-e5f6-7890-abcd-ef1234567890
+curl -X POST https://your-domain.com/api/indexnow \
+  -H "Content-Type: application/json" \
+  -d '{"url": "https://your-domain.com/"}'
 ```
 
-**Replace** `a1b2c3d4-e5f6-7890-abcd-ef1234567890` with your actual UUID.
+A rejection usually means one of three things: `INDEXNOW_KEY` is missing in that environment, the key file is not reachable at the root, or step 4 was skipped and the host check failed.
 
----
+## 6. Bing Webmaster Tools
 
-## Step 4: Add to Production Environment
+Register your site at [bing.com/webmasters](https://www.bing.com/webmasters), verify ownership, then enter the UUID under the IndexNow section. This is separate from the app code. Search engines need to know the key belongs to your domain.
 
-Add the same environment variable to your production hosting (Vercel):
+## 7. Use it
 
-1. Go to Vercel Dashboard → kanadojo project
-2. Settings → Environment Variables
-3. Add new variable:
-   - **Name:** `INDEXNOW_KEY`
-   - **Value:** `[your-uuid-here]`
-   - **Environment:** Production (and Preview if you want)
-4. Save
+For app code, call the helpers in `shared/utils/indexnow.ts` after publishing or updating a page. For manual submissions, post to `/api/indexnow` with a single `url` or an array of `urls`. The route forwards them to `https://api.indexnow.org/indexnow`.
 
----
-
-## Step 5: Commit and Deploy
-
-```bash
-# Add the key file to git
-git add public/[your-uuid].txt
-
-# Commit
-git commit -m "chore(seo): add IndexNow key file"
-
-# Push to deploy
-git push
-```
-
----
-
-## Step 6: Verify After Deployment
-
-1. **Check key file is accessible:**
-   ```
-   https://kanadojo.com/[your-uuid].txt
-   ```
-   Should return your UUID as plain text
-
-2. **Test IndexNow endpoint:**
-   ```
-   https://kanadojo.com/api/indexnow
-   ```
-   Should return `{"service":"IndexNow API","configured":true,...}`
-
-3. **Test a submission:**
-   ```bash
-   curl -X POST https://kanadojo.com/api/indexnow \
-     -H "Content-Type: application/json" \
-     -d '{"url": "https://kanadojo.com"}'
-   ```
-
----
-
-## Step 7: Submit to Bing Webmaster Tools
-
-1. Go to https://www.bing.com/webmasters
-2. Add site if not already added: `kanadojo.com`
-3. Verify ownership (you already have MS verification token)
-4. Navigate to **Sitemaps & IndexNow** section
-5. Submit your IndexNow API key (the UUID)
-6. Verify that IndexNow is enabled
-
----
-
-## Step 8: Integrate into Your Workflow
-
-Add IndexNow notifications when you publish/update content:
-
-```typescript
-import { notifyPageUpdateAllLocales } from '@/shared/utils/indexnow';
-
-// Example: When publishing a blog post
-await notifyPageUpdateAllLocales('/academy/new-post-slug');
-
-// Example: When updating a page
-await notifyPageUpdate('/kana');
-```
-
----
-
-## ✅ Verification Checklist
-
-- [ ] UUID generated
-- [ ] Key file created in `public/[uuid].txt`
-- [ ] Environment variable added to `.env.local`
-- [ ] Environment variable added to Vercel/production
-- [ ] Changes committed and pushed
-- [ ] Key file accessible at `https://kanadojo.com/[uuid].txt`
-- [ ] IndexNow API endpoint returns `configured: true`
-- [ ] Submitted to Bing Webmaster Tools
-- [ ] Tested a URL submission
-- [ ] Added to content publishing workflow (optional but recommended)
-
----
-
-## 📍 Quick Reference
-
-**Your UUID:** `_______________________________________`
-(Write it here for reference)
-
-**Key file location:** `public/[your-uuid].txt`
-
-**Environment variable:** `INDEXNOW_KEY=[your-uuid]`
-
-**Verification URL:** `https://kanadojo.com/[your-uuid].txt`
-
----
-
-## ❓ Troubleshooting
-
-**Key file not accessible?**
-- Make sure it's in the `public/` folder
-- Check the filename exactly matches your UUID
-- Verify it's deployed to production
-- No extra `.txt.txt` extension
-
-**API says not configured?**
-- Check environment variable is set in production (not just locally)
-- Redeploy after adding the environment variable
-- Check for typos in the variable name
-
-**Submissions failing?**
-- Verify the UUID in your code matches the file
-- Ensure URLs use `https://kanadojo.com` domain
-- Check Bing Webmaster Tools for error messages
-
----
-
-**⏰ Estimated Time:** 10-15 minutes
-
-**🎯 Priority:** HIGH - Do this ASAP for instant Bing indexing
-
-**📖 Full Documentation:** See `/docs/INDEXNOW_SETUP.md` for more details
-
----
-
-**DELETE THIS FILE** after completing all steps.
-
+There is no need to submit on every change. Submit when a page is new or its content actually changed.

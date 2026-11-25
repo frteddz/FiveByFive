@@ -1,66 +1,66 @@
 {
-  "title": "Entraînement Kanji",
-  "description": "Maîtrisez les caractères Kanji japonais",
+  "title": "Codes Training",
+  "description": "Learn radio phrases across five tiers",
   "selection": {
-    "title": "Sélectionnez les Kanji",
-    "byLevel": "Par niveau JLPT",
-    "byCategory": "Par catégorie",
-    "selectAll": "Tout sélectionner",
-    "deselectAll": "Tout désélectionner",
+    "title": "Select Codes",
+    "byLevel": "By Tier",
+    "byCategory": "By Category",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
     "levels": {
-      "n5": "JLPT N5",
-      "n4": "JLPT N4",
-      "n3": "JLPT N3",
-      "n2": "JLPT N2",
-      "n1": "JLPT N1"
+      "n5": "Tier 1",
+      "n4": "Tier 2",
+      "n3": "Tier 3",
+      "n2": "Tier 4",
+      "n1": "Tier 5"
     }
   },
   "game": {
-    "title": "Jeu Kanji",
-    "start": "Commencer",
+    "title": "Codes Game",
+    "start": "Start Game",
     "pause": "Pause",
-    "resume": "Reprendre",
-    "finish": "Terminer",
-    "nextQuestion": "Question suivante",
-    "submit": "Valider la réponse",
-    "score": "Score : {{points}}",
-    "timeLeft": "Temps restant : {{seconds}}s",
-    "streak": "Série : {{count}}",
-    "correct": "Correct !",
+    "resume": "Resume",
+    "finish": "Finish",
+    "nextQuestion": "Next Question",
+    "submit": "Submit Answer",
+    "score": "Score: {{points}}",
+    "timeLeft": "Time left: {{seconds}}s",
+    "streak": "Streak: {{count}}",
+    "correct": "Correct!",
     "incorrect": "Incorrect",
-    "showAnswer": "Voir la réponse",
-    "hint": "Indice"
+    "showAnswer": "Show Answer",
+    "hint": "Hint"
   },
   "modes": {
-    "pick": "Mode choix",
-    "reversePick": "Choix inversé",
-    "input": "Mode saisie",
-    "reverseInput": "Saisie inversée",
+    "pick": "Pick Mode",
+    "reversePick": "Reverse Pick",
+    "input": "Input Mode",
+    "reverseInput": "Reverse Input",
     "description": {
-      "pick": "Voir le kanji, choisir le sens",
-      "reversePick": "Voir le sens, choisir le kanji",
-      "input": "Voir le kanji, taper le sens",
-      "reverseInput": "Voir le sens, taper le kanji"
+      "pick": "See a radio phrase, choose its meaning",
+      "reversePick": "See a meaning, choose the radio phrase",
+      "input": "See a radio phrase, type its meaning",
+      "reverseInput": "See a meaning, type the radio phrase"
     }
   },
   "results": {
-    "title": "Résultats",
-    "congratulations": "Félicitations !",
-    "correct": "Correct : {{count}}",
-    "incorrect": "Incorrect : {{count}}",
-    "accuracy": "Précision : {{percentage}}%",
-    "timeSpent": "Temps passé : {{time}}",
-    "playAgain": "Rejouer",
-    "backToMenu": "Retour au menu"
+    "title": "Results",
+    "congratulations": "Congratulations!",
+    "correct": "Correct: {{count}}",
+    "incorrect": "Incorrect: {{count}}",
+    "accuracy": "Accuracy: {{percentage}}%",
+    "timeSpent": "Time spent: {{time}}",
+    "playAgain": "Play Again",
+    "backToMenu": "Back to Menu"
   },
   "details": {
-    "meaning": "Signification",
-    "readings": "Lectures",
-    "onyomi": "On'yomi",
-    "kunyomi": "Kun'yomi",
-    "examples": "Exemples",
-    "strokes": "Traits",
-    "radical": "Radical",
-    "jlptLevel": "Niveau JLPT"
+    "meaning": "Meaning",
+    "readings": "Code and short meaning",
+    "onyomi": "Code",
+    "kunyomi": "Short meaning",
+    "examples": "Examples",
+    "strokes": "Length",
+    "radical": "Category",
+    "jlptLevel": "Tier"
   }
 }

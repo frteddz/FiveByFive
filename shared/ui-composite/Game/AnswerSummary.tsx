@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import { toKana, toRomaji } from 'wanakana';
 import type { IKanjiObj } from '@/features/Kanji';
 import type { IVocabObj } from '@/features/Vocabulary';
 import { CircleArrowRight, Volume2 } from 'lucide-react';
@@ -171,13 +170,6 @@ const KanjiDisplay = ({ payload }: { payload: IKanjiObj }) => (
     className='relative flex aspect-square w-full max-w-[100px] sm:max-w-[125px] items-center justify-center'
     style={{ perspective: 1000 }}
   >
-    <a
-      href={`http://kanjiheatmap.com/?open=${payload.kanjiChar}`}
-      target='_blank'
-      rel='noopener'
-      className='absolute inset-0 z-20 cursor-pointer'
-      aria-label={`View ${payload.kanjiChar} on Kanji Heatmap`}
-    />
     {/* 4-segment square background with subtle animation */}
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
@@ -195,7 +187,7 @@ const KanjiDisplay = ({ payload }: { payload: IKanjiObj }) => (
       text={payload.kanjiChar}
       reading={payload.onyomi[0] || payload.kunyomi[0]}
       className='relative z-10 pb-2 text-7xl sm:text-8xl'
-      lang='ja'
+      lang='en'
     />
   </motion.div>
 );
@@ -352,10 +344,9 @@ const VocabSummary = ({
   onPlayPronunciation: (reading: string) => void;
   isEmbedded?: boolean;
 }) => {
-  const { displayKana: showKana } = useThemePreferences();
   const rawReading = payload.reading || '';
   const baseReading = rawReading.split(' ')[1] || rawReading;
-  const displayReading = showKana ? toKana(baseReading) : toRomaji(baseReading);
+  const displayReading = baseReading.trim().toLowerCase();
 
   return (
     <motion.div
@@ -374,19 +365,12 @@ const VocabSummary = ({
         style={{ perspective: 1000 }}
         className='flex w-full justify-center'
       >
-        <a
-          href={`https://jisho.org/search/${encodeURIComponent(payload.word)}`}
-          target='_blank'
-          rel='noopener'
-          className='cursor-pointer transition-opacity hover:opacity-80'
-        >
-          <FuriganaText
-            text={payload.word}
-            reading={payload.reading}
-            className='text-6xl sm:text-8xl'
-            lang='ja'
-          />
-        </a>
+        <FuriganaText
+          text={payload.word}
+          reading={payload.reading}
+          className='text-6xl sm:text-8xl'
+          lang='en'
+        />
       </motion.div>
 
       <motion.div

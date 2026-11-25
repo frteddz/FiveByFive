@@ -1,263 +1,287 @@
 {
   "home": {
-    "title": "KanaDojo - Japanisch Hiragana, Katakana, Kanji und Vokabeln Online Lernen",
-    "titleShort": "KanaDojo - Japanisch Lernen",
-    "description": "Meistern Sie Japanisch mit KanaDojo - einer ästhetischen, minimalistischen Plattform zum Lernen von Hiragana, Katakana, Kanji und Vokabeln. Üben Sie mit interaktiven Spielen, verfolgen Sie Ihren Fortschritt und personalisieren Sie Ihre Lernerfahrung mit über 100 Themen.",
-    "descriptionShort": "Meistern Sie japanische Hiragana, Katakana, Kanji und Vokabeln mit interaktiven Spielen, Fortschrittsverfolgung und schönen Anpassungsoptionen.",
-    "keywords": "japanisch lernen, hiragana lernen, katakana lernen, kana lernen, kanji lernen, japanische vokabeln, hiragana übung, katakana übung, kanji übung, japanisch lern app, japanisch online kurs, japanisches schriftsystem, JLPT vorbereitung, japanisch sprachelernen, kana dojo, japanisch lernwerkzeug, kostenlose japanisch kurse"
+    "title": "FiveByFive - Learn the NATO Phonetic Alphabet",
+    "titleShort": "FiveByFive - Learn ICAO Code Words",
+    "description": "Learn Alpha, Bravo, Charlie and every NATO code word with typing drills. Practice letters, radio phrases and callsign spelling, with progress saved in your browser.",
+    "descriptionShort": "Practice NATO code words, radio phrases and callsign spelling with fast typing drills and instant feedback.",
+    "keywords": "NATO phonetic alphabet, ICAO code words, learn Alpha Bravo Charlie, radio phrase training, callsign spelling, phonetic alphabet practice, radiotelephony codes, typing drills, code word quiz, free phonetic alphabet trainer"
   },
   "kana": {
-    "title": "Kana Dojo - Japanische Hiragana und Katakana Nach Level Lernen",
-    "titleShort": "Kana Dojo - Hiragana & Katakana",
-    "description": "Meistern Sie Hiragana und Katakana mit interaktiven Spielen und Übungen. Üben Sie japanische Kana-Zeichen nach Schwierigkeitsgrad mit sofortigem Feedback und Fortschrittsverfolgung.",
-    "keywords": "hiragana, katakana, japanische kana, hiragana lernen, katakana lernen, kana übung, japanisches alphabet"
+    "title": "Letters - Match A to Z with ICAO Code Words | FiveByFive",
+    "titleShort": "Letters - NATO Code Words",
+    "description": "Learn the code word for every letter from A to Z. Pick, reverse pick, input and reverse input drills give instant feedback and track your accuracy.",
+    "keywords": "NATO letters, ICAO code words, A to Z code words, letter drills, Alpha Bravo Charlie, phonetic alphabet practice, letter quiz, code word recognition"
   },
   "learnHiragana": {
-    "title": "Hiragana Lernen - Komplette Tabelle, Übungen & Training | KanaDojo",
-    "titleShort": "Hiragana Lernen",
-    "description": "Lernen Sie Hiragana schnell mit interaktiven Übungen, auswählbaren Kana-Karten und geführter Praxis. Meistern Sie die komplette Hiragana-Tabelle, Dakuon und Yoon mit sofortigem Feedback.",
-    "keywords": "hiragana lernen, hiragana tabelle, hiragana übung, hiragana quiz, hiragana karteikarten, hiragana aussprache, hiragana lesen, hiragana zeichen, hiragana dakuon, hiragana yoon, hiragana für anfänger"
+    "title": "Learn Letters A to Z with Code Words | FiveByFive",
+    "titleShort": "Learn Letters A to Z",
+    "description": "Learn the full A to Z letter set with selectable cards, typing drills and instant feedback. Practice the whole alphabet or focus on A to M and N to Z.",
+    "keywords": "learn NATO letters, A to Z code words, Alpha Bravo Charlie, letter drills, phonetic alphabet A to Z, code word practice, letter recognition"
   },
   "learnKatakana": {
-    "title": "Katakana Lernen - Komplette Tabelle, Übungen & Training | KanaDojo",
-    "titleShort": "Katakana Lernen",
-    "description": "Lernen Sie Katakana schnell mit interaktiven Übungen, auswählbaren Kana-Karten und geführter Praxis. Meistern Sie die komplette Katakana-Tabelle, Dakuon, Yoon und Fremdlaute mit sofortigem Feedback.",
-    "keywords": "katakana lernen, katakana tabelle, katakana übung, katakana quiz, katakana karteikarten, katakana aussprache, katakana lesen, katakana zeichen, katakana dakuon, katakana yoon, katakana fremdlaute"
+    "title": "Learn Radio Codes and Phrases | FiveByFive",
+    "titleShort": "Learn Radio Codes",
+    "description": "Learn digits, radio phrases and common radiotelephony codes with short drills. Practice at your own pace and review the items you miss most.",
+    "keywords": "radio codes, radiotelephony phrases, ICAO digits, radio phrase drills, mayday roger wilco, code word practice"
   },
   "kanaBlitz": {
-    "title": "Kana Blitz - Testen Sie Ihre Hiragana und Katakana Geschwindigkeit",
-    "titleShort": "Kana Blitz",
-    "description": "Testen Sie Ihre Geschwindigkeit bei der Erkennung japanischer Kana mit Kana Blitz. Fordern Sie sich mit zeitgesteuerten Übungen heraus und verfolgen Sie Ihren Fortschritt.",
-    "keywords": "kana geschwindigkeitstest, hiragana geschwindigkeit, katakana geschwindigkeit, japanische kana übung, kana karteikarten, schnelles kana lesen, zeitgesteuertes kana quiz, schnelles hiragana abrufen, schnelle katakana erkennung, kana drill"
+    "title": "Letters Blitz - Test Your Code Word Speed",
+    "titleShort": "Letters Blitz - Test Your Speed",
+    "description": "Race through letter to code word drills with a timer. Letters Blitz builds fast recall for the NATO phonetic alphabet.",
+    "keywords": "code word speed test, NATO letters speed, timed letter drills, phonetic alphabet quiz, rapid code word recall"
   },
   "kanaGauntlet": {
-    "title": "Kana Gauntlet - Meistern Sie Jedes Zeichen",
-    "titleShort": "Kana Gauntlet",
-    "description": "Meistern Sie jedes Hiragana- und Katakana-Zeichen mit dem Kana Gauntlet. Umfassende Übung für alle japanischen Kana.",
-    "keywords": "kana meisterschaft, hiragana meisterschaft, katakana meisterschaft, umfassende kana übung"
+    "title": "Letters Gauntlet - Master Every Code Word",
+    "titleShort": "Letters Gauntlet - Master Every Letter",
+    "description": "Work through the full A to Z letter set in one session. Letters Gauntlet checks recall for every NATO code word.",
+    "keywords": "NATO letter mastery, all code words, full alphabet drill, phonetic alphabet mastery"
   },
   "kanji": {
-    "title": "Kanji Dojo - Japanische Kanji-Zeichen Nach JLPT Level Lernen",
-    "titleShort": "Kanji Dojo",
-    "description": "Lernen Sie japanische Kanji-Zeichen organisiert nach JLPT-Levels. Üben Sie mit interaktiven Übungen, verfolgen Sie Ihren Fortschritt und meistern Sie Tausende von Kanji.",
-    "keywords": "kanji, kanji lernen, japanische kanji, JLPT kanji, kanji übung, kanji nach level"
+    "title": "Codes - Learn Radio Phrases by Tier | FiveByFive",
+    "titleShort": "Codes - Radio Phrases",
+    "description": "Practice radio phrases across five tiers with quick set selection, typing drills and progress tracking. Learn what each phrase means in voice communication.",
+    "keywords": "radio phrases, radiotelephony codes, ICAO phrase practice, radio code tiers, mayday, roger, wilco, phrase meaning drills"
   },
   "kanjiJlptN5": {
-    "title": "JLPT N5 Kanji - Liste und Übung | KanaDojo",
-    "titleShort": "JLPT N5 Kanji",
-    "description": "Üben Sie JLPT N5 Kanji mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
-    "keywords": "jlpt n5 kanji, n5 kanji, n5 kanji liste, n5 kanji übung, kanji lernen n5"
+    "title": "Tier 1 Radio Codes - Practice and Meaning | FiveByFive",
+    "titleShort": "Tier 1 Radio Codes",
+    "description": "Practice the first tier of radio codes with short drills and instant feedback. Build confident recall of common phrases such as roger, over and out.",
+    "keywords": "tier 1 radio codes, beginner radio phrases, roger over out, radiotelephony practice, code meaning drills"
   },
   "kanjiJlptN4": {
-    "title": "JLPT N4 Kanji - Liste und Übung | KanaDojo",
-    "titleShort": "JLPT N4 Kanji",
-    "description": "Üben Sie JLPT N4 Kanji mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
-    "keywords": "jlpt n4 kanji, n4 kanji, n4 kanji liste, n4 kanji übung, kanji lernen n4"
+    "title": "Tier 2 Radio Codes - Practice and Meaning | FiveByFive",
+    "titleShort": "Tier 2 Radio Codes",
+    "description": "Train the second tier of radio codes with focused sets and quizzes. Improve recall speed and phrase meaning accuracy.",
+    "keywords": "tier 2 radio codes, radio phrase practice, radiotelephony drills, code recall speed"
   },
   "kanjiJlptN3": {
-    "title": "JLPT N3 Kanji - Liste und Übung | KanaDojo",
-    "titleShort": "JLPT N3 Kanji",
-    "description": "Üben Sie JLPT N3 Kanji mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
-    "keywords": "jlpt n3 kanji, n3 kanji, n3 kanji liste, n3 kanji übung, kanji lernen n3"
+    "title": "Tier 3 Radio Codes - Practice and Meaning | FiveByFive",
+    "titleShort": "Tier 3 Radio Codes",
+    "description": "Practice the third tier of radio codes with selected sets and interactive drills. Strengthen phrase recognition and meaning recall.",
+    "keywords": "tier 3 radio codes, radio phrase quiz, radiotelephony training, phrase recall"
   },
   "kanjiJlptN2": {
-    "title": "JLPT N2 Kanji - Liste und Übung | KanaDojo",
-    "titleShort": "JLPT N2 Kanji",
-    "description": "Üben Sie JLPT N2 Kanji mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
-    "keywords": "jlpt n2 kanji, n2 kanji, n2 kanji liste, n2 kanji übung, kanji lernen n2"
+    "title": "Tier 4 Radio Codes - Practice and Meaning | FiveByFive",
+    "titleShort": "Tier 4 Radio Codes",
+    "description": "Study the fourth tier of radio codes with advanced drills and set review. Improve accuracy on longer and less common phrases.",
+    "keywords": "tier 4 radio codes, advanced radio phrases, radiotelephony drills, phrase practice"
   },
   "kanjiJlptN1": {
-    "title": "JLPT N1 Kanji - Liste und Übung | KanaDojo",
-    "titleShort": "JLPT N1 Kanji",
-    "description": "Üben Sie JLPT N1 Kanji mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
-    "keywords": "jlpt n1 kanji, n1 kanji, n1 kanji liste, n1 kanji übung, kanji lernen n1"
+    "title": "Tier 5 Radio Codes - Practice and Meaning | FiveByFive",
+    "titleShort": "Tier 5 Radio Codes",
+    "description": "Master the fifth tier of radio codes with focused drills and full set review. Train the most detailed phrases in the trainer.",
+    "keywords": "tier 5 radio codes, advanced radiotelephony, full phrase mastery, radio code review"
   },
   "kanjiBlitz": {
-    "title": "Kanji Blitz - Testen Sie Ihre Kanji-Erkennungsgeschwindigkeit",
-    "titleShort": "Kanji Blitz",
-    "description": "Testen Sie Ihre Geschwindigkeit bei der Erkennung japanischer Kanji mit Kanji Blitz. Schnelle Übungen zur Verbesserung Ihrer Kanji-Fähigkeiten.",
-    "keywords": "kanji geschwindigkeitstest, kanji erkennung, schnelle kanji übung, kanji karteikarten, kanji drill, schnelles kanji lesen, zeitgesteuertes kanji quiz, schnelles kanji abrufen, kanji schnelllesen, JLPT kanji übung"
+    "title": "Codes Blitz - Test Your Radio Phrase Speed",
+    "titleShort": "Codes Blitz - Test Your Speed",
+    "description": "Race through radio phrase drills against the clock. Codes Blitz helps you recognize and type phrases faster.",
+    "keywords": "radio phrase speed test, timed code drills, radiotelephony speed, rapid phrase recall"
   },
   "kanjiGauntlet": {
-    "title": "Kanji Gauntlet - Meistern Sie Jedes Zeichen",
-    "titleShort": "Kanji Gauntlet",
-    "description": "Meistern Sie jedes Kanji-Zeichen mit dem Kanji Gauntlet. Umfassende Übung für alle JLPT-Levels.",
-    "keywords": "kanji meisterschaft, umfassende kanji übung, alle JLPT kanji"
+    "title": "Codes Gauntlet - Master Every Radio Phrase",
+    "titleShort": "Codes Gauntlet - Master Every Phrase",
+    "description": "Work through every radio phrase in the trainer. Codes Gauntlet checks recall across all five tiers.",
+    "keywords": "radio phrase mastery, all radiotelephony codes, full code set drill"
   },
   "vocabulary": {
-    "title": "Vocabulary Dojo - Japanische Wörter und Vokabeln Nach JLPT Level Lernen",
-    "titleShort": "Vocabulary Dojo",
-    "description": "Erweitern Sie Ihren japanischen Wortschatz mit Wörtern organisiert nach JLPT-Levels. Interaktive Übungen, Beispielsätze und Fortschrittsverfolgung.",
-    "keywords": "japanische vokabeln, japanische wörter lernen, JLPT vokabeln, vokabel übung, japanische wortliste, vokabel karteikarten, japanische phrasen, JLPT wort studium, vokabeln nach level, japanische vokabel app"
+    "title": "Spelling - Spell Words with Code Words | FiveByFive",
+    "titleShort": "Spelling - Code Word Drills",
+    "description": "Spell full words using ICAO code words. Practice sets by tier, check your spelling with instant feedback and track the words you miss.",
+    "keywords": "callsign spelling, spell with code words, NATO spelling drills, word spelling practice, phonetic alphabet spelling"
   },
   "vocabularyJlptN5": {
-    "title": "JLPT N5 Vokabeln - Liste und Übung | KanaDojo",
-    "titleShort": "JLPT N5 Vokabeln",
-    "description": "Üben Sie JLPT N5 Vokabeln mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
-    "keywords": "jlpt n5 vokabeln, n5 wortliste, n5 vokabeln üben, japanisch n5 wörter"
+    "title": "Tier 1 Spelling - Short Words | FiveByFive",
+    "titleShort": "Tier 1 Spelling",
+    "description": "Spell short words with NATO code words in the first tier. Quick drills build accurate letter by letter recall.",
+    "keywords": "tier 1 spelling, short word spelling, code word drills, beginner callsign practice"
   },
   "vocabularyJlptN4": {
-    "title": "JLPT N4 Vokabeln - Liste und Übung | KanaDojo",
-    "titleShort": "JLPT N4 Vokabeln",
-    "description": "Üben Sie JLPT N4 Vokabeln mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
-    "keywords": "jlpt n4 vokabeln, n4 wortliste, n4 vokabeln üben, japanisch n4 wörter"
+    "title": "Tier 2 Spelling - Common Words | FiveByFive",
+    "titleShort": "Tier 2 Spelling",
+    "description": "Spell common words with code words in the second tier. Improve spelling speed and recognition with short sessions.",
+    "keywords": "tier 2 spelling, common word spelling, ICAO spelling practice, code word recall"
   },
   "vocabularyJlptN3": {
-    "title": "JLPT N3 Vokabeln - Liste und Übung | KanaDojo",
-    "titleShort": "JLPT N3 Vokabeln",
-    "description": "Üben Sie JLPT N3 Vokabeln mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
-    "keywords": "jlpt n3 vokabeln, n3 wortliste, n3 vokabeln üben, japanisch n3 wörter"
+    "title": "Tier 3 Spelling - Longer Words | FiveByFive",
+    "titleShort": "Tier 3 Spelling",
+    "description": "Spell longer words with code words in the third tier. Focused sets help you keep letters in the right order.",
+    "keywords": "tier 3 spelling, longer word spelling, callsign drills, code word order"
   },
   "vocabularyJlptN2": {
-    "title": "JLPT N2 Vokabeln - Liste und Übung | KanaDojo",
-    "titleShort": "JLPT N2 Vokabeln",
-    "description": "Üben Sie JLPT N2 Vokabeln mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
-    "keywords": "jlpt n2 vokabeln, n2 wortliste, n2 vokabeln üben, japanisch n2 wörter"
+    "title": "Tier 4 Spelling - Callsigns | FiveByFive",
+    "titleShort": "Tier 4 Spelling",
+    "description": "Spell callsign style words with code words in the fourth tier. Build speed on multi letter sequences.",
+    "keywords": "tier 4 spelling, callsign spelling, code word sequence, spelling drills"
   },
   "vocabularyJlptN1": {
-    "title": "JLPT N1 Vokabeln - Liste und Übung | KanaDojo",
-    "titleShort": "JLPT N1 Vokabeln",
-    "description": "Üben Sie JLPT N1 Vokabeln mit interaktiven Übungen, schneller Auswahl und Fortschrittsverfolgung.",
-    "keywords": "jlpt n1 vokabeln, n1 wortliste, n1 vokabeln üben, japanisch n1 wörter"
+    "title": "Tier 5 Spelling - Full Word Mastery | FiveByFive",
+    "titleShort": "Tier 5 Spelling",
+    "description": "Master the most demanding spelling sets in the fifth tier. Practice complete words with code words and review weak items.",
+    "keywords": "tier 5 spelling, advanced callsign spelling, full word mastery, NATO spelling"
   },
   "vocabularyBlitz": {
-    "title": "Vocabulary Blitz - Testen Sie Ihre Japanische Vokabelgeschwindigkeit",
-    "titleShort": "Vocabulary Blitz",
-    "description": "Testen Sie Ihre japanische Vokabelgeschwindigkeit mit Vocabulary Blitz. Schnelle Worterkennungsübungen.",
-    "keywords": "vokabel geschwindigkeitstest, japanische wörter, schnelle vokabel übung, vokabel karteikarten, wort drill, schnelles japanisch lesen, zeitgesteuertes vokabel quiz, schnelles wort abrufen, JLPT vokabel übung, japanische wort erkennung"
+    "title": "Spelling Blitz - Test Your Code Word Spelling Speed",
+    "titleShort": "Spelling Blitz - Test Your Speed",
+    "description": "Race through spelling drills against the clock. Spelling Blitz builds fast and accurate code word spelling.",
+    "keywords": "spelling speed test, timed code word spelling, callsign speed, rapid spelling drills"
   },
   "vocabularyGauntlet": {
-    "title": "Vocabulary Gauntlet - Meistern Sie Jedes Wort",
-    "titleShort": "Vocabulary Gauntlet",
-    "description": "Meistern Sie umfassenden japanischen Wortschatz mit dem Vocabulary Gauntlet. Üben Sie alle JLPT-Wörter.",
-    "keywords": "vokabel meisterschaft, umfassender wortschatz, alle JLPT wörter"
+    "title": "Spelling Gauntlet - Master Every Word",
+    "titleShort": "Spelling Gauntlet - Master Every Word",
+    "description": "Spell every word in the trainer with code words. Spelling Gauntlet checks full coverage across all five tiers.",
+    "keywords": "spelling mastery, all word sets, full code word spelling drill"
   },
   "academy": {
-    "title": "Akademie - Japanisch Lernartikel | KanaDojo",
-    "titleShort": "Akademie",
-    "description": "Lesen Sie umfassende Anleitungen und Artikel über das Japanischlernen. Tipps, Tricks und Einblicke zum Meistern von Hiragana, Katakana, Kanji und Vokabeln.",
-    "keywords": "japanisch lernanleitungen, japanisch tipps, hiragana anleitung, katakana anleitung, kanji anleitung"
+    "title": "Academy - Phonetic Alphabet Guides | FiveByFive",
+    "titleShort": "Academy - Training Guides",
+    "description": "Read guides on the NATO alphabet, radio phrase meaning and callsign spelling. Short articles that support the training modes.",
+    "keywords": "phonetic alphabet guide, radio phrase guide, callsign spelling tips, training articles"
   },
   "preferences": {
-    "title": "Einstellungen - Personalisieren Sie Ihre Lernerfahrung",
-    "titleShort": "Einstellungen",
-    "description": "Personalisieren Sie Ihre KanaDojo-Lernerfahrung. Wählen Sie Themen, Schriftarten und konfigurieren Sie Ihre Lernpräferenzen.",
-    "keywords": "KanaDojo personalisieren, lernpräferenzen, themen, schriftarten"
+    "title": "Preferences - Customize Your Training",
+    "titleShort": "Preferences - Customize FiveByFive",
+    "description": "Customize your FiveByFive training. Choose themes, fonts and display preferences.",
+    "keywords": "customize FiveByFive, training preferences, themes, fonts"
   },
   "progress": {
-    "title": "Fortschritt - Verfolgen Sie Ihre Japanisch Lernstatistiken",
-    "titleShort": "Fortschritt",
-    "description": "Verfolgen Sie Ihren Japanisch-Lernfortschritt. Sehen Sie detaillierte Statistiken, Errungenschaften und Lernmeilensteine.",
-    "keywords": "lernfortschritt, japanisch statistiken, lernanalyse"
+    "title": "Progress - Track Your Training Statistics",
+    "titleShort": "Progress - Your Training Stats",
+    "description": "Track your FiveByFive results. View accuracy, speed, streaks and mastery by letter, code phrase or word.",
+    "keywords": "training progress, phonetic alphabet statistics, accuracy tracking, speed charts"
   },
   "privacy": {
-    "title": "Datenschutzrichtlinie - Ihr Datenschutz bei KanaDojo",
-    "titleShort": "Datenschutz",
-    "description": "Erfahren Sie, wie KanaDojo Ihre Privatsphäre schützt und Ihre Daten verwaltet. Unser Engagement für Datenschutz und Datensicherheit.",
-    "keywords": "datenschutzrichtlinie, datenschutz, benutzerprivatsphäre"
+    "title": "Privacy Policy - Your Data Protection at FiveByFive",
+    "titleShort": "Privacy Policy",
+    "description": "Learn how FiveByFive handles your data. Progress and preferences stay in your browser.",
+    "keywords": "privacy policy, data protection, local browser storage"
   },
   "terms": {
-    "title": "Nutzungsbedingungen - KanaDojo Nutzungsrichtlinien",
-    "titleShort": "Nutzungsbedingungen",
-    "description": "Lesen Sie die Nutzungsbedingungen von KanaDojo. Richtlinien für die Nutzung unserer Japanisch-Lernplattform.",
-    "keywords": "nutzungsbedingungen, nutzungsrichtlinien, allgemeine geschäftsbedingungen"
+    "title": "Terms of Service - FiveByFive Usage Guidelines",
+    "titleShort": "Terms of Service",
+    "description": "Read the FiveByFive Terms of Service and the guidelines for using the trainer.",
+    "keywords": "terms of service, usage guidelines, terms and conditions"
   },
   "security": {
-    "title": "Sicherheitsrichtlinie - Wie Wir KanaDojo Sicher Halten",
-    "titleShort": "Sicherheit",
-    "description": "Erfahren Sie mehr über KanaDojos Sicherheitsmaßnahmen und wie wir unsere Plattform und Benutzer schützen.",
-    "keywords": "sicherheitsrichtlinie, plattformsicherheit, datensicherheit"
+    "title": "Security Policy - How We Keep FiveByFive Safe",
+    "titleShort": "Security Policy",
+    "description": "Learn about the security practices that protect the FiveByFive site and its users.",
+    "keywords": "security policy, platform security, data security"
   },
   "credits": {
-    "title": "Danksagungen - Mitwirkende und Unterstützer",
-    "titleShort": "Danksagungen",
-    "description": "Treffen Sie die Mitwirkenden und Unterstützer, die KanaDojo möglich machen. Unsere Gemeinschaft von Entwicklern, Designern und Unterstützern.",
-    "keywords": "danksagungen, mitwirkende, unterstützer, gemeinschaft"
+    "title": "Credits - Contributors & Supporters",
+    "titleShort": "Credits",
+    "description": "Meet the contributors and supporters who help maintain FiveByFive.",
+    "keywords": "credits, contributors, supporters, community"
   },
   "patchNotes": {
-    "title": "Versionshinweise - Neueste Updates und Funktionen",
-    "titleShort": "Versionshinweise",
-    "description": "Bleiben Sie auf dem Laufenden über die neuesten KanaDojo-Funktionen, Verbesserungen und Fehlerbehebungen. Sehen Sie unser Änderungsprotokoll.",
-    "keywords": "versionshinweise, updates, änderungsprotokoll, neue funktionen"
+    "title": "Patch Notes - Latest Updates & Features",
+    "titleShort": "Patch Notes",
+    "description": "Stay updated with the latest FiveByFive features, improvements and fixes.",
+    "keywords": "patch notes, updates, changelog, new features"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions - FiveByFive Help & Support",
+    "titleShort": "FAQ - Help & Support",
+    "description": "FiveByFive FAQ: answers about letter drills, radio codes, callsign spelling, training modes and local progress storage.",
+    "keywords": "FiveByFive FAQ, NATO alphabet questions, code word practice, radio phrase help, callsign spelling FAQ, local progress storage, no account trainer"
   },
   "experiments": {
-    "title": "Experimente - Erkunden Sie Alternative Lernmethoden",
-    "titleShort": "Experimente",
-    "description": "Erkunden Sie experimentelle Funktionen und alternative Lernmethoden für Japanisch. Probieren Sie neue Übungsmöglichkeiten aus.",
-    "keywords": "experimente, alternatives lernen, japanische übungsmethoden"
+    "title": "Experiments - Alternative Training Methods",
+    "titleShort": "Experiments",
+    "description": "Try experimental ways to practice code words, phrases and spelling.",
+    "keywords": "experiments, alternative training, code word practice methods"
   },
   "translate": {
-    "title": "Übersetzer - Japanisch-Deutsch Übersetzungswerkzeug",
-    "titleShort": "Übersetzer",
-    "description": "Übersetzen Sie zwischen Japanisch und Deutsch mit unserem integrierten Übersetzungstool. Perfekt zum Üben und Verstehen japanischer Texte.",
-    "keywords": "japanisch übersetzer, übersetzungswerkzeug, japanisch deutsch"
+    "title": "Code Word Reference | FiveByFive",
+    "titleShort": "Code Word Reference",
+    "description": "Look up code words and phrase meanings while you train. Keep a reference close by during drills.",
+    "keywords": "code word reference, NATO alphabet lookup, radio phrase meaning, phonetic alphabet reference"
   },
   "zen": {
-    "title": "Zen-Modus - Ablenkungsfreie Japanisch-Übung",
-    "titleShort": "Zen-Modus",
-    "description": "Üben Sie Japanisch in einer ablenkungsfreien, minimalistischen Umgebung. Konzentrieren Sie sich auf Ihr Lernen mit dem Zen-Modus.",
-    "keywords": "zen modus, fokussiertes üben, minimalistisches lernen, ablenkungsfrei"
+    "title": "Zen Mode - Distraction-Free Code Word Practice",
+    "titleShort": "Zen Mode",
+    "description": "Practice code words in a minimal, distraction-free interface.",
+    "keywords": "zen mode, focused practice, minimalist training, distraction-free drills"
   },
   "kanaTrain": {
-    "title": "Kana-Training - Hiragana und Katakana Üben",
-    "titleShort": "Kana-Training",
-    "description": "Trainieren Sie Ihre Hiragana- und Katakana-Fähigkeiten mit strukturierten Übungseinheiten. Bauen Sie Muskelgedächtnis auf und verbessern Sie die Erkennung.",
-    "keywords": "kana training, hiragana übung, katakana übung, strukturiertes lernen"
+    "title": "Letters Training - Practice Code Words A to Z",
+    "titleShort": "Letters Training",
+    "description": "Train letter to code word recall with structured sessions. Build accuracy first, then improve speed.",
+    "keywords": "letters training, code word practice, NATO alphabet drills, structured training"
   },
   "kanjiTrain": {
-    "title": "Kanji-Training - Japanische Kanji Üben",
-    "titleShort": "Kanji-Training",
-    "description": "Trainieren Sie Ihre Kanji-Erkennung und -Schreibung mit strukturierten Übungseinheiten. Meistern Sie japanische Zeichen schrittweise.",
-    "keywords": "kanji training, kanji übung, strukturiertes kanji lernen"
+    "title": "Codes Training - Practice Radio Phrases",
+    "titleShort": "Codes Training",
+    "description": "Train radio phrase recognition and meaning with structured sessions across five tiers.",
+    "keywords": "codes training, radio phrase practice, radiotelephony drills"
   },
   "vocabularyTrain": {
-    "title": "Vokabeltraining - Japanische Wörter Üben",
-    "titleShort": "Vokabeltraining",
-    "description": "Trainieren Sie Ihren japanischen Wortschatz mit strukturierten Übungseinheiten. Lernen und behalten Sie neue Wörter effektiv.",
-    "keywords": "vokabeltraining, wort übung, strukturiertes vokabellernen, japanische vokabel übungen"
+    "title": "Spelling Training - Practice Code Word Spelling",
+    "titleShort": "Spelling Training",
+    "description": "Train word spelling with ICAO code words. Short sessions build accurate letter by letter recall.",
+    "keywords": "spelling training, word drills, code word spelling, callsign practice"
   },
   "kanaSubset": {
     "hiraganaBase": {
-      "title": "Hiragana Grundzeichen (あ-わ) - Grundlegende Hiragana Lernen | KanaDojo",
-      "titleShort": "Hiragana Grundzeichen",
-      "description": "Meistern Sie die 46 grundlegenden Hiragana-Zeichen (あいうえお, かきくけこ, さしすせそ, etc.). Vollständiger Referenzleitfaden mit Romanisierung für alle fundamentalen japanischen Hiragana.",
-      "keywords": "hiragana basis, grundlegende hiragana, hiragana tabelle, あいうえお, hiragana referenz, hiragana grundlagen lernen, japanisches alphabet hiragana, hiragana romanisierung"
+      "title": "Letters A to Z - Full Code Word Set | FiveByFive",
+      "titleShort": "Letters A to Z",
+      "description": "Practice all 26 letters with their NATO code words, from Alfa to Zulu.",
+      "keywords": "letters A to Z, Alfa Bravo Charlie, full NATO alphabet, code word set"
     },
     "hiraganaDakuon": {
-      "title": "Hiragana Dakuon (が-ぽ) - Stimmhafte Hiragana-Zeichen | KanaDojo",
-      "titleShort": "Hiragana Dakuon",
-      "description": "Lernen Sie stimmhafte Dakuon- und Handakuon-Hiragana-Zeichen (がぎぐげご, ざじずぜぞ, だぢづでど, ばびぶべぼ, ぱぴぷぺぽ). Meistern Sie alle 25 stimmhaften Hiragana mit Ausspracheführer.",
-      "keywords": "hiragana dakuon, stimmhaftes hiragana, hiragana mit dakuten, がぎぐげご, hiragana handakuon, ばびぶべぼ, ぱぴぷぺぽ, stimmhafte hiragana zeichen"
+      "title": "Letters N to Z - Code Word Set | FiveByFive",
+      "titleShort": "Letters N to Z",
+      "description": "Practice the letters N through Z with November, Oscar, Papa and the rest of the code word set.",
+      "keywords": "letters N to Z, November Oscar Papa, code word practice, NATO alphabet"
     },
     "hiraganaYoon": {
-      "title": "Hiragana Yoon (きゃ-りょ) - Kombinierte Hiragana-Zeichen | KanaDojo",
-      "titleShort": "Hiragana Yoon",
-      "description": "Meistern Sie kombinierte Yoon-Hiragana-Zeichen (きゃきゅきょ, しゃしゅしょ, ちゃちゅちょ, etc.). Lernen Sie alle 33 kombinierten Hiragana-Laute mit Romanisierung.",
-      "keywords": "hiragana yoon, kombiniertes hiragana, hiragana kombinationen, きゃきゅきょ, しゃしゅしょ, ちゃちゅちょ, hiragana digraphen, yoon hiragana"
+      "title": "Letters A to M - Code Word Set | FiveByFive",
+      "titleShort": "Letters A to M",
+      "description": "Practice the letters A through M with Alfa, Bravo, Charlie and the rest of the code word set.",
+      "keywords": "letters A to M, Alfa Bravo Charlie, code word practice, NATO alphabet"
     },
     "katakanaBase": {
-      "title": "Katakana Grundzeichen (ア-ワ) - Grundlegende Katakana Lernen | KanaDojo",
-      "titleShort": "Katakana Grundzeichen",
-      "description": "Meistern Sie die 46 grundlegenden Katakana-Zeichen (アイウエオ, カキクケコ, サシスセソ, etc.). Vollständiger Referenzleitfaden mit Romanisierung für alle fundamentalen japanischen Katakana.",
-      "keywords": "katakana basis, grundlegende katakana, katakana tabelle, アイウエオ, katakana referenz, katakana grundlagen lernen, japanisches alphabet katakana, katakana romanisierung"
+      "title": "Digits 0 to 9 - ICAO Code Words | FiveByFive",
+      "titleShort": "Digits 0 to 9",
+      "description": "Practice digit code words from Zero to Niner with fast drills.",
+      "keywords": "ICAO digits, Zero One Two Three, niner, digit code words, radiotelephony numbers"
     },
     "katakanaDakuon": {
-      "title": "Katakana Dakuon (ガ-ポ) - Stimmhafte Katakana-Zeichen | KanaDojo",
-      "titleShort": "Katakana Dakuon",
-      "description": "Lernen Sie stimmhafte Dakuon- und Handakuon-Katakana-Zeichen (ガギグゲゴ, ザジズゼゾ, ダヂヅデド, バビブベボ, パピプペポ). Meistern Sie alle 25 stimmhaften Katakana mit Ausspracheführer.",
-      "keywords": "katakana dakuon, stimmhaftes katakana, katakana mit dakuten, ガギグゲゴ, katakana handakuon, バビブベボ, パピプペポ, stimmhafte katakana zeichen"
+      "title": "Radio Phrases - Set One | FiveByFive",
+      "titleShort": "Radio Phrases",
+      "description": "Practice common radio phrases such as roger, wilco, over and mayday with their meanings.",
+      "keywords": "radio phrases, roger wilco over, mayday, radiotelephony practice"
     },
     "katakanaYoon": {
-      "title": "Katakana Yoon (キャ-リョ) - Kombinierte Katakana-Zeichen | KanaDojo",
-      "titleShort": "Katakana Yoon",
-      "description": "Meistern Sie kombinierte Yoon-Katakana-Zeichen (キャキュキョ, シャシュショ, チャチュチョ, etc.). Lernen Sie alle 33 kombinierten Katakana-Laute mit Romanisierung.",
-      "keywords": "katakana yoon, kombiniertes katakana, katakana kombinationen, キャキュキョ, シャシュショ, チャチュチョ, katakana digraphen, yoon katakana"
+      "title": "All Radio Codes - Full Set | FiveByFive",
+      "titleShort": "All Radio Codes",
+      "description": "Work through every radio code and phrase in the trainer in one set.",
+      "keywords": "all radio codes, full phrase set, radiotelephony codes"
     },
     "katakanaForeign": {
-      "title": "Katakana Fremdlaute (ファ-ウィ) - Erweitertes Katakana | KanaDojo",
-      "titleShort": "Katakana Fremdlaute",
-      "description": "Lernen Sie erweiterte Katakana-Zeichen für Fremdwörter (ファ, フィ, ウィ, ウェ, etc.). Meistern Sie spezielle Katakana-Kombinationen im modernen Japanisch.",
-      "keywords": "katakana fremdlaute, erweitertes katakana, lehnwörter katakana, ファフィ, ウィウェ, spezielles katakana, modernes katakana, fremdwort katakana"
+      "title": "Confusable Pairs - Code Word Drills | FiveByFive",
+      "titleShort": "Confusable Pairs",
+      "description": "Practice pairs that are easy to mix up, such as B and D or M and N, with targeted drills.",
+      "keywords": "confusable letters, B and D, M and N, code word drills, letter pairs"
     }
+  },
+  "hiraganaPractice": {
+    "title": "Letters Practice - Learn Code Words A to Z | FiveByFive",
+    "titleShort": "Letters Practice",
+    "description": "Practice every letter with NATO code words. Pick mode builds recognition and input mode builds typing recall.",
+    "keywords": "letters practice, code word drills, NATO alphabet practice, A to Z quiz"
+  },
+  "katakanaPractice": {
+    "title": "Codes Practice - Radio Phrases | FiveByFive",
+    "titleShort": "Codes Practice",
+    "description": "Practice radio codes and phrases with short drills and instant feedback. Track the phrases you miss.",
+    "keywords": "radio codes practice, radio phrase drills, radiotelephony practice, code quiz"
+  },
+  "kanjiPractice": {
+    "title": "Radio Code Practice by Tier | FiveByFive",
+    "titleShort": "Radio Code Practice",
+    "description": "Practice radio phrases by tier with interactive drills. Improve meaning recall and speed over short sessions.",
+    "keywords": "radio code practice, phrase drills by tier, radiotelephony training"
   }
 }
