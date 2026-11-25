@@ -1,203 +1,118 @@
-<p align="center">
-<b>This project is sponsored by</b>
-<br/>
-<br/>
-<a href="https://vercel.com/oss">
-  <img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge-2026.svg" />
-</a>
-<br/>
-<br/>
-<a href="https://cossistant.com/open-source-program">
-  <img alt="Cossistant OSS Program" src="https://cdn.cossistant.com/oss/oss-friends.svg" />
-</a>
-</p>
-
-<div id="top"></div>
-
-# KanaDojo かな道場
-
 <div align="center">
+  
+# FiveByFive
 
-![KanaDojo Banner](https://github.com/user-attachments/assets/56716ee9-9347-4224-9fe2-ef1beb93e286)
 
-![Training](https://github.com/user-attachments/assets/d491708f-2ad3-41c7-9717-dec8a90afd03)
 
-**An aesthetic, minimalist, and highly customizable platform for mastering Japanese, inspired by Duolingo and Monkeytype. Built with Next.js and sponsored by Vercel.**
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](./LICENSE.md)
+[![GitHub stars](https://img.shields.io/github/stars/frteddz/FiveByFive?style=flat)](https://github.com/frteddz/FiveByFive/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/frteddz/FiveByFive)](https://github.com/frteddz/FiveByFive/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/frteddz/FiveByFive)](https://github.com/frteddz/FiveByFive/pulls)
+[![GitHub last commit](https://img.shields.io/github/last-commit/frteddz/FiveByFive)](https://github.com/frteddz/FiveByFive/commits/main)
 
-[![Vercel OSS Program](https://img.shields.io/badge/Vercel-OSS%20Program-black?style=for-the-badge&logo=vercel)](https://vercel.com/open-source-program)
-[![Sponsored by Vercel](https://img.shields.io/badge/Sponsored%20by-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/oss)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Vitest](https://img.shields.io/badge/Tested_with-Vitest-6E9F18?logo=vitest&logoColor=white)](https://vitest.dev/)
 
-<!--[![Sponsored by Cossistant](https://cdn.cossistant.com/oss/oss-friends.svg)](https://cossistant.com/open-source-program)-->
 
-[![Live Demo](https://img.shields.io/badge/demo-kanadojo.com-blue?style=for-the-badge)](https://kanadojo.com)
-[![DeepWiki](https://img.shields.io/badge/docs-DeepWiki-purple?style=for-the-badge)](https://deepwiki.com/lingdojo/kana-dojo)
-[![Good First Issues](https://img.shields.io/github/issues-search/lingdojo/kana-dojo?query=is%3Aissue+is%3Aopen+label%3A%22good%20first%20issue%22&style=for-the-badge&label=good%20first%20issues&color=brightgreen)](https://github.com/lingdojo/kana-dojo/issues?q=is%3Aissue+is%3Aopen+label%3A%22good%20first%20issue%22)
-[![License](https://img.shields.io/badge/license-AGPL--v3-blue?style=for-the-badge)](LICENSE.md)
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=for-the-badge&logo=typescript)](https://typescriptlang.org/)
-[![Zustand](https://img.shields.io/badge/Zustand-00C7B7?style=for-the-badge&logo=zustand&logoColor=white)](https://github.com/pmndrs/zustand)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
-[![Vitest](https://img.shields.io/badge/Tests-Vitest-yellow?style=for-the-badge)](https://vitest.dev/)
-[![AGPL-3.0](https://img.shields.io/badge/open-source-green?style=for-the-badge)](https://gnu.org/licenses/agpl-3.0)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/CyvBNNrSmb)
-[![Email](https://img.shields.io/badge/Email-dev%40kanadojo.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dev@kanadojo.com)
 
----
+A trainer for the NATO/ICAO phonetic alphabet. Learn the code words (Alpha, Bravo, Charlie and the rest), the radio phrases that go with them, and how to spell a word out loud so the other person gets it right the first time.
 
-<!--
-## 🌐 Translations / 번역 / 翻訳
+FiveByFive is a fork of [lingdojo/kana-dojo](https://github.com/lingdojo/kana-dojo). The training engine and the UI are the upstream work, largely intact. What changed is the content: the Japanese learning material has been replaced with aviation and radio alphabet material. Credit for the original app goes to the lingdojo team and the kana-dojo contributors.
 
-This README is available in multiple languages:
+Maintained by [@frteddz](https://github.com/frteddz). Source: [github.com/frteddz/FiveByFive](https://github.com/frteddz/FiveByFive).
 
-**English** (current) · [한국어 (Korean)](./docs/translations/README.ko.md) · [日本語 (Japanese)](./docs/translations/README.ja.md) · [Español (Spanish)](./docs/translations/README.es.md) · [Français (French)](./docs/translations/README.fr.md) · [Deutsch (German)](./docs/translations/README.de.md) · [Português (Portuguese)](./docs/translations/README.pt-br.md) · [Русский (Russian)](./docs/translations/README.ru.md) · [Türkçe (Turkish)](./docs/translations/README.tr.md) · [العربية (Arabic)](./docs/translations/README.ar.md) · [हिन्दी (Hindi)](./docs/translations/README.hin.md) · [Italiano (Italian)](./docs/translations/README.it.md) · [Bahasa Indonesia (Indonesian)](./docs/translations/README.id.md) · [Українська (Ukrainian)](./docs/translations/README.ua.md) · [Tiếng Việt (Vietnamese)](./docs/translations/README.vi.md) · [简体中文 (Simplified Chinese)](./docs/translations/README.zh-CN.md) · [繁體中文 (Traditional Chinese)](./docs/translations/README.zh-tw.md)
+## What you train on
 
--->
+There are three trainings.
 
-## About
+**Letters** drills the 26 code words. You see a letter and recall its code word, or you see a code word and recall the letter. The data uses ICAO spellings, so `alfa` has one `l` and `juliett` has two `t`. The common spellings (`alpha`, `juliet`) are accepted as correct answers too.
 
-KanaDojo is an engaging and user-friendly web-based Japanese learning platform that makes mastering Hiragana, Katakana, Kanji, and vocabulary fun and intuitive. Built with a focus on aesthetics, customization, and effective learning, it provides an immersive training environment for Japanese language learners at all levels.
+**Codes** covers radio phrases. Think `roger`, `wilco`, `mayday`, `say again`, `hold`, `clearance`. The phrases are split across five levels so you can work through them in steps instead of all at once.
 
-## Contributing
+**Spelling** gives you a word and asks you to spell it with code words. `WHEAT` becomes `whiskey hotel echo alfa tango`. The word lists keep their upstream filenames and field names, but the entries now carry code-word spellings.
 
-### For Complete Beginners
+## Game modes
 
-Start with the [Beginner's Contribution Guide](./docs/CONTRIBUTING-BEGINNERS.md) for a step-by-step walkthrough that explains everything from creating a GitHub account to opening your first PR.
+All three trainings use the same four modes inherited from the upstream engine.
 
-### Not a Beginner?
+| Mode | What you do |
+| --- | --- |
+| Pick | See a prompt, choose the right answer from options |
+| Reverse pick | See an answer, choose the matching prompt |
+| Input | See a prompt, type the answer |
+| Reverse input | See an answer, type the prompt |
 
-All contributions are welcome! Whether you're fixing bugs, adding features, improving documentation, or translating — check out [CONTRIBUTING.md](./CONTRIBUTING.md) to get started.
+The mode is a per-training preference, so you can switch between recognition and recall without leaving the app.
 
-[Live Demo](https://kanadojo.com) · [Documentation](./docs/)
+## Tech stack
 
-</div>
+- Next.js 16 with App Router and Turbopack
+- React 19
+- TypeScript in strict mode
+- Tailwind CSS 4
+- Zustand 5 for state, with localStorage persistence
+- next-intl for translations
+- Vitest for tests
 
-## Key Features
+The folder layout is feature based: `app/` for routes, `features/` for training modules, `entities/` for domain helpers, `shared/` for reusable code, `core/` for i18n and infrastructure, `widgets/` for cross-feature composition. See [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) for the details.
 
-- **Three Training Dojos** — Kana (Hiragana/Katakana), Kanji (JLPT N5-N1), and Vocabulary
-- **Four Game Modes** — Pick, Reverse-Pick, Input, and Reverse-Input for varied practice
-- **100+ Themes** — Beautiful light and dark themes with 28 Japanese fonts
-- **Progress Tracking** — Statistics, streaks, and 80+ achievements
-- **Fully Responsive** — Works seamlessly on desktop, tablet, and mobile
+## Run it locally
 
-## Quick Start
-
-We recommend [Node.js 24 LTS](https://nodejs.org/en/download) for local development.
+Use a recent Node LTS release. Node 24 works.
 
 ```bash
-git clone https://github.com/lingdojo/kana-dojo.git
-cd kana-dojo
+git clone https://github.com/frteddz/FiveByFive.git
+cd FiveByFive
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to start learning.
+Open [http://localhost:3000](http://localhost:3000).
 
-To validate changes before opening a PR:
+Useful commands:
 
 ```bash
-npm run check
+npm run check          # TypeScript + ESLint
+npm run test           # Vitest, single run
+npm run test:watch     # Vitest, watch mode
+npm run lint           # ESLint only
+npm run format         # Prettier, writes files
+npm run format:check   # Prettier, no writes
+npm run i18n:check     # translation config, keys, generated types
 ```
 
-> **Having issues?** See the [Troubleshooting Guide](./docs/TROUBLESHOOTING.md)
+Avoid `npm run build` for a quick sanity check. It is slow and it does not validate anything that `npm run check` and `npm run test` do not already cover.
 
-<!--
-## Screenshots
+If something breaks during setup, start with [docs/TROUBLESHOOTING.md](./docs/TROUBLESHOOTING.md).
 
-<div align="center">
+## Contributing
 
-### Home Page
+If GitHub itself is new to you, [docs/CONTRIBUTING-BEGINNERS.md](./docs/CONTRIBUTING-BEGINNERS.md) walks through fork, clone, commit and pull request. Otherwise [CONTRIBUTING.md](./CONTRIBUTING.md) covers the normal workflow.
 
-![Home](https://github.com/user-attachments/assets/cac78e72-4d31-43e8-8160-104c431e55be)
+Content changes are welcome: better phrase coverage, extra accepted spellings, more spelling words, translation fixes. The code is still marked up with some upstream names (`kana`, `kanji`, `vocabulary`) because the engine was inherited. Do not rename those paths as part of a content change. That is a separate job.
 
-### Training Screen
+## Docs
 
-![Training](https://github.com/user-attachments/assets/d491708f-2ad3-41c7-9717-dec8a90afd03)
+| Doc | What is in it |
+| --- | --- |
+| [Architecture](./docs/ARCHITECTURE.md) | Folder layout, boundaries, where to put new code |
+| [UI design](./docs/UI_DESIGN.md) | Styling, theming and component conventions |
+| [State management](./docs/STATE_MANAGEMENT.md) | Stores, persistence, what belongs where |
+| [Translation guide](./docs/TRANSLATION_GUIDE.md) | i18n files, namespaces, scripts |
+| [Troubleshooting](./docs/TROUBLESHOOTING.md) | Common setup and dev problems |
+| [Deploy a fork on Vercel](./docs/VERCEL_PERSONAL_DEPLOYMENT.md) | Personal deployment walkthrough |
+| [Beginner contributing](./docs/CONTRIBUTING-BEGINNERS.md) | First pull request, step by step |
 
-### Themes & Customization
-
-![Themes](https://github.com/user-attachments/assets/f664a280-0344-4ff9-8639-83f9c1c4223b)
-
-</div>
--->
-
-## Documentation
-
-| Document                                                           | Description                                    |
-| ------------------------------------------------------------------ | ---------------------------------------------- |
-| [Architecture](./docs/ARCHITECTURE.md)                             | Project structure, patterns, and conventions   |
-| [UI Design](./docs/UI_DESIGN.md)                                   | Theming, styling, and component guidelines     |
-| [Translation Guide](./docs/TRANSLATION_GUIDE.md)                   | How to translate the app                       |
-| [Troubleshooting](./docs/TROUBLESHOOTING.md)                       | Common issues and solutions                    |
-| [Personal Vercel Deployment](./docs/VERCEL_PERSONAL_DEPLOYMENT.md) | Deploy a personal fork on Vercel Hobby         |
-| [Beginner Contributing](./docs/CONTRIBUTING-BEGINNERS.md)          | Step-by-step guide for first-time contributors |
-| [All Documentation](./docs/)                                       | Complete documentation index                   |
-
-## Tech Stack
-
-- [Next.js](https://nextjs.org/) 15
-- [React](https://react.dev/) 19
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [shadcn/ui](https://ui.shadcn.com/)
-- [Zustand](https://github.com/pmndrs/zustand)
-- [Framer Motion](https://framer.com/motion/)
-
-> See [Architecture docs](./docs/ARCHITECTURE.md) for full technical details.
-
-## Credits
-
-### Logo
-
-- [Brandon Haupt](https://www.instagram.com/talorash/) — creator of the KanaDojo logo.
-
-### Sponsors
-
-- [Vercel](https://vercel.com/oss) — part of Vercel's Open-source Software Sponsorship Program.
-- [Cossistant](https://cossistant.com/) — part of Cossistant's Open-source Program.
-
-### Inspiration
-
-- [Duolingo](https://www.duolingo.com/) — main inspiration.
-- [Monkeytype](https://github.com/monkeytypegame/monkeytype) — UI and design inspiration.
-
-### Japanese Language Libraries
-
-- [Kuroshiro](https://github.com/hexenq/kuroshiro) — Japanese text conversion and romanization.
-- [Kuromoji](https://github.com/takuyaa/kuromoji.js) — Japanese tokenizer used for text analysis.
-- [Wanakana](https://github.com/WaniKani/WanaKana) — kana and romaji transliteration helpers.
-
-### Data Sources
-
-- [JMdict](https://www.edrdg.org/jmdict/j_jmdict.html) — Japanese-English dictionary data.
-- [KANJIDIC](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project) — kanji readings and meanings database.
-- [Jonathan Waller's JLPT Resources](https://japanesetest4you.com/) — JLPT study references.
-- [jlptsensei.com](https://jlptsensei.com/) — JLPT vocabulary and study material.
-
-## Star History
-
-<div align="center">
-
-[![Star History Chart](https://api.star-history.com/svg?repos=lingdojo/kana-dojo&type=Date)](https://star-history.com/#lingdojo/kana-dojo&Date)
-
-</div>
+Some inherited docs in `docs/` still describe the original Japanese app. They are being updated. When in doubt, read the source.
 
 ## License
 
-This project is licensed under the AGPL 3.0 License — see [LICENSE.md](./LICENSE.md) for details.
+AGPL-3.0. See [LICENSE.md](./LICENSE.md). The upstream project keeps its own license and attribution.
 
-## Contact
+## Disclosure 
 
-- **Discord**: https://discord.gg/CyvBNNrSmb
-- **Email**: dev@kanadojo.com
-
----
-
-<div align="center">
-
-**Made with ❤️ by the open-source community for Japanese language learners worldwide**
-
-がんばって！ (Ganbatte! — Do your best!)
-
-[⬆ Back to top](#top)
-
+I used AI for parts that i do not have experience with. the rest of the code comes from [lingdojo/kana-dojo](https://github.com/lingdojo/kana-dojo)
 </div>
