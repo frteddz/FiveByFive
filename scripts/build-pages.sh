@@ -4,6 +4,7 @@
 set -euo pipefail
 
 # npm normally generates this through prebuild, which npx next build skips.
+mkdir -p shared/data
 node scripts/generate-commit-info.mjs
 
 route_backup="$(mktemp -d)"
