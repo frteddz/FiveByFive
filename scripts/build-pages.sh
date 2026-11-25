@@ -3,6 +3,9 @@
 # app/api is moved aside for the duration of the build and restored afterwards.
 set -euo pipefail
 
+# npm normally generates this through prebuild, which npx next build skips.
+node scripts/generate-commit-info.mjs
+
 route_backup="$(mktemp -d)"
 for route in api llms.txt security.txt; do
   mv "app/$route" "$route_backup/$route"
